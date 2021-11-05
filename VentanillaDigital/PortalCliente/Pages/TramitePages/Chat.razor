@@ -1,0 +1,37 @@
+﻿@if (Mensajes != null && Mensajes.Any())
+{
+<div class="page-content page-container" id="page-content">
+    <div class="padding bg-light">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-4 col-sm-12">
+                <div class="card card-bordered">
+                    <div class="card-header">
+                        <h4 class="card-title"><strong>Historial de Mensajes</strong></h4>
+                    </div>
+                    <div class="ps-container ps-theme-default ps-active-y" id="chat-content" style="overflow-y: scroll !important; height:400px !important;">
+
+                        @foreach (var mensaje in Mensajes)
+                        {
+        @if (mensaje.EsNotario)
+        {
+<div class="media media-chat">
+    <img class="avatar" src="https://img.icons8.com/color/36/000000/administrator-male.png" alt="...">
+    <div class="media-body">
+        <p>@mensaje.Mensaje</p>
+        <p class="meta"><time datetime="2018">@mensaje.Fecha.ToString("yyyy-MM-dd HH:mm:ss")</time></p>
+    </div>
+</div> }
+else
+{
+<div class="media media-chat media-chat-reverse">
+    <div class="media-body">
+        <p class="text-white">@mensaje.Mensaje</p>
+        <p class="meta"><time datetime="2018">@mensaje.Fecha.ToString("yyyy-MM-dd HH:mm:ss")</time></p>
+    </div>
+</div>}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>}

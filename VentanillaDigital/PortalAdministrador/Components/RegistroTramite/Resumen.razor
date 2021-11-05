@@ -1,0 +1,157 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-4 col-tablet">
+            <img src="@imgCompareciente" class="img-client" />
+        </div>
+        <div class="col-8 col-tablet order">
+            <h3>Resumen de verificación de identidad del compareciente</h3>
+            <table class="resumen-table resumen_acta-tabla">
+                <tr>
+                    <td>Tipo y número de documento</td>
+                    <td>@Compareciente?.TipoIdentificacion?.Abreviatura - @Compareciente?.NumeroIdentificacion</td>
+                </tr>
+                <tr>
+                    <td>Estado:</td>
+                    <td>
+                        @if (Compareciente.ResulHuellas == "HIT - VIGENTE")
+                        {
+                            <p>@Compareciente.ResulHuellasDetalle</p>
+                        }
+                    </td>
+                </tr>
+                <tr class="estado-row">
+                    <td>
+                        Nombre digitado:
+                    </td>
+                    <td>
+                        <p class="@(@Compareciente.NombreRNEC != @Compareciente.NombreCompletoDigitado ? "error-nombre" : "" )">
+                            @(string.IsNullOrWhiteSpace(Compareciente.NombreCompletoDigitado)? "NO DIGITADO": Compareciente.NombreCompletoDigitado)
+                        </p>
+                    </td>
+                </tr>
+                @if (Compareciente.NombreRNEC != null)
+                {
+                    <tr>
+                        <td>
+                            Nombre en la Registraduría
+                        </td>
+                        <td>
+                            @Compareciente.NombreRNEC
+                        </td>
+                    </tr>
+                }
+                <tr class="estado-row">
+                    <td>Resultado de la biometría</td>
+                    <td>
+                    <div>
+                        @if (Compareciente.ResulHuellas == "HIT - VIGENTE")
+                        {
+                           <p class="texto-ok vigente">@Compareciente.ResulHuellas</p>
+                        }
+                        else
+                        {
+                            <p class="error-texto">@Compareciente.ResulHuellas</p>
+                        }
+                        </div>
+                        <div class="d-flex">
+
+                        <div class="dedo-resultado-container">
+                            <p>Dedo uno</p>
+                            @if (Compareciente.DedoUnoResultado == "HIT")
+                            {
+                                <span class="fas fa-check ok"></span>
+                            }
+                            else
+                            {
+                                <span class="fas fa-times error"></span>
+                            }
+                        </div>
+                        <div class="dedo-resultado-container">
+                            <p>Dedo dos</p>
+                            @if (Compareciente.DedoDosResultado == "HIT")                                
+                            {
+                                <span class="fas fa-check ok"></span>
+                            }
+                            else
+                            {
+                                <span class="fas fa-times error"></span>
+                            }
+                        </div>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    
+                </tr>
+                @if (Compareciente.ResulHuellas == "HIT - VIGENTE") {
+                <tr>
+                    <td>ID petición</td>
+                    <td>@Compareciente.TransaccionRNECId</td>
+                </tr>
+                }
+            </table>
+        </div>
+    </div>
+
+</div>
+@*<div class="order">
+        <div class="pb-2">
+                <div class="col-12">
+                    <h3 class="ventanilla-subtitle">Resumen de verificación de identidad del compareciente</h3>
+                    <div class="d-flex">
+                        <p><strong>Tipo y número de documento</strong></p>
+                        <p>@Compareciente?.TipoIdentificacion?.Abreviatura - @Compareciente?.NumeroIdentificacion </p>
+                    </div>
+                    <div class="d-flex">
+                        <p><strong>Estado</strong></p>
+                        @if (Compareciente.ResulHuellas == "HIT - VIGENTE")
+                        {
+                            <div class="mensaje-container mensaje-ok">
+                                <p> @Compareciente.ResulHuellas</p>
+                            </div>
+                        }
+                        else
+                        {
+                            <div class="mensaje-container mensaje-alerta">
+                                <p>@Compareciente.ResulHuellas</p>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <p><strong>Nombres y apellidos ingresados</strong></p>
+                    <p class="@(@Compareciente.NombreRNEC != @Compareciente.NombreCompletoDigitado ? "error-texto" : "" )">
+                        @(string.IsNullOrWhiteSpace(Compareciente.NombreCompletoDigitado)?
+                        "NO DIGITADO": Compareciente.NombreCompletoDigitado)
+                    </p>
+                </div>
+                <p><strong>Nombres y apellidos en Registraduría</strong></p>
+                <p>@Compareciente.NombreRNEC</p>
+                <div>
+                    <p><strong>Resultado de validación</strong></p>
+                    @if (Compareciente.ResulHuellas == "HIT - VIGENTE")
+                    {
+                        <div class="mensaje-container mensaje-ok">
+                            <p> @Compareciente.ResulHuellas</p>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="mensaje-container mensaje-error">
+                            <p>@Compareciente.ResulHuellas</p>
+                        </div>
+                    }
+                </div>
+                <p><strong>NUT de la Registraduría</strong></p>
+                <p>@Compareciente.TransaccionRNECId</p>
+            </div>
+    </div>*@
+@* <div class="pt-3">
+    <div class="col-12">
+    <h3>Datos adicionales</h3>
+    <label>Correo electrónico</label>
+    <p>@Compareciente?.Email</p>
+    <label>Número de celular</label>
+    <p>@Compareciente?.NumeroCelular</p>
+    </div>
+    </div>*@

@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "PdfTronUtils/1.0.0": {
+        "dependencies": {
+          "PDFTron.NETCore.Windows.x64": "8.1.0.76931"
+        },
+        "runtime": {
+          "PdfTronUtils.dll": {}
+        }
+      },
+      "PDFTron.NETCore.Windows.x64/8.1.0.76931": {
+        "runtime": {
+          "lib/netcoreapp2.1/PDFNetDotNetCore.dll": {
+            "assemblyVersion": "6.11.0.0",
+            "fileVersion": "6.11.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PdfTronUtils/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PDFTron.NETCore.Windows.x64/8.1.0.76931": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WsyxXGpursfZj0WBMu4HtvCx69t41oAg3HLu5/ALcJBU0HhuOrEjyRlAxFf89Dp7ZWTYMNrlx2/5JZn5xbY69w==",
+      "path": "pdftron.netcore.windows.x64/8.1.0.76931",
+      "hashPath": "pdftron.netcore.windows.x64.8.1.0.76931.nupkg.sha512"
+    }
+  }
+}

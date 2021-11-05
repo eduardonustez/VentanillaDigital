@@ -1,0 +1,12 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\TSAIntegracion\bin\Release\netstandard2.0\TSAIntegracion.deps.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\TSAIntegracion\bin\Release\netstandard2.0\TSAIntegracion.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\TSAIntegracion\bin\Release\netstandard2.0\TSAIntegracion.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\TSAIntegracion\bin\Release\netstandard2.0\Infraestructura.KeyManager.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\TSAIntegracion\bin\Release\netstandard2.0\Infraestructura.KeyManager.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\TSAIntegracion\obj\Release\netstandard2.0\TSAIntegracion.csprojAssemblyReference.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\TSAIntegracion\obj\Release\netstandard2.0\TSAIntegracion.AssemblyInfoInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\TSAIntegracion\obj\Release\netstandard2.0\TSAIntegracion.AssemblyInfo.cs
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\TSAIntegracion\obj\Release\netstandard2.0\TSAIntegracion.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\TSAIntegracion\obj\Release\netstandard2.0\TSAIntegracion.csproj.CopyComplete
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\TSAIntegracion\obj\Release\netstandard2.0\TSAIntegracion.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\TSAIntegracion\obj\Release\netstandard2.0\TSAIntegracion.pdb

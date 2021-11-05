@@ -1,0 +1,11 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Extensions.Hosting.AsyncInitialization\bin\Debug\netstandard2.1\Extensions.Hosting.AsyncInitialization.xml
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Extensions.Hosting.AsyncInitialization\bin\Debug\netstandard2.1\Extensions.Hosting.AsyncInitialization.deps.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Extensions.Hosting.AsyncInitialization\bin\Debug\netstandard2.1\Extensions.Hosting.AsyncInitialization.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Extensions.Hosting.AsyncInitialization\bin\Debug\netstandard2.1\Extensions.Hosting.AsyncInitialization.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Extensions.Hosting.AsyncInitialization\obj\Debug\netstandard2.1\Extensions.Hosting.AsyncInitialization.AssemblyInfoInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Extensions.Hosting.AsyncInitialization\obj\Debug\netstandard2.1\Extensions.Hosting.AsyncInitialization.AssemblyInfo.cs
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Extensions.Hosting.AsyncInitialization\obj\Debug\netstandard2.1\Extensions.Hosting.AsyncInitialization.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Extensions.Hosting.AsyncInitialization\obj\Debug\netstandard2.1\Extensions.Hosting.AsyncInitialization.sourcelink.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Extensions.Hosting.AsyncInitialization\obj\Debug\netstandard2.1\Extensions.Hosting.AsyncInitialization.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Extensions.Hosting.AsyncInitialization\obj\Debug\netstandard2.1\Extensions.Hosting.AsyncInitialization.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Extensions.Hosting.AsyncInitialization\obj\Debug\netstandard2.1\Extensions.Hosting.AsyncInitialization.csprojAssemblyReference.cache

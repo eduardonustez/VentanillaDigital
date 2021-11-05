@@ -1,0 +1,42 @@
+﻿<div>
+    <div class="firma-compareciente">
+        <canvas id="sig-canvas" />
+    </div>
+    <div class="btn-firma-container">
+        <button id="limpiar-firma-movil" type="button" class="btn-limpiar" @onclick="Limpiar">Limpiar</button>
+        <button id="aceptar-firma-movil" type="button" class="btn-contorno-primario" @onclick="Aceptar" disabled>Aceptar</button>
+    </div>
+</div>
+
+@code {
+    [Inject]
+    protected IJSRuntime JSRuntime { get; set; }
+    [Parameter]
+    public string Grafo { get; set; }
+    [Parameter]
+    public EventCallback<string> GrafoChanged { get; set; }
+    [Parameter]
+    public EventCallback<bool> ReadyChanged { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JSRuntime.InvokeVoidAsync("initialize_fm");
+        }
+        await base.OnAfterRenderAsync(firstRender);
+    }
+
+    private async Task Aceptar()
+    {
+        string grafo = await JSRuntime.InvokeAsync<string>("getImage_fm");
+        await GrafoChanged.InvokeAsync(grafo);
+        await ReadyChanged.InvokeAsync(true);
+    }
+    private async Task Limpiar()
+    {
+        await GrafoChanged.InvokeAsync(null);
+        await ReadyChanged.InvokeAsync(false);
+        await JSRuntime.InvokeVoidAsync("clearCanvas_fm");
+    }
+}

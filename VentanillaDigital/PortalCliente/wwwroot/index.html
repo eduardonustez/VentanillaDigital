@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="es-CO" translate="no">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-TCVFLHP');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notaria Digital</title>
+    <base href="/" />
+    <link rel="stylesheet" href="_content/Radzen.Blazor/css/default.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link href="css/ModuloNotario.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+          integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link href="css/drag-drop-file-upload.css" rel="stylesheet" />
+    <link href="css/sidebar.css" rel="stylesheet" />
+    <link href="css/ventanilla.css" rel="stylesheet" />
+    <link href="css/mobile.css" rel="stylesheet" />
+    <link href="manifest.json" rel="manifest" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
+
+    <!--<script src="js/script.js"></script>-->
+    <script src="js/script-camera.js"></script>
+    <script src="js/script-nuevo-compareciente.js"></script>
+    <script src="js/script-capturahuella.js"></script>
+
+    <script src="js/TramitesPortalVirtual/IndexTramiteVirtual.js"></script>
+    <!--<script src="js/pdfobject.min.js"></script>-->
+
+    <script src="_content/BlazorStrap/blazorStrap.js"></script>
+    <script src="_content/BlazorInputFile/inputfile.js"></script>
+
+    <script src="js/wacom-sigcaptx/demoButtons_encryption.js"></script>
+    <script src="js/wacom-sigcaptx/q.js"></script>
+    <script src="js/wacom-sigcaptx/wgssStuSdk.js"></script>
+    <script src="js/solicitudFirma.js"></script>
+    <script src="js/script_firma_manual.js"></script>
+    <script src="lib/powerbi-client/dist/powerbi.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD3rbfyWYWr3TRjHDLx2ACE8UqM8fZk-AQ&language=es&region=CO"></script>
+    <script src="js/index.js"></script>
+    <script src="js/signalr/jquery-3.4.1.min.js"></script>
+    <script src="js/signalr/jquery.signalR-2.4.1.js"></script>
+    <script src="js/signalr-conn.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+    <script src="_content/Radzen.Blazor/Radzen.Blazor.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="_content/Blazored.Typeahead/blazored-typeahead.css" rel="stylesheet" />
+    <script src="js/signalRClient.js"></script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TCVFLHP" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <app>
+        <div class="col-12 d-flex flex-column mt-5">
+            <img src="images/logo-ucnc.png" alt="Logo 'U.C.N.C.'" class="logo-ucnc align-self-center" />
+            <h3 class="titulo-login align-self-center mt-5">Autenticación biométrica en línea</h3>
+            <div class="spinner-container">
+                <div class="spinner"></div>
+            </div>
+            <div class="align-self-center mt-2">
+                <span>Desarrollado por</span><img class="logo-olimpia ml-1" alt="Olimpia"
+                    src="./images/logo-olimpia-color.svg">
+            </div>
+        </div>
+    </app>
+
+    <script src="_framework/blazor.webassembly.js"></script>
+    <script src="js/swOps.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+    <script src="js/pdf-js/build/pdf.js"></script>
+    <script src="js/pdf-js/build/pdf.worker.js"></script>
+    <script src="js/pdf-js/implement.js"></script>
+    <script src="js/Utilidades.js"></script>
+    <script src="_content/Blazor-Analytics/blazor-analytics.js"></script>
+    <script src="_content/Blazored.Typeahead/blazored-typeahead.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.KeyManager\bin\Release\netstandard2.0\Infraestructura.KeyManager.deps.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.KeyManager\bin\Release\netstandard2.0\Infraestructura.KeyManager.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.KeyManager\bin\Release\netstandard2.0\Infraestructura.KeyManager.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.KeyManager\obj\Release\netstandard2.0\Infraestructura.KeyManager.csprojAssemblyReference.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.KeyManager\obj\Release\netstandard2.0\Infraestructura.KeyManager.AssemblyInfoInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.KeyManager\obj\Release\netstandard2.0\Infraestructura.KeyManager.AssemblyInfo.cs
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.KeyManager\obj\Release\netstandard2.0\Infraestructura.KeyManager.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.KeyManager\obj\Release\netstandard2.0\Infraestructura.KeyManager.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.KeyManager\obj\Release\netstandard2.0\Infraestructura.KeyManager.pdb

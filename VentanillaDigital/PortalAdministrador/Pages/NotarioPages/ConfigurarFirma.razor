@@ -1,0 +1,78 @@
+﻿@page "/Autorizaciones"
+@using PortalAdministrador.Components.Notario
+
+<div class="container">
+    <h1>Autorizaciones</h1>
+    <h3>PIN de firma electrónica</h3>
+    <p> El PIN de firma electrónica es el que debe ingresar cada vez que realiza una autorizacion de trámite </p>
+    <div>
+        <button type="button" class="@(banPin?"btn-contorno-secundario":"btn-primario")"
+                data-toggle="modal"
+                data-target="#modalPIN">
+            @(banPin? "Cambiar":"Configurar") PIN de firma electrónica
+        </button>
+
+        @if (CreacionPinResul != "")
+        {
+            <div class="alert @CreacionPinClass alert-dismissible fade show" role="alert">
+                @CreacionPinResul
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+        }
+    </div>
+    <!-- -->
+    <div class="modal fade" id="modalPIN" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalForAtdp" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-pin">
+                <div class="modal-header">
+                    <h3>Cambiar PIN de firma electronica</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Ingrese el PIN que utilizará para realizar la autorización de los actos notariales</p>
+                    <PinFirma ClaseFirma="pin-autorizar" ModalAutorizar="true" ModalCambioFirma="true" SetPin="AdicionarPIN" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin de Ventana Modal-->
+    <h3>Grafo Visible</h3>
+    <p>
+        Esta será la firma que se imprimirá cuando realice la autorización de los trámites. Recuerde
+        que para capturar el grafo es necesario contar con una tableta wacom.
+    </p>
+    <p>Su grafo aparecerá en el siguiente recuadro</p>
+    <div class="firma-container">
+        <div class="img-firma-container">
+            <img class="img-firma" id="signatureImage" src="@grafo" />
+        </div>
+    </div>
+    @if (!_capturando)
+    {
+        <button type="button"
+                class="@(banFirma?"btn-contorno-secundario":"btn-primario")"
+                @onclick="MostrarADTP">
+            @(banFirma? "Cambiar":"Configurar") grafo de firma electrónica
+        </button>
+
+        @if (CreacionFirmaResul != "")
+        {
+            <div class="alert @CreacionFirmaClass alert-dismissible fade show" role="alert">
+                @CreacionFirmaResul
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        }
+    }
+</div>
+
+
+@code {
+
+}

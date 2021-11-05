@@ -1,0 +1,14 @@
+<form Model="escrituraPublica" @oninput="oninput">
+    <div class="input-container">
+        <label>Acto(s)</label>
+        <textarea @bind-value="escrituraPublica.ActoNotarial" @bind-value:event="oninput"></textarea>
+    </div>
+    <div class="input-container">
+        <label>Fecha del trámite</label>
+        <input type="date" @bind-value="escrituraPublica.FechaTramite" @bind-value:event="oninput" max="@maxDate" />
+    </div>
+    <div class="input-container">
+        <label>Número de referencia</label>
+        <input type="text" @bind-value="escrituraPublica.NumeroReferencia" @bind-value:event="oninput" />
+    </div>
+</form>

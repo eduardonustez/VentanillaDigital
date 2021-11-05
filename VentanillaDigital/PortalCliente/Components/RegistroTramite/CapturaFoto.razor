@@ -1,0 +1,24 @@
+﻿@inject IJSRuntime jsRuntime
+@inject PortalCliente.Services.ITramiteService tramiteService;
+@using PortalCliente.Data
+@using PortalCliente.Data.Account
+<div class="col-12 paso-captura-foto">
+    <h3>Fotografía</h3>
+    <div class="captura-foto-container">
+        <video muted="muted" id="video" class="captura-foto" hidden="@(!Capturando)">
+        </video>
+        <img class="captura-foto" src="@Foto" hidden="@Capturando" />
+        <div class="btn-captura-container">
+            <div hidden="@(!Capturando)">
+                <button class="btn-terciario btn-cambiar-camara" id="cambiarcamra" hidden="@(!Capturando)"
+                        @onclick="cambiar">
+                    <i class="material-icons mr-2">flip_camera_ios</i> Cambiar cámara
+                </button>
+            </div>
+            <button class="btn-contorno-primario" id="botonIniciarCaptura" @onclick="Capturar">
+                <i class="material-icons mr-2">camera_alt</i>
+                @TextoBoton
+            </button>
+        </div>
+    </div>
+</div>

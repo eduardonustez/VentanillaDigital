@@ -1,0 +1,53 @@
+﻿@page "/Diagnostico"
+@using PortalAdministrador.Services.Wacom;
+@inject IWacomService WacomService;
+@inject IJSRuntime JSRuntime;
+@implements IDisposable
+<label>Wacom: </label>
+<label>@WacomService.EstadoServicio</label>
+<button style="border-radius: 50%; padding: .1rem .3rem;" type="button" class="btn-ventanilla" @onclick="WacomService.VerificarServicio">
+    <i class="fas fa-sync-alt"></i>
+</button>
+<br />
+<label>Camara: </label>
+<label>@EstadoCamara</label>
+<button style="border-radius: 50%; padding: .1rem .3rem;" type="button" class="btn-ventanilla" @onclick="VerificarCamara">
+    <i class="fas fa-sync-alt"></i>
+</button>
+
+@code {
+    private EventHandler<PortalAdministrador.Services.Wacom.Models.EstadoServicio> _estadoWacomChanged;
+
+    private string EstadoCamara { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        _estadoWacomChanged = (s, e) => StateHasChanged();
+        WacomService.EstadoServicioChanged += _estadoWacomChanged;
+        await VerificarCamara();
+        await base.OnInitializedAsync();
+    }
+
+    private async Task VerificarCamara()
+    {
+        EstadoCamara = "Probando";
+        var estado = await JSRuntime.InvokeAsync<int>("CamaraDiagnostico");
+        switch (estado)
+        {
+            case 0:
+                EstadoCamara = "No soportado";
+                break;
+            case 1:
+                EstadoCamara = "Desconectado";
+                break;
+            case 2:
+                EstadoCamara = "Listo";
+                break;
+        }
+    }
+
+    public void Dispose()
+    {
+        WacomService.EstadoServicioChanged -= _estadoWacomChanged;
+    }
+}

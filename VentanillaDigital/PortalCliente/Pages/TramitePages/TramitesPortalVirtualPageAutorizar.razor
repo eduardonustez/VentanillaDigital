@@ -1,0 +1,489 @@
+﻿@page "/tramitesportalvirtual/autorizar/{tramiteId:long}"
+@using PortalCliente.Components.Input
+@using BlazorInputFile
+@attribute [Authorize]
+
+<div class="container-fluid">
+    <div class="container autorizar-flex-titulo">
+        <a href="@($"tramitesportalvirtual")">
+            Regresar al listado
+        </a>
+        <h1 class="autorizar-flex-titulo-h1">Revisión de tramite virtual</h1>
+        @if (_movil)
+        {
+            <p class="mensaje-pdf-movil">Esta es una <strong>previsualización del documento</strong>. Para imprimir o descargar, <strong>ingrese desde un computador</strong>.</p>
+        }
+    </div>
+
+    @if (Tramite != null)
+    {
+        <div class="container">
+            <div class="container autorizar-flex-titulo">
+                <h4 class="autorizar-flex-titulo-h1">Información General</h4>
+            </div>
+            <div class="row g-3 shadow-none p-3 bg-light rounded">
+                <div class="col-md-4">
+                    <label for="txtNumeroIdentificacion" class="mb-0">Tipo Trámite</label>
+                    <p class="mt-0">@Tramite.TipoTramiteVirtualNombre</p>
+                </div>
+                <div class="col-md-4">
+                    <label for="txtTipoDocumento" class="mb-0">Documento</label>
+                    <p class="mt-0">@(string.Concat(Tramite.TipoDocumentoNombre, " - ", Tramite.NumeroDocumento))</p>
+                </div>
+                <div class="col-md-4">
+                    <label for="txtNotaria" class="mb-0">Fecha</label>
+                    <p class="mt-0">@Tramite.Fecha.ToString("yyyy-MM-dd HH:mm:ss")</p>
+                </div>
+                <div class="col-md-4">
+                    <label for="txtEstado" class="mb-0">Estado</label>
+                    <p class="mt-0">@Tramite.EstadoNombre</p>
+                </div>
+                <div class="col-md-8">
+                    <label for="cmbActoPrincipal" class="mb-0">Acto Principal</label>
+                    <p class="mt-0">@TramiteFrm.ActoPrincipalNombre</p>
+                </div>
+                @if (Tramite.HasDatosAdicionales)
+                {
+                    <div class="col-2">
+                        <label></label>
+                        <br />
+                        <button disabled="@IsLoading" class="btn btn-sm btn-success mt-2" @onclick="() => ModalDatosAdicionales.Open()"><i class="fa fa-eye"></i> Datos adicionales</button>
+                    </div>
+                }
+            </div>
+            @if (Tramite.EstadoTramiteVirtualId == (int)EstadoTramiteVirtual.PendienteAutorizar &&
+   (Tramite.TipoTramiteVirtualId == (int)TipoTramiteVirtual.Compraventa
+   || Tramite.TipoTramiteVirtualId == (int)TipoTramiteVirtual.Matrimonio
+   || Tramite.TipoTramiteVirtualId == (int)TipoTramiteVirtual.TestamentoAbierto
+   || Tramite.TipoTramiteVirtualId == (int)TipoTramiteVirtual.TestamentoCerrado))
+            {
+                <div class="row">
+                    @foreach (var item in DatosAdicionales)
+                    {
+                        <div class="col-md-4">
+                            <div class="input-container">
+                                <label for="@item.Field">@item.Titulo</label>
+                                <input type="number" disabled="@IsLoading" id="@item.Field" @bind="@item.Value" placeholder="@item.Titulo" />
+                            </div>
+                        </div>
+                    }
+                </div>
+            }
+
+            @if (Tramite.EstadoTramiteVirtualId == 1 || Tramite.EstadoTramiteVirtualId == 5 || Tramite.EstadoTramiteVirtualId == 2)
+            {
+                <div class="input-container">
+                    <label for="sleEstado">Estado</label>
+                    <select disabled="@IsLoading" id="sleEstado" @bind="@estadoSeleccionado">
+
+                        @if (Tramite.EstadoTramiteVirtualId == 1 || Tramite.EstadoTramiteVirtualId == 2)
+                        {
+                            @*<option value="3">Pendiente por Pagar</option>*@
+                            <option value="15">Rechazado</option>
+                        }
+                        @if (Tramite.EstadoTramiteVirtualId == 5 || Tramite.EstadoTramiteVirtualId == 2 || (Tramite.EstadoTramiteVirtualId == 1 && Tramite.TipoTramiteVirtualId == 2))
+                        {
+                            <option value="7">Minuta Subida</option>
+                        }
+                        @if (@Tramite.TipoTramiteVirtualId == 2)
+                        {
+                            <option value="9">Pendiente Autorizar</option>
+                        }
+                        else
+                        {
+                            <option value="17">Enviar al Cliente</option>
+                        }
+                    </select>
+                </div>
+                @if (estadoSeleccionado == 17)
+                {
+                    <div class="row">
+                        @*<div class="input-container col-6 pl-0">
+                                <label for="txtPrecio">Valor total con impuestos</label>
+                                <input disabled="@IsLoading" type="number" id="txtPrecio" @bind-value="Precio" placeholder="Valor total con impuestos" />
+                            </div>*@
+                        <div class="input-container col-6 pl-0">
+                            <label for="txtRazonDevolucion" class="form-label">Mensaje para el Cliente</label>
+                            <input disabled="@IsLoading" type="text" id="txtRazonDevolucion" class="form-control" @bind-value="Razon" placeholder="Mensaje para el Cliente" />
+                        </div>
+                        <div class="d-flex flex-column col-6">
+                            <label for="txtFactura">Adjuntar Archivo</label>
+                            @if (Files.Count == 0)
+                            {
+                                <InputFile id="loadDocumentosInputFile" disabled="@IsLoading" OnChange="OnFileChangeDocumentos" Multiple hidden />
+                                <InputFile id="loadMinutasInputFile" disabled="@IsLoading" OnChange="OnFileChangeMinutas" Multiple hidden />
+                                <InputFile id="loadMinutasBorradorInputFile" disabled="@IsLoading" OnChange="OnFileChangeMinutasBorrador" Multiple hidden />
+
+                                <div class="dropdown-ufile">
+                                    <button class="btn btn-outline-success"><i class="fa fa-cloud-upload-alt mr-2"></i> Examinar</button>
+                                    <div class="dropdown-ufile-content">
+                                        <label for="loadDocumentosInputFile" class="mb-0">Adjuntar Soporte de Liquidación</label>
+                                        <label for="loadMinutasInputFile" class="mb-0">Adjuntar Minuta Abierta</label>
+                                        <label for="loadMinutasBorradorInputFile" class="mb-0">Adjuntar Borrador Minuta</label>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                @foreach (var file in Files)
+                                {
+                                    <div class="highlight file-selected p-2">
+                                        <span>@ShortName(file.Nombre)</span>
+                                        <span class="float-lg-right" @onclick="@(() => RemoveFile(file))" title="Remover de la lista">
+                                            <i class="fa fa-trash btn-outline-danger"></i>
+                                        </span>
+                                    </div>
+                                }
+                                if (Files.Count > 0 && Files.Count < 4)
+                                {
+                                    <InputFile id="loadDocumentoInputFile" disabled="@IsLoading" OnChange="OnFileChangeDocumento" Multiple hidden />
+                                    <InputFile id="loadMinutaInputFile" disabled="@IsLoading" OnChange="OnFileChangeMinuta" Multiple hidden />
+                                    <InputFile id="loadMinutaBorradorInputFile" disabled="@IsLoading" OnChange="OnFileChangeMinutaBorrador" Multiple hidden />
+
+                                    <div class="dropdown-ufile">
+                                        <button class="btn btn-outline-success"><i class="fa fa-plus mr-2"></i> Adicionar</button>
+                                        <div class="dropdown-ufile-content">
+                                            <label for="loadDocumentoInputFile">Adjuntar Soporte de Liquidación</label>
+                                            <label for="loadMinutaInputFile">Adjuntar Minuta Abierta</label>
+                                            <label for="loadMinutaBorradorInputFile">Adjuntar Borrador Minuta</label>
+                                        </div>
+                                    </div>
+                                }
+                            }
+                        </div>
+
+                    </div>
+                }
+                else if (estadoSeleccionado == 15)
+                {
+                    <div>
+                        <label for="txtRazonRechazo" class="form-label">Razón de Rechazo</label>
+                        <input disabled="@IsLoading" type="text" id="txtRazonRechazo" class="form-control" @bind-value="Razon" placeholder="Razón de Rechazo" />
+                    </div>
+
+                }
+                @*else if (estadoSeleccionado == 17)
+                    {
+                        <div>
+                            <label for="txtRazonDevolucion" class="form-label">Mensaje para el Cliente</label>
+                            <input disabled="@IsLoading" type="text" id="txtRazonDevolucion" class="form-control" @bind-value="Razon" placeholder="Mensaje para el Cliente" />
+                        </div>
+                    }*@
+            }
+            @if ((context.User.IsInRole("Administrador") || context.User.IsInRole("Notario Encargado")) && Tramite.EstadoTramiteVirtualId == 9 && Tramite.TipoTramiteVirtualId == 5)
+            {
+                <div class="form-group row">
+                    <label for="txtFactura" class="col-sm-2 col-form-label">Testamento Cerrado</label>
+                    <br />
+                    @if (Files.Count == 0)
+                    {
+                        <InputFile id="loadFiles2" disabled="@IsLoading" OnChange="OnFileChangeTestamento" hidden />
+                        <label for="loadFiles2" class="btn btn-success"><i class="fa fa-cloud-upload-alt"></i> Examinar</label>
+                    }
+                    else
+                    {
+                        <span>Testamento Cargado correctamente</span>
+                        <button class="btn btn-default" @onclick="CleanFiles"><i class="fa fa-trash"></i></button>
+                    }
+                </div>
+                <div class="form-group row">
+                    <label for="txtClave" class="col-sm-2 col-form-label">Clave Testamento</label>
+                    <div class="col-sm-9">
+                        <input disabled="@IsLoading" type="password" id="txtClave" class="form-control" @bind-value="ClaveTestamento" placeholder="Clave Testamento" />
+                    </div>
+                </div>
+            }
+            else if ((context.User.IsInRole("Administrador") || context.User.IsInRole("Notario Encargado")) && Tramite.EstadoTramiteVirtualId == 11 && Tramite.TipoTramiteVirtualId == 5)
+            {
+                <div class="form-group row">
+                    <label for="txtClave" class="col-sm-2 col-form-label">Clave Testamento</label>
+                    <div class="col-sm-9">
+                        <input disabled="@IsLoading" type="password" id="txtClave" class="form-control" @bind-value="ClaveTestamento" placeholder="Clave Testamento" />
+                    </div>
+                </div>
+                <div class="form-group mt-4">
+                    <button class="btn btn-default" disabled="@IsLoading" @onclick="DownloadTestamento"><i class="fa fa-cloud-download-alt"></i> Descargar Testamento</button>
+                </div>
+            }
+
+            @if (!string.IsNullOrEmpty(MensajeError))
+            {
+                <div class="mensaje-container mensaje-error ml-3">
+                    <p>@MensajeError</p>
+                </div>
+            }
+
+            @if (Tramite.EstadoTramiteVirtualId != 11)
+            {
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        @if ((context.User.IsInRole("Administrador") || context.User.IsInRole("Notario Encargado")) && Tramite.EstadoTramiteVirtualId == 9)
+                        {
+                            @if (Tramite.TipoTramiteVirtualId == 1)
+                            {
+                                <button disabled="@IsLoading" class="btn btn-primary mt-2" @onclick="() => ModalQuestion.Open()"><i class="fa fa-check"></i> Autorizar</button>
+                            }
+                            else
+                            {
+                                <button disabled="@IsLoading" class="btn btn-primary mt-2" @onclick="() => ModalQuestionAprobar.Open()"><i class="fa fa-check"></i> Autorizar</button>
+                            }
+
+                            <button disabled="@IsLoading" class="btn btn-info mt-2" @onclick="@(() => ModalQuestionRechazar.Open())"><i class="fa fa-ban"></i> Rechazar</button>
+                        }
+                        else
+                        {
+                            if (estadoSeleccionado == 7)
+                            {
+                                <button disabled="@IsLoading" class="btn btn-info mt-2" @onclick="@(() => ModalIframe.Open(TituloMinutaSubida, CUANDI, comparecientesIFrame))">
+                                    <i class="fa fa-cloud-upload-alt"></i> Cargar archivos
+                                </button>
+                                if (Tramite.TipoTramiteVirtualId != (int)TipoTramiteVirtual.Autenticacion)
+                                {
+                                    <label for="txtClave" class="col-form-label">
+                                        <strong>Advertencia:</strong> Recuerda dar clic en <strong>Guardar</strong> una vez se cargue los archivos.
+                                    </label>
+                                }
+                            }
+                            if (Tramite.TipoTramiteVirtualId != (int)TipoTramiteVirtual.Autenticacion)
+                            {
+                                if (new[] { 1, 2, 5, 9 }.Contains(Tramite.EstadoTramiteVirtualId))
+                                {
+                                    <button disabled="@IsLoading" class="btn btn-primary mt-2" @onclick="() => CambiarEstado(estadoSeleccionado)"><i class="fa fa-save"></i> Guardar</button>
+                                }
+                            }
+                            else
+                            {
+                                if (Tramite.TipoTramiteVirtualId == (int)TipoTramiteVirtual.Autenticacion && estadoSeleccionado != 7)
+                                {
+                                    if (new[] { 1, 2, 5, 9 }.Contains(Tramite.EstadoTramiteVirtualId))
+                                    {
+                                        <button disabled="@IsLoading" class="btn btn-primary mt-2" @onclick="() => CambiarEstado(estadoSeleccionado)"><i class="fa fa-save"></i> Guardar</button>
+                                    }
+                                }
+                            }
+                        }
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6">
+                        <button class="btn btn-primary" disabled="@IsLoading" @onclick="MostrarModalPagos"><i class="fa fa-money-bill"></i> Recaudo (@TotalPagado.ToString("C0", Culture))</button>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+
+    @if (Archivos != null && Archivos.Count > 0)
+    {
+        <div class="container">
+            <div class="container autorizar-flex-titulo">
+                <h4 class="autorizar-flex-titulo-h1">Archivos adjuntos</h4>
+            </div>
+
+            <div class="container-fluid mt-2">
+                <div class="col-12">
+                    <figure class="fig-table table-responsive-sm">
+                        <table class="table table-hover table-sm table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Archivo</th>
+                                    <th>Tipo</th>
+                                    <th class="text-center" style="width: 120px;">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var row in Archivos)
+                                {
+                                    <tr>
+                                        <td>@row.Nombre</td>
+                                        <td>@row.TipoNombre</td>
+                                        <td class="text-center">
+                                            <button class="btn btn-sm btn-default" @onclick="@(() => ShowFile(row.ArchivosPortalVirtualId))"><i class="fa fa-eye"></i></button>
+                                            <button class="btn btn-sm btn-default" @onclick="@(() => DownloadFile(row.ArchivosPortalVirtualId))"><i class="fa fa-cloud-download-alt"></i></button>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    }
+
+    @if (Tramite != null && ActosPorTramite != null)
+    {
+        <div class="container">
+            <div class="container autorizar-flex-titulo">
+                <div class="input-group">
+                    <h4 class="autorizar-flex-titulo-h1">Otros Actos</h4>
+                    @if (Tramite.EstadoTramiteVirtualId == 1 || Tramite.EstadoTramiteVirtualId == 2)
+                    {
+                        <div><button class="btn btn-sm btn-success ml-3" disabled="@IsLoading" @onclick="NuevoActoNotarial"><i class="fa fa-plus"></i> Agregar acto</button></div>
+                    }
+                </div>
+            </div>
+
+            <div class="container-fluid mt-2">
+                <div class="row mt-2">
+                    <div class="col-12">
+                        <div class="table-responsive-sm">
+                            <table class="table table-hover table-sm table-striped table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Acto Notarial</th>
+                                        @if (Tramite.EstadoTramiteVirtualId != 1)
+                                        {
+                                            <th style="width: 300px;">Cuandi</th>
+                                        }
+                                        @if (Tramite.EstadoTramiteVirtualId == 1)
+                                        {
+                                            <th class="text-center" style="width: 120px;">Acciones</th>
+                                        }
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var row in ActosPorTramite)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @if (Tramite.EstadoTramiteVirtualId == 1 || Tramite.EstadoTramiteVirtualId == 2)
+                                                {
+                                                    @if (ActosNotarialesLista != null)
+                                                    {
+
+                                                        <BlazoredTypeahead SearchMethod="searchActosNotariales"
+                                                                           TValue="int"
+                                                                           TItem="ApiGateway.Contratos.Models.Notario.ActoNotarialModel"
+                                                                           ConvertMethod="ConvertActoNotarial"
+                                                                           @bind-Value="row.ActoNotarialId">
+                                                            <SelectedTemplate Context="actoId">
+                                                                @{
+                                                                    var selectedActo = LoadSelectedActo(actoId);
+                                                                    <text>@selectedActo?.Codigo - @selectedActo?.Nombre</text>
+                                                                }
+                                                            </SelectedTemplate>
+                                                            <ResultTemplate Context="person">
+                                                                @person.Codigo - @person.Nombre
+                                                            </ResultTemplate>
+                                                        </BlazoredTypeahead>
+                                                    }
+
+                                                    @*<select disabled="@IsLoading" class="custom-select" @bind="@row.ActoNotarialId">
+                                                            <option>Seleccione</option>
+                                                            @if (ActosNotarialesLista != null)
+                                                            {
+                                                                @foreach (var item in ActosNotarialesLista)
+                                                                {
+                                                                    <option value="@item.ActoNotarialId">@item.Codigo - @item.Nombre</option>
+                                                                }
+                                                            }
+                                                        </select>*@
+                                                }
+                                                else
+                                                {
+                                                    <input type="text" readonly class="form-control" value="@row.ActoNotarialNombre" placeholder="Acto Principal" />
+                                                }
+                                            </td>
+                                            @if (Tramite.EstadoTramiteVirtualId != 1)
+                                            {
+                                                <td>
+                                                    <input type="text" readonly class="form-control" value="@row.Cuandi" placeholder="Cuandi" />
+                                                </td>
+                                            }
+                                            @if (Tramite.EstadoTramiteVirtualId == 1 || Tramite.EstadoTramiteVirtualId == 2)
+                                            {
+                                                <td class="text-center">
+                                                    <button class="btn btn-sm btn-default" disabled="@IsLoading" @onclick="@(() => EliminarActoNotarial(row.ActoNotarialId))"><i class="fa fa-trash"></i></button>
+                                                </td>
+                                            }
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <Chat TramitePortalVirtualId="tramiteId"></Chat>
+    }
+</div>
+
+@if (@Tramite != null)
+{
+    <ModalForm @ref="ModalDatosAdicionales" ModalTitle="Datos Adicionales" CustomStyleModal="max-width:80%">
+        <div class="row mt-2">
+            @if (Tramite.HasDatosAdicionales)
+            {
+                var converted = Newtonsoft.Json.JsonConvert.DeserializeObject(Tramite.DatosAdicionales);
+
+                if (converted is Newtonsoft.Json.Linq.JObject)
+                {
+                    <Details_Multilevel_result JsonData="@Tramite.DatosAdicionales"></Details_Multilevel_result>
+                }
+                else if (converted is Newtonsoft.Json.Linq.JArray)
+                {
+                    <Details_SingleLevelResult JsonData="@Tramite.DatosAdicionales"></Details_SingleLevelResult>
+                }
+            }
+        </div>
+    </ModalForm>
+
+    @if (estadoSeleccionado == 7)
+    {
+        <PortalCliente.Components.TransaccionesVirtuales.ModalFormVirtual @ref="ModalIframe"
+                                                                          CustomStyleModal="max-width:70%"
+                                                                          ModalTitle="Subir archivos"
+                                                                          CustomModalClass="loader">
+            @if (ModalIframe.ModalClass.Equals("Show"))
+            {
+                <div id="iframeTramiteVirtual" border="0" cellspacing="0" style="border-style: none;width: 100%; height: 75vh;">
+                </div>
+            }
+        </PortalCliente.Components.TransaccionesVirtuales.ModalFormVirtual>
+    }
+
+    <ModalForm @ref="ModalShowPdf" ModalTitle="Ver Documento" CustomStyleModal="max-width:60%" CustomModalClass="loader">
+        @*<div class="root-initial-loader" style="display: @(iframeLoading ? "block" : "none")">
+                <div class="overlay"></div>
+                <i class="fas fa-circle-notch fa-3x fa-spin-2x"></i>
+            </div>*@
+
+        @if (ModalShowPdf.ModalClass == "Show")
+        {
+            <iframe src="data:@MimeTypeFile;base64,@Base64File" frameborder="0" border="0" cellspacing="0" style="border-style: none;width: 100%; height: 60vh;"></iframe>
+        }
+    </ModalForm>
+
+    <ModalQuestion @ref="ModalQuestionRechazar" OnOkClick="Rechazar" ModalTitle="Rechazar">
+        <p>
+            ¿Está seguro que desea rechazar el registro?
+        </p>
+        <div class="row">
+            <label for="txtRazonRechazo" class="form-label">Razón de Rechazo</label>
+            <input disabled="@IsLoading" type="text" id="txtRazonRechazo" class="form-control" @bind-value="Razon" placeholder="Razón de Rechazo" />
+        </div>
+    </ModalQuestion>
+
+    <ModalQuestion @ref="ModalQuestion" OnOkClick="Autorizar" ModalTitle="Autorizar">
+        <p>
+            ¿Esta seguro que desea autorizar el registro?
+        </p>
+    </ModalQuestion>
+
+    <ModalQuestion @ref="ModalQuestionAprobar" OnOkClick="Autorizar" ModalTitle="Autorizar">
+        <p>
+            ¿Está seguro que desea autorizar el registro?
+            @MensajeAutorizacion
+        </p>
+    </ModalQuestion>
+
+    <ModalForm @ref="ModalPagos" ModalTitle="Recaudo Trámite Virtual" CustomStyleModal="max-width:60%" CustomModalClass="loader">
+        @if (ModalPagos.ModalClass == "Show")
+        {
+            <RecaudoTramite TramitePortalVirtualId="tramiteId" Archivos="Tramite.Archivos?.Where(m => m.TipoArchivo == 2).ToList()"></RecaudoTramite>
+        }
+    </ModalForm>
+}

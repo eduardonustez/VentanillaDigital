@@ -1,0 +1,39 @@
+/* -- RESPONSIVE --*/
+@import "reset.css";
+@import "colors.css";
+@import "collapsenav.css";
+@import "loader.css";
+@import "texto.css";
+@import "boton.css";
+@import "tabla.css";
+/* -- MENSAJES -- */
+@import "mensaje.css";
+/* -- FORMULARIOS -- */
+@import "formulario.css";
+/* -- CHECKBOX --*/
+@import "componentes/checkbox.css";
+/* -- INPUT TYPE NUMBER --*/
+@import "componentes/header.css";
+@import "componentes/input.css";
+@import "componentes/landing-pago.css";
+@import "componentes/layout.css";
+@import "componentes/login.css";
+
+/* tramite */
+@import "tramite/seleccion.css";
+@import "tramite/cabecera.css";
+@import "tramite/pasos.css";
+@import "tramite/general.css";
+
+/* paginas */
+@import "componentes/paginador.css";
+@import "pagina/bandeja-de-entrada.css";
+@import "componentes/spinner.css";
+@import "componentes/filtros.css";
+@import "componentes/toast.css";
+@import "pagina/autorizar.css";
+@import "pagina/usuarios.css";
+@import "pagina/certificados.css";
+@import "pagina/configuracion.css";
+@import "pagina/reportes.css";
+@import "pagina/multitramite.css";

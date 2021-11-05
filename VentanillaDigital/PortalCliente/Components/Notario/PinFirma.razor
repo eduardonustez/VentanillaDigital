@@ -1,0 +1,42 @@
+﻿@if (errors)
+{
+    <div class="alert mensaje-alerta">
+        <p>Por favor, escriba su PIN en todos los campos.</p>
+    </div>
+}
+<div id="@ClaseFirma" class="mt-3 input-container">
+    <div class="d-flex justify-content-center">
+        <input name="pinFirma" autocomplete="off" @bind-value=@p1 class="pin-firma" @bind-value:event="oninput" type="@tipoDefecto"
+               @onkeydown="KeyDown" @onkeydown:preventDefault="@preventDefault" placeholder="-" id="inputUno" maxlength="1"
+               required autofocus>
+        <input name="pinFirma" autocomplete="off" @bind-value=@p2 class="pin-firma" @bind-value:event="oninput" type="@tipoDefecto"
+               @onkeydown="KeyDown" @onkeydown:preventDefault="@preventDefault" placeholder="-" maxlength="1" required>
+        <input name="pinFirma" autocomplete="off" @bind-value=@p3 class="pin-firma" @bind-value:event="oninput" type="@tipoDefecto"
+               @onkeydown="KeyDown" @onkeydown:preventDefault="@preventDefault" placeholder="-" maxlength="1" required>
+        <input name="pinFirma" autocomplete="off" @bind-value=@p4 class="pin-firma" @bind-value:event="oninput" type="@tipoDefecto"
+               @onkeydown="KeyDown" @onkeydown:preventDefault="@preventDefault" placeholder="-" maxlength="1" required>
+        <div class="px-2 d-flex align-items-center">
+            <span @onclick="VerTodo" class="material-icons">
+                @iconoVisibilidad
+            </span>
+        </div>
+    </div>
+</div>
+
+@if (ModalCambioFirma)
+{
+    <div class="d-flex justify-content-around mt-3">
+        <button type="button" class="btn-contorno-primario" data-dismiss="modal" @onclick="LimpiarInputs">Cancelar</button>
+        <button type="button" class="btn-primario" @onclick="Firmar">
+            Cambiar PIN de firma electrónica
+        </button>
+    </div>
+}
+else
+{
+    <div class="d-flex justify-content-center mt-3">
+        <button type="button" class="btn-primario" @onclick="Firmar">
+            <span>@(ModalAutorizar ? "Autorizar" : "Rechazar")</span>
+        </button>
+    </div>
+}

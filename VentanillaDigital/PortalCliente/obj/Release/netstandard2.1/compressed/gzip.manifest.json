@@ -1,0 +1,509 @@
+{
+  "FilesToCompress": [
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\1PATMhiQoqeIIH_pG4amkNgmYZMvLV2ueqf3jkEIhMQ=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\ApiGateway.Cliente.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/ApiGateway.Cliente.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\uD7AGL51sIP53Q7BIu1Clff3Z_s-ST-MOhkZbb2zp6c=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\ApiGateway.Contratos.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/ApiGateway.Contratos.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\C-KRuK6UtU7v5BBWtHClM8Y54YfpaMa-JKswhSa7GiE=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\AutoMapper.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/AutoMapper.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\3g3EG0mf6UycF_UNvjigldr8p_rA33VrT8aBq1ES1ss=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Blazor-Analytics.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Blazor-Analytics.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\9VqqASjMRw8LX9vNXRKXBE_XlDpUfTeuo4_CPgg1fQE=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\BlazorComponentUtilities.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorComponentUtilities.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\L2CHCFnjUT3Kw3wiKNucOe3AfdVXI0eNICEUMn3Qw1Q=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Blazored.SessionStorage.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Blazored.SessionStorage.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\YNakk-GmzitY7JWE-2LWemYjE_ufhSnWzOQM36VuU5Q=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Blazored.Typeahead.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Blazored.Typeahead.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\C0KrMmLQQE68cd1_FNwIOW89nNGbOH48hRxQAoSBaaA=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\BlazorInputFile.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorInputFile.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\uAitBn6XIKQgJ_4LZgAlAU-73sFRKOKKbthZn4Vuxsw=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\BlazorStrap.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/BlazorStrap.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\l5LIus0Vy4iq7jJA3UPR9-uo6xhW15l1tK8tyB0E-Ik=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Castle.Core.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Castle.Core.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\849NiDRhrGOAu02S2RZ-5FnoewXi9QXGbL5HFIiuFK0=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Extensions.Hosting.AsyncInitialization.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Extensions.Hosting.AsyncInitialization.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\xF7tQm77ONxvC0vTccvuZ6CnJ5sMabYcBrFHGOBLFa0=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Faso.Blazor.SpinKit.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Faso.Blazor.SpinKit.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\HtFpik4Lyr5uv8qQl19uQVQc5F5dOGHJuFHGl1QcP28=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\GenericExtensions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/GenericExtensions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\yb7A7wsz_Sv_kF5NLjIUKh_JRAni-OASYupEMEn3_0I=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Hashids.net.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Hashids.net.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\p26s0MIdtBoe6WrdkPMAFjMOUO5MM3h2anQdLQ5o-Qc=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Infraestructura.Transversal.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Infraestructura.Transversal.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\dbu2m8sjNRiaUjl9QzIQDcy-9Dq7Zq0Ky9hJmJ7GgGA=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Authentication.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Authentication.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\u9KOmf3ho-7d1x7YIIskEhQPMHXrrJbwuYSNAs_WznU=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Authentication.Core.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Authentication.Core.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\6objh374khcKwfPbmzqA5q86JJmqddERtSzh9OljZLA=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Authorization.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Authorization.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\qzh_YLjSOjsk3PYKgsyi5AYFpMKnI14VQhwTI-4sphs=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.Authorization.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Authorization.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\xDUVy4vQ7COqrvhR__YJG6lHulGMpuq5RtIsKEWw8YY=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\J7y7y3fl0IJ78XbLSKghDoTRYB00r_Z2iTc2GAxWC8g=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.Forms.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Forms.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\lBYAy8KhrB0wCuCNbkhswTR0pbininupGatg1281nnU=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.Web.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.Web.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\tc51wgFQggE1IJ8prT8tHcmLfkzaIXzBuM6CVME5YqA=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Components.WebAssembly.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.WebAssembly.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\Vajk9_sfdlshZRMxMb7IDjA2cmf14QFLjstvr-mvIlE=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Hosting.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Hosting.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\QhDydpks2FAEFXIH49O0Lp9fFpPcw1zECUbbsjz09o8=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Http.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Http.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\goxxt6GRol4k0n_DhzZk2WDX-ZG5FdDw-eEg8a4nIMg=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Http.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Http.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\5qdeKP51jXGyOr8CwoSkyXJqJhJlAgiJK-bA8KJpbmU=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Http.Features.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Http.Features.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\ts08oAYA8rF-cgMhys9edCFFiQ4Nwu0pNJMg1H1QTUg=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Metadata.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Metadata.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\fCD90lCaIow2pqziq3YB1yfpXQlYcvp603S_AKekUNY=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Mvc.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Mvc.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\e05ZBaCsDNawY96UUFczJQNUvpIYOhZ0aj-O6vzwfbs=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Mvc.Core.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Mvc.Core.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\fUyGBdtHuIePitwFRL6ZPobM75urMpcIIHo18kZAfhM=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.Routing.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Routing.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\9h7qbcvENEToc7sNhjDl92v3AzxztCItBweAavZyBVE=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.AspNetCore.WebUtilities.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.WebUtilities.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\OBWh2or_2mU6elwqPfmL72FBZVKl2WzTJ4L-IrKeXM4=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Bcl.AsyncInterfaces.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Bcl.AsyncInterfaces.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\WrqkYD6j1T5zrV4VG5Y38JTbWM6uOfFckSGWIrM36Rk=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.CSharp.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.CSharp.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\btJeDlwTubUwM0TxARvlavIGQVpSJoD46VfBh-CHJyM=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.DotNet.PlatformAbstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.DotNet.PlatformAbstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\rfdcwBzE5R2QsN_DVbWd-s5f57-naqrO7aVNTldXCxg=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Caching.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Caching.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\lgwP18269v__ONPQPh79PjQP58iZ08rfNidyQHiUPiA=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Configuration.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\TfOjqzyf0NoTmL1ow41RQXTdldf_DdPFfAjtu2-OB5U=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Configuration.Binder.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.Binder.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\hAbjY4QS7NMK2KXqi3bLTs1k6gi792xjnCw7n308Pf4=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Configuration.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\QK5-EnCFu-Q9q8-idHRbFLH1Vwsq2XVK16c5iKbghio=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Configuration.Json.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Configuration.Json.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\6vt_93ebt5qtNTQRqYE4d5GciiLoIDr7SURftJrUQtI=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\XlZcZk-bLeyfiWyMFz9avfh_IY31Pcmm1k_sZD5mLuA=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.DependencyInjection.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyInjection.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\3fUvU9LL1p2RLqlcT7NN1jZTnrtgE4bXlT2zCCS304M=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.DependencyModel.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.DependencyModel.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\ZYubhlTIy3TYXm-qq867ZYm-XHzEJOf4XnPcPm3vdT8=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.FileProviders.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.FileProviders.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\v5KMU9x-qUMXQ0mgyy6ioRBavCSZaMruMUKhrjZ32wY=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Hosting.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Hosting.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\x18In30f_IImYo6MKyknU2PqDkbuzuQh64I7L8Q9GcE=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Http.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Http.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\IPnWXHIwCfYAJBxoxUtMPmWp9v60aSxM0Ui6yqJ2qak=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Logging.Abstractions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.Abstractions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\-N0kXzfVSDQ1XeAKc96ft5_DF1DAZyD9AjTTSTtaBwo=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Logging.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Logging.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\Cexq0XEbK_QuvsnRTCixcqQTUfSoFpFJ0eThS9oUCCg=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Options.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Options.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\MmuhltA1effhuT0xq1KOI2k3V8bGakLaUkS6kDhnr14=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Extensions.Primitives.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.Primitives.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\siM2ZZLu8Cy6bozWUa6it-By18HmwOGdrtHhusqm2xM=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.JSInterop.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\czNf3btAeBW-vvID5LAfgcsNZ_GM3ssVuPaMflcg0rs=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.JSInterop.WebAssembly.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\Jea0hELKc-ME24Hri-_stCY80inv9wNXHYEm0c4PCeM=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Net.Http.Headers.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Net.Http.Headers.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\3DUdUtVg4-wATQCO6P49LB9x_HHtHvnokxb5DlEQfNo=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Microsoft.Win32.Registry.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Win32.Registry.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\b2mdP8lnLpdmMgfInPMJdZOPWNzsCcuzKEmk6Xnqi4E=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Mono.Security.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Mono.Security.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\yJq-kWOoNwa33U3_Tcf2hmtv_kqE7gZo8CrtSn3RA8Q=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Moq.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Moq.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\hOoDuFUuRAfdIVOeeb14hBI0QIuf8xrNVPtn9OJDv_0=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\mscorlib.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/mscorlib.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\1nuZ4tE01m7mcbCIx0ysOOJkTbv2QoAF2N8nkHHtOpk=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\netstandard.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/netstandard.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\mRd6TL4DYldo1ko9czkjEDcoiPdMPrJxz3dekwV6OOY=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Newtonsoft.Json.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Newtonsoft.Json.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\NVKuI8_tFS1dLANLyXjexMPzOBmEm1EQ3eAHS1LyxkQ=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\PortalCliente.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/PortalCliente.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\EgAeSGw_UtL7BJwcD6fwg44qZ0X3jZD4lQQQHP6dtiw=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Radzen.Blazor.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Radzen.Blazor.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\gFZ2LWYAw_IAvRkzLgTlp6ceTdX_qTDYdjit7ctcIRU=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Serilog.AspNetCore.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Serilog.AspNetCore.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\Ei-v_LFZqj25uXpP8DZkF9JD5AyV_adSIbR9dXIJUWo=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Serilog.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Serilog.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\C8NdtT243RsC8DlHJzDsFcFS2UIYAzs0LfXK4UQghZM=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Serilog.Enrichers.Process.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Serilog.Enrichers.Process.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\Yrz4KXiWYthbn8ns1vXz07Bd-mOldGi1a5bpzpwidAw=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Serilog.Extensions.Hosting.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Serilog.Extensions.Hosting.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\_FRl00FZgXGNi76troWeJPhQchRJhEXc3XqMn4Cu7dI=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Serilog.Extensions.Logging.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Serilog.Extensions.Logging.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\O6W5qDDhppFmbrjsdZH9teaI3J0FlInnVwCDYOrqG4Q=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Serilog.Formatting.Compact.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Serilog.Formatting.Compact.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\rX54SxGIePu59O3FHweYsF2tv1_UDf2Lvcp1awDgiDg=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Serilog.Settings.Configuration.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Serilog.Settings.Configuration.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\nId2KFElsUhBGfbOw8dVMyD-rjCsDIbwSakOxN_fYdQ=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Serilog.Sinks.Console.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Serilog.Sinks.Console.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\N6ebeK1KqAXmmSU9sMb1IA7H8prftGu2-Ijz8W2Mf1c=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Serilog.Sinks.Debug.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Serilog.Sinks.Debug.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\rqyorWLLxkdCgZjLZGNd-g5-8iolrzzCUlEblaC5ad8=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Serilog.Sinks.EventLog.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Serilog.Sinks.EventLog.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\caJqNvghiH4rxtclmCbpCiOgKL7sFdn_4Wxpfv6cX-4=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Serilog.Sinks.File.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Serilog.Sinks.File.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\s3-XWmESIxC9qvnWCBh9gQy2Uqf9oxdXyoBidgxxBKI=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Serilog.Sinks.MSSqlServer.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Serilog.Sinks.MSSqlServer.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\2KfMhkccBIdXuEkO5oh2aboH5a0SQqSDNKslGVueyNY=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\Serilog.Sinks.PeriodicBatching.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/Serilog.Sinks.PeriodicBatching.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\bVSRRm5TN2odaKOEnM38XhFr1yAecAs4FqpeUUKrG3M=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.ComponentModel.DataAnnotations.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.ComponentModel.DataAnnotations.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\DEAIN-Le79i7-U8mGxQiJT2NpOBk3BbT_9fzDB1xCYk=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Core.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Core.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\RORa5h4kJbVBQLmhWXgj-nNbijUxBTgyexuSxllVK8I=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Data.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Data.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\q5HKw67rISztckIWOU2_Rwpwo2wfAdpWvm2OAHTwWwc=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Diagnostics.DiagnosticSource.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Diagnostics.DiagnosticSource.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\gKzeu2HEKxUOwB438AuNmNFq6Bl8hSZ3aw4UTQefCPU=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Diagnostics.EventLog.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Diagnostics.EventLog.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\FFtUBfiLk5N__tc4Lldh3kAI34voWseiaPUpV6Q5MpQ=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\l81-KoQxNDkqnU9YOh-DdT8KHkURrkCWgLDl5qXCdRQ=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Drawing.Common.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Drawing.Common.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\pnfh1Ckgl_wyujr2wz7zqWNEB7xgm6oD7CTHCaKEW7I=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Linq.Dynamic.Core.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Linq.Dynamic.Core.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\2FWongB8Wxw3DhsibD-wIBl6blGkIxuSXFn3WMYZZ9Q=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Net.Http.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Net.Http.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\fzMK7JNFlcbaNgQzYe0AfDjCZt0GNI8HQtg0Ifq7Ark=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Net.Http.Json.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Net.Http.Json.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\aV4yYye28TSMJIRKyNS63eVbqewkK0CWXWcTPAOlXIA=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Net.Http.WebAssemblyHttpHandler.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Net.Http.WebAssemblyHttpHandler.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\99dyCZipQ7UKAY9kkDVtZuAoYzy-pi1eWeYjKyu2IOc=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Numerics.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Numerics.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\v3NAMeT6KREu3uosQ9_3g91muOhTVEuflzMjeotKqb0=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Runtime.CompilerServices.Unsafe.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Runtime.CompilerServices.Unsafe.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\ItbtM1a5RIXpfqapXwbHX6PJxx6GNOsJMCGyuKpDfBE=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Runtime.Serialization.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Runtime.Serialization.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\0T9kzl0x2OqR8jDTDT7c3sE_ov54IkdGi_Szt3aATS8=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Text.Encodings.Web.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Encodings.Web.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\mw10glfzgwkflcUlSXkdqK0iW2PPC_XKqT2OF42B0EQ=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Text.Json.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Text.Json.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\xo97woJbqVTel7x5oAaJy1VQmEys9javDF2GS_Bq3FM=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Transactions.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Transactions.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\qwZXUdxSQqiusk4eSq2DHbjlb8dQpgCTE__aqk_Gizk=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Xml.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Xml.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\hB0IUdb6EzXR85QGQ12NGwwMx7j2kmAgWiOFFnBule0=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\System.Xml.Linq.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/System.Xml.Linq.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\0FIy4tDPEEq2oFt7ll5raTM4i8M64rigc8kLvkI9cm8=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\ValidationAttributes.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/ValidationAttributes.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\L1O3NQ0PpCAyGuqdwsTBJuLihwEX56KGl_4IGPM7tY4=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\linker\\WebAssembly.Bindings.dll",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/_bin\/WebAssembly.Bindings.dll.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\mPoqx7XczFHBWk3gRNn0hc9ekG1OvkKY4XiKRY5Mj5U=.hash",
+      "Source": "C:\\Users\\enustez\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.runtime\\3.2.0\\tools\\dotnetwasm\\wasm\\dotnet.3.2.0.js",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/wasm\/dotnet.3.2.0.js.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\3S0qzYaBEKOBXarzVLNzNAFXlwJr6nI3lFlYUpQTPH8=.hash",
+      "Source": "C:\\Users\\enustez\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.runtime\\3.2.0\\tools\\dotnetwasm\\wasm\\dotnet.timezones.dat",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/wasm\/dotnet.timezones.dat.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\UC-3Rm1NkdNdlIrzYARo_dO-HDlS5mhPxo0IQv7kma8=.hash",
+      "Source": "C:\\Users\\enustez\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.runtime\\3.2.0\\tools\\dotnetwasm\\wasm\\dotnet.wasm",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/wasm\/dotnet.wasm.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\SPHS1EAPAcMFN4TEIUYl3FWtoCQTsNJch0XVGgok1eE=.hash",
+      "Source": "C:\\Users\\enustez\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.build\\3.2.1\\tools\\blazor\\blazor.webassembly.js",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\OfC2rMJGSK3xfBW0nTYgf5SQudhOyvPYv1Nor6x7c1E=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\blazor.boot.json",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.gz"
+    },
+    {
+      "InputSource": "obj\\Release\\netstandard2.1\\integrity\\MH9ZCBfEh4ijMYUg3KCwXRRFuvqLOJsBsxrSRPWxghc=.hash",
+      "Source": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PortalCliente\\obj\\Release\\netstandard2.1\\blazor\\service-worker-assets.js",
+      "Target": "obj\\Release\\netstandard2.1\\compressed\\service-worker-assets.js.gz"
+    }
+  ]
+}

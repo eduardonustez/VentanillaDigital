@@ -1,0 +1,27 @@
+﻿@page "/sesionfinalizada"
+@inject NavigationManager NavigationManager
+
+
+<div class="row shadow p-3 bg-white rounded">
+    <div class="col-12 d-flex flex-column">
+        <img src="images/logo-ucnc.png" alt="Logo 'U.C.N.C.'" class="logo-ucnc align-self-center" />
+        <h1 class="align-self-center">Su sesión ha expirado</h1>
+        <div class="align-self-center mt-2">
+            <button type="button" class="btn-primario" @onclick="redirectLogin">Volver a inicio de sesión</button>
+        </div>
+        <div class="align-self-center mt-4">
+            <span>Desarrollado por</span><img class="logo-olimpia ml-1" src="./images/logo-olimpia-color.svg">
+        </div>
+    </div>
+</div>
+
+
+
+
+
+@code {
+    public void redirectLogin()
+    {
+        NavigationManager.NavigateTo("/login");
+    }
+}

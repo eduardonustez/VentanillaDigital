@@ -1,0 +1,16 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ApiGateway.Cliente\bin\Release\netstandard2.1\ApiGateway.Cliente.deps.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ApiGateway.Cliente\bin\Release\netstandard2.1\ApiGateway.Cliente.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ApiGateway.Cliente\bin\Release\netstandard2.1\ApiGateway.Cliente.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ApiGateway.Cliente\bin\Release\netstandard2.1\ApiGateway.Contratos.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ApiGateway.Cliente\bin\Release\netstandard2.1\Infraestructura.Transversal.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ApiGateway.Cliente\bin\Release\netstandard2.1\ValidationAttributes.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ApiGateway.Cliente\bin\Release\netstandard2.1\ApiGateway.Contratos.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ApiGateway.Cliente\bin\Release\netstandard2.1\Infraestructura.Transversal.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ApiGateway.Cliente\bin\Release\netstandard2.1\ValidationAttributes.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ApiGateway.Cliente\obj\Release\netstandard2.1\ApiGateway.Cliente.csprojAssemblyReference.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ApiGateway.Cliente\obj\Release\netstandard2.1\ApiGateway.Cliente.AssemblyInfoInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ApiGateway.Cliente\obj\Release\netstandard2.1\ApiGateway.Cliente.AssemblyInfo.cs
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ApiGateway.Cliente\obj\Release\netstandard2.1\ApiGateway.Cliente.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ApiGateway.Cliente\obj\Release\netstandard2.1\ApiGateway.Cliente.csproj.CopyComplete
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ApiGateway.Cliente\obj\Release\netstandard2.1\ApiGateway.Cliente.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ApiGateway.Cliente\obj\Release\netstandard2.1\ApiGateway.Cliente.pdb

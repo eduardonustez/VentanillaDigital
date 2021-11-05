@@ -1,0 +1,94 @@
+﻿@page "/Diagnostico"
+@using PortalCliente.Services.Biometria;
+@* @using PortalCliente.Services.Wacom;
+    @inject IWacomService WacomService; *@
+@inject IJSRuntime JSRuntime;
+@inject IRNECService _rnecService;
+@implements IDisposable
+<label>Wacom: </label>
+<label>@EstadoServicioWacomSTU</label>
+<label>@EstadoDllWacom</label>
+@* <button style="border-radius: 50%; padding: .1rem .3rem;" type="button" class="btn-ventanilla"
+    @onclick="WacomService.VerificarServicio"> *@
+<button style="border-radius: 50%; padding: .1rem .3rem;" type="button" class="btn-ventanilla">
+    <i class="fas fa-sync-alt"></i>
+</button>
+<br />
+<label>Camara: </label>
+<label>@EstadoCamara</label>
+<button style="border-radius: 50%; padding: .1rem .3rem;" type="button" class="btn-ventanilla"
+    @onclick="VerificarCamara">
+    <i class="fas fa-sync-alt"></i>
+</button>
+
+@code {
+    //private EventHandler<PortalCliente.Services.Wacom.Models.EstadoServicio> _estadoWacomChanged;
+
+    private string EstadoCamara { get; set; }
+    string EstadoServicioWacomSTU = "Consultando...";
+    string EstadoDllWacom = "Consultando...";
+
+    protected override async Task OnInitializedAsync()
+    {
+        //_estadoWacomChanged = (s, e) => StateHasChanged();
+        //WacomService.EstadoServicioChanged += _estadoWacomChanged;
+
+
+        await VerificarCamara();
+        await VerificarServicioWacomSTU();
+        await base.OnInitializedAsync();
+    }
+
+
+    private async Task VerificarServicioWacomSTU()
+    {
+        string WacomSTUSigCaptX = "";
+        string IsWacomDllRegistered = "0";
+        var datosEquipo = await _rnecService.ConsultarEstado();
+        if (datosEquipo != null && datosEquipo.Estado == "OK")
+        {
+            WacomSTUSigCaptX = datosEquipo.Propiedades.FirstOrDefault(d => d.Key == "WacomSTUSigCaptX").Value;
+            IsWacomDllRegistered = datosEquipo.Propiedades.FirstOrDefault(d => d.Key == "IsWacomDllRegistered").Value;
+        }
+        switch (WacomSTUSigCaptX)
+        {
+            case "NotInstalled":
+                EstadoServicioWacomSTU = "El servicio WacomSTUSigCaptX no se encuentra instalado";
+                break;
+            case "Stopped":
+                EstadoServicioWacomSTU = "El servicio WacomSTUSigCaptX se encuentra detenido";
+                break;
+            case "Running":
+                EstadoServicioWacomSTU = "El servicio WacomSTUSigCaptX esta en ejecución";
+                break;
+        }
+        if (IsWacomDllRegistered == "1")
+            EstadoDllWacom = "wgssSTU.dll se encuentra registrada";
+        else
+            EstadoDllWacom = "wgssSTU.dll no esta registrada";
+    }
+
+
+    private async Task VerificarCamara()
+    {
+        EstadoCamara = "Probando";
+        var estado = await JSRuntime.InvokeAsync<int>("CamaraDiagnostico");
+        switch (estado)
+        {
+            case 0:
+                EstadoCamara = "No soportado";
+                break;
+            case 1:
+                EstadoCamara = "Desconectado";
+                break;
+            case 2:
+                EstadoCamara = "Listo";
+                break;
+        }
+    }
+
+    public void Dispose()
+    {
+        // WacomService.EstadoServicioChanged -= _estadoWacomChanged;
+    }
+}

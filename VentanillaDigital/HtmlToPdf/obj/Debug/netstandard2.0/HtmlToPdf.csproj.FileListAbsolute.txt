@@ -1,0 +1,13 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlToPdf\obj\Debug\netstandard2.0\HtmlToPdf.Properties.Resources.resources
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlToPdf\obj\Debug\netstandard2.0\HtmlToPdf.csproj.GenerateResource.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlToPdf\bin\Debug\netstandard2.0\HiQPdf.dep
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlToPdf\bin\Debug\netstandard2.0\HiQPdf.rda
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlToPdf\bin\Debug\netstandard2.0\HtmlToPdf.deps.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlToPdf\bin\Debug\netstandard2.0\HtmlToPdf.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlToPdf\bin\Debug\netstandard2.0\HtmlToPdf.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlToPdf\obj\Debug\netstandard2.0\HtmlToPdf.csprojAssemblyReference.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlToPdf\obj\Debug\netstandard2.0\HtmlToPdf.AssemblyInfoInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlToPdf\obj\Debug\netstandard2.0\HtmlToPdf.AssemblyInfo.cs
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlToPdf\obj\Debug\netstandard2.0\HtmlToPdf.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlToPdf\obj\Debug\netstandard2.0\HtmlToPdf.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlToPdf\obj\Debug\netstandard2.0\HtmlToPdf.pdb

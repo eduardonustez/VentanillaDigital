@@ -1,0 +1,31 @@
+/* -- PAGINADOR -- */
+
+.paginator-container {
+  display: flex;
+  justify-content: center;
+}
+
+.paginator-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.paginator-container p,
+.paginator-container span {
+  padding: 0.31rem;
+  color: var(--gris-500);
+}
+
+.paginator-container .btn-terciario {
+  padding: 5px 7px;
+  border-radius: 0;
+  min-height: 36px;
+  font-size: 1.2rem;
+  color: var(--rojo-primario);
+}
+
+.paginator-container .btn-terciario:hover {
+  background-color: var(--rojo-200);
+}

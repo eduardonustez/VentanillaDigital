@@ -1,0 +1,91 @@
+﻿
+.bandejaEntradaNav {
+    border-top-color: #dedede;
+    border-top-width: 2px;
+    margin-bottom: 0.8em;
+}
+.divider {
+    height: 2px;
+    background-color: #dedede;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.iconNavEntrada {
+    font-size: 32px !important;
+    color: #adadad;
+    margin-right: 0.3em;
+}
+
+.focNavE:focus {
+    background-color: #d6e3fd;
+}
+.autofocus {
+    background-color: #d6e3fd;
+}/*
+.active {
+    background-color: #d6e3fd;
+}
+*/
+/*.botonRev {
+    width:170px !important;
+}*/
+/*Botones de la pagina Revisar Documento*/
+.btnAutorizar {
+    background-color: #fbfbfb;
+    border-color: #eeeeee;
+    color: #000000;
+    width: 220px;
+    height: 50px;
+    margin-bottom: 0.8em;
+    box-shadow: 0.1px 0.1px 3px 1px #eeeeee;
+}
+
+.iconDoc {
+    font-size: 32px !important;
+    border-radius: 0.1em 0.1em;
+    color: white;
+    margin-right: 0.3em;
+}
+
+.colBigraf {
+    background-color: #fab828;
+}
+
+.colBaut {
+    background-color: #53ecbd;
+}
+
+.btn-iconEnvia {
+    color: white;
+    background-color: #00d246;
+    border-color: #eeeeee;
+    width: 220px;
+    height: 50px;
+    margin-bottom: 0.8em;
+    box-shadow: 0.1px 0.1px 3px 1px #eeeeee;
+}
+
+.btn-iconEnvia .iconEnvia {
+    font-size: 32px !important;
+    /*background-color: #ebebeb;*/
+    border-radius: 0.1em 0.1em;
+    color: white;
+    margin-right: 0.3em;
+   
+}
+
+    .btn-iconEnvia:disabled {
+        background-color: #ebebeb;
+        color: #acacac;
+    }
+
+.btn-iconEnvia:disabled .iconEnvia{
+    /*background-color: black;*/
+    border-radius: 0.1em 0.1em;
+    color: #acacac;
+    margin-right: 0.3em;
+}
+
+.pdfobject-container {
+}

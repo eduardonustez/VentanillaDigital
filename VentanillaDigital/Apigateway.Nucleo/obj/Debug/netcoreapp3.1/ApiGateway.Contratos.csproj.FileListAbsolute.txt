@@ -1,0 +1,14 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Apigateway.Nucleo\bin\Debug\netcoreapp3.1\ApiGateway.Contratos.deps.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Apigateway.Nucleo\bin\Debug\netcoreapp3.1\ApiGateway.Contratos.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Apigateway.Nucleo\bin\Debug\netcoreapp3.1\ApiGateway.Contratos.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Apigateway.Nucleo\bin\Debug\netcoreapp3.1\Infraestructura.Transversal.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Apigateway.Nucleo\bin\Debug\netcoreapp3.1\ValidationAttributes.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Apigateway.Nucleo\bin\Debug\netcoreapp3.1\Infraestructura.Transversal.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Apigateway.Nucleo\bin\Debug\netcoreapp3.1\ValidationAttributes.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Apigateway.Nucleo\obj\Debug\netcoreapp3.1\ApiGateway.Contratos.csprojAssemblyReference.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Apigateway.Nucleo\obj\Debug\netcoreapp3.1\ApiGateway.Contratos.AssemblyInfoInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Apigateway.Nucleo\obj\Debug\netcoreapp3.1\ApiGateway.Contratos.AssemblyInfo.cs
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Apigateway.Nucleo\obj\Debug\netcoreapp3.1\ApiGateway.Contratos.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Apigateway.Nucleo\obj\Debug\netcoreapp3.1\ApiGateway.Contratos.csproj.CopyComplete
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Apigateway.Nucleo\obj\Debug\netcoreapp3.1\ApiGateway.Contratos.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Apigateway.Nucleo\obj\Debug\netcoreapp3.1\ApiGateway.Contratos.pdb

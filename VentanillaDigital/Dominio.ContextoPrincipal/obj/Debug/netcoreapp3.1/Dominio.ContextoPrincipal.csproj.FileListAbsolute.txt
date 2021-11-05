@@ -1,0 +1,14 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.ContextoPrincipal\bin\Debug\netcoreapp3.1\Dominio.ContextoPrincipal.deps.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.ContextoPrincipal\bin\Debug\netcoreapp3.1\Dominio.ContextoPrincipal.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.ContextoPrincipal\bin\Debug\netcoreapp3.1\Dominio.ContextoPrincipal.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.ContextoPrincipal\bin\Debug\netcoreapp3.1\Dominio.Nucleo.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.ContextoPrincipal\bin\Debug\netcoreapp3.1\Infraestructura.Transversal.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.ContextoPrincipal\bin\Debug\netcoreapp3.1\Dominio.Nucleo.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.ContextoPrincipal\bin\Debug\netcoreapp3.1\Infraestructura.Transversal.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.ContextoPrincipal\obj\Debug\netcoreapp3.1\Dominio.ContextoPrincipal.csprojAssemblyReference.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.ContextoPrincipal\obj\Debug\netcoreapp3.1\Dominio.ContextoPrincipal.AssemblyInfoInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.ContextoPrincipal\obj\Debug\netcoreapp3.1\Dominio.ContextoPrincipal.AssemblyInfo.cs
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.ContextoPrincipal\obj\Debug\netcoreapp3.1\Dominio.ContextoPrincipal.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.ContextoPrincipal\obj\Debug\netcoreapp3.1\Dominio.ContextoPrincipal.csproj.CopyComplete
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.ContextoPrincipal\obj\Debug\netcoreapp3.1\Dominio.ContextoPrincipal.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.ContextoPrincipal\obj\Debug\netcoreapp3.1\Dominio.ContextoPrincipal.pdb

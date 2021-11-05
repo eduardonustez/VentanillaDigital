@@ -1,0 +1,146 @@
+﻿@using PortalCliente.Components.Transversales;
+@using PortalCliente.Data;
+<TabSelector @ref="TabSelector" NextDisabledChanged="disabled => NextDisabled = disabled"
+    PreviousDisabledChanged="disabled => PreviousDisabled=disabled">
+    <Navigator Context="tabs">
+        <div class="pasos-container">
+            <div class="pasos-content">
+                <div class="pasos">
+                    @tabs
+                </div>
+                <button class="btn-terciario" data-toggle="modal" data-target="#omitirComparecienteModal"
+                    disabled="@(Compareciente.Tramite.CantidadComparecientes == 1)">
+                    @if (!_esMovil)
+                {
+                    <i class="material-icons mr-1 md-18">skip_next</i>
+                    }
+                    Omitir compareciente
+                </button>
+            </div>
+        </div>
+    </Navigator>
+    <NavigatorLink Context="tab">
+        <button class="btn-terciario d-flex align-items-center" disabled="@(tab.Disabled)"
+            @onclick="async () => await tab.Parent.Select(tab.Name)" tabindex="@(tab.Disabled ? -1 : 0)"
+            aria-disabled=@(tab.Disabled)>
+            @tab.Selector
+        </button>
+    </NavigatorLink>
+
+    <Tabs>
+        <Tab Name="TDatos" Disabled="Terminado">
+            <Selector>
+                Datos Biográficos
+            </Selector>
+            <Content>
+                <DatosCiudadanoATDP 
+                    EmailCelular="(x) => Incluir = (bool)x"
+                    Compareciente="Compareciente"
+                    ComparecienteChanged="(x) => Compareciente = (Compareciente)x"
+                    ReadyChanged="(x)=>ActualizarPaso(x,PasoRegistrarCompareciente.ATDP)" />
+            </Content>
+        </Tab>
+        @if (_esMovil)
+                {
+        <Tab Name="TFoto" Disabled="@(Terminado || UltimoPasoCompleto < PasoRegistrarCompareciente.ATDP )">
+            <Selector>
+                Foto
+            </Selector>
+            <Content>
+                <CapturaFoto @bind-Foto="Compareciente.Foto"
+                    ReadyChanged="(x)=>ActualizarPaso(x,PasoRegistrarCompareciente.Foto)" />
+            </Content>
+        </Tab>
+        <Tab Name="THuellas" Disabled="@(Terminado || UltimoPasoCompleto < PasoRegistrarCompareciente.ATDP)" OnNext="async () =>
+            await CapturaHuella.Validar()">
+            <Selector>
+                Huellas
+            </Selector>
+            <Content>
+                <CapturaHuella CodigoTipoTramite="CodigoTipoTramite" @ref="CapturaHuella"
+                    @bind-Compareciente="Compareciente"
+                    ReadyChanged="(x) => ActualizarPaso(x, PasoRegistrarCompareciente.Huellas)" />
+            </Content>
+        </Tab>
+        }
+                else
+                {
+        <Tab Name="TFoto" Disabled="@(Terminado || UltimoPasoCompleto < PasoRegistrarCompareciente.ATDP )"
+            OnNext="async () => await FotoCapturaHuella.Validar()" >
+            <Selector>
+                Validación de identidad
+            </Selector>
+            <Content>
+                <FotoCapturaHuella @ref="FotoCapturaHuella" Compareciente="Compareciente"
+                    ComparecienteChanged="(x) => Compareciente = (Compareciente)x"
+                    CodigoTipoTramite="(int)CodigoTipoTramite"
+                    ReadyChanged="(x)=>ActualizarPaso(x,PasoRegistrarCompareciente.Huellas)" />
+            </Content>
+        </Tab>
+        }
+        <Tab Name="TResumen" Disabled="@(UltimoPasoCompleto < PasoRegistrarCompareciente.Huellas)">
+            <Selector>
+                Resumen
+            </Selector>
+            <Content>
+                <Resumen Compareciente="Compareciente"></Resumen>
+            </Content>
+        </Tab>
+    </Tabs>
+
+</TabSelector>
+<div class="ui-steps-buttons">
+    <button class="ui-steps-prev" disabled="@PreviousDisabled" @onclick="@(
+            async ()=> {
+            await TabSelector.SelectPrevious();
+        })">
+        <i class="material-icons">navigate_before</i>
+        Anterior
+    </button>
+
+    <button class="ui-steps-next" disabled="@((NextDisabled && !Terminado) || showSpinner)" @onclick="SiguienteClick">
+        @if (showSpinner)
+        {
+            <i class="fa fa-sync fa-spin"></i>
+        }
+        @(@Compareciente.Tramite.CantidadComparecientes == @Compareciente.Tramite.ComparecienteActualPos
+        && NextDisabled
+        && Terminado
+        ? "Finalizar"
+        : "Siguiente"
+        )
+        @if (!showSpinner)
+        {
+            <i class="material-icons">navigate_next</i>
+        }
+    </button>
+
+</div>
+
+<!-- Confirmar omitir compareciente -->
+<div class="modal fade" id="omitirComparecienteModal" tabindex="-1" role="dialog"
+    aria-labelledby="omitirComparecienteModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Omitir compareciente</h3>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="message-text" class="col-form-label">Escriba el motivo de la omisión:</label>
+                    <textarea class="form-control" id="message-text" @bind="MotivoOmision"
+                        @bind:event="oninput"></textarea>
+                </div>
+                <div class="d-flex justify-content-around mt-3">
+
+                    <button type="button" class="btn-contorno-primario" data-dismiss="modal">Volver</button>
+                    <button type="button" class="btn-primario" data-dismiss="modal"
+                        disabled="@(string.IsNullOrWhiteSpace(MotivoOmision))" @onclick="OmitirCompareciente">
+                        Omitir
+                        compareciente
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

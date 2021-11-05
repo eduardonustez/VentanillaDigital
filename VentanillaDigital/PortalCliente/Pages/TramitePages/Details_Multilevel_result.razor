@@ -1,0 +1,125 @@
+﻿<div class="container-fluid">
+    @if (!string.IsNullOrEmpty(JsonData))
+    {
+        <div class="fig-table table-responsive-sm">
+            <table class="table table-sm table-striped table-bordered">
+                <tbody>
+                    @foreach (var property in JsonDataObject.Properties())
+                    {
+                        if (property.Name.ToLower().EndsWith("id")) continue;
+
+                        <tr>
+                            <td><b>@property.Name</b></td>
+                            <td>
+                                @foreach (var data in property)
+                                {
+                                    if (data.Type == Newtonsoft.Json.Linq.JTokenType.Array)
+                                    {
+                                        <div class="fig-table table-responsive-sm">
+                                            <table class="table table-sm table-striped table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        @{
+                                                            var firstProperty = data.First;
+                                                        }
+                                                        @if (firstProperty != null)
+                                                        {
+                                                            foreach (Newtonsoft.Json.Linq.JProperty propertyData in firstProperty)
+                                                            {
+                                                                if (propertyData.Name.ToLower().EndsWith("id")) continue;
+
+                                                                <th>@propertyData.Name</th>
+                                                            }
+                                                        }
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach (var propertyData in (data as Newtonsoft.Json.Linq.JArray))
+                                                    {
+                                                        <tr>
+                                                            @foreach (Newtonsoft.Json.Linq.JProperty jProperty in propertyData)
+                                                            {
+                                                                if (jProperty.HasValues)
+                                                                {
+                                                                    if (jProperty.Name.ToLower().EndsWith("id")) continue;
+
+                                                                    if (jProperty.Value.Type == Newtonsoft.Json.Linq.JTokenType.Object)
+                                                                    {
+                                                                        var inlineClass = ((Newtonsoft.Json.Linq.JObject)jProperty.Value).Properties();
+                                                                        var result = inlineClass.Where(m => m.Value != null && !m.Value.ToString().Equals("")).Select(x => string.Format("<div><b>{0}:</b><span> {1}</span></div>", x.Name, x.Value)).ToList();
+                                                                        string joinedResult = string.Join("", result);
+                                                                        <td>
+                                                                            <div>@Raw(joinedResult)</div>
+                                                                        </td>
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        <td>@jProperty.Value</td>
+                                                                    }
+                                                                }
+                                                            }
+                                                        </tr>
+                                                    }
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    }
+                                    else if (data.Type == Newtonsoft.Json.Linq.JTokenType.Object)
+                                    {
+                                        var uniqueClass = data as Newtonsoft.Json.Linq.JObject;
+
+                                        <div class="fig-table table-responsive-sm">
+                                            <table class="table table-sm table-striped table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        @{
+                                                            var classProperties = uniqueClass.Properties()
+                                                                .Select(x => x.Name)
+                                                                .ToList();
+                                                            foreach (var classProperty in classProperties)
+                                                            {
+                                                                if (classProperty.ToLower().EndsWith("id")) continue;
+
+                                                                <th>@classProperty</th>
+                                                            }
+                                                        }
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        @foreach (var classProperty in uniqueClass.Properties())
+                                                        {
+                                                            if (classProperty.Name.ToLower().EndsWith("id")) continue;
+
+                                                            if (classProperty.Value.Type == Newtonsoft.Json.Linq.JTokenType.Object)
+                                                            {
+                                                                var inlineClass = ((Newtonsoft.Json.Linq.JObject)classProperty.Value).Properties();
+                                                                var result = inlineClass.Where(m => m.Value != null && !m.Value.ToString().Equals("")).Select(x => string.Format("<div><b>{0}</b> <span>: {1}</span></div>", x.Name, x.Value)).ToList();
+                                                                string joinedResult = string.Join("", result);
+                                                                <td>
+                                                                    <div>@Raw(joinedResult)</div>
+                                                                </td>
+                                                            }
+                                                            else
+                                                            {
+                                                                <td>@classProperty.Value</td>
+                                                            }
+                                                        }
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        @data
+                                    }
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

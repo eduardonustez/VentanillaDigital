@@ -1,0 +1,98 @@
+﻿<div class="col-12">
+    <h3>Firma</h3>
+
+    <div>
+        <label class="check-box-container checkbox-disabled">
+            El compareciente no
+            <input type="checkbox" name="nosabe" id="nosabe" checked="@_sinFirma" @onchange="ToggleSinFirmaAsync" disabled="@(!_habilitarCambioFirma)"/>
+            <span class="check" for="tramiteSinBiometria"></span>
+            <select name="verb" id="verb" @bind="_sinSaberFirma" disabled="@(!_habilitarCambioVerbo)">
+                <option value="1">sabe</option>
+                <option value="2">puede</option>
+            </select>
+            firmar
+        </label>
+    </div>
+    @if (_movil)
+    {
+        if(!_capturando || _sinFirma){
+              <div class="atdp-text-container text-justify">
+            <h3>Autorización para el tratamiento de datos personales</h3>
+            <p>
+                Autorizo de manera voluntaria, previa, explícita, informada e inequivoca el tratamiento de mis datos
+                personales para la autenticación biométrica en linea de mi huella dactilar conforme lo dispone el Decreto
+                Ley 0019 de 2012 y en general para lo correspondiente al trámite notarial que he solicitado.
+            </p>
+            <button type="button" class="btn-primario" @onclick="AutorizaRec">Autoriza</button>
+        </div>
+        }else{
+             <div class="atdp-text-container">
+            <FirmaCanvas @bind-Grafo="Compareciente.Firma" ReadyChanged="ReadyChanged"></FirmaCanvas>
+        </div>
+        }
+    }else{
+
+    @if (_sinTableta || _sinFirma || (_autorizarAtdpEnPantalla && !_autorizado) )
+    {
+        <div class="atdp-text-container text-justify">
+            <h3>Autorización para el tratamiento de datos personales</h3>
+            <p>
+                Autorizo de manera voluntaria, previa, explícita, informada e inequivoca el tratamiento de mis datos
+                personales para la autenticación biométrica en linea de mi huella dactilar conforme lo dispone el Decreto
+                Ley 0019 de 2012 y en general para lo correspondiente al trámite notarial que he solicitado.
+            </p>
+            <button type="button" class="btn-primario" @onclick="AutorizaRec">Autoriza</button>
+        </div>
+    }
+    else
+    {
+        @if (_sinTableta && !_sinFirma)
+            {
+                <p class="bg-light text-center w-100 p-1">
+                    El compareciente debe firmar manualmente el acta
+                </p>
+            }else{
+        <p>La firma del compareciente aparecerá en el siguiente recuadro</p>
+        <div class="firma-container border d-flex flex-column mt-3">
+            <div class="img-firma-container">
+                @if (FirmaCapturada)
+                {
+                    <img class="img-firma" id="signatureImage" src="@Compareciente?.Firma" />
+                }
+            </div>
+            <p class="bg-light text-center w-100 p-1">
+                    Firma de compareciente
+            </p>
+            @if (FirmaCapturada)
+            {
+                <div class="firma-capturada">
+
+                    <div class="firma-ok">
+                        <p>
+                            Firma capturada
+                        </p>
+                    </div>
+                </div>
+            }
+        </div>
+        <div>
+            <button class="btn-autorizar" @onclick="MostrarADTP">
+                @if (FirmaCapturada)
+                {
+                    <i class="material-icons mr-3">
+                        edit
+                    </i>
+                    <span>Capturar nuevamente</span>
+                }
+                else
+                {
+                    <i class="fas fa-file-signature mr-3"></i>
+                    <span>Reconectar</span>
+                }
+            </button>
+        </div>
+            }
+    }
+    
+    }
+</div>

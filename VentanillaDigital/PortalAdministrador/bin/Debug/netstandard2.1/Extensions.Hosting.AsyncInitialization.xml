@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Extensions.Hosting.AsyncInitialization</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Extensions.DependencyInjection.AsyncInitializationServiceCollectionExtensions">
+            <summary>
+            Provides extension methods to register async initializers.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.AsyncInitializationServiceCollectionExtensions.AddAsyncInitialization(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Registers necessary services for async initialization support.
+            </summary>
+            <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> to add the service to.</param>
+            <returns>A reference to this instance after the operation has completed.</returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.AsyncInitializationServiceCollectionExtensions.AddAsyncInitializer``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds an async initializer of the specified type.
+            </summary>
+            <typeparam name="TInitializer">The type of the async initializer to add.</typeparam>
+            <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> to add the service to.</param>
+            <returns>A reference to this instance after the operation has completed.</returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.AsyncInitializationServiceCollectionExtensions.AddAsyncInitializer``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,``0)">
+            <summary>
+            Adds the specified async initializer instance.
+            </summary>
+            <typeparam name="TInitializer">The type of the async initializer to add.</typeparam>
+            <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> to add the service to.</param>
+            <param name="initializer">The service initializer</param>
+            <returns>A reference to this instance after the operation has completed.</returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.AsyncInitializationServiceCollectionExtensions.AddAsyncInitializer(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.IServiceProvider,Extensions.Hosting.AsyncInitialization.IAsyncInitializer})">
+            <summary>
+            Adds an async initializer with a factory specified in <paramref name="implementationFactory" />.
+            </summary>
+            <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> to add the service to.</param>
+            <param name="implementationFactory">The factory that creates the async initializer.</param>
+            <returns>A reference to this instance after the operation has completed.</returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.AsyncInitializationServiceCollectionExtensions.AddAsyncInitializer(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type)">
+            <summary>
+            Adds an async initializer of the specified type
+            </summary>
+            <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> to add the service to.</param>
+            <param name="initializerType">The type of the async initializer to add.</param>
+            <returns>A reference to this instance after the operation has completed.</returns>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.AsyncInitializationServiceCollectionExtensions.AddAsyncInitializer(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Func{System.Threading.Tasks.Task})">
+            <summary>
+            Adds an async initializer whose implementation is the specified delegate.
+            </summary>
+            <param name="services">The <see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection" /> to add the service to.</param>
+            <param name="initializer">The delegate that performs async initialization.</param>
+            <returns>A reference to this instance after the operation has completed.</returns>
+        </member>
+        <member name="T:Microsoft.Extensions.Hosting.AsyncInitializationHostExtensions">
+            <summary>
+            Provides extension methods to perform async initialization of an application.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.Hosting.AsyncInitializationHostExtensions.InitAsync(Microsoft.AspNetCore.Components.WebAssembly.Hosting.WebAssemblyHost)">
+            <summary>
+            InitAsync
+            </summary>
+            <param name="host"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Extensions.Hosting.AsyncInitialization.IAsyncInitializer">
+            <summary>
+            Represents a type that performs async initialization.
+            </summary>
+        </member>
+        <member name="M:Extensions.Hosting.AsyncInitialization.IAsyncInitializer.InitializeAsync">
+            <summary>
+            Performs async initialization.
+            </summary>
+            <returns>A task that represents the initialization completion.</returns>
+        </member>
+    </members>
+</doc>

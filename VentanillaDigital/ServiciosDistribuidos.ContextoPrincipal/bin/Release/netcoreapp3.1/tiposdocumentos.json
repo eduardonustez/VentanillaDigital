@@ -1,0 +1,1264 @@
+{
+  "tiposDocumentos": [
+    {
+      "nombre": "INFORME ESTADISTICO NOTARIAL",
+      "idtipodocumento": "304"
+    },
+    {
+      "nombre": "POLIZA DE CUMPLIMIENTO",
+      "idtipodocumento": "306"
+    },
+    {
+      "nombre": "FORMATO DE AUSENTISMO LABORAL",
+      "idtipodocumento": "309"
+    },
+    {
+      "nombre": "CERTIFICADO DE SUPERVIVENCIA",
+      "idtipodocumento": "310"
+    },
+    {
+      "nombre": "FACTURA",
+      "idtipodocumento": "311"
+    },
+    {
+      "nombre": "QUEJA",
+      "idtipodocumento": "312"
+    },
+    {
+      "nombre": "FORMATO DE SOLICITUD Y AUTORIZACION DE COMISION",
+      "idtipodocumento": "314"
+    },
+    {
+      "nombre": "COMISION DE VIATICOS",
+      "idtipodocumento": "315"
+    },
+    {
+      "nombre": "PLANILLAS VIATICOS",
+      "idtipodocumento": "316"
+    },
+    {
+      "nombre": "PETICION",
+      "idtipodocumento": "317"
+    },
+    {
+      "nombre": "SUGERENCIAS",
+      "idtipodocumento": "318"
+    },
+    {
+      "nombre": "SEGUIMIENTO Y TRAZABILIDAD",
+      "idtipodocumento": "319"
+    },
+    {
+      "nombre": "FELICITACIONES",
+      "idtipodocumento": "320"
+    },
+    {
+      "nombre": "SOLICITUD A SAC",
+      "idtipodocumento": "321"
+    },
+    {
+      "nombre": "TRAMITE",
+      "idtipodocumento": "322"
+    },
+    {
+      "nombre": "SOLICITUD DE PETICION REGULAR",
+      "idtipodocumento": "323"
+    },
+    {
+      "nombre": "OTROS",
+      "idtipodocumento": "324"
+    },
+    {
+      "nombre": "Propuestas",
+      "idtipodocumento": "293"
+    },
+    {
+      "nombre": "Registro de Peticiones Quejas y Reclamos Notarias",
+      "idtipodocumento": "299"
+    },
+    {
+      "nombre": "Resolución de nombramiento",
+      "idtipodocumento": "295"
+    },
+    {
+      "nombre": "Salidas",
+      "idtipodocumento": "297"
+    },
+    {
+      "nombre": "Solicitud",
+      "idtipodocumento": "298"
+    },
+    {
+      "nombre": "Resolución y/o Decreto de Nombramiento",
+      "idtipodocumento": "296"
+    },
+    {
+      "nombre": "Póliza",
+      "idtipodocumento": "292"
+    },
+    {
+      "nombre": "Producto",
+      "idtipodocumento": "193"
+    },
+    {
+      "nombre": "DERECHO DE PETICION",
+      "idtipodocumento": "300"
+    },
+    {
+      "nombre": "CONSULTA",
+      "idtipodocumento": "301"
+    },
+    {
+      "nombre": "FORMULARIO RETIRO DE CESANTIAS",
+      "idtipodocumento": "303"
+    },
+    {
+      "nombre": "Tutela",
+      "idtipodocumento": "302"
+    },
+    {
+      "nombre": "Accion Popular",
+      "idtipodocumento": "313"
+    },
+    {
+      "nombre": "Denuncia",
+      "idtipodocumento": "326"
+    },
+    {
+      "nombre": "Queja",
+      "idtipodocumento": "325"
+    },
+    {
+      "nombre": "Reclamo",
+      "idtipodocumento": "327"
+    },
+    {
+      "nombre": "Solicitud de Documentos",
+      "idtipodocumento": "328"
+    },
+    {
+      "nombre": "Peticion de Consulta",
+      "idtipodocumento": "329"
+    },
+    {
+      "nombre": "Peticion de Concepto",
+      "idtipodocumento": "330"
+    },
+    {
+      "nombre": "Peticion de Informacion",
+      "idtipodocumento": "331"
+    },
+    {
+      "nombre": "Peticion No Competente",
+      "idtipodocumento": "332"
+    },
+    {
+      "nombre": "Sugerencias",
+      "idtipodocumento": "333"
+    },
+    {
+      "nombre": "Acta apertura recibo de ofertas",
+      "idtipodocumento": "1"
+    },
+    {
+      "nombre": "Acta de apertura de uma",
+      "idtipodocumento": "2"
+    },
+    {
+      "nombre": "Acta de audiencia de secuestro",
+      "idtipodocumento": "3"
+    },
+    {
+      "nombre": "Acta de audiencia pública",
+      "idtipodocumento": "4"
+    },
+    {
+      "nombre": "Acta de Celebración audiencia",
+      "idtipodocumento": "5"
+    },
+    {
+      "nombre": "Acta de finalización",
+      "idtipodocumento": "6"
+    },
+    {
+      "nombre": "Acta de inicio",
+      "idtipodocumento": "7"
+    },
+    {
+      "nombre": "Acta de posesión de nombramiento, encargo, traslad",
+      "idtipodocumento": "8"
+    },
+    {
+      "nombre": "Acta de presentación",
+      "idtipodocumento": "9"
+    },
+    {
+      "nombre": "Acta de Recibo",
+      "idtipodocumento": "10"
+    },
+    {
+      "nombre": "Acta de visita",
+      "idtipodocumento": "11"
+    },
+    {
+      "nombre": "Acta liquidación",
+      "idtipodocumento": "12"
+    },
+    {
+      "nombre": "Acta reparto notarial",
+      "idtipodocumento": "13"
+    },
+    {
+      "nombre": "Actas de mejoramiento de procesos y procedimientos",
+      "idtipodocumento": "14"
+    },
+    {
+      "nombre": "Acuerdos de gestión",
+      "idtipodocumento": "15"
+    },
+    {
+      "nombre": "Acuerdos de pago / refinanciación",
+      "idtipodocumento": "16"
+    },
+    {
+      "nombre": "Adiciones y/o modificaciones",
+      "idtipodocumento": "17"
+    },
+    {
+      "nombre": "Adquisiciones y donaciones",
+      "idtipodocumento": "18"
+    },
+    {
+      "nombre": "Ajustes contables",
+      "idtipodocumento": "19"
+    },
+    {
+      "nombre": "Amortizaciones",
+      "idtipodocumento": "20"
+    },
+    {
+      "nombre": "Anexos",
+      "idtipodocumento": "21"
+    },
+    {
+      "nombre": "Antecedentes",
+      "idtipodocumento": "22"
+    },
+    {
+      "nombre": "Apelación",
+      "idtipodocumento": "23"
+    },
+    {
+      "nombre": "Apertura de investigación",
+      "idtipodocumento": "24"
+    },
+    {
+      "nombre": "Aplicación de pruebas",
+      "idtipodocumento": "25"
+    },
+    {
+      "nombre": "Auto (Mandamiento de pago)",
+      "idtipodocumento": "26"
+    },
+    {
+      "nombre": "Auto de indagación preliminar",
+      "idtipodocumento": "27"
+    },
+    {
+      "nombre": "Auto inhibitorio",
+      "idtipodocumento": "28"
+    },
+    {
+      "nombre": "Auto Interlocutorio",
+      "idtipodocumento": "29"
+    },
+    {
+      "nombre": "Auto sustanciación",
+      "idtipodocumento": "30"
+    },
+    {
+      "nombre": "Autorización de giro",
+      "idtipodocumento": "31"
+    },
+    {
+      "nombre": "Autorización de horarios de notarias",
+      "idtipodocumento": "32"
+    },
+    {
+      "nombre": "Autorización de locales",
+      "idtipodocumento": "33"
+    },
+    {
+      "nombre": "Autorización traslado de fondos",
+      "idtipodocumento": "34"
+    },
+    {
+      "nombre": "Autorizaciones de Entrega de protocolos históricos",
+      "idtipodocumento": "35"
+    },
+    {
+      "nombre": "Auxilios funerarios",
+      "idtipodocumento": "36"
+    },
+    {
+      "nombre": "Avalúo de bienes",
+      "idtipodocumento": "37"
+    },
+    {
+      "nombre": "Avisos en prensa",
+      "idtipodocumento": "38"
+    },
+    {
+      "nombre": "Avisos publicitarios",
+      "idtipodocumento": "39"
+    },
+    {
+      "nombre": "Back-ups",
+      "idtipodocumento": "40"
+    },
+    {
+      "nombre": "Balance General",
+      "idtipodocumento": "41"
+    },
+    {
+      "nombre": "Base de datos",
+      "idtipodocumento": "42"
+    },
+    {
+      "nombre": "Bono pensional",
+      "idtipodocumento": "43"
+    },
+    {
+      "nombre": "CDP Fonprenop",
+      "idtipodocumento": "44"
+    },
+    {
+      "nombre": "Cédula del Director",
+      "idtipodocumento": "45"
+    },
+    {
+      "nombre": "Certificación del servicio",
+      "idtipodocumento": "46"
+    },
+    {
+      "nombre": "Certificación de inscripción  en carrera administr",
+      "idtipodocumento": "47"
+    },
+    {
+      "nombre": "Certificaciones al contratista",
+      "idtipodocumento": "48"
+    },
+    {
+      "nombre": "DEVOLUCION DE DINERO",
+      "idtipodocumento": "308"
+    },
+    {
+      "nombre": "Certificaciones de tiempo de servicio, cargo,",
+      "idtipodocumento": "49"
+    },
+    {
+      "nombre": "Certificado ausencia de responsabilidad civil",
+      "idtipodocumento": "50"
+    },
+    {
+      "nombre": "Certificado de antecedentes disciplinarios",
+      "idtipodocumento": "51"
+    },
+    {
+      "nombre": "Certificado de disponibilidad presupuestal",
+      "idtipodocumento": "52"
+    },
+    {
+      "nombre": "Certificado de la Contaduría General de la Nación",
+      "idtipodocumento": "53"
+    },
+    {
+      "nombre": "Certificado de libertad",
+      "idtipodocumento": "54"
+    },
+    {
+      "nombre": "Certificado disponibilidad presupuestal",
+      "idtipodocumento": "55"
+    },
+    {
+      "nombre": "Certificado Judicial",
+      "idtipodocumento": "56"
+    },
+    {
+      "nombre": "Certificado médico de aptitud",
+      "idtipodocumento": "57"
+    },
+    {
+      "nombre": "Certificados de estudios",
+      "idtipodocumento": "58"
+    },
+    {
+      "nombre": "Certificados de incapacidad",
+      "idtipodocumento": "59"
+    },
+    {
+      "nombre": "Certificados de ingresos y retenciones",
+      "idtipodocumento": "60"
+    },
+    {
+      "nombre": "Certificados de tradición y libertad",
+      "idtipodocumento": "61"
+    },
+    {
+      "nombre": "Certificados laborales",
+      "idtipodocumento": "62"
+    },
+    {
+      "nombre": "Cheques",
+      "idtipodocumento": "63"
+    },
+    {
+      "nombre": "Circulares",
+      "idtipodocumento": "64"
+    },
+    {
+      "nombre": "Citación",
+      "idtipodocumento": "65"
+    },
+    {
+      "nombre": "Comprobante de ingreso",
+      "idtipodocumento": "66"
+    },
+    {
+      "nombre": "Comprobantes o actos administrativos",
+      "idtipodocumento": "67"
+    },
+    {
+      "nombre": "Compromisos",
+      "idtipodocumento": "68"
+    },
+    {
+      "nombre": "Comunicaciones relacionadas con el proceso",
+      "idtipodocumento": "69"
+    },
+    {
+      "nombre": "Conceptos de viabilidad",
+      "idtipodocumento": "70"
+    },
+    {
+      "nombre": "Conciliación mensual",
+      "idtipodocumento": "71"
+    },
+    {
+      "nombre": "Conciliaciones de correo",
+      "idtipodocumento": "72"
+    },
+    {
+      "nombre": "Concurso o contratación directa",
+      "idtipodocumento": "73"
+    },
+    {
+      "nombre": "Consecutivo",
+      "idtipodocumento": "74"
+    },
+    {
+      "nombre": "Consignaciones",
+      "idtipodocumento": "75"
+    },
+    {
+      "nombre": "Contestación",
+      "idtipodocumento": "76"
+    },
+    {
+      "nombre": "Contrato",
+      "idtipodocumento": "77"
+    },
+    {
+      "nombre": "Control de ingreso",
+      "idtipodocumento": "78"
+    },
+    {
+      "nombre": "Convocatoria",
+      "idtipodocumento": "79"
+    },
+    {
+      "nombre": "Copia de afiliación Caja de Compensación Familiar",
+      "idtipodocumento": "80"
+    },
+    {
+      "nombre": "Copia de afiliación de EPS, Fondos de pensiones.",
+      "idtipodocumento": "81"
+    },
+    {
+      "nombre": "Correos",
+      "idtipodocumento": "82"
+    },
+    {
+      "nombre": "Cronograma",
+      "idtipodocumento": "83"
+    },
+    {
+      "nombre": "Declaración juramentada de no ser deudor moroso",
+      "idtipodocumento": "84"
+    },
+    {
+      "nombre": "Declaración juramentada de no tener conocimiento",
+      "idtipodocumento": "85"
+    },
+    {
+      "nombre": "Declaraciones extraproceso de impedimentos,",
+      "idtipodocumento": "86"
+    },
+    {
+      "nombre": "Descuentos de nómina",
+      "idtipodocumento": "87"
+    },
+    {
+      "nombre": "Demanda (escritura, tablas de amortización,",
+      "idtipodocumento": "88"
+    },
+    {
+      "nombre": "Depreciación",
+      "idtipodocumento": "89"
+    },
+    {
+      "nombre": "Descargos",
+      "idtipodocumento": "90"
+    },
+    {
+      "nombre": "Diagnostico de necesidades de capacitación",
+      "idtipodocumento": "91"
+    },
+    {
+      "nombre": "Encargos",
+      "idtipodocumento": "92"
+    },
+    {
+      "nombre": "Encuestas del desarrollo de los planes de capacita",
+      "idtipodocumento": "93"
+    },
+    {
+      "nombre": "Encuestas estudio oficinas y documental",
+      "idtipodocumento": "94"
+    },
+    {
+      "nombre": "Escritura",
+      "idtipodocumento": "95"
+    },
+    {
+      "nombre": "Estadisticas escrituras y actos por regional",
+      "idtipodocumento": "96"
+    },
+    {
+      "nombre": "Estado de cuenta",
+      "idtipodocumento": "97"
+    },
+    {
+      "nombre": "Estado de P y G",
+      "idtipodocumento": "98"
+    },
+    {
+      "nombre": "Estracto único de publicación",
+      "idtipodocumento": "99"
+    },
+    {
+      "nombre": "Estudios de conveniencia",
+      "idtipodocumento": "100"
+    },
+    {
+      "nombre": "Estudios de evaluación ambiental",
+      "idtipodocumento": "101"
+    },
+    {
+      "nombre": "Estudios previos",
+      "idtipodocumento": "102"
+    },
+    {
+      "nombre": "Evaluación anual del desempeño laboral",
+      "idtipodocumento": "103"
+    },
+    {
+      "nombre": "Evaluación técnica. económica y jurídica",
+      "idtipodocumento": "104"
+    },
+    {
+      "nombre": "Evaluación y seguimiento",
+      "idtipodocumento": "105"
+    },
+    {
+      "nombre": "Extracto bancario",
+      "idtipodocumento": "106"
+    },
+    {
+      "nombre": "Extracto único de publicación",
+      "idtipodocumento": "107"
+    },
+    {
+      "nombre": "Fallas del sistema",
+      "idtipodocumento": "108"
+    },
+    {
+      "nombre": "Fallo (dIligencia de liquidación de crédito)",
+      "idtipodocumento": "109"
+    },
+    {
+      "nombre": "Fallo en primera instancia",
+      "idtipodocumento": "110"
+    },
+    {
+      "nombre": "Fallo en segunda instancia",
+      "idtipodocumento": "111"
+    },
+    {
+      "nombre": "Ficha EBI",
+      "idtipodocumento": "112"
+    },
+    {
+      "nombre": "Formato único de hoja de vida",
+      "idtipodocumento": "113"
+    },
+    {
+      "nombre": "Formulario de solicitud de protección",
+      "idtipodocumento": "114"
+    },
+    {
+      "nombre": "Formulario único de declaración juramentada",
+      "idtipodocumento": "115"
+    },
+    {
+      "nombre": "Formularios de auotliquidación",
+      "idtipodocumento": "116"
+    },
+    {
+      "nombre": "Formularios de evaluación del desempeño",
+      "idtipodocumento": "117"
+    },
+    {
+      "nombre": "Fotocopia  cèdula de ciudadania",
+      "idtipodocumento": "118"
+    },
+    {
+      "nombre": "Fotocopia de diploma de estudios",
+      "idtipodocumento": "119"
+    },
+    {
+      "nombre": "Fotocopia de libreta militar",
+      "idtipodocumento": "120"
+    },
+    {
+      "nombre": "Fotocopia del Carné de la Caja de Compensación",
+      "idtipodocumento": "121"
+    },
+    {
+      "nombre": "Fotografía tamaño cédula",
+      "idtipodocumento": "122"
+    },
+    {
+      "nombre": "Gastos",
+      "idtipodocumento": "123"
+    },
+    {
+      "nombre": "Griro de PAC",
+      "idtipodocumento": "124"
+    },
+    {
+      "nombre": "Hoja de calificación de carrera notarial",
+      "idtipodocumento": "125"
+    },
+    {
+      "nombre": "Hoja de calificación de reparto",
+      "idtipodocumento": "126"
+    },
+    {
+      "nombre": "Hoja de vida",
+      "idtipodocumento": "127"
+    },
+    {
+      "nombre": "Homologación",
+      "idtipodocumento": "128"
+    },
+    {
+      "nombre": "Informe (Reportes estadisticos DP y Tutelas)",
+      "idtipodocumento": "129"
+    },
+    {
+      "nombre": "Informe de entidad pública",
+      "idtipodocumento": "130"
+    },
+    {
+      "nombre": "Informe de evaluación de servicios",
+      "idtipodocumento": "131"
+    },
+    {
+      "nombre": "Informe de seguimiento",
+      "idtipodocumento": "132"
+    },
+    {
+      "nombre": "Informe de visita",
+      "idtipodocumento": "133"
+    },
+    {
+      "nombre": "Informe evaluativo",
+      "idtipodocumento": "134"
+    },
+    {
+      "nombre": "Informes a los Estados Financieros",
+      "idtipodocumento": "135"
+    },
+    {
+      "nombre": "Informes de ejecucion y seguimiento",
+      "idtipodocumento": "136"
+    },
+    {
+      "nombre": "Informes de seguimiento de la ejecución presupuest",
+      "idtipodocumento": "137"
+    },
+    {
+      "nombre": "Informes unidades administrativas",
+      "idtipodocumento": "138"
+    },
+    {
+      "nombre": "Inscripciones",
+      "idtipodocumento": "139"
+    },
+    {
+      "nombre": "Instrucciones",
+      "idtipodocumento": "140"
+    },
+    {
+      "nombre": "Instructivo de transferencias",
+      "idtipodocumento": "141"
+    },
+    {
+      "nombre": "Inventario General",
+      "idtipodocumento": "142"
+    },
+    {
+      "nombre": "Inventario Individual",
+      "idtipodocumento": "143"
+    },
+    {
+      "nombre": "Inventarios Documentales (Formato FUI)",
+      "idtipodocumento": "144"
+    },
+    {
+      "nombre": "Inventarios en su estado natural",
+      "idtipodocumento": "145"
+    },
+    {
+      "nombre": "Invitación a cotizar o pliego de condiciones",
+      "idtipodocumento": "146"
+    },
+    {
+      "nombre": "Legalizaciones",
+      "idtipodocumento": "147"
+    },
+    {
+      "nombre": "Libro",
+      "idtipodocumento": "148"
+    },
+    {
+      "nombre": "Licencia de conducción",
+      "idtipodocumento": "149"
+    },
+    {
+      "nombre": "Listados de admitidos",
+      "idtipodocumento": "150"
+    },
+    {
+      "nombre": "Listados deudores",
+      "idtipodocumento": "151"
+    },
+    {
+      "nombre": "Listados no admitidos",
+      "idtipodocumento": "152"
+    },
+    {
+      "nombre": "Mandamiento de pago",
+      "idtipodocumento": "153"
+    },
+    {
+      "nombre": "Manual",
+      "idtipodocumento": "154"
+    },
+    {
+      "nombre": "Memoriales",
+      "idtipodocumento": "155"
+    },
+    {
+      "nombre": "Modificaciones",
+      "idtipodocumento": "156"
+    },
+    {
+      "nombre": "Nómina mensual",
+      "idtipodocumento": "157"
+    },
+    {
+      "nombre": "Notas a los Estados Financieros",
+      "idtipodocumento": "158"
+    },
+    {
+      "nombre": "Notas crédito",
+      "idtipodocumento": "159"
+    },
+    {
+      "nombre": "Notas débito",
+      "idtipodocumento": "160"
+    },
+    {
+      "nombre": "Notificación resolucion",
+      "idtipodocumento": "161"
+    },
+    {
+      "nombre": "Novedades de nómina",
+      "idtipodocumento": "162"
+    },
+    {
+      "nombre": "Oficio comunicación de nombramiento, encargo,",
+      "idtipodocumento": "163"
+    },
+    {
+      "nombre": "Oficio aceptación de nombramiento",
+      "idtipodocumento": "164"
+    },
+    {
+      "nombre": "Oficio comunicando los actos administrativos",
+      "idtipodocumento": "165"
+    },
+    {
+      "nombre": "Oficio de citación",
+      "idtipodocumento": "166"
+    },
+    {
+      "nombre": "Oficio de notificación",
+      "idtipodocumento": "167"
+    },
+    {
+      "nombre": "Oficio de solicitud de interrupción de licencia",
+      "idtipodocumento": "169"
+    },
+    {
+      "nombre": "Oficio información numero de cuenta bancaria",
+      "idtipodocumento": "170"
+    },
+    {
+      "nombre": "Oficio manifestación libre y voluntaria",
+      "idtipodocumento": "171"
+    },
+    {
+      "nombre": "Oficio presentación de renuncia",
+      "idtipodocumento": "172"
+    },
+    {
+      "nombre": "Oficios juzgados",
+      "idtipodocumento": "173"
+    },
+    {
+      "nombre": "Oficios relacionados con el proceso",
+      "idtipodocumento": "174"
+    },
+    {
+      "nombre": "Oficios secuestro y embargo de bienes",
+      "idtipodocumento": "175"
+    },
+    {
+      "nombre": "Oficios transferencias de fondos",
+      "idtipodocumento": "176"
+    },
+    {
+      "nombre": "Orden de compra",
+      "idtipodocumento": "177"
+    },
+    {
+      "nombre": "Orden de embargo",
+      "idtipodocumento": "178"
+    },
+    {
+      "nombre": "Orden de pago",
+      "idtipodocumento": "179"
+    },
+    {
+      "nombre": "Orden de Visita",
+      "idtipodocumento": "180"
+    },
+    {
+      "nombre": "Pagaré",
+      "idtipodocumento": "181"
+    },
+    {
+      "nombre": "Pago EPS / Pensión / Fondos",
+      "idtipodocumento": "182"
+    },
+    {
+      "nombre": "Pasivos",
+      "idtipodocumento": "183"
+    },
+    {
+      "nombre": "Periódico Institucional",
+      "idtipodocumento": "184"
+    },
+    {
+      "nombre": "Plan de Actividades",
+      "idtipodocumento": "185"
+    },
+    {
+      "nombre": "Plan de Transferencias Documentales Primarias",
+      "idtipodocumento": "186"
+    },
+    {
+      "nombre": "Planes arquitectónicos",
+      "idtipodocumento": "187"
+    },
+    {
+      "nombre": "Planillas de control",
+      "idtipodocumento": "188"
+    },
+    {
+      "nombre": "Planillas de control envio de  correspondencia",
+      "idtipodocumento": "189"
+    },
+    {
+      "nombre": "Planos",
+      "idtipodocumento": "190"
+    },
+    {
+      "nombre": "Pliego de condiciones",
+      "idtipodocumento": "191"
+    },
+    {
+      "nombre": "Póliza de deudores",
+      "idtipodocumento": "192"
+    },
+    {
+      "nombre": "Programa",
+      "idtipodocumento": "194"
+    },
+    {
+      "nombre": "Propuestas presentadas",
+      "idtipodocumento": "195"
+    },
+    {
+      "nombre": "Proyección gastos Superintendencia",
+      "idtipodocumento": "196"
+    },
+    {
+      "nombre": "Prueba",
+      "idtipodocumento": "197"
+    },
+    {
+      "nombre": "Puntaje de calificación de carrera notarial",
+      "idtipodocumento": "198"
+    },
+    {
+      "nombre": "Queja/anónimo con sustento probatorio o de oficio",
+      "idtipodocumento": "199"
+    },
+    {
+      "nombre": "Recibo de publicación Diario Oficial",
+      "idtipodocumento": "200"
+    },
+    {
+      "nombre": "Recibos de consignación",
+      "idtipodocumento": "201"
+    },
+    {
+      "nombre": "Recurso",
+      "idtipodocumento": "202"
+    },
+    {
+      "nombre": "Registro civil de nacimiento",
+      "idtipodocumento": "203"
+    },
+    {
+      "nombre": "Registro de asistencia",
+      "idtipodocumento": "204"
+    },
+    {
+      "nombre": "Registro de préstamo y consulta",
+      "idtipodocumento": "205"
+    },
+    {
+      "nombre": "Registro de proyectos",
+      "idtipodocumento": "206"
+    },
+    {
+      "nombre": "Registro presupuestal",
+      "idtipodocumento": "207"
+    },
+    {
+      "nombre": "Registros consultas estados de cuenta",
+      "idtipodocumento": "208"
+    },
+    {
+      "nombre": "Registros de solicitud de vivienda",
+      "idtipodocumento": "209"
+    },
+    {
+      "nombre": "Relación pago subsidio",
+      "idtipodocumento": "210"
+    },
+    {
+      "nombre": "Relación suspensión de términos",
+      "idtipodocumento": "211"
+    },
+    {
+      "nombre": "Remisión y/o factura",
+      "idtipodocumento": "212"
+    },
+    {
+      "nombre": "Reportes estadísticos",
+      "idtipodocumento": "213"
+    },
+    {
+      "nombre": "Requerimiento",
+      "idtipodocumento": "214"
+    },
+    {
+      "nombre": "Resolución aclarando proceso desierto",
+      "idtipodocumento": "215"
+    },
+    {
+      "nombre": "Resolución Acuerdo de pago",
+      "idtipodocumento": "216"
+    },
+    {
+      "nombre": "Resolución de aceptación de renuncia",
+      "idtipodocumento": "217"
+    },
+    {
+      "nombre": "Resolución de adjudicación",
+      "idtipodocumento": "218"
+    },
+    {
+      "nombre": "Resolución de apertura",
+      "idtipodocumento": "219"
+    },
+    {
+      "nombre": "Resolución de cumplimiento al fallo",
+      "idtipodocumento": "220"
+    },
+    {
+      "nombre": "Resolución de encargos",
+      "idtipodocumento": "221"
+    },
+    {
+      "nombre": "Resolución de no aceptación de carrera notarial",
+      "idtipodocumento": "222"
+    },
+    {
+      "nombre": "Resolución de nombramiento carrera notarial",
+      "idtipodocumento": "223"
+    },
+    {
+      "nombre": "Resolución de nombramiento periodo de prueba",
+      "idtipodocumento": "224"
+    },
+    {
+      "nombre": "Resolución de pensión",
+      "idtipodocumento": "225"
+    },
+    {
+      "nombre": "Resolución de reconocimiento pensional",
+      "idtipodocumento": "226"
+    },
+    {
+      "nombre": "Resolución y/o constancia inscripción",
+      "idtipodocumento": "227"
+    },
+    {
+      "nombre": "Resolución y/o Decreto de nombramiento, encargo,",
+      "idtipodocumento": "228"
+    },
+    {
+      "nombre": "Resoluciones de reconocimientos por conceptos",
+      "idtipodocumento": "229"
+    },
+    {
+      "nombre": "Resoluciones de reconocimientos, permisos,",
+      "idtipodocumento": "230"
+    },
+    {
+      "nombre": "Oficio de respuesta",
+      "idtipodocumento": "168"
+    },
+    {
+      "nombre": "Resoluciones de Retiro del servicio",
+      "idtipodocumento": "231"
+    },
+    {
+      "nombre": "Resoluciones o actos administrativos",
+      "idtipodocumento": "232"
+    },
+    {
+      "nombre": "Resoluciones por comisiones de servicio, estudio,",
+      "idtipodocumento": "233"
+    },
+    {
+      "nombre": "Resoluciones por Licencias",
+      "idtipodocumento": "234"
+    },
+    {
+      "nombre": "Salida de almacén",
+      "idtipodocumento": "236"
+    },
+    {
+      "nombre": "Solicitud de inscripción en carrera administrativa",
+      "idtipodocumento": "237"
+    },
+    {
+      "nombre": "Solicitud de reconomiento de pensión",
+      "idtipodocumento": "238"
+    },
+    {
+      "nombre": "Soportes",
+      "idtipodocumento": "239"
+    },
+    {
+      "nombre": "Sustitución pensional",
+      "idtipodocumento": "240"
+    },
+    {
+      "nombre": "Tabla de retención documental",
+      "idtipodocumento": "241"
+    },
+    {
+      "nombre": "Tablas de amortización",
+      "idtipodocumento": "242"
+    },
+    {
+      "nombre": "Tarjeta de usuario",
+      "idtipodocumento": "243"
+    },
+    {
+      "nombre": "Términos de referencia",
+      "idtipodocumento": "244"
+    },
+    {
+      "nombre": "Titulo valor y/o Resolución",
+      "idtipodocumento": "245"
+    },
+    {
+      "nombre": "Comunicación",
+      "idtipodocumento": "246"
+    },
+    {
+      "nombre": "Acta",
+      "idtipodocumento": "263"
+    },
+    {
+      "nombre": "Acuerdos",
+      "idtipodocumento": "264"
+    },
+    {
+      "nombre": "Ajustes",
+      "idtipodocumento": "265"
+    },
+    {
+      "nombre": "Avaluos",
+      "idtipodocumento": "266"
+    },
+    {
+      "nombre": "Certificaciones",
+      "idtipodocumento": "267"
+    },
+    {
+      "nombre": "Certificado",
+      "idtipodocumento": "268"
+    },
+    {
+      "nombre": "Certificado Disponibilidad",
+      "idtipodocumento": "269"
+    },
+    {
+      "nombre": "Certificado Medico",
+      "idtipodocumento": "270"
+    },
+    {
+      "nombre": "Comunicado",
+      "idtipodocumento": "271"
+    },
+    {
+      "nombre": "Concepto",
+      "idtipodocumento": "272"
+    },
+    {
+      "nombre": "Conciliacion",
+      "idtipodocumento": "273"
+    },
+    {
+      "nombre": "Demanda",
+      "idtipodocumento": "274"
+    },
+    {
+      "nombre": "Entradas",
+      "idtipodocumento": "275"
+    },
+    {
+      "nombre": "Entradas y salidas de almacén",
+      "idtipodocumento": "276"
+    },
+    {
+      "nombre": "Estudio",
+      "idtipodocumento": "277"
+    },
+    {
+      "nombre": "Extracto",
+      "idtipodocumento": "278"
+    },
+    {
+      "nombre": "Fallo",
+      "idtipodocumento": "280"
+    },
+    {
+      "nombre": "Fotocopia de la cédula",
+      "idtipodocumento": "281"
+    },
+    {
+      "nombre": "Informe",
+      "idtipodocumento": "282"
+    },
+    {
+      "nombre": "Instructivos",
+      "idtipodocumento": "283"
+    },
+    {
+      "nombre": "Inventario",
+      "idtipodocumento": "284"
+    },
+    {
+      "nombre": "Licencias",
+      "idtipodocumento": "285"
+    },
+    {
+      "nombre": "Listados",
+      "idtipodocumento": "286"
+    },
+    {
+      "nombre": "Nómina",
+      "idtipodocumento": "287"
+    },
+    {
+      "nombre": "Notificación",
+      "idtipodocumento": "288"
+    },
+    {
+      "nombre": "Plan",
+      "idtipodocumento": "291"
+    },
+    {
+      "nombre": "Oficios",
+      "idtipodocumento": "290"
+    },
+    {
+      "nombre": "Respuesta",
+      "idtipodocumento": "235"
+    },
+    {
+      "nombre": "Oficio de solicitud",
+      "idtipodocumento": "289"
+    },
+    {
+      "nombre": "PQRS",
+      "idtipodocumento": "334"
+    },
+    {
+      "nombre": "Cuenta de Cobro",
+      "idtipodocumento": "305"
+    }
+  ]
+}

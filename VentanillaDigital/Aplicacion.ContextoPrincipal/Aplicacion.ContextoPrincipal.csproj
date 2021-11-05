@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Hashids.net" Version="1.3.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.10" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="3.1.10" />
+    <PackageReference Include="Microsoft.PowerBI.Api" Version="3.21.0" />
+    <PackageReference Include="RestSharp" Version="106.11.7" />
+    <PackageReference Include="System.Drawing.Common" Version="5.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Utilidades\HerramientasFirmaDigital\HerramientasFirmaDigital.InyeccionDeDependencias\HerramientasFirmaDigital.InyeccionDeDependencias.csproj" />
+    <ProjectReference Include="..\..\Utilidades\HerramientasFirmaDigital\HerramientasFirmaDigital\HerramientasFirmaDigital.csproj" />
+    <ProjectReference Include="..\Aplicacion.Nucleo\Aplicacion.Nucleo.csproj" />
+    <ProjectReference Include="..\Aplicacion.TareasAutomaticas\Aplicacion.TareasAutomaticas.csproj" />
+    <ProjectReference Include="..\Dominio.ContextoPrincipal\Dominio.ContextoPrincipal.csproj" />
+    <ProjectReference Include="..\GenericExtensions\GenericExtensions.csproj" />
+    <ProjectReference Include="..\HtmlToPdf\HtmlToPdf.csproj" />
+    <ProjectReference Include="..\Infraestructura.AgenteServicios\Infraestructura.AgenteServicios.csproj" />
+    <ProjectReference Include="..\Infraestructura.Cosmos\Infraestructura.Cosmos.csproj" />
+    <ProjectReference Include="..\Infraestructura.Storage\Infraestructura.Storage.csproj" />
+    <ProjectReference Include="..\PdfTronUtils\PdfTronUtils.csproj" />
+    <ProjectReference Include="..\TSAIntegracion\TSAIntegracion.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Contrato\General\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Contrato\General\" />
+  </ItemGroup>
+
+</Project>

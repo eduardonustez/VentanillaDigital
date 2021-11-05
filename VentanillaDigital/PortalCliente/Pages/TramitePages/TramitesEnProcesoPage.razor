@@ -1,0 +1,34 @@
+@page "/tramitesenproceso"
+@*@attribute [Authorize(Policy = "RequireNotario")]*@
+@attribute [Authorize]
+@using PortalCliente.Components.ConsultasTramites
+@using PortalCliente.Components.Transversales
+<div class="grid-tabla-filtro-contenedor">
+    <div class="container">
+        <h1>@TituloBandejaEntrada</h1>
+
+        <div class="d-flex flex-column">
+            @if (!string.IsNullOrWhiteSpace(@MsjAutorizacionResulOK))
+            {
+                <div class="mensaje-container mensaje-ok mensaje-bandeja-entrada">
+                    <p>@MsjAutorizacionResulOK</p>
+                </div>
+            }
+
+            @if (!string.IsNullOrWhiteSpace(@MsjAutorizacionResulError))
+            {
+                <div class="mensaje-container mensaje-error mensaje-bandeja-entrada">
+                    <p>@MsjAutorizacionResulError</p>
+                </div>
+            }
+        </div>
+        <FiltrosTramitesEnProceso UserName="@_username" FiltrosChanged="(filters)=>FiltrosChangedHandler(filters)"></FiltrosTramitesEnProceso>
+    </div>
+    <div class="contenedor_tabla">
+        <DataGrid @ref="child" data="registros" columnTitles="columnas" totalRegistros="totalRegistros"
+            totalPaginas="totalPaginas" registrosPagina="model.RegistrosPagina " OnChangePage="ObtenerPendientes"
+            OnSelectRow="ContinuarTramite" mostrarCheckboxes="mostrarCheckboxes"
+            textoInformativo="Haga doble-clic para reanudar el trámite">
+        </DataGrid>
+    </div>
+</div>

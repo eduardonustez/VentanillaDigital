@@ -1,0 +1,20 @@
+<form Model="documentoPrivado" @oninput="oninput">
+    <div class="input-container">
+        <label>Acto</label>
+        <textarea @bind-value="documentoPrivado.ActoNotarial" @bind-value:event="oninput"></textarea>
+    </div>
+    <div class="input-container">
+        <label>Firmantes</label>
+        <textarea @bind-value="documentoPrivado.Firmantes" @bind-value:event="oninput" />
+    </div>
+    <div class="input-container">
+        <label>Descripción</label>
+        <textarea @bind-value="documentoPrivado.DetalleDeActo" @bind-value:event="oninput"></textarea>
+    </div>
+    <label class="check-box-container">
+        No sabe firmar
+        <input @bind-value="NoSabeFirmar" @bind-value:event="oninput" type="checkbox"
+            name="diligenciaPersonaInvidente" />
+        <span class="check" for="diligenciaPersonaInvidente"></span>
+    </label>
+</form>

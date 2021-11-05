@@ -1,0 +1,14 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneracionPDF\bin\Debug\Generacion PDF Notaria.exe.config
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneracionPDF\bin\Debug\Generacion PDF Notaria.exe
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneracionPDF\bin\Debug\Generacion PDF Notaria.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneracionPDF\bin\Debug\HiQPdf.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneracionPDF\bin\Debug\itextsharp.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneracionPDF\bin\Debug\HiQPdf.xml
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneracionPDF\bin\Debug\itextsharp.xml
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneracionPDF\bin\Debug\HiQPdf.dep
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneracionPDF\bin\Debug\HiQPdf.rda
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneracionPDF\obj\Debug\Generacion PDF Notaria.csprojAssemblyReference.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneracionPDF\obj\Debug\Generacion PDF Notaria.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneracionPDF\obj\Debug\Generacion PDF Notaria.csproj.CopyComplete
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneracionPDF\obj\Debug\Generacion PDF Notaria.exe
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneracionPDF\obj\Debug\Generacion PDF Notaria.pdb

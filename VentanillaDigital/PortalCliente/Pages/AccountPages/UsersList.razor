@@ -1,0 +1,223 @@
+﻿@page "/usersAdmin"
+@layout MainLayout
+@attribute [Authorize(Policy = "RequireNotario")]
+
+<div class="container">
+    <h1>Usuarios</h1>
+    <div class="botones-container">
+        @* Botón que abre modal de creación de usuarios *@
+        <button class="btn-primario" data-toggle="modal" data-target="#modalCrearUsuario" @onclick="setCreateModal">
+            <i class="material-icons mr-2">add_circle_outline</i>
+            Crear nuevo usuario
+        </button>
+    </div>
+</div>
+
+<div class="contenedor_tabla">
+
+    <figure class="fig-table">
+        @if (registros != null)
+        {
+            <table class="tabla-usuarios">
+                <thead>
+                    <tr>
+                        @for (int i = 0; i < columnas.Length; i++)
+                        {
+                            <th>@columnas[i]</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @for (int i = 0; i < registros.GetLength(0); i++)
+                    {
+                        var id = registros[i, 0].ToString();
+                        <tr>
+                            @for (int j = 1; j < registros.GetLength(1); j++)
+                            {
+                                <td>@registros[i, j]</td>
+                            }
+                            <td class="d-flex">
+                                <button class="btn-terciario mr-3" data-toggle="modal" data-target="#modalCrearUsuario"
+                                        @onclick="() => setUpdateModal(id)">
+                                    <i class="material-icons">edit</i>
+                                </button>
+                                @if (registros[i, 4].ToString() != "Administrador")
+                                {
+                                    <button class="btn-terciario" @onclick="() => OpenRemoveUsers(id)">
+                                        <i class="material-icons">delete</i>
+                                    </button>
+                                }
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <div class="skeleton-tabla-usuarios">
+                <img src="images/table-skeleton.svg" />
+            </div>
+        }
+    </figure>
+</div>
+
+@* Modal de creación de usuarios *@
+<div class="modal fade @ModalClassCreateEditUser" id="modalCrearUsuario" data-backdrop="static" data-keyboard="false"
+     tabindex="-1" aria-labelledby="modalCrearUsuario" aria-hidden="true" style="display:@ModalDisplayCreateEditUser">
+    <div class="modal-dialog modal-dialog-centered modal-crear-usuario">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>@ModalTitle</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="mensaje-container mensaje-info">
+                    <p>
+                        Recuerde que la información del documento y correo electrónico no podrán ser editados después de
+                        que el usuario haya sido creado
+                    </p>
+                </div>
+                <p>Los campos marcados con (*) son obligatorios</p>
+                <form class="needs-validation">
+                    <div class="form-en-linea">
+                        <div class="input-container">
+                            <label>Rol *</label>
+                            @if(rol==1){
+                                <input type="text" value="Notario Principal" disabled/>
+                            }else{
+                                <select @bind="@rol" required>
+                                    <option value="2">Funcionario operador</option>
+                                    <option value="3">Notario encargado</option>
+                                </select>
+                            }
+                        </div>
+                        <div class="input-container">
+                            <label>Género *</label>
+                            <select @bind="@genero" required>
+                                <option selected value="@Genero.Masculino">Masculino</option>
+                                <option value="@Genero.Femenino">Femenino</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-en-linea">
+                        <div class="input-container">
+                            <label for="tipoNumeroIdentificacion">Tipo de documento *</label>
+                            <div class="d-flex tipo-numero-identificacion">
+                                <div class="input-tipo-identificacion">
+                                    <select disabled="@(!isNew)" @bind="@tipoIdentificacion" required>
+                                        <option value="1">Cédula de ciudadanía</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <label for="tipoNumeroIdentificacion">Número de documento *</label>
+                            <div class="d-flex tipo-numero-identificacion">
+                                <input type="number" disabled="@(!isNew)" @bind="@identificacion" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-en-linea">
+                        <div class="input-container">
+                            <label>Nombres *</label>
+                            <input type="text" @bind="@nombres" required />
+                        </div>
+                        <div class="input-container">
+                            <label>Apellidos *</label>
+                            <input type="text" @bind="@apellidos" required />
+                        </div>
+                    </div>
+                    <div class="form-en-linea">
+                        <div class="input-container">
+                            <label>Número de celular *</label>
+                            <input type="number" pattern="[0-9]" class="@errorInputClase" minlength="7" maxlength="16"
+                                   value="@celular" @onchange="validateInput" required />
+                            <label class="form-error @mensajeErrorClase">
+                                Este campo debe contener entre 7 y 12
+                                caracteres
+                            </label>
+                        </div>
+                        <div class="input-container">
+                            <label>Correo electrónico *</label>
+                            <input minlength="5" maxlength="51" type="email" disabled="@(!isNew)" @bind="@correo" required />
+                        </div>
+                    </div>
+                    <div class="form-en-linea">
+                        <div class="input-container">
+                            <label>Cargo *</label>
+                            <input type="text" @bind="@cargo" required />
+                        </div>
+                        <div class="input-container">
+                            <label>Area *</label>
+                            <input type="text" @bind="@area" required />
+                        </div>
+                    </div>
+                </form>
+                <div class="d-flex @ModalBtnsJustification">
+                    @if (!isNew)
+                    {
+                        <button type="button" class="btn-contorno-secundario mr-3" disabled="@IsDisabledSubmitEmail"
+                                @onclick="sendVerificationEmail">
+                            Enviar correo de acceso a cuenta
+                        </button>
+                    }
+                    <div>
+                        <button type="button" class="btn-contorno-primario mr-3" data-dismiss="modal">Cancelar</button>
+                        <button type="submit" style="display:@IsDisabledRol" class="btn-primario" disabled="@showSpinner"
+                                @onclick="SaveUser">
+                            @if (showSpinner)
+                            {
+                                <i class="fa fa-sync fa-spin"></i>
+                            }
+                            @ModalSubmitBtn
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@if (ShowBackdropCreateEditUser)
+{
+    <div class="modal-backdrop fade show"></div>
+}
+@* Fin modal de creación de usuarios *@
+
+@* Modal de eliminación de usuarios *@
+<div class="modal-backdrop @ModalClassRemove" id="modalRemoveUsuario" style="display:@ModalDisplayRemove"
+     data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalRemoveUsuario" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>@EstadoEliminacion</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="CloseRemoveUsers">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>@MensajeEliminacion</p>
+                <div class="d-flex justify-content-end">
+                    <button type="button" class="btn-contorno-primario mr-3" data-dismiss="modal"
+                            @onclick="CloseRemoveUsers">
+                        Cerrar
+                    </button>
+                    <button type="submit" class="btn-primario" data-dismiss="modal"
+                            @onclick="RemoveUsersSelected">
+                        Aceptar
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@if (ShowBackdrop)
+{
+    <div class="modal-backdrop fade show"></div>
+}
+@* Fin modal de eliminación de usuarios *@

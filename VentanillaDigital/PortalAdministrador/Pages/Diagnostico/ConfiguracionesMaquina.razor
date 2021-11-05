@@ -1,0 +1,99 @@
+﻿@page "/configuracionesmaquina"
+
+
+@*<div class="grid-tabla-filtro">*@
+    <div class="grid-tabla-filtro-contenedor">
+        <div class="container">
+            <h1>Configuraciones máquina</h1>
+            @*<div class="botones-container">
+                    <button class="btn-contorno-primario botones-container-link" @onclick="Refrescar">
+                        <span class="material-icons">
+                            refresh
+                        </span>Refrescar
+                    </button>
+
+                    <button id="boton-filtrar-bandeja" class="btn-contorno-primario" @onclick="() => MostrarFiltros()">
+                        <span class="material-icons">
+                            filter_alt
+                        </span> Filtrar
+                    </button>
+                </div>*@
+            <div>
+                <div class="row">
+                    <div class="input-container col-6">
+                        <label for="nuip-operador">Notaría</label>
+                        <select class="custom-select" @bind="@NotariaSeleccionada">
+                            <option value="0">Seleccione una notaría</option>
+                            @if (Notarias != null)
+                            {
+                                @foreach (var notaria in Notarias)
+                                {
+                                    <option value="@notaria.NotariaId">@notaria.NotariaNombre</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                    <div class="input-container col-6">
+                        <label for="txtCorreoAdmin">Correo</label>
+                        <input type="text" @bind="@CorreoFilter" placeholder="Correo" @onkeyup="@Enter">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-end mt-3">
+                    <button @onclick="LimpiarCampos" class="btn-contorno-primario mr-3">
+                        Reiniciar
+                    </button>
+                    <button type="button" @onclick="Filtrar" class="btn-primario">
+                        Buscar
+                    </button>
+                </div>
+            </div>
+            <div class="pt-2">
+                @if (result != null)
+                {
+
+                    <GridControl @ref="Grid" Title=""
+                                 Columns="@Columns" Data="@Usuarios" TotalRows="@TotalRows"
+                                 TotalPages="@TotalPages" OnChangePage="OnChangePage">
+                    </GridControl>
+                }
+            </div>
+        </div>
+
+        @*<div class="filtros">
+            <div class="overlay" id="overlay" @onclick="@(() => MostrarFiltros())"></div>
+            <div class="filters-container" id="filtros">
+                <h4>Filtrar resultados</h4>
+                <button id="boton-cerrar-filtrar-bandeja" @onclick="@(() => MostrarFiltros())">
+                    &#10005
+                </button>
+                <div class="input-container">
+                    <label for="nuip-operador">Notaría</label>
+                    <select class="custom-select" @bind="@NotariaSeleccionada">
+                        <option value="0">Seleccione una notaría</option>
+                        @if (Notarias != null)
+                        {
+                            @foreach (var notaria in Notarias)
+                            {
+                                <option value="@notaria.NotariaId">@notaria.NotariaNombre</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="input-container">
+                    <label for="txtCorreoAdmin">Correo</label>
+                    <input type="text" @bind="@CorreoFilter" placeholder="Correo" @onkeyup="@Enter">
+                </div>
+                <div class="d-flex justify-content-end mt-3">
+                    <button @onclick="LimpiarCampos" class="btn-contorno-primario mr-3">
+                        Reiniciar
+                    </button>
+                    <button type="button" @onclick="Filtrar" class="btn-primario">
+                        Buscar
+                    </button>
+                </div>
+            </div>
+        </div>*@
+
+    </div>
+@*</div>*@

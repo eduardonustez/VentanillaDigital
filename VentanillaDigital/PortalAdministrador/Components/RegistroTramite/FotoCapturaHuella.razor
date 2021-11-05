@@ -1,0 +1,14 @@
+﻿<div class="container">
+    <div class=" row">
+        <div class="col-5 col-tablet">
+            <CapturaFoto @bind-Foto="Compareciente.Foto"></CapturaFoto>
+        </div>
+        <div class="col-7 col-tablet">
+            <CapturaHuella @ref="CapturaHuella" 
+                           Compareciente="Compareciente" 
+                           ComparecienteChanged="ComparecienteChanged"
+                           CodigoTipoTramite="CodigoTipoTramite"
+                           ReadyChanged="ReadyChanged"></CapturaHuella>
+        </div>
+    </div>
+</div>

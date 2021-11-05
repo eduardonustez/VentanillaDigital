@@ -1,0 +1,90 @@
+
+.certificados-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  
+  .card-certificado {
+    text-align: center;
+    height: 250px;
+    margin: 0 16px 0;
+    border-radius: 0.25rem;
+    box-shadow: var(--elevacion-1);
+    padding: 1rem;
+  }
+  
+  .border-gradient {
+    border-radius: 4px;
+    position: relative;
+    background: linear-gradient(to right, #5f72be, #9921e8);
+    padding: 2px;
+  }
+  
+  .certificado-olimpia,
+  .certificado-propio {
+    background: white;
+    color: black;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    min-height: 290px;
+    text-align: center;
+    max-width: 250px;
+    justify-content: space-evenly;
+  }
+  
+  .certificado-olimpia {
+    border: 2px solid #332074;
+    color: #332074;
+  }
+  
+  .certificado-propio button,
+  .certificado-olimpia button {
+    background: transparent linear-gradient(90deg, #1e3b70 0%, #29539b 100%) 0% 0%
+      no-repeat padding-box;
+    color: #fff;
+    display: inline-flex;
+    justify-content: center;
+    white-space: nowrap;
+  }
+  
+  .certificado-propio button {
+    background: transparent linear-gradient(90deg, #5f72be 0%, #9921e8 100%) 0% 0%
+      no-repeat padding-box;
+  }
+  
+  .certificado-propio[disabled] button {
+    background: var(--gris-500);
+  }
+  
+  .certificado-propio .subtitle {
+    color: #a00f7d;
+  }
+  
+  .certificado-propio label {
+    color: #3b3b3b;
+  }
+  
+  .border-gradient[disabled] .certificado-propio label,
+  .border-gradient[disabled] .certificado-propio p {
+    color: var(--gris-500);
+    pointer-events: none;
+  }
+  
+  .border-gradient[disabled] {
+    background: var(--gris-500);
+  }
+  
+  .certificado-olimpia button:disabled,
+  .certificado-propio button:disabled {
+    background: var(--gris-200);
+    color: var(--gris-400);
+  }
+  .certificado-olimpia button:disabled,
+  .certificado-propio button:disabled:hover {
+    cursor: context-menu;
+  }
+  
+  

@@ -1,0 +1,9 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ImagingExtensions\bin\Debug\netstandard2.1\ImagingExtensions.deps.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ImagingExtensions\bin\Debug\netstandard2.1\ImagingExtensions.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ImagingExtensions\bin\Debug\netstandard2.1\ImagingExtensions.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ImagingExtensions\obj\Debug\netstandard2.1\ImagingExtensions.csprojAssemblyReference.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ImagingExtensions\obj\Debug\netstandard2.1\ImagingExtensions.AssemblyInfoInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ImagingExtensions\obj\Debug\netstandard2.1\ImagingExtensions.AssemblyInfo.cs
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ImagingExtensions\obj\Debug\netstandard2.1\ImagingExtensions.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ImagingExtensions\obj\Debug\netstandard2.1\ImagingExtensions.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ImagingExtensions\obj\Debug\netstandard2.1\ImagingExtensions.pdb

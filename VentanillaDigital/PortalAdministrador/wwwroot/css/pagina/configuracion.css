@@ -1,0 +1,13 @@
+#mensaje-escaner {
+  border: 1px solid var(--gris-300);
+  border-radius: 4px;
+  padding: 10px;
+}
+
+input[type="file"] {
+  color: transparent;
+}
+
+.epson-510-image {
+  width: 100%;
+}

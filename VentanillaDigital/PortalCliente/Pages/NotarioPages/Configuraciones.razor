@@ -1,0 +1,153 @@
+﻿@page  "/configuraciones"
+<div class="container">
+    <h1>Configuración</h1>
+
+    <div class="col-6 p-0 col-tablet">
+        <h3 class="mt-4">Impresión</h3>
+        <p>Seleccione el formato de impresión</p>
+        <div class="input-container">
+            <select @bind="@UsarSticker">
+                <option disabled>Seleccione</option>
+                <option value="0">Imprimir Documentos en Formato Carta</option>
+                <option value="1">Imprimir Documentos en Formato Sticker</option>
+            </select>
+        </div>
+
+        <h3 class="mt-4">Firma manual</h3>
+        <label class="check-box-container">
+            Activar firma manual
+            <input type="checkbox" name="firmaManual" checked="@UsarFirmaManual"
+                   @onchange="eventArgs => { ActivarFirmaManualCheck(eventArgs.Value); }" />
+            <span class="check" for="firmaManual"></span>
+        </label>
+        @if (UsarFirmaManual)
+        {
+            <div class="input-container">
+                <label>Seleccione el notario</label>
+                <select @bind="@notarioId">
+                    <option disabled>Seleccione</option>
+                    @if (notarioReturnDTOs != null)
+                    {
+                        @foreach (ApiGateway.Contratos.Models.Notario.NotarioReturnDTO notario in notarioReturnDTOs)
+                        {
+                            <option value="@notario.NotarioId">@notario.NotarioNombre</option>
+                        }
+                    }
+                </select>
+            </div>
+
+        }
+        @if (!_movil)
+        {
+            <h3 class="mt-4">Tableta de Firma</h3>
+            <label class="radio-button-container">
+                No usar tableta de firma
+                <input class="radio-input" type="radio" name="usoTableta" value="NO"
+                       @onchange="eventArgs=>useTabletCheck(eventArgs)" checked="@noUsarTableta">
+                <span class="radio-active"></span>
+            </label>
+            <label class="radio-button-container">
+                Solicitar firma al compareciente
+                <input class="radio-input" type="radio" name="usoTableta" value="SI"
+                       @onchange="eventArgs=>useTabletCheck(eventArgs)" checked="@requerirFirma">
+                <span class="radio-active"></span>
+            </label>
+            @if(requerirFirma){
+                 <p>Seleccione el canal de comunicación con la wacom para <strong>esta máquina</strong></p>
+        <div class="input-container">
+            <select @bind="@channelSelected">
+                <option disabled>Seleccione</option>
+                <option value="1">Canal 1</option>
+                <option value="2">Canal 2</option>
+            </select>
+        </div>
+                
+            }
+            @* <label class="check-box-container">
+                        No usar tableta de captura de firma
+                        <input type="checkbox" name="noTableta" checked="@noUsarTableta" @onchange="@noTabletaCheck"/>
+                        <span class="check" for="noTableta"></span>
+                </label>
+                <label class="check-box-container">
+                        Requerir firma del compareciente
+                        <input type="checkbox" name="requerirFirma" checked="@requerirFirma" @onchange="requerirFirmaCheck"/>
+                        <span class="check" for="requerirFirma"></span>
+                </label> *@
+            <h3 class="mt-4">Autorización para el tratamiento de datos</h3>
+            <label class="check-box-container">
+                Mostrar ATDP en la ventana de la aplicación
+                <input type="checkbox" name="mostrarAtdp" @bind="@mostrarAtdpAplicacion" disabled="@noUsarTableta" />
+                <span class="check" for="mostrarAtdp"></span>
+            </label>
+            <h3 class="mt-4">Lector de Código de Barras Bidimensional</h3>
+            <p>Por única vez, escanea este código para ingresar la información de la cédula en la creación de trámites y enrolamiento.</p>
+            <img class="py-2" src="data:image/png;base64,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" />
+            <h3 class="mt-4">Escáner</h3>
+            @if (!EsSignalRConectado)
+            {
+                <div id="mensaje-escaner">
+                    <p><strong>Servicio de comunicación</strong></p>
+                    <p>El servicio de comunicación con el escáner no está disponible</p>
+                    <button type="button" class="btn-contorno-primario d-flex align-items-center" @onclick="ObtenerConfiguracionScanner">
+                        <i class="material-icons md-24">refresh</i>
+                        <span>@*Buscar dispositivos*@</span>
+                    </button>
+                </div>
+            }
+            else
+            {
+
+                @if (Escaners != null)
+                {
+                    <label class="check-box-container">
+                        Usar escáner para recuperar información de documento
+                        <input type="checkbox" name="mostrarEscaner" checked="@usarScanner" @onchange="UsarScannerChange" />
+                        <span class="check" for="mostrarEscaner"></span>
+                    </label>
+                    @if (usarScanner)
+                    {
+                        <div class="input-container input-container-escaner">
+                            <label>Escáner disponible</label>
+                            <select @bind="@SeleccionarEscaner" id="escaner-detectados">
+                                <option disabled selected>Seleccione</option>
+                                @foreach (string escaner in Escaners)
+                                {
+                                    <option value="@escaner">@escaner</option>
+                                }
+
+                            </select>
+                        </div>
+                        <div class="input-container input-container-escaner">
+                            <label>Seleccione la densidad de pixeles (resolución)</label>
+                            <select @bind="@SeleccionarDpi">
+                                <option disabled>Seleccione</option>
+                                @foreach (int dpi in DPIOptions)
+                                {
+                                    <option value="@dpi">@dpi @((dpi == 400) ? "(Recomendado)" : "")</option>
+                                }
+                            </select>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div id="mensaje-escaner">
+                        <p><strong>No encontramos dispositivos en su equipo</strong></p>
+                        <p>Por favor, obtenga los drivers del escáner desde el sitio web del fabricante.</p>
+                        <div>
+                            <button type="button" class="btn-contorno-primario d-flex align-items-center" @onclick="RefrescarDispositivos">
+                                <i class="material-icons md-24">scanner</i>
+                                <span>Buscar dispositivos</span>
+                            </button>
+                        </div>
+                    </div>
+                }
+            }
+        }
+
+    </div>
+    <div class="mt-3">
+        <button type="button" class="btn-contorno-primario" @onclick="Guardar">Guardar Cambios</button>
+    </div>
+</div>
+

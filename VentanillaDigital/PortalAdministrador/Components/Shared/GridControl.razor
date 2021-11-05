@@ -1,0 +1,143 @@
+﻿<figure class="fig-table table-responsive">
+
+    <table class="table table-hover table-striped">
+        @if (!string.IsNullOrEmpty(Title))
+        {
+            <caption>
+                @Title
+            </caption>
+        }
+
+        @if (Columns != null && Columns.Count > 0)
+        {
+            <thead>
+                <tr>
+                    @foreach (var col in Columns)
+                    {
+                        <th>@col.Item1</th>
+                    }
+
+                    @if (ShowViewAction || ShowEditAction || ShowDeleteAction)
+                    {
+                        <th>Acciones</th>
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @if (Data != null)
+                {
+                    @foreach (var row in Data)
+                    {
+                        <tr>
+                            @foreach (var col in Columns)
+                            {
+                                <td>@row.GetType().GetProperty(col.Item2).GetValue(row, null)</td>
+                            }
+
+                            @if (ShowViewAction || ShowEditAction || ShowDeleteAction)
+                            {
+                        <td>
+                            <div class="d-flex">
+                                @if (ShowViewAction)
+                                {
+                                    <button class="btn-contorno-primario mr-2" @onclick="@(() => OnViewItemClick(row))"><i class="fa fa-eye mr-2"></i> Ver</button>
+                                }
+                                @if (ShowEditAction)
+                                {
+                                    <button class="btn-contorno-primario mr-2" @onclick="@(() => OnEditItemClick(row))"><i class="fa fa-edit"></i></button>
+                                }
+                                @if (ShowDeleteAction)
+                                {
+                                    <button class="btn-primario" @onclick="@(() => OnDeleteItemClick(row))"><i class="fa fa-trash"></i></button>
+                                }
+                            </div>
+
+                        </td>
+                            }
+                        </tr>
+                    }
+                }
+            </tbody>
+        }
+    </table>
+</figure>
+<div class="container">
+    <div class="paginator-container">
+        <div class="paginator-buttons">
+            <button class="btn-terciario" @onclick="OnClickFirst"><i class="fas fa-angle-double-left" disabled="@(indicePagina == 1)"></i></button>
+            <button class="btn-terciario" @onclick="OnClickPrevious"><i class="fas fa-angle-left" disabled="@(indicePagina == 1)"></i></button>
+            <span>Página @indicePagina de @TotalPages</span>
+            <button class="btn-terciario" @onclick="OnClickNext" disabled="@(indicePagina == TotalPages)"><i class="fas fa-angle-right"></i></button>
+            <button class="btn-terciario" @onclick="OnClickLast" disabled="@(indicePagina == TotalPages)"><i class="fas fa-angle-double-right"></i></button>
+        </div>
+        <p>Total Registros: @TotalRows</p>
+    </div>
+</div>
+
+@typeparam TItem
+
+@code {
+
+    [Parameter] public string Title { get; set; }
+    [Parameter] public List<(string, string)> Columns { get; set; }
+    [Parameter] public List<TItem> Data { get; set; }
+    [Parameter]
+    public long TotalRows { get; set; }
+    [Parameter]
+    public int TotalPages { get; set; }
+    [Parameter]
+    public EventCallback<int> OnChangePage { get; set; }
+    [Parameter]
+    public bool ShowViewAction { get; set; }
+    [Parameter]
+    public bool ShowEditAction { get; set; }
+    [Parameter]
+    public bool ShowDeleteAction { get; set; }
+    [Parameter]
+    public Action<TItem> OnViewItemClick { get; set; }
+    [Parameter]
+    public Action<TItem> OnEditItemClick { get; set; }
+    [Parameter]
+    public Action<TItem> OnDeleteItemClick { get; set; }
+    int indicePagina;
+
+    protected override Task OnInitializedAsync()
+    {
+        indicePagina = 1;
+        return base.OnInitializedAsync();
+    }
+
+    public void ResetIndex()
+    {
+        OnClickFirst();
+    }
+
+    async void OnClickFirst()
+    {
+        indicePagina = 1;
+        await OnChangePage.InvokeAsync(indicePagina);
+    }
+
+    async void OnClickPrevious()
+    {
+        if (indicePagina > 1)
+        {
+            indicePagina--;
+            await OnChangePage.InvokeAsync(indicePagina);
+        }
+    }
+    async void OnClickNext()
+    {
+        if (indicePagina < TotalPages)
+        {
+            indicePagina++;
+            await OnChangePage.InvokeAsync(indicePagina);
+
+        }
+    }
+    async void OnClickLast()
+    {
+        indicePagina = TotalPages;
+        await OnChangePage.InvokeAsync(indicePagina);
+    }
+}

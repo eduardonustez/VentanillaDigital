@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Entidad\Operacion\**" />
+    <Compile Remove="ContratoRepositorio\Operacion\**" />
+    <EmbeddedResource Remove="Entidad\Operacion\**" />
+    <EmbeddedResource Remove="ContratoRepositorio\Operacion\**" />
+    <None Remove="Entidad\Operacion\**" />
+    <None Remove="ContratoRepositorio\Operacion\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Dominio.Nucleo\Dominio.Nucleo.csproj" />
+    <ProjectReference Include="..\Infraestructura.Transversal\Infraestructura.Transversal.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,150 @@
+﻿@page "/bandejaEntrada/{PEstadoTramite}"
+@using PortalAdministrador.Components.Notario
+
+@inject PortalAdministrador.Services.ITramiteService tramiteService
+
+@using PortalAdministrador.Components.Transversales
+<div class="@(paginasNoPendientes.Contains(PEstadoTramite) ? "grid-tabla-filtro" : "")">
+    <div class="grid-tabla-filtro-contenedor">
+        <div class="container">
+            <h1>@TituloBandejaEntrada</h1>
+            <div class="botones-container">
+                <button @onclick="LimpiarCampos" class="btn btn-autorizar botones-container-link">
+                    <span class="material-icons">
+                        refresh
+                    </span>Refrescar
+                </button>
+                @if (!paginasNoPendientes.Contains(PEstadoTramite))
+                {
+                    @* <button id="boton-rechazar"class="btn btn-rechazar btn-acciones-bandeja"><i class="fas fa-times
+                        mr-3" disabled></i> No autorizar
+                        seleccionados</button> *@
+                    <button id="boton-autorizar" class="btn btn-autorizar btn-acciones-bandeja"
+                        @onclick="AutorizarSeleccionados" disabled>
+                        <i class="fas fa-stamp mr-3"></i> Autorizar
+                        seleccionados
+                    </button>
+                }
+                else
+                {
+                    <button id="boton-filtrar-bandeja" class="btn-contorno-primario" @onclick="@(() => MostrarFiltros())">
+                        <span class="material-icons">
+                            filter_alt
+                        </span> Filtrar
+                    </button>
+                }
+            </div>
+            <div class="d-flex flex-column">
+                @if (!string.IsNullOrWhiteSpace(@MsjAutorizacionResulOK))
+                {
+                    <div class="mensaje-container mensaje-ok mensaje-bandeja-entrada">
+                        <p>@MsjAutorizacionResulOK</p>
+                    </div>
+                }
+
+                @if (!string.IsNullOrWhiteSpace(@MsjAutorizacionResulError))
+                {
+                    <div class="mensaje-container mensaje-error mensaje-bandeja-entrada">
+                        <p>@MsjAutorizacionResulError</p>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="contenedor_tabla">
+            <DataGrid @ref="child" data="registros" columnTitles="columnas" totalRegistros="totalRegistros"
+                totalPaginas="totalPaginas" registrosPagina="model.RegistrosPagina " OnChangePage="ObtenerPendientes"
+                OnSelectRow="Autorizar" mostrarCheckboxes="mostrarCheckboxes" TipoTramite="@PEstadoTramite">
+            </DataGrid>
+        </div>
+    </div>
+    @if (paginasNoPendientes.Contains(PEstadoTramite))
+    {
+        <div class="filtros">
+            <div class="overlay" id="overlay" @onclick="@(() => MostrarFiltros())"></div>
+            <div class="filters-container" id="filtros">
+                <h4>Filtrar resultados</h4>
+                <button id="boton-cerrar-filtrar-bandeja" @onclick="@(() => MostrarFiltros())">
+                    &#10005
+                </button>
+                <form Model="filtrosBandejaEntrada">
+                    <div class="d-flex justify-content-between">
+                        <div class="input-container">
+                            <label for="fecha-inicio">Fecha inicio</label>
+                            <input name="fecha-inicio" type="date" max="@DateTime.Now.ToString("yyyy-MM-dd")" @bind-value="filtrosBandejaEntrada.FechaInicio" />
+                        </div>
+                        <div class="input-container">
+                            <label for="fecha-fin">Fecha fin</label>
+                            <input name="fecha-fin" type="date" min="@filtrosBandejaEntrada.FechaInicio.ToString("yyyy-MM-dd")" max="@DateTime.Now.ToString("yyyy-MM-dd")" @bind-value="filtrosBandejaEntrada.FechaFin" />
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label for="nuip-operador">NUIP Operador</label>
+                        <input name="nuip-operador" type="number" maxlength="12"
+                            @bind-value="filtrosBandejaEntrada.NuipOperador" />
+                    </div>
+                    <div class="input-container">
+                        <label for="nuip-compareciente">NUIP Compareciente</label>
+                        <input name="nuip-compareciente" type="number" maxlength="12"
+                            @bind-value="filtrosBandejaEntrada.NuipComparenciente" />
+                    </div>
+                    <div class="input-container">
+                        <label for="no-tramite">No. Trámite</label>
+                        <input name="no-tramite" type="number" maxlength="12"
+                            @bind-value="filtrosBandejaEntrada.IdTramite" />
+                    </div>
+                    @* <div class="input-container">
+                        <label for="nombre-operador">Nombre del operador</label>
+                        <input name="nombre-operador" type="text" @bind-value="filtrosBandejaEntrada.NombreOperador" />
+                        </div>
+                        <div class="input-container">
+                        <label for="nombre-compareciente">Nombre del compareciente</label>
+                        <input name="nombre-compareciente" type="text"
+                        @bind-value="filtrosBandejaEntrada.NombreCompareciente" />
+                        </div> *@
+                </form>
+                <div class="d-flex justify-content-end mt-3">
+
+                    <button @onclick="LimpiarCampos" class="btn-contorno-primario mr-3">
+                        Reiniciar
+                    </button>
+                    <button @onclick="Filtrar" class="btn-primario">
+                        Buscar
+                    </button>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
+
+@if (ShowBackdrop)
+{
+    <div class="modal-backdrop fade show"></div>
+}
+
+@* Modal que muestra el modal de pin firma*@
+<div class="modal @ModalFirma" id="modalForPinFirma" data-keyboard="false" tabindex="-1" aria-labelledby="modalPin"
+    aria-hidden="true" style="display:@ModalFirmaDisplay">
+    <div class="modal-dialog modal-dialog-centered modal-pin">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Autorización de trámite</h3>
+                <button @onclick="@(() => CerrarModal(ModalFirma, false))" type="button" class="close"
+                    data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Ingrese su PIN para continuar</p>
+                @if (!string.IsNullOrWhiteSpace(@MsjAutorizacionResulError) && @MostrarErrorEnModal)
+                {
+                    <div class="alert @MsjAutorizacionClass">
+                        @MsjAutorizacionResulError
+                    </div>
+                }
+                <PinFirma ClaseFirma="pin-autorizar" ModalAutorizar="true" SetPin="Firmar" />
+            </div>
+        </div>
+    </div>
+</div>
+@* Fin del modal *@

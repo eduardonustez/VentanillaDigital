@@ -1,0 +1,34 @@
+<form Model="inscripcionRegCivil" @oninput="oninput">
+    <div class="input-container">
+        <label>Tipo de registro civil *</label>
+        @*<select @bind-value="inscripcionRegCivil.TipoRegistroCivil" @bind-value:event="oninput" required>
+                <option disabled selected></option>
+                <option value="Nacimiento">Nacimiento</option>
+                <option value="Matrimonio">Matrimonio</option>
+                <option value="Defunción">Defunción</option>
+            </select>*@
+            <select @onchange="onTipoRegistroSelected" required>
+            <option disabled selected>--Seleccione--</option>
+             @if (TipoRegistroCivil != null)
+            {
+                @foreach (var cnt in TipoRegistroCivil)
+                {
+                    <option value="@cnt">@cnt</option>
+                }
+            }
+            </select>
+        @* <select @bind="inscripcionRegCivil.TipoRegistroCivil">
+            @if (TipoRegistroCivil != null)
+            {
+                @foreach (var cnt in TipoRegistroCivil)
+                {
+                    <option value="@cnt">@cnt</option>
+                }
+            }
+        </select> *@
+    </div>
+    <div class="input-container">
+        <label>Nombres y apellidos inscritos *</label>
+        <textarea @bind-value="inscripcionRegCivil.NombresApellidosInscritos" @bind-value:event="oninput" required></textarea>
+    </div>
+</form>

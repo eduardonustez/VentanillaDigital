@@ -1,0 +1,10 @@
+<form Model="declaracionExtraProceso" @oninput="oninput">
+    <div class="input-container">
+        <label>Título *</label>
+        <input type="text" required @bind-value="declaracionExtraProceso.ActoNotarial" @bind-value:event="oninput" />
+    </div>
+    <div class="input-container">
+        <label>Destinatario</label>
+        <input type="text" @bind-value="declaracionExtraProceso.Destinatario" @bind-value:event="oninput" />
+    </div>
+</form>

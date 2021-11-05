@@ -1,0 +1,117 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerramientasFirmaDigital", "HerramientasFirmaDigital\HerramientasFirmaDigital.csproj", "{7544645D-C1B0-4E0B-AAF3-C34DAF8E5E31}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TSAIntegracion", "..\..\VentanillaDigital\TSAIntegracion\TSAIntegracion.csproj", "{10AEC084-6B61-42E3-A909-A7BAD6C5B3F3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HtmlToPdf", "..\..\VentanillaDigital\HtmlToPdf\HtmlToPdf.csproj", "{FDE13848-C76D-4B53-9E7A-358FEA1ED038}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GeneradorQR", "..\..\VentanillaDigital\GeneradorQR\GeneradorQR.csproj", "{080D701F-CFEC-4D0A-A648-83D05CC892E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{E8048BCC-CE99-4916-A65D-36FFABDA186E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerramientasFirmaDigital.Test", "HerramientasFirmaDigital\Test\HerramientasFirmaDigital.Test.csproj", "{4AF49662-7083-4B55-AF24-2E68C54DC695}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sample", "Sample", "{50C4A8C2-D8FB-4FF3-AF69-540B2E882798}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencias", "Dependencias", "{0C4265E5-7F39-496E-A51F-01A0F6C65BCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HerramientasFirmaDigital.InyeccionDeDependencias", "HerramientasFirmaDigital.InyeccionDeDependencias\HerramientasFirmaDigital.InyeccionDeDependencias.csproj", "{FD3785D4-6D73-45F0-97C8-648A4454E873}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerramientasFirmaDigital.InyeccionDeDependencias.Test", "HerramientasFirmaDigital.InyeccionDeDependencias\Test\HerramientasFirmaDigital.InyeccionDeDependencias.Test.csproj", "{14CB76D8-C7B2-40D2-BD46-F9F0A3444351}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HerramientasFirmaDigital.Sample", "HerramientasFirmaDigital.Sample\HerramientasFirmaDigital.Sample.csproj", "{E9F78D9E-FD6E-4A5B-BDFA-6AC4B27E4AB0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7544645D-C1B0-4E0B-AAF3-C34DAF8E5E31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7544645D-C1B0-4E0B-AAF3-C34DAF8E5E31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7544645D-C1B0-4E0B-AAF3-C34DAF8E5E31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7544645D-C1B0-4E0B-AAF3-C34DAF8E5E31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10AEC084-6B61-42E3-A909-A7BAD6C5B3F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10AEC084-6B61-42E3-A909-A7BAD6C5B3F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10AEC084-6B61-42E3-A909-A7BAD6C5B3F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10AEC084-6B61-42E3-A909-A7BAD6C5B3F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDE13848-C76D-4B53-9E7A-358FEA1ED038}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDE13848-C76D-4B53-9E7A-358FEA1ED038}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDE13848-C76D-4B53-9E7A-358FEA1ED038}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDE13848-C76D-4B53-9E7A-358FEA1ED038}.Release|Any CPU.Build.0 = Release|Any CPU
+		{080D701F-CFEC-4D0A-A648-83D05CC892E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{080D701F-CFEC-4D0A-A648-83D05CC892E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{080D701F-CFEC-4D0A-A648-83D05CC892E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{080D701F-CFEC-4D0A-A648-83D05CC892E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AF49662-7083-4B55-AF24-2E68C54DC695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AF49662-7083-4B55-AF24-2E68C54DC695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AF49662-7083-4B55-AF24-2E68C54DC695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AF49662-7083-4B55-AF24-2E68C54DC695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD3785D4-6D73-45F0-97C8-648A4454E873}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD3785D4-6D73-45F0-97C8-648A4454E873}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD3785D4-6D73-45F0-97C8-648A4454E873}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD3785D4-6D73-45F0-97C8-648A4454E873}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14CB76D8-C7B2-40D2-BD46-F9F0A3444351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14CB76D8-C7B2-40D2-BD46-F9F0A3444351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14CB76D8-C7B2-40D2-BD46-F9F0A3444351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14CB76D8-C7B2-40D2-BD46-F9F0A3444351}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9F78D9E-FD6E-4A5B-BDFA-6AC4B27E4AB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9F78D9E-FD6E-4A5B-BDFA-6AC4B27E4AB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9F78D9E-FD6E-4A5B-BDFA-6AC4B27E4AB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9F78D9E-FD6E-4A5B-BDFA-6AC4B27E4AB0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{10AEC084-6B61-42E3-A909-A7BAD6C5B3F3} = {0C4265E5-7F39-496E-A51F-01A0F6C65BCE}
+		{FDE13848-C76D-4B53-9E7A-358FEA1ED038} = {0C4265E5-7F39-496E-A51F-01A0F6C65BCE}
+		{080D701F-CFEC-4D0A-A648-83D05CC892E6} = {0C4265E5-7F39-496E-A51F-01A0F6C65BCE}
+		{4AF49662-7083-4B55-AF24-2E68C54DC695} = {E8048BCC-CE99-4916-A65D-36FFABDA186E}
+		{14CB76D8-C7B2-40D2-BD46-F9F0A3444351} = {E8048BCC-CE99-4916-A65D-36FFABDA186E}
+		{E9F78D9E-FD6E-4A5B-BDFA-6AC4B27E4AB0} = {50C4A8C2-D8FB-4FF3-AF69-540B2E882798}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {984B622D-B6BE-498C-A019-513358650534}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://olsrvtfs01:8080/tfs/olimpia-desarrollo
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = HerramientasFirmaDigital\\HerramientasFirmaDigital.csproj
+		SccProjectName1 = HerramientasFirmaDigital
+		SccLocalPath1 = HerramientasFirmaDigital
+		SccProjectUniqueName2 = ..\\..\\VentanillaDigital\\TSAIntegracion\\TSAIntegracion.csproj
+		SccProjectTopLevelParentUniqueName2 = HerramientasFirmaDigital.sln
+		SccProjectName2 = ../../VentanillaDigital/TSAIntegracion
+		SccLocalPath2 = ..\\..\\VentanillaDigital\\TSAIntegracion
+		SccProjectUniqueName3 = ..\\..\\VentanillaDigital\\HtmlToPdf\\HtmlToPdf.csproj
+		SccProjectTopLevelParentUniqueName3 = HerramientasFirmaDigital.sln
+		SccProjectName3 = ../../VentanillaDigital/HtmlToPdf
+		SccLocalPath3 = ..\\..\\VentanillaDigital\\HtmlToPdf
+		SccProjectUniqueName4 = ..\\..\\VentanillaDigital\\GeneradorQR\\GeneradorQR.csproj
+		SccProjectTopLevelParentUniqueName4 = HerramientasFirmaDigital.sln
+		SccProjectName4 = ../../VentanillaDigital/GeneradorQR
+		SccLocalPath4 = ..\\..\\VentanillaDigital\\GeneradorQR
+		SccProjectUniqueName5 = HerramientasFirmaDigital\\Test\\HerramientasFirmaDigital.Test.csproj
+		SccProjectTopLevelParentUniqueName5 = HerramientasFirmaDigital.sln
+		SccProjectName5 = HerramientasFirmaDigital/Test
+		SccLocalPath5 = HerramientasFirmaDigital\\Test
+		SccProjectUniqueName6 = HerramientasFirmaDigital.InyeccionDeDependencias\\HerramientasFirmaDigital.InyeccionDeDependencias.csproj
+		SccProjectName6 = HerramientasFirmaDigital.InyeccionDeDependencias
+		SccLocalPath6 = HerramientasFirmaDigital.InyeccionDeDependencias
+		SccProjectUniqueName7 = HerramientasFirmaDigital.InyeccionDeDependencias\\Test\\HerramientasFirmaDigital.InyeccionDeDependencias.Test.csproj
+		SccProjectTopLevelParentUniqueName7 = HerramientasFirmaDigital.sln
+		SccProjectName7 = HerramientasFirmaDigital.InyeccionDeDependencias/Test
+		SccLocalPath7 = HerramientasFirmaDigital.InyeccionDeDependencias\\Test
+		SccProjectUniqueName8 = HerramientasFirmaDigital.Sample\\HerramientasFirmaDigital.Sample.csproj
+		SccProjectTopLevelParentUniqueName8 = HerramientasFirmaDigital.sln
+		SccProjectName8 = HerramientasFirmaDigital.Sample
+		SccLocalPath8 = HerramientasFirmaDigital.Sample
+	EndGlobalSection
+EndGlobal

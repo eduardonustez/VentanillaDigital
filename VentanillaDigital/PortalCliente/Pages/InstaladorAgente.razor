@@ -1,0 +1,44 @@
+﻿@page "/install"
+@* @attribute [Authorize] *@
+@inject IJSRuntime js
+<div class="container">
+    <h1>Instalación de software biométrico</h1>
+    <ol class="instalacion-list">
+        <li>
+            <span>Descargar e instalar software</span>
+            <p>Debe realizar la instalación del software biométrico a través del siguiente enlace</p>
+            <a class="btn-primario"
+                href="https://sacaeuprducnc.blob.core.windows.net/rsnotariasinstall/InstaladorReconoSer.zip"
+                target="_blank">
+                <i class="material-icons mr-1">get_app</i> Descargar Software
+            </a>
+        </li>
+        @* <li>
+            <span>Revisar si los dispositivos se encuentran en línea y listos para usar</span>
+            <ul class="dispositivos-list">
+            <li>
+            <div class="spinner-border spinner-border-sm text-secondary mr-2" role="status">
+            <span class="sr-only">...</span>
+            </div>
+            Cámara
+            </li>
+            <li>
+            <div class="mensaje-container ok">
+            <p>Captor biométrico </p>
+            </div>
+            </li>
+            <li>
+            <div class="mensaje-container alerta">
+            <p>Tableta wacom </p>
+            <a role="button" class="link-secundario">Reintentar</a>
+            </div>
+            </li>
+            </ul>
+            </li>*@
+        <li>
+            <span>Asegúrese de que el software se encuentra en línea y listo para usar</span>
+            <p>Haga clic en el siguiente botón cuando haya terminado de instalar el software biométrico</p>
+            <button class="btn-contorno-secundario" @onclick="Refresh">Verificar software en línea</button>
+        </li>
+    </ol>
+</div>

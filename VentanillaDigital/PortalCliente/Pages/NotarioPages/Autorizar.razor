@@ -1,0 +1,159 @@
+﻿@page "/autorizar/{PEstadoTramite}/{PIdTramite}"
+@attribute [Authorize]
+@using PortalCliente.Components.Notario
+@inject ITramiteService TramiteService
+<div class="autorizar-grid-pdf">
+    <div class="container autorizar-flex-titulo">
+        <a href="@($"bandejaEntrada/{PEstadoTramite}")">
+            Regresar al listado
+        </a>
+        <h1 class="autorizar-flex-titulo-h1">@titulo</h1>
+        @if (_movil)
+        {
+            <p class="mensaje-pdf-movil">Esta es una <strong>previsualización del documento</strong>. Para imprimir o descargar, <strong>ingrese desde un computador</strong>.</p>
+        }
+    </div>
+    <div class="pdf-contenedor @(PEstadoTramite != "2" ? "pdf-contenedor-full" : "" )" id="pdfObject">
+        @if (paginasNoAutorizar.Contains(PEstadoTramite))
+        {
+            <ActaPrevia @ref="actaPreviaChild" IdTramite="long.Parse(PIdTramite)" />
+        }
+        else
+        {
+            @if (!string.IsNullOrWhiteSpace(pdfFile))
+            {
+                @if (_movil)
+                {
+                    <div class="pdf-skeleton-container previsualizacion-mobile">
+                        <div class="pdf-movil-bar">
+                            <button class="btn-terciario btn-preacta-anterior" id="prev">Anterior</button>
+                            <span>Página <span id="page_num"></span> de <span id="page_count"></span></span>
+                            <button class="btn-terciario btn-preacta-siguiente" id="next">Siguiente</button>
+                        </div>
+                        <canvas id="the-canvas" class="preacta-mobile"></canvas>
+                    </div>
+                }
+                else
+                {
+                    @if (esPdfGranTamanio)
+                    {
+                        <div class="pdf-skeleton-container">
+                            <div class="contenedor-pdf-descarga">
+                                <p><strong>El PDF no puede ser visualizado debido a que excede el tamaño permitido.</strong></p>
+                                <button type="button" class="btn-primario" @onclick="ObtenerPDF" disabled="@showSpinner">
+                                    @if (showSpinner)
+                                    {
+                                        <i class="fa fa-sync fa-spin"></i>
+                                    }
+                                    Descargar PDF
+                                </button>
+                            </div>
+                        </div>
+                    }
+                    else
+                    {
+                        <embed class="tamanio-pdf" type="application/pdf" src="data:application/pdf;base64,@pdfFile" />
+                    }
+                }
+            }
+            else
+            {
+                <div class="pdf-skeleton-container">
+                    <img src="images/pdf-skeleton.svg" class="pdf-skeleton" />
+                </div>
+            }
+        }
+
+
+    </div>
+    @if (PEstadoTramite == "2")
+    {
+        <div class="autorizar-flex-botones">
+            @if (MostrarAutorizar && (UserRol == "Administrador" || UserRol == "Notario Encargado"))
+            {
+                @if (pinAsignadoNotario)
+                {
+                    <button class="btn btn-autorizar" @onclick="AutorizarSeleccionados">
+                        <i class="fas fa-stamp mr-3"></i>
+                        Autorizar
+                    </button>
+                    <button data-target="#modalRechazoTramite" data-toggle="modal" class="btn btn-rechazar mt-3">
+                        <i class="fas fa-times mr-3"></i>
+                        No autorizar
+                    </button>
+                }
+                else
+                {
+                    <button class="btn btn-azul mt-3" @onclick="IrAConfigurarPin">
+                        <i class="fas fa-signature mr-3"></i>
+                        Configurar PIN y firma
+                    </button>
+                }
+            }
+        </div>
+    }
+
+
+    @if (!string.IsNullOrWhiteSpace(MsjAutorizacionResul))
+    {
+        <div class="mensaje-container @MsjAutorizacionClass">
+            <p>@MsjAutorizacionResul</p>
+        </div>
+    }
+
+    @if (ShowBackdrop)
+    {
+        <div class="modal-backdrop fade show"></div>
+    }
+
+    @* Modal que muestra el modal de pin firma*@
+    <div class="modal @ModalFirma" id="modalForPinFirma" data-keyboard="false" tabindex="-1"
+         aria-labelledby="modalForAtdp" aria-hidden="true" style="display:@ModalFirmaDisplay">
+        <div class="modal-dialog modal-dialog-centered modal-pin">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Autorización de trámite</h3>
+                    <button type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    @if (!string.IsNullOrWhiteSpace(@MsjAutorizacionResul) && @MostrarErrorEnModal)
+                    {
+                        <div class="alert @MsjAutorizacionClass">
+                            @MsjAutorizacionResul
+                        </div>
+                    }
+                    <p>Ingrese su PIN para continuar</p>
+                    <PinFirma ClaseFirma="pin-autorizar" ModalAutorizar="true" SetPin="Firmar" />
+                </div>
+            </div>
+        </div>
+    </div>
+    @* Fin del modal *@
+
+    @* Modal que muestra el modal de rechazo tramite*@
+    <div class="modal @ModalRechazo" id="modalRechazoTramite" data-keyboard="false" tabindex="-1"
+         aria-labelledby="modalRechazoTramite" aria-hidden="true" style="display:@ModalDisplay">
+        <div class="modal-dialog modal-dialog-centered modal-pin">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Rechazo de trámite</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Ingrese el motivo del rechazo y su PIN para continuar</p>
+                    <div class="input-container">
+                        <label>Motivo de rechazo</label>
+                        <textarea @bind="MotivoRechazo" id="InputMotivo" required></textarea>
+                    </div>
+                    <PinFirma ClaseFirma="pin-rechazar-tramite" ModalAutorizar="false" SetPin="RechazarTramite" />
+                </div>
+            </div>
+        </div>
+    </div>
+    @* Fin del modal *@
+</div>

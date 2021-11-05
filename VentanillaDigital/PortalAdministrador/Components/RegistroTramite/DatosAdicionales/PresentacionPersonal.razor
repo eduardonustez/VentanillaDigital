@@ -1,0 +1,10 @@
+<form Model="presentacionPersonal" @oninput="oninput">
+    <div class="input-container">
+        <label>Destinatario *</label>
+        <input type="text" @bind-value="presentacionPersonal.Destinatario" @bind-value:event="oninput" required />
+    </div>
+     <div class="input-container">
+        <label>Tarjeta Profesional</label>
+        <input type="text" @bind-value="presentacionPersonal.TarjetaProfesional" @bind-value:event="oninput" />
+    </div>
+</form>

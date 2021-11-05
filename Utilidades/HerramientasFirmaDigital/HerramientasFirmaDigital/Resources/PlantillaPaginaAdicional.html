@@ -1,0 +1,274 @@
+﻿<!DOCTYPE html>
+<html lang="es-CO">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=740px, initial-scale=1.0">
+    <title>
+        [Titulo]
+    </title>
+</head>
+<style>
+    :root {
+        font-family: Calibri, Arial, sans-serif;
+        font-size: 12pt;
+        line-height: 1.22;
+    }
+
+    a:link {
+        text-decoration: none;
+        color: currentColor;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    main p {
+        margin: 0;
+        text-align: justify;
+    }
+
+    .centrado {
+        text-align: center;
+    }
+
+    .encabezado {
+        margin-top: 5mm;
+        margin-bottom: 2mm;
+    }
+
+    .encabezado-tabla {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+    }
+
+    .encabezado-tabla-logo {
+        width: auto;
+        vertical-align: top;
+    }
+
+    .encabezado-tabla-titulo {
+        width: 100%;
+        padding: 0 3mm;
+    }
+
+    .encabezado-tabla-qr {
+        width: auto;
+        font-family: Arial, sans-serif;
+        font-size: 8pt;
+        text-align: center;
+        vertical-align: top;
+    }
+
+    .encabezado-tabla-qr p {
+        margin: 0;
+    }
+
+    .encabezado-tabla-titulo h1 {
+        text-transform: uppercase;
+    }
+
+    .encabezado-tabla-titulo h1,
+    .encabezado-tabla-titulo h2 {
+        font-size: 12pt;
+        font-weight: bold;
+        text-align: center;
+        margin: 0;
+    }
+
+    .contenedor-qr-code {
+        font-size: 8pt;
+        text-align: center !important;
+    }
+
+    .contenedor-qr-code span,
+    .contenedor-firma span {
+        display: block;
+    }
+
+    .compareciente {
+        page-break-inside: avoid;
+        margin: 0;
+    }
+
+    .comparecientes-tabla {
+        margin: 2mm 0;
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    .contenedor-firma {
+        width: 50%;
+        vertical-align: bottom;
+    }
+
+    .contenedor-firma p {
+        margin-bottom: 0;
+    }
+
+    .articulo-singular {
+        display: inline;
+    }
+
+    .articulo-plural {
+        display: inline;
+    }
+
+    .articulo-oculto {
+        display: none
+    }
+
+    .firma-notario {
+        margin-top: 2mm;
+        text-align: center;
+        page-break-inside: avoid;
+    }
+
+    .firma-notario-contenedor {
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+    .firma-notario-sello {
+        /*position: absolute;
+        bottom: 0;
+        right: 0;*/      
+        z-index: -1;
+    }
+
+    .uppercase {
+        text-transform: uppercase;
+    }
+
+    .firma-notario-datos_notario {
+        margin-bottom: 1.22rem;
+    }
+
+
+
+    .wrapper {
+        margin: 0 5mm;
+        padding: 0;
+    }
+
+    .qr-code,
+    .logo-ucnc {
+        margin-left: auto;
+        margin-right: auto;
+        width: 1.5cm;
+    }
+
+    .con_padding {
+        margin-bottom: 1mm;
+    }
+
+    .contenedor-qr-code {
+        width: auto;
+        font-size: 8pt;
+    }
+
+    .firma-compareciente-imagen {
+        max-width: 53mm;
+        max-height: 25mm;
+        width: 100%;
+    }
+
+    .foto-compareciente {
+        max-width: 22mm;
+        max-height: 26mm;
+        width: 100%;
+    }
+
+    .firma-notario-contenedor {
+        width: 64mm;
+        height: 30mm;
+    }
+
+    .firma-notario-linea {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3mm;
+        border-bottom: 0.25pt dashed black;
+        width: 55mm;
+        height: 1mm;
+    }
+
+    .firma-notario-imagen {
+        width: 100%;
+        max-height: 30mm;
+        max-width: 64mm;
+    }
+
+    .firma-notario-sello {
+        max-width: 2cm;
+        max-height: 2cm;
+        width: 100%;
+    }
+
+    .firma-notario-nut {
+        font-size: 10pt;
+    }
+
+    @media print {
+        @page {
+            size: letter;
+            margin: 0;
+        }
+
+        :root {
+            font-size: 12pt;
+        }
+    }
+</style>
+
+<body>
+    <table class="wrapper">
+        <thead style="display: table-header-group">
+            <tr>
+                <th>
+                    <header class="encabezado">
+                        <table class="encabezado-tabla">
+                            <tr>
+                                <td class="encabezado-tabla-titulo">
+                                    <h1>[Titulo]</h1>
+                                </td>
+                                <td class="encabezado-tabla-qr"> 
+									<img src="[UrlQR]" alt="" class="qr-code" />
+                                </td>
+                            </tr>
+                        </table>
+                    </header>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <main>
+                        <p class="justificado">
+                           [TextoFirma]
+                        </p>
+					</main>
+                    <footer class="firma-notario">
+                        <div class="firma-notario-contenedor">
+                            <img src="[Grafo]" alt="" class="firma-notario-imagen" />
+                            <img src="[Sello]" alt="" class="firma-notario-sello"  />
+                        </div>
+                        <div class="firma-notario-linea"></div>
+                        <p class="uppercase"><em>[NombreCompleto]</em></p>
+                        <p class="firma-notario-datos_notario">
+							[Cargo]
+                        </p>
+                    </footer>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

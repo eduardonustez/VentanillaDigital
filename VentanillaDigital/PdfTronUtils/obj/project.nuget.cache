@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mlDf4fzcparfnTGeevtJlTU8K30mm291ZTXm4wVX4cWwaqicdsTIIwjzMieRg84TS6zI3jCYeVw87NQFCzsgtQ==",
+  "success": true,
+  "projectFilePath": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PdfTronUtils\\PdfTronUtils.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\enustez\\.nuget\\packages\\pdftron.netcore.windows.x64\\8.1.0.76931\\pdftron.netcore.windows.x64.8.1.0.76931.nupkg.sha512"
+  ],
+  "logs": []
+}

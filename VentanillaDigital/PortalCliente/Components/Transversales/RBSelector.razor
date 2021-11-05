@@ -1,0 +1,49 @@
+﻿<div class="accordion rb-selector @Class" id="@Name">
+    @if (Categorias != null)
+    {
+        int categoriaActual = 0;
+        string parent = ExpandMultiple?"":$"#{Name}";
+        foreach (var categoria in Categorias)
+        {
+            categoriaActual++;
+            string categoriaId = $"{Name}Heading{categoriaActual}";
+            string collapseId = $"{Name}Collapse{categoriaActual}";
+            string collapseTarget = $"#{collapseId}";
+            string show = InitialState == InitialExpandState.ExpandAll && ExpandMultiple ? "show" :
+                          InitialState != InitialExpandState.RetractAll && categoriaActual == 1 ? "show" :
+                          "";
+
+            <div class="card">
+                @*<div class="card-header" id="@categoriaId">
+                    <h2 class="mb-0">
+                        <button class="btn btn-block text-left" type="button" data-toggle="collapse"
+                                data-target="@collapseTarget" aria-expanded="@((show != "").ToString())" aria-controls="@collapseId">
+                            @EtiquetaCategoria(categoria)
+                        </button>
+                    </h2>
+                </div>*@
+                <div id="@collapseId" class="collapse @show" aria-labelledby="opcion"
+                     data-parent="@parent">
+                    <div class="card-body">
+                        @{
+                            int opcionActual = 0;
+                            foreach (var opcion in Opciones(categoria))
+                            {
+                                opcionActual++;
+                                string opcionId = $"{Name}cat{categoriaActual}opt{opcionActual}";
+                                string value = $"{categoriaActual};{opcionActual}";
+                                <label class="radio-button-container" for="@opcionId">
+                                    @EtiquetaElemento(opcion)
+                                    <input class="radio-input" type="radio" name="@Name"
+                                           id="@opcionId" value="@value"
+                                           @onchange="SeleccionEvent">
+                                    <span class="radio-active"></span>
+                                </label>
+                            }
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>

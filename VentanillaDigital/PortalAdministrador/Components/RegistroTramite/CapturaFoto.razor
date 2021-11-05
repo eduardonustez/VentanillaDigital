@@ -1,0 +1,29 @@
+﻿@inject IJSRuntime jsRuntime
+@inject PortalAdministrador.Services.ITramiteService tramiteService;
+@using PortalAdministrador.Data
+@using PortalAdministrador.Data.Account
+<div class="col-12">
+    <h3>Fotografía</h3>
+    <div class="input-container"
+         hidden="@(!Capturando)">
+        <label>Selecciona un dispositivo</label>
+        <select name="listaDeDispositivos"
+                id="listaDeDispositivos">
+        </select>
+    </div>
+    <div class="captura-foto-container">
+        <video muted="muted" id="video"
+               class="captura-foto"
+               hidden="@(!Capturando)">
+        </video>
+        <img class="captura-foto"
+                src="@Foto"
+                hidden="@Capturando" />
+        <button class="btn-contorno-primario"
+                id="botonIniciarCaptura"
+                @onclick="Capturar">
+            <i class="material-icons mr-2">camera_alt</i>
+            @TextoBoton
+        </button>
+    </div>
+</div>

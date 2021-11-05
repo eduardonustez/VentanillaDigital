@@ -1,0 +1,61 @@
+app {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / auto 1fr auto;
+    background: white;
+}
+
+header {
+    grid-column: 1 / 4;
+}
+
+.left-sidebar {
+    grid-column: 1 / 2;
+    /*overflow: auto;*/
+}
+
+main {
+    grid-column: 2 / 3;
+    overflow: auto;
+}
+
+.right-sidebar {
+    /* background: yellow; */
+    grid-column: 3 / 4;
+}
+
+footer {
+    /* background: wheat; */
+    grid-column: 1 / 4;
+}
+
+/*bootstrap - override*/
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+/* ETIQUETAS GLOBALES */
+.main-app-loader {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+/* Radzen - override */
+body:not(.rz-default-scrollbars) ::-webkit-scrollbar-thumb {
+    background: var(--gris-400);
+    border: 4px solid white;
+}
+
+a {
+    color: #479cc8;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.ParentMainLayout {
+    display: flex;
+    /*flex-wrap: wrap;*/
+}

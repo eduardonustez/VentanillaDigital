@@ -1,0 +1,40 @@
+@using PortalCliente.Components.Input
+@using BlazorInputFile
+<h4>3. Cargar documentos</h4>
+<p>Por favor cargue los documentos requeridos para completar la solicitud. La Autorización y el Contrato de suscripción fueron firmados con el grafo configurado.</p>
+<div class="row mt-3">
+    <div class="col-6 border-right">
+        <h4>Archivos por subir</h4>
+        <CInputFile FileContent="@solicitud.Cedula" FileContentChanged="onLoadCedula" Id="cedula" Placeholder="Cedula del Solicitante">
+        </CInputFile>
+        <CInputFile FileContent="@solicitud.CComercio" FileContentChanged="onLoadCComercio" Id="ccomercio"
+            Placeholder="Acta y decreto de nombramiento del Solicitante">
+        </CInputFile>
+        <CInputFile FileContent="@solicitud.Rut" FileContentChanged="onLoadRut" Id="rut"
+                    Placeholder="Rut del Notario Principal">
+        </CInputFile>
+        @if(solicitud.Cargo=="Notario Encargado"){
+            <CInputFile FileContent="@solicitud.CedulaPrincipal" FileContentChanged="onLoadCedulaPrincipal" Id="cedulaPrincipal"
+                        Placeholder="Cedula del Notario Principal">
+            </CInputFile>
+        }
+    </div>
+    <div class="col-6">
+        <h4>Archivos generados</h4>
+        <div class="file-input-container file-input-container">
+            <label for="downloadAuthorization" class="label">Autorización Solicitud Certificado</label>
+            <button id="downloadAuthorization" type="button" class="btn btn-contorno-azul"
+                @onclick="Download_Authorization">
+                <i class="fas fa-file-download"></i>
+                <span class="texto">Descargar autorización</span>
+            </button>
+        </div>
+        <div class="file-input-container file-input-container">
+            <label for="downloadContract" class="label">Contrato de Suscripción para emisión de Certificados</label>
+            <button id="downloadContract" type="button" class="btn btn-contorno-azul" @onclick="Download_Contract">
+                <i class="fas fa-file-download"></i>
+                <span class="texto">Descargar contrato</span>
+            </button>
+        </div>
+    </div>
+</div>

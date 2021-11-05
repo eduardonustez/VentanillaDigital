@@ -1,0 +1,9 @@
+<form [formGroup]="aFormGroup">
+  <ngx-recaptcha2 #captchaElem
+    [siteKey]="'6LeVuCgaAAAAAFUTAK8krysmAz1rdLc5_2Rf2NQP'"
+    (reset)="reset()"
+    (expire)="cbExpiration()"
+    (success)="resolved($event)"
+    formControlName="recaptcha">
+  </ngx-recaptcha2>
+</form>

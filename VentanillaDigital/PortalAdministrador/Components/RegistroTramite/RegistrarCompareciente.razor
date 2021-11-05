@@ -1,0 +1,105 @@
+﻿@using PortalAdministrador.Components.Transversales;
+@using PortalAdministrador.Data;
+<TabSelector @ref="TabSelector" NextDisabledChanged="disabled => NextDisabled = disabled"
+    PreviousDisabledChanged="disabled => PreviousDisabled=disabled">
+    <Navigator Context="tabs">
+        <div class="pasos-container">
+            <div class="pasos-content">
+                <div class="pasos">
+                    @tabs
+                </div>
+                <a class="link-primario" @onclick="OmitirCompareciente"
+                    disabled="@(Compareciente.Tramite.CantidadComparecientes == 1)">
+                    <i class="material-icons mr-1 md-18">skip_next</i> Omitir compareciente
+                </a>
+            </div>
+        </div>
+    </Navigator>
+    <NavigatorLink Context="tab">
+        <button class="btn-terciario d-flex align-items-center" disabled="@(tab.Disabled)"
+            @onclick="async () => await tab.Parent.Select(tab.Name)" tabindex="@(tab.Disabled ? -1 : 0)"
+            aria-disabled=@(tab.Disabled)>
+            @tab.Selector
+        </button>
+    </NavigatorLink>
+
+
+    <Tabs>
+        <Tab Name="TDatos" Disabled="Terminado">
+            <Selector>
+                Datos Biográficos
+            </Selector>
+            <Content>
+                <DatosCiudadanoATDP Compareciente="Compareciente"
+                    ComparecienteChanged="(x) => Compareciente = (Compareciente)x"
+                    ReadyChanged="(x)=>ActualizarPaso(x,PasoRegistrarCompareciente.ATDP)" />
+            </Content>
+        </Tab>
+        @*<Tab Name="TATDP" Disabled="@(UltimoPasoCompleto < PasoRegistrarCompareciente.Datos )">
+            <Selector>
+            Autorización de datos
+            </Selector>
+            <Content>
+            <CapturaFirmaStep Compareciente="Compareciente"
+            ComparecienteChanged="async c => await ComparecienteChanged.InvokeAsync(c)"
+            ReadyChanged="(x)=>ActualizarPaso(x,PasoRegistrarCompareciente.ATDP)" />
+            </Content>
+            </Tab>*@
+        <Tab Name="TFoto" Disabled="@(Terminado || UltimoPasoCompleto < PasoRegistrarCompareciente.ATDP )"
+            OnNext="async () => await CapturaHuella.Validar()">
+            <Selector>
+                Validación de identidad
+            </Selector>
+            <Content>
+                <FotoCapturaHuella @ref="CapturaHuella" Compareciente="Compareciente"
+                    ComparecienteChanged="(x) => Compareciente = (Compareciente)x" CodigoTipoTramite="CodigoTipoTramite"
+                    ReadyChanged="(x)=>ActualizarPaso(x,PasoRegistrarCompareciente.Huellas)" />
+            </Content>
+        </Tab>
+        @*<Tab Name="THuellas" Disabled="@(UltimoPasoCompleto < PasoRegistrarCompareciente.ATDP)" OnNext="async () =>
+            await CapturaHuella.Validar()">
+            <Selector>
+            Captura de huellas
+            </Selector>
+            <Content>
+            <CapturaHuella CodigoTipoTramite="CodigoTipoTramite"
+            @ref="CapturaHuella"
+            @bind-Compareciente="Compareciente"
+            ReadyChanged="(x)=>ActualizarPaso(x,PasoRegistrarCompareciente.Huellas)" />
+            </Content>
+            </Tab>*@
+        <Tab Name="TResumen" Disabled="@(UltimoPasoCompleto < PasoRegistrarCompareciente.Huellas)">
+            <Selector>
+                Resumen
+            </Selector>
+            <Content>
+                <Resumen Compareciente="Compareciente"></Resumen>
+            </Content>
+        </Tab>
+    </Tabs>
+
+</TabSelector>
+<div class="ui-steps-buttons">
+    <a class="ui-steps-prev" disabled="@PreviousDisabled" @onclick="@(
+            async ()=> {
+            await TabSelector.SelectPrevious();
+        })">
+        <i class="material-icons">navigate_before</i>
+        Anterior
+    </a>
+    @if (@Compareciente.Tramite.CantidadComparecientes != @Compareciente.Tramite.Comparecientes.Count)
+    {
+        <a class="ui-steps-next" disabled="@(NextDisabled && !Terminado)" @onclick="SiguienteClick">
+            Siguiente
+            <i class="material-icons">navigate_next</i>
+        </a>
+    }
+    else
+    {
+        <a class="ui-steps-next" disabled="@(NextDisabled && !Terminado)" @onclick="SiguienteClick">
+            Finalizar
+            <i class="material-icons">navigate_next</i>
+        </a>
+    }
+
+</div>

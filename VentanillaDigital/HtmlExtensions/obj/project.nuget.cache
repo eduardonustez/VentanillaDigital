@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "x2UmEbvJIhfBqHnBN3XFyuskvSv6+1TzxkRjl9+kGdoNLLzVfnGK/wwZDKB/BUY9UPDt5w2GL+u+1VFpKaYFZg==",
+  "success": true,
+  "projectFilePath": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\HtmlExtensions\\HtmlExtensions.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\enustez\\.nuget\\packages\\htmlagilitypack\\1.11.30\\htmlagilitypack.1.11.30.nupkg.sha512",
+    "C:\\Users\\enustez\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.11\\microsoft.aspnetcore.http.features.3.1.11.nupkg.sha512",
+    "C:\\Users\\enustez\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.11\\microsoft.extensions.primitives.3.1.11.nupkg.sha512",
+    "C:\\Users\\enustez\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\enustez\\.nuget\\packages\\system.io.pipelines\\4.7.4\\system.io.pipelines.4.7.4.nupkg.sha512",
+    "C:\\Users\\enustez\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\enustez\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\enustez\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
+    "C:\\Users\\enustez\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
+  "logs": []
+}

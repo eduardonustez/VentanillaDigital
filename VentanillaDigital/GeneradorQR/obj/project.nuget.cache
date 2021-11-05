@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "lDX9IicDycYSjgMrTvsaTu8jOpxV/uSiMBC+ehGjchfiCwbdPPmCCW9bnkQmoQb/dDqcV0k+cJF4mietVD9r2A==",
+  "success": true,
+  "projectFilePath": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\GeneradorQR\\GeneradorQR.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\enustez\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\enustez\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\enustez\\.nuget\\packages\\qrcoder\\1.4.1\\qrcoder.1.4.1.nupkg.sha512",
+    "C:\\Users\\enustez\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

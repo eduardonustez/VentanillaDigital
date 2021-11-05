@@ -1,0 +1,59 @@
+﻿<CascadingValue Value="this" IsFixed="true">
+    <CascadingValue Value="@NavigatorLink" IsFixed="true">
+        @Navigator(@Tabs)
+    </CascadingValue>
+
+    @if (ActiveTab != null)
+    {
+        <div class="ui-widget-content">
+            @ActiveTab.Value.Content
+        </div>
+    }
+</CascadingValue>
+
+@code {
+
+    [Parameter]
+    public RenderFragment Tabs { get; set; }
+
+    [Parameter]
+    public RenderFragment ChildContent { get => Tabs; set => Tabs = value; }
+
+
+    [Parameter]
+    public RenderFragment<RenderFragment> Navigator { get; set; }
+
+    [Parameter]
+    public RenderFragment<Tab> NavigatorLink { get; set; }
+
+
+
+    protected override async Task OnParametersSetAsync()
+    {
+        if (NavigatorLink == null)
+        {
+            NavigatorLink = tab =>@:@{
+        <li class="nav-item">
+            <button @key=tab @onclick="async () => await tab.Parent.Select(tab.Name)"
+                    class="nav-link @(tab.Active ? "active show" : "") @(tab.Disabled ? "disabled" : "")"
+                    tabindex="@(tab.Disabled ? -1 : 0)" aria-disabled=@(tab.Disabled)>
+                @tab.Selector
+            </button>
+        </li>
+            }
+            ;
+        }
+
+        if (Navigator == null)
+        {
+            Navigator = tabs =>@:@{
+        <ul class="nav nav-tabs">
+            @tabs
+        </ul>
+            }
+            ;
+        }
+
+        await base.OnParametersSetAsync();
+    }
+}

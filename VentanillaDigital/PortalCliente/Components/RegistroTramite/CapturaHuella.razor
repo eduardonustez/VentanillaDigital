@@ -1,0 +1,162 @@
+﻿@*<div class="col-sm-12 col-md-6">
+    <h3>Tips para una buena captura</h3>
+    <div class="tips-captura-container shadow-sm deskt">
+    <p> <strong>1.</strong> Posición del dispositivo</p>
+    <div class="d-flex justify-content-center">
+    <img class="img-tip-captura" src="images/tip-1.svg" />
+    </div>
+    <p> <strong>2.</strong> Sensor y dedos del ciudadano limpios</p>
+    <div class="d-flex justify-content-center">
+    <img class="img-tip-captura" src="images/tip-2.svg" />
+
+    </div>
+    <p> <strong>3.</strong> Posición de los dedos sobre el dispositivo </p>
+    <div class="d-flex justify-content-center align-items-center">
+    <img class="img-tip-captura img-tip-captura-tres pr-3 mr-3 border-right" src="images/tip-3.1.svg" />
+    <img class="img-tip-captura img-tip-captura-horizontal" src="images/tip-3.2.svg" />
+    </div>
+
+    </div>
+    <div class="deskt-mobile order">
+    <p> <strong>1.</strong> Sensor y dedos del ciudadano limpios</p>
+    <p> <strong>2.</strong> Posición de los dedos sobre el dispositivo </p>
+    </div>
+    </div>*@
+
+<div class="col-12 paso-captura-huellas">
+    <h3>Captura de huellas</h3>
+    <div class="d-flex flex-row justify-content-between pr-4">
+        <label class="check-box-container checkbox-disabled">
+            Trámite sin biometría
+            <input type="checkbox" name="tramiteSinBiometria" disabled="@_chkSinBiometriaIsDisabled"
+                   @bind="Compareciente.TramiteSinBiometria" />
+            <span class="check" for="tramiteSinBiometria"></span>
+        </label>
+        @if (_esMovil && !Compareciente.TramiteSinBiometria)
+        {
+            <button class="btn-contorno-primario" @onclick="ReiniciarCaptor">Reconectar Huella</button>
+        }
+    </div>
+    @if (Compareciente.TramiteSinBiometria)
+    {
+        <p>Ingrese el motivo por el cual el ciudadano no realiza la validación biómetrica</p>
+        <form>
+            <div class="input-container">
+                <label>Seleccione el motivo</label>
+                <select disabled="@_slSinBiometriaIsDisabled" @onchange="async (v)=> { _motivo = int.Parse(v.Value.ToString());
+                                                                         await ReadyChanged.InvokeAsync(_motivo > 0); }">
+                    <option disabled>Seleccione</option>
+                    @foreach (KeyValuePair<int, string> entry in MotivosSinBiometria)
+                    {
+                        <option value="@entry.Key" selected="@(entry.Key == _motivo)">@entry.Value</option>
+                    }
+                    @*<option value="1">Menor de edad</option>
+                        <option value="2">Extranjero (Pasaporte - Cédula de extranjería)</option>
+                        <option value="3">Imposibilidad de captura de huellas</option>
+                        <option value="4">Fallas de conectividad</option>
+                        <option value="5">Otras excepciones de ley</option>
+                        <option value="6">Otro</option>*@
+                </select>
+            </div>
+        </form>
+    }
+    else
+    {
+        <p class="mt-2 mb-2">Haga clic sobre la imagen para iniciar la captura de la huella</p>
+        <div class="d-flex captura-huellas">
+            <div class="dedo-solicitado-container dedo-uno">
+                <div class="img-dedo-container @(_dedo1Class)" @onclick="Captura1">
+                    <img src="@_imgDedoSolicitado1" class="img-dedo" />
+                    <p class="mt-2 mb-2">@_lblDedoSolicitado1 </p>
+                    <div class="estado-captura-container @(_dedo1Class)">
+                        @if (_capturandoHuella1)
+                        {
+                            <div class="estado-captura-huella spinner"></div>
+                            <div class="estado-captura-huella contador">@counter1</div>
+                        }
+                        else
+                        {
+                            <span class="estado-captura-huella "></span>
+                        }
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar @(_claseCalidadHuella1)" role="progressbar"
+                         style="width: @($"{_calidadHuella1}%");" aria-valuenow="@_calidadHuella1" aria-valuemin="0"
+                         aria-valuemax="100">@($"{_calidadHuella1}%")</div>
+                </div>
+            </div>
+            <div class="dedo-solicitado-container">
+                <div class="img-dedo-container @(_dedo2Class)">
+                    <img src="@_imgDedoSolicitado2" @onclick="Captura2" class="img-dedo" />
+                    <p class="mt-2 mb-2">@_lblDedoSolicitado2 </p>
+                    <div class="estado-captura-container  @(_dedo2Class)">
+                        @if (_capturandoHuella2)
+                        {
+                            <div class="estado-captura-huella spinner"></div>
+                            <div class="estado-captura-huella contador">@counter1</div>
+                        }
+                        else
+                        {
+                            <span class="estado-captura-huella "></span>
+                        }
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar @(_claseCalidadHuella2)" role="progressbar"
+                         style="width: @($"{_calidadHuella2}%");" aria-valuenow="@_calidadHuella2" aria-valuemin="0"
+                         aria-valuemax="100">@($"{_calidadHuella2}%")</div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-2">
+            <a data-toggle="modal" data-target="#modalForExcepciones" class="link-primario mt-2 mb-2" href="">
+                Haga clic aquí si alguna de las huellas solicitadas no puede ser capturada
+            </a>
+        </div>
+        @* Modal que muestra el cuadro de excepciones de huella*@
+        <div class="modal fade" id="modalForExcepciones" data-backdrop="static" data-keyboard="false" tabindex="-1"
+             aria-labelledby="modalForAtdp" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Excepción de huella</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <ExcepcionHuella Excepciones="_exceptuados" ExcepcionesChanged="ExcepcionesChanged" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        @* Fin del modal *@
+        @* Modal que muestra instrucciones para reconectar*@
+        <div class="modal fade" id="reconectar" data-backdrop="static" data-keyboard="false" tabindex="-1"
+             aria-labelledby="modalForAtdp" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Conectando el captor biométrico</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p>Intrucciones:</p>
+                        <p>1. Si es la primera vez que realiza esta acción, dé clic en "mostrar siempre" en el cuadro que aparece en la parte inferior de la pantalla.</p>
+                        <img class="img-tip-captura" src="images/popupweb.png" />
+                        <p>2. Aparecerá una ventana emergente en el centro de la pantalla, dé clic en "ACEPTAR".</p>
+                        <img class="img-tip-captura" src="images/popupmovil.png" />
+                        <p>3. Cuando este cuadro desaparezca, el captor estará conectado y podrá iniciar la captura dando clic sobre cada mano.</p>
+                        <div class="slider">
+                            <div class="line"></div>
+                            <div class="subline inc"></div>
+                            <div class="subline dec"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @* Fin del modal *@
+
+    }
+</div>

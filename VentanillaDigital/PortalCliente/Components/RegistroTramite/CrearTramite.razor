@@ -1,0 +1,136 @@
+﻿@using PortalCliente.Components.Transversales;
+@using PortalCliente.Data;
+@using PortalCliente.Components.RegistroTramite.DatosAdicionales;
+@inject IJSRuntime js
+
+@if (_firmaManualConfigurado)
+{
+    <div class="header-configuraciones">
+        <a href="/configuraciones" class="opciones-configuracion">
+            <span>Firma manual activada para: <strong>@_notarioConfigurado</strong></span>
+            <span>Impresión del trámite en formato <strong>@(_usarStickerConfigurado ? "Sticker" : "Carta")</strong></span>
+        </a>
+    </div>
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>Trámite</h1>
+        </div>
+        <div class="col-sm-12 col-md-6 order col-tablet">
+            <h3>Selección de trámite </h3>
+            <RBSelector Seleccion="Tramite.TipoTramite"
+                        SeleccionChanged="@(async (v)=> await ChildChanged("TipoTramite",v))" Class="tipo-tramites-container"
+                        Name="tramites" Categorias="categorias" Opciones="c=>((Categoria)c).TiposTramites">
+            </RBSelector>
+        </div>
+        <div class="col-sm-12 col-md-6 col-tablet">
+            @if (Tramite.TipoTramite != null)
+            {
+                <h3>Detalles trámite</h3>
+
+                @if (_esAndroid)
+                {
+                    <fieldset>
+                        <legend>Lugar de comparecencia</legend>
+                        <label class="radio-button-container" for="EnNotaria">
+                            Trámite en Notaría
+                            <input class="radio-input" type="radio" id="EnNotaria" name="lugarTramite" @onchange="@(() => UpdateLugar(1))">
+                            <span class="radio-active"></span>
+                        </label>
+
+                        <label class="radio-button-container" for="FueraDespacho">
+                            Trámite fuera del despacho
+                            <input class="radio-input" type="radio" id="FueraDespacho" name="lugarTramite" checked @onchange="@(() => UpdateLugar(2))">
+                            <span class="radio-active"></span>
+                        </label>
+                    </fieldset>
+
+
+                    if (@lugarComparecencia == "FueraDespacho")
+                    {
+                        <div class="input-container">
+                            <label>Dirección</label>
+                            <input type="text" @bind-value="@direccionComparecencia" />
+                        </div>
+                    }
+                }
+                <label>Cantidad de comparecientes</label>
+                <div class="cantidad-comp-container">
+                    <button type="button" class="btn-resta" data-quantity="resta" id="restarCompareciente"
+                            disabled="@_bloquearNumeroComparecientes"
+                            data-field="cantidad-comparecientes" @onclick="RestarCompareciente">
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                    </button>
+                    <input type="text" pattern="\d*" id="cantidadComparecientes" class="comparecientes-input" maxlength="2"
+                           value="@Tramite.CantidadComparecientes"
+                           disabled="@_bloquearNumeroComparecientes"
+                           @oninput="@(async (v)=> await ChildChanged("CantidadComparecientes",v.Value))" />
+                    <button type="button" class="btn-suma" data-quantity="suma" id="sumarCompareciente"
+                            disabled="@_bloquearNumeroComparecientes"
+                            data-field="cantidad-comparecientes" @onclick="SumarCompareciente">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                </div>
+                @switch ((CodigoTipoTramite)Tramite.TipoTramite.CodigoTramite)
+                {
+                    case CodigoTipoTramite.DocumentoPrivado:
+                        <DocumentoPrivado GetFields="SetCamposAdicionales" />
+                        break;
+                    case CodigoTipoTramite.EscrituraPublica:
+                        <EscrituraPublica GetFields="SetCamposAdicionales" />
+                        break;
+                    case CodigoTipoTramite.DeclaracionExtraProceso:
+                        <DeclaracionExtraProceso GetFields="SetCamposAdicionales" />
+                        break;
+                    case CodigoTipoTramite.PresentacionPersonal:
+                        <PresentacionPersonal GetFields="SetCamposAdicionales" />
+                        break;
+                    case CodigoTipoTramite.EnrolamientoNotariaDigital:
+                        <AutenticacionHuella GetFields="SetCamposAdicionales" />
+                        break;
+                    case CodigoTipoTramite.InscripcionRegistroCivil:
+                        <InscripcionRegistroCivil GetFields="SetCamposAdicionales" />
+                        break;
+                    case CodigoTipoTramite.DocumentoPrivadoFirmaARuego:
+                        <DocumentoPrivadoFirmaARuego GetFields="SetCamposAdicionales" />
+                        break;
+                    case CodigoTipoTramite.DocumentoPrivadoInvidente:
+                        <DocumentoPrivadoInvidente GetFields="SetCamposAdicionales" NoSabeFirmarChanged="NoSabeFirmarChanged" />
+                        break;
+                    case CodigoTipoTramite.AutenticacionFirma:
+                        <AutenticacionFirma GetFields="SetCamposAdicionales" />
+                        break;
+                }
+                <div class="btn-crear-tramite-container">
+                    <button class="btn-primario btn-crear-tramite" @onclick="Crear" disabled="@(Tramite.TipoTramite == null || showSpinner)">
+                        @if (showSpinner)
+                        {
+                            <i class="fa fa-sync fa-spin"></i>
+                        }
+                        else
+                        {
+                            <i class="fas fa-plus-circle mr-2"></i>
+                        }
+                        Crear trámite
+                    </button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="sesionClosedModalCenter" tabindex="-1" role="dialog" aria-labelledby="sesionClosedModalCenter" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Su sesión ha caducado.</h3>
+            </div>
+            <div class="modal-body">
+                <p>Se le redigirá al inicio de sesión...</p>
+            </div>
+        </div>
+    </div>
+</div>

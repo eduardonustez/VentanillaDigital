@@ -1,0 +1,73 @@
+@using PortalCliente.Components.Input
+@if (solicitud != null)
+{
+    <form class="row mt-3 solicitud-certificado-form">
+        <div class="col-6 border-right">
+            <h4>Notaría</h4>
+            <div class="plain-text-input">
+                <label>Departamento</label>
+                <p>@solicitud.Departamento</p>
+            </div>
+            @* <CInputText Placeholder="Departamento" Id="Departamento" @bind-Text="" IsDisabled=true>
+                </CInputText> *@
+            <div class="plain-text-input">
+                <label>Municipio</label>
+                <p>@solicitud.Municipio</p>
+            </div>
+            @* <CInputText Placeholder="Municipio" Id="Municipio" @bind-Text="" IsDisabled="true">
+                </CInputText> *@
+            <div class="plain-text-input">
+                <label>Notaria</label>
+                <p>@solicitud.Notaria</p>
+            </div>
+            @* <CInputText Placeholder="Notaria" Id="Notaria" @bind-Text="solicitud.Notaria" IsDisabled="true">
+                </CInputText> *@
+            <div class="plain-text-input">
+                <label>Cédula Notario Principal</label>
+                <p>@solicitud.DniNotarioPrincipal</p>
+            </div>
+            @* <CInputText Placeholder="Cédula Notario Principal" Id="DniNotarioPpal"
+                @bind-Text="solicitud.DniNotarioPrincipal" IsDisabled="true"></CInputText> *@
+
+            <CInputText Placeholder="Dirección Notaría" Id="Notaria" Text="@solicitud.Direccion" TextChanged="onInputDir">
+            </CInputText>
+        </div>
+        <div class="col-6">
+            <h4>Solicitante</h4>
+            <div class="plain-text-input">
+                <label>Cédula</label>
+                <p>@solicitud.NumeroDocumento</p>
+            </div>
+            @* <CInputText Placeholder="Cédula" Id="Documento" @bind-Text="solicitud.NumeroDocumento" IsDisabled="true">
+            </CInputText> *@
+            <div class="plain-text-input">
+                <label>Nombres y apellidos</label>
+                <p>@solicitud.NombreCompleto</p>
+            </div>
+            @* <CInputText Placeholder="Nombres y apellidos" Id="Nombre" @bind-Text="solicitud.NombreCompleto"
+            IsDisabled="true"></CInputText> *@
+            <div class="plain-text-input">
+                <label>Correo electrónico</label>
+                <p>@solicitud.Correo</p>
+            </div>
+            @* <CInputText Placeholder="Correo electrónico" Id="Correo" @bind-Text="solicitud.Correo" IsDisabled="true">
+            </CInputText> *@
+             <div class="plain-text-input">
+                <label>Cargo</label>
+                <p>@solicitud.Cargo</p>
+            </div>
+            @* <CInputText Placeholder="Cargo" Id="Cargo" @bind-Text="solicitud.Cargo" IsDisabled="true"></CInputText> *@
+            @* <CInputText Placeholder="Celular" Id="Celular" @bind-Text="solicitud.Celular"></CInputText> *@
+            <div class="input-container">
+                <label for="Celular"># Celular</label>
+                <div>
+                    <input type="tel" value="@solicitud.Celular" id="Celular" @oninput="onInputCel" class="form-control"
+                    minlength="7" maxlength="12" />
+                </div>
+            </div>
+        </div>
+        @* <div class="mt-3">
+            <button type="button" class="btn-contorno-primario" @onclick="Guardar">Continuar</button>
+            </div> *@
+    </form>
+}

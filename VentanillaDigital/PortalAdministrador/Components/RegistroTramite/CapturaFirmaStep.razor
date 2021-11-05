@@ -1,0 +1,158 @@
+﻿<div class="col-12">
+    @*<h3>Autorización para el tratamiento de datos personales</h3>*@
+    <div class="pb-2">
+        @*<p>Para continuar con la autorización del trámite es necesario que el ciudadano autorice el traramiento de sus
+            datos personales</p>*@
+
+        @*if (@_autorizado)
+            {
+            <div class="mensaje-container mensaje-ok">
+            <p>
+            Autorización realizada
+            </p>
+            </div>
+            }*@
+        @*
+            else
+            {
+            <div class="d-flex align-items-center">
+            <p class="text-black-50">
+            <div class="spinner-border spinner-border-sm text-secondary mr-2" role="status">
+            <span class="sr-only">...</span>
+            </div>
+            Esperando autorización
+            </p>
+            </div>
+            }*@
+        @* Botón que muestra el formato de autorización de datos *@
+        @*<a class="link-primario" data-toggle="modal" data-target="#modalForAtdp" href="">Haga clic aquí si el
+            compareciente no puede leer o firmar</a>*@
+
+        @* Modal que muestra el Formato de autorización de datos *@
+        <div class="modal fade" id="modalForAtdp" data-backdrop="static" data-keyboard="false" tabindex="-1"
+            aria-labelledby="modalForAtdp" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Autorización para el tratamiento de datos personales</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-justify">
+                        <p>Lea al compareciente la siguiente pregunta, y dé clic sobre el botón correspondiente a su
+                            respuesta:</p>
+                        <p>¿Autoriza de manera voluntaria, previa, explicita, informada e inequívoca el tratamiento de
+                            sus datos personales para la autenticación biométrica en línea de su huella dactilar
+                            conforme lo dispone el Decreto Ley 0019 de 2012 y en general para lo correspondiente al
+                            trámite notarial que ha solicitado?</p>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn-contorno-primario" data-dismiss="modal" @onclick="Rechazar">No
+                            Autoriza</button>
+                        <button type="button" class="btn-primario" data-dismiss="modal"
+                            @onclick="AutorizaRec">Autoriza</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @* Fin del modal *@
+    </div>
+</div>
+
+<div class="col-12">
+    <h3>Firma</h3>
+
+    <label class="check-box-container">
+        El compareciente no puede firmar
+        <input type="checkbox" name="sinFirma" @bind="_sinFirma" />
+        <span class="check" for="sinFirma"></span>
+    </label>
+
+    @if (_sinFirma)
+    {
+        <div class="atdp-text-container text-justify">
+            <h3>Autorización para el tratamiento de datos personales</h3>
+            <p>Lea al compareciente la siguiente pregunta, y dé clic sobre el botón correspondiente a su respuesta:</p>
+            <p>¿Autoriza de manera voluntaria, previa, explicita, informada e inequívoca el tratamiento de sus datos
+                personales para la autenticación biométrica en línea de su huella dactilar conforme lo dispone el Decreto
+                Ley 0019 de 2012 y en general para lo correspondiente al trámite notarial que ha solicitado?</p>
+            <button type="button" class="btn-primario" @onclick="AutorizaRec">Autoriza</button>
+        </div>
+    }
+    else
+    {
+        <p>La firma del compareciente aparecerá en el siguiente recuadro</p>
+        <div class="firma-container border d-flex flex-column mt-3">
+            <div class="img-firma-container">
+                @if (FirmaCapturada)
+                {
+                    <img class="img-firma" id="signatureImage" src="@Compareciente?.Firma" />
+                }
+            </div>
+            <p class="bg-light text-center w-100 p-1">
+                Firma de compareciente
+            </p>
+            @if (FirmaCapturada)
+            {
+                <div class="firma-capturada">
+
+                    <div class="firma-ok">
+                        <p>
+                            Firma capturada
+                        </p>
+                    </div>
+                </div>
+            }
+            else
+            {
+                @*<div class="d-flex align-items-center">
+                    <p class="text-black-50">
+                    <div class="spinner-border spinner-border-sm text-secondary mr-2" role="status">
+                    <span class="sr-only">...</span>
+                    </div>
+                    Esperando firma
+                    </p>
+                    </div>*@
+            }
+        </div>
+
+        <div>
+            <button class="btn-autorizar" @onclick="MostrarADTP">
+                @if (FirmaCapturada)
+                {
+                    <i class="material-icons mr-3">
+                        edit
+                    </i>
+                    <span>Capturar nuevamente</span>
+                }
+                else
+                {
+                    <i class="fas fa-file-signature mr-3"></i>
+                    <span>Reconectar</span>
+                }
+            </button>
+        </div>
+
+        @*<div>
+            <a class="link-primario"
+            @onclick="MostrarADTP">
+            @if (FirmaCapturada)
+            {
+            <i class="material-icons mr-3">
+            edit
+            </i>
+            <span>Capturar nuevamente</span>
+            }
+            else
+            {
+            <i class="material-icons mr-3">
+            tablet
+            </i>
+            <span>Reconectar Wacom</span>
+
+            }
+            </a>
+            </div>*@
+    }
+</div>

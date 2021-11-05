@@ -1,0 +1,43 @@
+﻿.cInputNumber-container {
+  display: flex;
+  align-content: center;
+  flex-direction: row;
+  border-radius: 3px;
+  border: 1px solid var(--gris-200);
+}
+
+.cInputNumber-container input {
+  width: 3rem;
+  background-color: white;
+  border: none;
+  text-align: center;
+}
+
+    .cInputNumber-container input:disabled {
+        background: var(--gris-200);
+    }
+
+.modal-multitramite {
+    max-height: 25rem;
+    padding: 1rem 0;
+    overflow: scroll;
+}
+
+.titulo-tramite {
+  color: var(--rojo-600);
+  display: block;
+  font-weight: bold;
+}
+
+.form-group .progress {
+    margin-bottom: 1rem;
+}
+
+.multi-row {
+    display: flex;
+}
+
+    .multi-row .cinput-multi-container {
+        margin-left: auto;
+        padding-left: 0.7rem;
+    }

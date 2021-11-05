@@ -1,0 +1,100 @@
+﻿<AuthorizeView>
+    <Authorized>
+        <ul @onclick="onClickMenu" @onclick:preventDefault="usePreventDefault">
+            <li title="Iniciar nuevo trámite" class="nav-item">
+                <NavLink ActiveClass="link-active" class="nav-link text-dark" href="/tramite"
+                         @onclick='(e=>onClickLink("/tramite"))'>
+                    <i class="fa fa-plus-circle "></i>
+                    <span class="nav-text">
+                        Iniciar nuevo trámite
+                    </span>
+                </NavLink>
+            </li>
+            <li title="Reanudar trámite" class="nav-item">
+                <NavLink ActiveClass="link-active" class="nav-link text-dark" href="/tramitesenproceso"
+                         @onclick='(e=>onClickLink("/tramitesenproceso"))'>
+                    <i class="fa fa-redo-alt"></i>
+                    <span class="nav-text">
+                        Reanudar trámite
+                    </span>
+                </NavLink>
+            </li>
+            <li title="Bandeja de entrada" class="nav-item">
+                <NavLink ActiveClass="link-active" class="nav-link text-dark" href="/bandejaEntrada/2"
+                         @onclick='(e=>onClickLink("/bandejaEntrada/2"))'>
+                    <i class="fa fa-file-signature "></i>
+                    <span class="nav-text">
+                        Bandeja de entrada
+                    </span>
+                </NavLink>
+            </li>
+            <li title="Autorizados" class="nav-item">
+                <NavLink ActiveClass="link-active" class="nav-link text-dark" href="/bandejaEntrada/3"
+                         @onclick='(e=>onClickLink("/bandejaEntrada/3"))'>
+                    <i class="fa fa-file-pdf "></i>
+                    <span class="nav-text">
+                        Autorizados
+                    </span>
+                </NavLink>
+            </li>
+            <li title="Rechazados" class="nav-item">
+                <NavLink ActiveClass="link-active" class="nav-link text-dark" href="/bandejaEntrada/4"
+                         @onclick='(e=>onClickLink("/bandejaEntrada/4"))'>
+                    <i class="fa fa-file "></i>
+                    <span class="nav-text">
+                        Rechazados
+                    </span>
+                </NavLink>
+            </li>
+            <li title="Usuarios" class="nav-item">
+                <NavLink ActiveClass="link-active" class="nav-link text-dark" href="/usersAdmin"
+                         @onclick='(e=>onClickLink("/usersAdmin"))'>
+                    <i class="fa fa-user-tie "></i>
+                    <span class="nav-text">
+                        Usuarios
+                    </span>
+                </NavLink>
+            </li>
+            <li title="Autorizaciones" class="nav-item">
+                <NavLink ActiveClass="link-active" class="nav-link text-dark" href="/Autorizaciones"
+                         @onclick='(e=>onClickLink("/Autorizaciones"))'>
+                    <i class="fa fa-signature "></i>
+                    <span class="nav-text">
+                        Autorizaciones
+                    </span>
+                </NavLink>
+            </li>
+            <li title="Configuración" class="nav-item">
+                <NavLink ActiveClass="link-active" class="nav-link text-dark" href="/configuraciones"
+                         @onclick='(e=>onClickLink("/configuraciones"))'>
+                    <i class="fa fa-cog "></i>
+                    <span class="nav-text">
+                        Configuración
+                    </span>
+                </NavLink>
+            </li>
+            <li title="Reporte" class="nav-item">
+                <NavLink ActiveClass="link-active" class="nav-link text-dark" href="/Reportes"
+                         @onclick='(e=>onClickLink("/Reportes"))'>
+                    <i class="fas fa-chart-bar"></i>
+                    <span class="nav-text">
+                        Reportes
+                    </span>
+                </NavLink>
+            </li>
+            @if (NotariaConvenioVirtual)
+            {
+                <li title="TramitesPortalVirtual" class="nav-item">
+                    <NavLink ActiveClass="link-active" class="nav-link text-dark"
+                             href="/tramitesportalvirtual"
+                             @onclick='(e=>onClickLink("/tramitesportalvirtual"))'>
+                        <i class="fas fa-file-contract"></i>
+                        <span class="nav-text">
+                            Trámites Portal Virtual
+                        </span>
+                    </NavLink>
+                </li>
+            }
+        </ul>
+    </Authorized>
+</AuthorizeView>

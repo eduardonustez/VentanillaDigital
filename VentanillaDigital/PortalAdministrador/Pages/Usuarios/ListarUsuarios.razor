@@ -1,0 +1,651 @@
+﻿@page "/usuarios"
+@inject PortalAdministrador.Services.IAccountService _accountService
+@inject PortalAdministrador.Services.Notaria.INotariaService _notariaService
+@inject PortalAdministrador.Services.ITrazabilidadService _trazabilidadService
+@inject Radzen.NotificationService notificationService
+@inject AuthenticationStateProvider _authenticationStateProvider
+@using Infraestructura.Transversal.Log.Modelo
+@using Infraestructura.Transversal.Models
+@using ApiGateway.Contratos.Models.Account
+@using ApiGateway.Contratos.Models.LogTrazabilidad
+@using System.Text
+@using ApiGateway.Models
+@using PortalAdministrador.Data.Account
+@using Microsoft.AspNetCore.Components
+@using Microsoft.AspNetCore.Components.Forms
+@using PortalAdministrador.Validators
+@using System.Diagnostics
+@using Newtonsoft.Json;
+
+<div class="@(FiltrosVisibles ? "grid-tabla-filtro" : "" )">
+    <div class="grid-tabla-filtro-contenedor">
+        <div class="container">
+            <h1>Lista de Usuarios Notariales</h1>
+            <div class="botones-container">
+                @if (esUsuarioAdmin)
+                {
+                    <button class="btn-primario mr-2" data-toggle="modal" data-target="#createUserModalCenter" @onclick="ConfigurarModal">
+                        <span class="material-icons">
+                            add
+                        </span>Agregar usuario
+                    </button>
+                }
+                <button class="btn-contorno-primario botones-container-link" @onclick="Refrescar">
+                    <span class="material-icons">
+                        refresh
+                    </span>Refrescar
+                </button>
+
+                <button id="boton-filtrar-bandeja" class="btn-contorno-primario" @onclick="() => MostrarFiltros()">
+                    <span class="material-icons">
+                        filter_alt
+                    </span> Filtrar
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <GridControl @ref="Grid" Title=""
+                         Columns="@Columns" Data="@Usuarios" TotalRows="@TotalRows"
+                         TotalPages="@TotalPages" OnChangePage="OnChangePage"
+                         ShowEditAction="true" ShowDeleteAction="esUsuarioAdmin"
+                         OnEditItemClick="@(async (i) => await OnEditClick(i))"
+                         OnDeleteItemClick="@(async (i) => await OnDeleteItem(i))">
+            </GridControl>
+        </div>
+    </div>
+
+    @if (FiltrosVisibles)
+    {
+        <div class="filtros">
+            <div class="overlay" id="overlay" @onclick="@(() => MostrarFiltros())"></div>
+            <div class="filters-container" id="filtros">
+                <h4>Filtrar resultados</h4>
+                <button id="boton-cerrar-filtrar-bandeja" @onclick="@(() => MostrarFiltros())">
+                    &#10005
+                </button>
+                <form Model="filtrosBandejaEntrada">
+                    <div class="input-container">
+                        <label for="nuip-operador">Notaría</label>
+                        <select class="custom-select" @bind="@NotariaSeleccionada">
+                            <option value="0">Seleccione una notaría</option>
+                            @if (Notarias != null)
+                            {
+                                @foreach (var notaria in Notarias)
+                                {
+                                    <option value="@notaria.NotariaId">@notaria.NotariaNombre</option>
+                                }
+                            }
+                        </select>
+                    </div>
+                    <div class="input-container">
+                        <label for="txtNumeroIdent">Documento</label>
+                        <input type="number" class="form-control" id="txtNumeroIdent" @bind="@NumeroIdentificacionFilter" placeholder="Número Documento"
+                               @onkeyup="Enter" @onkeyup:preventDefault="@preventDefault"
+                               @onkeydown="InputNumberKeyboardEventHandler" @onkeydown:preventDefault="@preventDefault">
+                    </div>
+                    <div class="input-container">
+                        <label for="txtCorreo">Correo</label>
+                        <input type="text" class="form-control" id="txtCorreo" @bind="@CorreoFilter" placeholder="Correo" @onkeyup="@Enter">
+                    </div>
+                </form>
+                <div class="d-flex justify-content-end mt-3">
+                    <button @onclick="LimpiarCampos" class="btn-contorno-primario mr-3">
+                        Reiniciar
+                    </button>
+                    <button type="button" @onclick="Filtrar" class="btn-primario">
+                        Buscar
+                    </button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+@* Modal de creacion de usuarios *@
+<div class="modal fade" id="createUserModalCenter" tabindex="-1" role="dialog" aria-labelledby="createUserModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="createUserModalLongTitle">@TituloModal</h3>
+                @*<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>*@
+            </div>
+            <EditForm Model="userAccount" class="needs-validation" OnValidSubmit="@HandleValidSubmit">
+                <DataAnnotationsValidator />
+                <CustomValidator @ref="customValidator" />
+                @*<ValidationSummary />*@
+                <div class="modal-body">
+                    <div class="form-en-linea">
+                        <div class="input-container">
+                            <label>Notaría *</label>
+                            <select class="custom-select" @bind="@userAccount.NotariaId" disabled="@esUsuarioCreado" required>
+                                @*<option selected>Seleccione una notaría</option>*@
+                                @if (Notarias != null)
+                                {
+                                    @foreach (var notaria in Notarias)
+                                    {
+                                        <option value="@notaria.NotariaId">@notaria.NotariaNombre</option>
+                                    }
+                                }
+                            </select>
+                        </div>
+                        <div class="input-container">
+                            <label>Sexo *</label>
+                            <select @bind="@userAccount.Genero" required>
+                                <option selected value="1">Masculino</option>
+                                <option value="2">Femenino</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-en-linea">
+                        <div class="input-container">
+                            <label for="tipoNumeroIdentificacion">Tipo de documento *</label>
+                            <div class="d-flex tipo-numero-identificacion">
+                                <div class="input-tipo-identificacion">
+                                    <select @bind="@userAccount.TipoIdentificacionId" disabled="@esUsuarioCreado" required>
+                                        <option value="1">Cédula de ciudadanía</option>
+                                    </select>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="input-container">
+                            <label for="tipoNumeroIdentificacion">Número de documento *</label>
+                            <div class="d-flex tipo-numero-identificacion">
+                                <input type="number" @bind="@userAccount.NumeroDocumento" disabled="@esUsuarioCreado" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-en-linea">
+                        <div class="input-container">
+                            <label>Nombres *</label>
+                            <input type="text" @bind="@userAccount.Nombres" required />
+                        </div>
+                        <div class="input-container">
+                            <label>Apellidos *</label>
+                            <input type="text" @bind="@userAccount.Apellidos" required />
+                        </div>
+                    </div>
+                    <div class="form-en-linea">
+                        <div class="input-container">
+                            <label>Número de celular *</label>
+                            <InputText type="number" @bind-Value="@userAccount.NumeroCelular" required />
+                            <ValidationMessage For="@(() => userAccount.NumeroCelular)" />
+                        </div>
+                        <div class="input-container">
+                            <label>Correo electrónico *</label>
+                            <InputText minlength="5" maxlength="51" type="email" @bind-Value="@userAccount.EmailNotaria" disabled="@esUsuarioCreado" required />
+                            <ValidationMessage For="@(() => userAccount.EmailNotaria)" />
+                        </div>
+                    </div>
+                    <div class="form-en-linea">
+                        <div class="input-container">
+                            <label>Cargo *</label>
+                            <input type="text" @bind="@userAccount.Cargo" required />
+                        </div>
+                        <div class="input-container">
+                            <label>Area *</label>
+                            <input type="text" @bind="@userAccount.Area" required />
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-contorno-primario mr-3" data-dismiss="modal">Cancelar</button>
+                    @if (esUsuarioAdmin)
+                    {
+                        <button type="submit" class="btn-primario" disabled="@showSpinner">
+                            @if (showSpinner)
+                            {
+                                <i class="fa fa-sync fa-spin"></i>
+                            }
+                            @(esUsuarioCreado ? "Actualizar usuario" : "Guardar usuario" )
+                        </button>
+                    }
+                </div>
+            </EditForm>
+        </div>
+    </div>
+</div>
+
+@* Modal de eliminacion de usuarios *@
+<div class="modal fade" id="@deleteUserModalCenter" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="createUserModalLongTitle">¿Eliminar usuario?</h3>
+            </div>
+            <div class="modal-body">
+                <p>Eliminará el usuario del portal notario. Esta acción es irreversible</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-contorno-primario mr-3" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn-primario" @onclick="RemoveUsersSelected" disabled="@showSpinner">
+                    @if (showSpinner)
+                    {
+                        <i class="fa fa-sync fa-spin"></i>
+                    }
+                    Si, eliminar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+
+    [Inject]
+    IJSRuntime Js { get; set; }
+    #region Propiedades
+    public List<(string, string)> Columns { get; set; } = new List<(string, string)>
+{
+        ("Correo", "Email"),
+        ("Rol", "RolName"),
+        ("Documento", "Documento"),
+        ("Persona", "PersonaName"),
+        ("Notaría", "NotariaName"),
+    };
+    string TituloModal;
+    string Estado = string.Empty;
+    string Mensaje = string.Empty;
+    string EstadoEliminacion = string.Empty;
+    string MensajeEliminacion = string.Empty;
+    public bool usuariosEliminados = false;
+    List<AspNetUsersResponseDTO> usuarios;
+    AspNetUsersResponseDTO selectedUser;
+
+    public string mensajeErrorClase = "";
+    public string errorInputClase = "";
+    public string modalCrearUsuarioId = "createUserModalCenter";
+    public string deleteUserModalCenter = "deleteUserModalCenter";
+    bool showSpinner;
+    bool esUsuarioCreado;
+    UserAccount userAccount = ResetUser();
+    private CustomValidator customValidator;
+
+    public List<UsuarioModel> Usuarios { get; set; }
+    public int TotalPages { get; set; }
+    public long TotalRows { get; set; }
+    public GridControl<UsuarioModel> Grid { get; set; }
+    public long NotariaSeleccionada { get; set; }
+    public string NumeroIdentificacionFilter { get; set; }
+    public string CorreoFilter { get; set; }
+    public bool FiltrosVisibles { get; set; } = true;
+    public bool consultando { get; set; }
+    bool preventDefault = false;
+    public IEnumerable<ApiGateway.Contratos.Models.NotariaBasicModel> Notarias { get; set; }
+    bool esUsuarioAdmin = false;
+    #endregion
+
+    #region Overrides
+    protected override async Task OnInitializedAsync()
+    {
+        var state = await _authenticationStateProvider.GetAuthenticationStateAsync();
+        esUsuarioAdmin = state.User.IsInRole("ADMIN");
+        await ConsultarUsuarios(1);
+        await ConsultarNotarias();
+    }
+    #endregion
+
+    #region Privates
+    static UserAccount ResetUser()
+    {
+        return new UserAccount()
+        {
+            RolId = 1,
+            EsUsuarioNotaria = true,
+            personaDatos = null,
+            Genero = 0
+        };
+    }
+
+    private async Task HandleValidSubmit()
+    {
+        customValidator.ClearErrors();
+
+        var errors = new Dictionary<string, List<string>>();
+
+        if (errors.Count() > 0)
+        {
+            customValidator.DisplayErrors(errors);
+        }
+        else
+        {
+            await SaveUserAlt();
+        }
+    }
+
+    void ConfigurarModal()
+    {
+        esUsuarioCreado = false;
+        userAccount = ResetUser();
+        TituloModal = "Nuevo notario principal";
+    }
+
+    private async Task OnDeleteItem(UsuarioModel usuarioModel)
+    {
+        selectedUser = await _accountService.ObtenerUsuarioNotariaPorId(new Guid(usuarioModel.Id));
+        await Js.InvokeVoidAsync("cerrarModal", deleteUserModalCenter);
+    }
+
+    private async Task RemoveUsersSelected()
+    {
+        if (selectedUser != null)
+        {
+            UserDelete ud = new UserDelete()
+            {
+                Id = selectedUser.Id,
+                Email = selectedUser.Email,
+                NotariaId = selectedUser.NotariaId
+            };
+
+            var stopwatch = new Stopwatch();
+            try
+            {
+                showSpinner = true;
+                Estado = "Eliminar usuario";
+                stopwatch.Start();
+                var resultado = await _accountService.UserDelete(ud);
+                stopwatch.Stop();
+                TimeSpan timeTaken = stopwatch.Elapsed;
+                if (resultado)
+                {
+                    Mensaje = $"Se ha eliminado correctamente al usuario {selectedUser.Email}";
+                    ShowMessage(NotificationSeverity.Info, string.Empty, Mensaje);
+                    await ConsultarUsuarios(1);
+                }
+                else
+                {
+                    Mensaje = $"Error al eliminar al usuario {selectedUser.Email}, si el error persiste por favor comunicarse con el administrador";
+                    ShowMessage(NotificationSeverity.Error, string.Empty, Mensaje);
+                }
+                var state = await _authenticationStateProvider.GetAuthenticationStateAsync();
+                LogTrazabilidadModel log = new LogTrazabilidadModel
+                {
+                    Usuario = state.User.Claims
+                    .Where(x => x.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name")
+                    .Select(x => x.Value).FirstOrDefault(),
+                    NotariaId = selectedUser.NotariaId,
+                    Peticion = JsonConvert.SerializeObject(ud),
+                    FechaRegistro = DateTime.Now.ToLongDateString(),
+                    Tiempo = $"{timeTaken.ToString(@"m\:ss\.fff")}",
+                    Mensaje = Mensaje
+                };
+
+                await AgregarLog($"{JsonConvert.SerializeObject(log)}", "RemoveUsersSelected", "UserDelete");
+            }
+            catch (Exception ex)
+            {
+                Estado = "Error";
+                Mensaje = ex.Message;
+                ShowMessage(NotificationSeverity.Error, string.Empty, Mensaje);
+                showSpinner = false;
+                TimeSpan timeTaken = stopwatch.Elapsed;
+                var state = await _authenticationStateProvider.GetAuthenticationStateAsync();
+                LogTrazabilidadModel log = new LogTrazabilidadModel
+                {
+                    Usuario = state.User.Claims
+                    .Where(x => x.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name")
+                    .Select(x => x.Value).FirstOrDefault(),
+                    NotariaId = selectedUser.NotariaId,
+                    Peticion = JsonConvert.SerializeObject(ud),
+                    FechaRegistro = DateTime.Now.ToLongDateString(),
+                    Tiempo = $"{timeTaken.ToString(@"m\:ss\.fff")}",
+                    Mensaje = Mensaje
+                };
+
+                await AgregarLog($"{JsonConvert.SerializeObject(log)}", "RemoveUsersSelected", "Exception");
+            }
+            finally
+            {
+                showSpinner = false;
+                await Js.InvokeVoidAsync("cerrarModal", deleteUserModalCenter);
+                StateHasChanged();
+            }
+        }
+    }
+
+    private async Task OnEditClick(UsuarioModel userAccount2)
+    {
+        TituloModal = "Actualizar información de usuario notarial";
+        userAccount = ResetUser();
+        esUsuarioCreado = true;
+        var stopwatch = new Stopwatch();
+        stopwatch.Start();
+        var usuarioSeleccionado = await _accountService.ObtenerUsuarioNotariaPorId(new Guid(userAccount2.Id));
+        stopwatch.Stop();
+        TimeSpan timeSpan = stopwatch.Elapsed;
+        if (usuarioSeleccionado != null)
+        {
+            userAccount.Nombres = usuarioSeleccionado.Nombres;
+            userAccount.Apellidos = usuarioSeleccionado.Apellidos;
+            userAccount.Cargo = usuarioSeleccionado.Cargo;
+            userAccount.Area = usuarioSeleccionado.Area;
+            userAccount.Genero = usuarioSeleccionado.Genero ?? 0;
+            userAccount.NumeroDocumento = usuarioSeleccionado.NumeroIdentificacion;
+            userAccount.TipoIdentificacionId = 1;
+            userAccount.NumeroCelular = usuarioSeleccionado.NumeroCelular;
+            userAccount.EmailNotaria = usuarioSeleccionado.Email;
+            userAccount.NotariaId = usuarioSeleccionado.NotariaId;
+            userAccount.Id = usuarioSeleccionado.Id;
+            userAccount.UserId = usuarioSeleccionado.Id;
+            await Js.InvokeVoidAsync("cerrarModal", "createUserModalCenter");
+            await AgregarLog($"[{timeSpan.ToString(@"m\:ss\.fff")}] {Mensaje}", "OnEditClick", "UserAccount");
+            StateHasChanged();
+        }
+        else
+        {
+            Estado = "No se ha encontrado el usuario.";
+            Mensaje = "No se ha encontrado el usuario solicitado. Probablemente haya sido eliminado.";
+            await AgregarLog($"[{timeSpan.ToString(@"m\:ss\.fff")}] {Mensaje}", "OnEditClick", "Exception");
+            ShowMessage(NotificationSeverity.Warning, Estado, Mensaje);
+        }
+    }
+
+    private async Task InputNumberKeyboardEventHandler(KeyboardEventArgs args)
+    {
+        byte codAscii = Encoding.ASCII.GetBytes(args.Key.ToString())[0];
+
+        if ((codAscii >= 48 && codAscii <= 57) ||
+             (args.Code == "Enter" || args.Code == "NumpadEnter") ||
+             codAscii == 66 || codAscii == 68 ||
+             codAscii == 65 || codAscii == 84)
+        {
+
+            this.preventDefault = false;
+        }
+        else
+        {
+            this.preventDefault = true;
+        }
+    }
+
+    public async Task Enter(KeyboardEventArgs e)
+    {
+        if (e.Code == "Enter" || e.Code == "NumpadEnter")
+        {
+            await Filtrar();
+        }
+    }
+
+    private async Task SaveUserAlt()
+    {
+        showSpinner = true;
+        var stopwatch = new Stopwatch();
+        try
+        {
+            userAccount.EmailPersonal = userAccount.EmailNotaria;
+            stopwatch.Start();
+            if (esUsuarioCreado)
+            {
+                await _accountService.UserUpdate(userAccount);
+                Estado = "Usuario actualizado";
+                Mensaje = "Se ha actualizado correctamente los datos del usuario " + userAccount.EmailNotaria;
+            }
+            else
+            {
+                await _accountService.UserRegister(userAccount);
+                Estado = "Usuario creado";
+                Mensaje = "Se ha creado el usuario " + userAccount.EmailNotaria + " en su Notaria. Se enviará un correo electrónico al funcionario para ingresar al sistema.";
+            }
+            stopwatch.Stop();
+            TimeSpan timeSpan = stopwatch.Elapsed;
+
+            var state = await _authenticationStateProvider.GetAuthenticationStateAsync();
+            LogTrazabilidadModel log = new LogTrazabilidadModel
+            {
+                Usuario = state.User.Claims.Where(x => x.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name")
+                .Select(x => x.Value).FirstOrDefault(),
+                NotariaId = userAccount.NotariaId,
+                Peticion = JsonConvert.SerializeObject(userAccount),
+                FechaRegistro = DateTime.Now.ToLongDateString(),
+                Tiempo = $"{timeSpan.ToString(@"m\:ss\.fff")}",
+                Mensaje = Mensaje
+            };
+
+            await AgregarLog($"{JsonConvert.SerializeObject(log)}", esUsuarioCreado ?
+                "OnEditClick" : "SaveUserAlt", "UserAccount");
+
+            await ConsultarUsuarios(1);
+            await ClosedModalWindow(modalCrearUsuarioId);
+            ShowMessage(NotificationSeverity.Success, Estado, Mensaje);
+            showSpinner = false;
+            esUsuarioCreado = false;
+            userAccount = ResetUser();
+            StateHasChanged();
+        }
+        catch (Exception e)
+        {
+            Estado = "Error al crear el usuario";
+            showSpinner = false;
+            Mensaje = $"Error al crear el usuario {userAccount.EmailNotaria}. {e.Message}";
+            TimeSpan timeSpan = stopwatch.Elapsed;
+            var state = await _authenticationStateProvider.GetAuthenticationStateAsync();
+            LogTrazabilidadModel log = new LogTrazabilidadModel
+            {
+                Usuario = state.User.Claims.Where(x => x.Type == "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/name")
+                .Select(x => x.Value).FirstOrDefault(),
+                NotariaId = userAccount.NotariaId,
+                Peticion = JsonConvert.SerializeObject(userAccount),
+                FechaRegistro = DateTime.Now.ToLongDateString(),
+                Tiempo = $"{timeSpan.ToString(@"m\:ss\.fff")}",
+                Mensaje = Mensaje
+            };
+
+            await AgregarLog($"{JsonConvert.SerializeObject(log)}", esUsuarioCreado ?
+                "OnEditClick" : "SaveUserAlt", "Exception");
+            await ClosedModalWindow(modalCrearUsuarioId);
+            ShowMessage(NotificationSeverity.Error, Estado, Mensaje);
+            await ConsultarUsuarios(1);
+            userAccount = ResetUser();
+            esUsuarioCreado = false;
+            StateHasChanged();
+        }
+    }
+
+    public async Task ClosedModalWindow(string Id)
+    {
+        await Js.InvokeVoidAsync("cerrarModal", Id);
+    }
+
+    protected void ShowMessage(NotificationSeverity notificationSeverity, string Summary, string Message)
+    {
+        var message = new NotificationMessage()
+        {
+            Severity = notificationSeverity,
+            Summary = $"{Summary}",
+            Detail = $"{Message}",
+            Duration = 4000
+        };
+        notificationService.Notify(message);
+    }
+
+    public async void OnChangePage(int indice)
+    {
+        await ConsultarUsuarios(indice);
+    }
+
+    public async Task Refrescar()
+    {
+        Grid.ResetIndex();
+        await ConsultarUsuarios(1);
+    }
+
+    public async Task MostrarFiltros(bool mostrarOverlay = true)
+    {
+        //FiltrosVisibles = !FiltrosVisibles;
+        await Js.InvokeVoidAsync("mostrarFiltros", mostrarOverlay);
+    }
+
+    public async Task LimpiarCampos()
+    {
+        NotariaSeleccionada = 0;
+        NumeroIdentificacionFilter = string.Empty;
+        CorreoFilter = string.Empty;
+        await ConsultarUsuarios(1);
+    }
+
+    public async Task Filtrar()
+    {
+        await ConsultarUsuarios(indice: 1);
+        Grid.ResetIndex();
+        await MostrarFiltros(false);
+    }
+
+    public async Task ConsultarNotarias()
+    {
+        Notarias = await _notariaService.ObtenerNotariasAsync();
+    }
+
+    private async Task AgregarLog(string exception, string metodo, string entidad)
+    {
+        var state = await _authenticationStateProvider.GetAuthenticationStateAsync();
+        InformationModel objTraza = new InformationModel("1",
+           "PortalAdministrador",
+           "ListarUsuarios",
+           metodo,
+           entidad,
+           null,
+           exception, state.User.Identity.Name);
+        await _trazabilidadService.CrearTraza(objTraza);
+    }
+
+    public async Task ConsultarUsuarios(int indice)
+    {
+        consultando = true;
+        var model = new DefinicionFiltro();
+        model.IndicePagina = indice;
+        model.TotalRegistros = 0;
+        model.RegistrosPagina = 10;
+        model.Filtros = new List<Filtro>();
+
+        if (NotariaSeleccionada > 0) model.Filtros.Add(new Filtro("NotariaId", NotariaSeleccionada.ToString()));
+        if (!string.IsNullOrEmpty(NumeroIdentificacionFilter)) model.Filtros.Add(new Filtro("Documento", NumeroIdentificacionFilter));
+        if (!string.IsNullOrEmpty(CorreoFilter)) model.Filtros.Add(new Filtro("Correo", CorreoFilter));
+
+        var stopwatch = new Stopwatch();
+        stopwatch.Start();
+        var res = await _accountService.ObtenerUsuariosPaginado(model);
+        stopwatch.Stop();
+        var timeSpan = stopwatch.Elapsed;
+        await AgregarLog($"[{timeSpan.ToString(@"m\:ss\.fff")}] {Mensaje}", "ConsultarUsuarios", "DefinicionFiltro");
+
+        if (res != null)
+        {
+            Usuarios = res.Data?.ToList();
+            TotalRows = res.TotalRows;
+            TotalPages = res.Pages;
+        }
+
+        consultando = false;
+
+        StateHasChanged();
+    }
+    #endregion
+
+    public enum Genero
+    {
+        Masculino = 1,
+        Femenino = 2
+    }
+}

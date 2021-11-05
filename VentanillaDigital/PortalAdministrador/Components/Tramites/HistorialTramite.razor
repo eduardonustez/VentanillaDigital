@@ -1,0 +1,50 @@
+﻿<div class="col-12 py-3">
+    <h3>Historial de transacciones</h3>
+    <button class="btn-contorno-primario" @onclick="OnClickVolver"><i class="fa fa-arrow-left mr-2"></i> Volver</button>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Fecha y hora</th>
+                    <th scope="col">Detalle</th>
+                    <th scope="col">No. documento</th>
+                    <th scope="col">Persona</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (HistorialTramites != null)
+                {
+                    @foreach (var item in HistorialTramites)
+                    {
+                        <tr>
+                            <td>@item.Fecha.ToString("yyyy-MM-dd HH:mm:ss")</td>
+                            <td>@item.Detalle</td>
+                            <td>@item.Documento</td>
+                            <td>@item.Persona</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@code {
+    [Parameter] public long TramiteId { get; set; }
+    [Parameter] public EventCallback OnClickVolver { get; set; }
+    [Inject]
+    protected PortalAdministrador.Services.ITramiteService _tramiteService { get; set; }
+    IEnumerable<ApiGateway.Contratos.Models.HistorialTramite> HistorialTramites { get; set; }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        await ConsultarHistorialTramite();
+    }
+
+    private async Task ConsultarHistorialTramite()
+    {
+        HistorialTramites = await _tramiteService.ConsultarHistorialTramite(TramiteId);
+    }
+}

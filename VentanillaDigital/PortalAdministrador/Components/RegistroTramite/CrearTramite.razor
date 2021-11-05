@@ -1,0 +1,107 @@
+﻿@using PortalAdministrador.Components.Transversales;
+@using PortalAdministrador.Data;
+@using PortalAdministrador.Components.RegistroTramite.DatosAdicionales;
+@inject IJSRuntime js
+@*<div class="header-configuraciones">
+        <a href="/configuraciones" class="opciones-configuracion">
+            <span>Firma manual activada para: <strong>Julián Stiven Gómez Caicedo</strong></span>
+            <span>Impresión del trámite en formato <strong>sticker</strong></span>
+        </a>
+    </div>*@
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1>Trámite</h1>
+        </div>
+        <div class="col-sm-12 col-md-6 order col-tablet">
+            <h3>Selección de trámite </h3>
+            <RBSelector Seleccion="Tramite.TipoTramite"
+                        SeleccionChanged="@(async (v)=> await ChildChanged("TipoTramite",v))" Class="tipo-tramites-container"
+                        Name="tramites" Categorias="categorias" Opciones="c=>((Categoria)c).TiposTramites">
+            </RBSelector>
+        </div>
+        <div class="col-sm-12 col-md-6 col-tablet">
+            @if (Tramite.TipoTramite != null)
+            {
+                <h3>Detalles de trámite</h3>
+                @if (_esAndroid)
+                {
+                    <div>
+                        <h4>Lugar de comparecencia</h4>
+
+                        <label class="radio-button-container" for="EnNotaria">
+                            Tramite en Notaria
+                            <input class="radio-input" type="radio" id="EnNotaria" name="lugarTramite" checked @onchange="@(() => UpdateLugar(1))">
+                            <span class="radio-active"></span>
+                        </label>
+
+                        <label class="radio-button-container" for="FueraDespacho">
+                            Tramite fuera del despacho
+                            <input class="radio-input" type="radio" id="FueraDespacho" name="lugarTramite" @onchange="@(() => UpdateLugar(2))">
+                            <span class="radio-active"></span>
+                        </label>
+                    </div>
+
+                    if (@lugarComparecencia == "FueraDespacho")
+                    {
+                        <div class="input-container">
+                            <label>Dirección</label>
+                            <input type="text" @bind-value="@direccionComparecencia" />
+                        </div>
+                    }
+                }
+                <label>Cantidad de comparecientes</label>
+                <div class="cantidad-comp-container">
+                    <button type="button" class="btn-resta" data-quantity="resta" id="restarCompareciente"
+                            disabled="@_bloquearNumeroComparecientes"
+                            data-field="cantidad-comparecientes" @onclick="RestarCompareciente">
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                    </button>
+                    <input type="text" pattern="\d*" id="cantidadComparecientes" class="comparecientes-input" maxlength="2"
+                           value="@Tramite.CantidadComparecientes"
+                           disabled="@_bloquearNumeroComparecientes"
+                           @oninput="@(async (v)=> await ChildChanged("CantidadComparecientes",v.Value))" />
+                    <button type="button" class="btn-suma" data-quantity="suma" id="sumarCompareciente"
+                            disabled="@_bloquearNumeroComparecientes"
+                            data-field="cantidad-comparecientes" @onclick="SumarCompareciente">
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </button>
+                </div>
+                @switch ((CodigoTipoTramite)Tramite.TipoTramite.CodigoTramite)
+                {
+                    case CodigoTipoTramite.DocumentoPrivado:
+                        <DocumentoPrivado GetFields="SetCamposAdicionales" />
+                        break;
+                    case CodigoTipoTramite.EscrituraPublica:
+                        <EscrituraPublica GetFields="SetCamposAdicionales" />
+                        break;
+                    case CodigoTipoTramite.DeclaracionExtraProceso:
+                        <DeclaracionExtraProceso GetFields="SetCamposAdicionales" />
+                        break;
+                    case CodigoTipoTramite.PresentacionPersonal:
+                        <PresentacionPersonal GetFields="SetCamposAdicionales" />
+                        break;
+                    case CodigoTipoTramite.AutenticacionHuella:
+                        <AutenticacionHuella GetFields="SetCamposAdicionales" />
+                        break;
+                    case CodigoTipoTramite.InscripcionRegistroCivil:
+                        <InscripcionRegistroCivil GetFields="SetCamposAdicionales" />
+                        break;
+                    case CodigoTipoTramite.DocumentoPrivadoFirmaARuego:
+                        <DocumentoPrivadoFirmaARuego GetFields="SetCamposAdicionales" />
+                        break;
+                    case CodigoTipoTramite.DocumentoPrivadoInvidente:
+                        <DocumentoPrivadoInvidente GetFields="SetCamposAdicionales" NoSabeFirmarChanged="NoSabeFirmarChanged" />
+                        break;
+                    case CodigoTipoTramite.AutenticacionFirma:
+                        <AutenticacionFirma GetFields="SetCamposAdicionales" />
+                        break;
+                }
+                <button class="btn-primario" @onclick="Crear" disabled="@(Tramite.TipoTramite == null)">
+                    Crear
+                    Tramite
+                </button>
+            }
+        </div>
+    </div>
+</div>

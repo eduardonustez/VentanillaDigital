@@ -1,0 +1,22 @@
+﻿<div class="container">
+    <div class=" row">
+        <div class="col-6 col-tablet">
+            <DatosCiudadano EmailCelular="EmailCelular"
+                            PersonaInfo="Compareciente"
+                            Compareciente="Compareciente" 
+                            ReadyChanged="async (x) => 
+                                          await ReadyChanged.InvokeAsync((_datosReady=x)&&_atdpReady)"/>
+        </div>
+        <div class="col-6 col-tablet">
+            <CapturaFirmaStep Compareciente="Compareciente" 
+                              ComparecienteChanged="ComparecienteChanged"
+                              ReadyChanged="async (x) => 
+                                            await ReadyChanged.InvokeAsync((_atdpReady=x)&&_datosReady)"/>
+        </div>
+    </div>
+</div>
+
+@code {
+
+
+}

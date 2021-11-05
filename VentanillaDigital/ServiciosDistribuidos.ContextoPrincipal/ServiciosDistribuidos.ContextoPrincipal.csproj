@@ -1,0 +1,72 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>01fa0b23-e788-4b05-a54f-7c1a224d9db7</UserSecretsId>
+    
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <WarningLevel>3</WarningLevel>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Cronos" Version="0.7.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.4" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.10" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.0-preview1.19506.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="RestSharp" Version="106.11.7" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.1.0" />
+    <PackageReference Include="System.DirectoryServices.Protocols" Version="5.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Aplicacion.ContextoPrincipal\Aplicacion.ContextoPrincipal.csproj" />
+    <ProjectReference Include="..\Dominio.ContextoPrincipal\Dominio.ContextoPrincipal.csproj" />
+    <ProjectReference Include="..\HtmlExtensions\HtmlExtensions.csproj" />
+    <ProjectReference Include="..\Infraestructura.AgenteReconoser\Infraestructura.AgenteReconoser.csproj" />
+    <ProjectReference Include="..\Infraestructura.ContextoArchivos\Infraestructura.ContextoArchivos.csproj" />
+    <ProjectReference Include="..\Infraestructura.ContextoPrincipal\Infraestructura.ContextoPrincipal.csproj" />
+    <ProjectReference Include="..\Infraestructura.PowerBI\Infraestructura.PowerBI.csproj" />
+    <ProjectReference Include="..\Infraestructura.Cosmos\Infraestructura.Cosmos.csproj" />
+    <ProjectReference Include="..\Infraestructura.Storage\Infraestructura.Storage.csproj" />
+    <ProjectReference Include="..\Infraestructura.Transversal\Infraestructura.Transversal.csproj" />
+    <ProjectReference Include="..\PdfTronUtils\PdfTronUtils.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="codigosactos.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="notariascosmosmap.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="res0826.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="tiposdocumentos.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
+
+</Project>

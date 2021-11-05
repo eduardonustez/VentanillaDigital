@@ -1,0 +1,9 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.Nucleo\bin\Debug\netcoreapp3.1\Dominio.Nucleo.deps.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.Nucleo\bin\Debug\netcoreapp3.1\Dominio.Nucleo.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.Nucleo\bin\Debug\netcoreapp3.1\Dominio.Nucleo.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.Nucleo\obj\Debug\netcoreapp3.1\Dominio.Nucleo.csprojAssemblyReference.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.Nucleo\obj\Debug\netcoreapp3.1\Dominio.Nucleo.AssemblyInfoInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.Nucleo\obj\Debug\netcoreapp3.1\Dominio.Nucleo.AssemblyInfo.cs
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.Nucleo\obj\Debug\netcoreapp3.1\Dominio.Nucleo.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.Nucleo\obj\Debug\netcoreapp3.1\Dominio.Nucleo.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Dominio.Nucleo\obj\Debug\netcoreapp3.1\Dominio.Nucleo.pdb

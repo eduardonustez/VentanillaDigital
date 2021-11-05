@@ -1,0 +1,19 @@
+@using BlazorInputFile
+<div class="input-container file-input-container">
+  <label for="@Id" class="label">@Placeholder</label>
+  <div class="custom-file">
+    @* <input type="file" class="custom-file-input" id="@Id" accept=".pdf">
+      <label class="custom-file-label" for="@Id">Seleccione Archivo</label> *@
+    <InputFile id="@Id" OnChange="OnInputFileChange" class="custom-file-input" accept=".pdf"></InputFile>
+    <label class="custom-file-label" for="@Id">
+      @if (fileSelected != null)
+      {
+        <p>@fileSelected.Name</p>
+      }
+      else
+      {
+        <p>Seleccione Archivo</p>
+      }
+    </label>
+  </div>
+</div>

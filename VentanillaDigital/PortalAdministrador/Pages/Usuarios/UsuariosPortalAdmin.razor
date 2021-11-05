@@ -1,0 +1,131 @@
+﻿@page "/usuariosportaladmin"
+
+<div class="grid-tabla-filtro">
+    <div class="grid-tabla-filtro-contenedor">
+        <div class="container">
+            <h1>Lista de Usuarios Portal Administrador</h1>
+            <div class="botones-container">
+                <button class="btn-primario mr-2" data-toggle="modal" data-target="#createUserModalCenter" @onclick="ConfigurarModal">
+                    <span class="material-icons">
+                        add
+                    </span>Agregar usuario
+                </button>
+                <button class="btn-contorno-primario botones-container-link" @onclick="Refrescar">
+                    <span class="material-icons">
+                        refresh
+                    </span>Refrescar
+                </button>
+
+                <button id="boton-filtrar-bandeja" class="btn-contorno-primario" @onclick="() => MostrarFiltros()">
+                    <span class="material-icons">
+                        filter_alt
+                    </span> Filtrar
+                </button>
+            </div>
+        </div>
+        <div class="container">
+            <GridControl @ref="Grid" Title=""
+                         Columns="@Columns" Data="@Usuarios" TotalRows="@TotalRows"
+                         TotalPages="@TotalPages" OnChangePage="OnChangePage"
+                         ShowEditAction="true" ShowDeleteAction="true"
+                         OnEditItemClick="@(async (i) => await OnEditClick(i))"
+                         OnDeleteItemClick="@(async (i) => await OnDeleteItem(i))">
+            </GridControl>
+        </div>
+
+        @if (FiltrosVisibles)
+            {
+        <div class="filtros">
+            <div class="overlay" id="overlay" @onclick="@(() => MostrarFiltros())"></div>
+            <div class="filters-container" id="filtros">
+                <h4>Filtrar resultados</h4>
+                <button id="boton-cerrar-filtrar-bandeja" @onclick="@(() => MostrarFiltros())">
+                    &#10005
+                </button>
+                <div class="input-container">
+                    <label for="txtCorreoAdmin">Correo</label>
+                    <input type="text" @bind="@CorreoFilter" placeholder="Correo" @onkeyup="@Enter">
+                </div>
+                <div class="d-flex justify-content-end mt-3">
+                    <button @onclick="LimpiarCampos" class="btn-contorno-primario mr-3">
+                        Reiniciar
+                    </button>
+                    <button type="button" @onclick="Filtrar" class="btn-primario">
+                        Buscar
+                    </button>
+                </div>
+            </div>
+        </div>
+            }
+    </div>
+</div>
+
+@* Modal de creacion de usuarios *@
+<div class="modal fade" id="createUserModalCenter" tabindex="-1" role="dialog" aria-labelledby="createUserModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="createUserModalLongTitle">@TituloModal</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <EditForm Model="userAccount" class="needs-validation" OnValidSubmit="@HandleValidSubmit">
+                <DataAnnotationsValidator />
+                @*<CustomValidator @ref="customValidator" />*@
+                @*<ValidationSummary />*@
+                <div class="modal-body">
+                    <div class="form-en-linea">
+                        <div class="input-container">
+                            <label>Correo electrónico *</label>
+                            <InputText minlength="5" maxlength="51" type="email" @bind-Value="@userAccount.Email" disabled="@esUsuarioCreado" required />
+                            <ValidationMessage For="@(() => userAccount.Email)" />
+                        </div>
+                        <div class="input-container">
+                            <label>Rol *</label>
+                            <select @bind="@userAccount.Rol" required>
+                                <option selected value="USER">Consultor</option>
+                                <option value="ADMIN">Administrador</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn-contorno-primario mr-3" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn-primario" disabled="@showSpinner">
+                        @if (showSpinner)
+                            {
+                        <i class="fa fa-sync fa-spin"></i>
+                            }
+                        @(esUsuarioCreado ? "Actualizar usuario" : "Guardar usuario" )
+                    </button>
+                </div>
+            </EditForm>
+        </div>
+    </div>
+</div>
+
+@* Modal de eliminacion de usuarios *@
+<div class="modal fade" id="@deleteUserModalCenter" tabindex="-1" role="dialog" aria-labelledby="deleteUserModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="createUserModalLongTitle">¿Eliminar usuario?</h3>
+            </div>
+            <div class="modal-body">
+                <p>Eliminará el usuario del portal administrador. Esta acción es irreversible</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-contorno-primario mr-3" data-dismiss="modal">Cancelar</button>
+                <button type="button" class="btn-primario" @onclick="RemoveUsersSelected" disabled="@showSpinner">
+                    @if (showSpinner)
+                        {
+                    <i class="fa fa-sync fa-spin"></i>
+                        }
+                    Si, eliminar
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+

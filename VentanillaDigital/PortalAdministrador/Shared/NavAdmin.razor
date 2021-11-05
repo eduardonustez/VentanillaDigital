@@ -1,0 +1,39 @@
+﻿<AuthorizeView>
+    <Authorized>
+        <li title="Trámites" class="nav-item">
+            <NavLink ActiveClass="link-active" class="nav-link" href="/tramite">
+                <i class="fa fa-file-alt"></i>
+                <span class="nav-text">
+                    Trámites
+                </span>
+            </NavLink>
+        </li>
+        <li title="Usuarios" class="nav-item">
+            <NavLink ActiveClass="link-active" class="nav-link" href="/usuarios">
+                <i class="fa fa-user-friends"></i>
+                <span class="nav-text">
+                    Usuarios
+                </span>
+            </NavLink>
+        </li>
+        @if (esRolUsuario)
+        {
+        <li title="Usuarios" class="nav-item">
+            <NavLink ActiveClass="link-active" class="nav-link" href="/usuariosportaladmin">
+                <i class="fa fa-user"></i>
+                <span class="nav-text">
+                    Usuarios Portal Admin.
+                </span>
+            </NavLink>
+        </li>
+        <li title="Configuraciones" class="nav-item">
+            <NavLink ActiveClass="link-active" class="nav-link" href="/configuracionesmaquina">
+                <i class="fa fa-tablet"></i>
+                <span class="nav-text">
+                    Máquina Wacom
+                </span>
+            </NavLink>
+        </li>
+        }
+    </Authorized>
+</AuthorizeView>

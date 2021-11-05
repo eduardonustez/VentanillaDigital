@@ -1,0 +1,113 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "PDFTron.NETCore.Windows.x64/8.1.0.76931": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp2.1/PDFNetDotNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/PDFNetDotNetCore.dll": {}
+        },
+        "build": {
+          "build/PDFTron.NETCore.Windows.x64.targets": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PDFTron.NETCore.Windows.x64/8.1.0.76931": {
+      "sha512": "WsyxXGpursfZj0WBMu4HtvCx69t41oAg3HLu5/ALcJBU0HhuOrEjyRlAxFf89Dp7ZWTYMNrlx2/5JZn5xbY69w==",
+      "type": "package",
+      "path": "pdftron.netcore.windows.x64/8.1.0.76931",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "GettingStarted_PDFNetC.pdf",
+        "build/PDFTron.NETCore.Windows.x64.targets",
+        "build/x64/PDFNetC.dll",
+        "legal.txt",
+        "lib/netcoreapp2.1/PDFNetDotNetCore.dll",
+        "license.pdf",
+        "pdftron.netcore.windows.x64.8.1.0.76931.nupkg.sha512",
+        "pdftron.netcore.windows.x64.nuspec",
+        "whatsnew.html"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "PDFTron.NETCore.Windows.x64 >= 8.1.0.76931"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\enustez\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PdfTronUtils\\PdfTronUtils.csproj",
+      "projectName": "PdfTronUtils",
+      "projectPath": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PdfTronUtils\\PdfTronUtils.csproj",
+      "packagesPath": "C:\\Users\\enustez\\.nuget\\packages\\",
+      "outputPath": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\PdfTronUtils\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\enustez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://olsrvtfs01:8080/tfs/arquitectura/_packaging/OlimpiaNugetServer/nuget/v3/index.json": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "dependencies": {
+          "PDFTron.NETCore.Windows.x64": {
+            "target": "Package",
+            "version": "[8.1.0.76931, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.208\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

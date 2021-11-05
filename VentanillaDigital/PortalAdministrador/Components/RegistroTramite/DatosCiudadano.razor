@@ -1,0 +1,115 @@
+﻿
+<EditForm class="col-12" Model="@PersonaInfo">
+    <div class="datos-identificacion-container">
+        <h3>Identificación</h3>
+        <div class="input-container ">
+            <label for="tipoNumeroIdentificacion">Tipo y número de documento</label>
+            <div class="d-flex tipo-numero-identificacion">
+                <div class="input-tipo-identificacion">
+                    <InputSelect id="tipo-identificacion-datos"
+                                ValueExpression="()=>CurrTipoDoc"
+                                 Value="@CurrTipoDoc"
+                                 @oninput="@((x)=>ChildChanged("TipoIdentificacion",x.Value))">
+                        @if (_tiposIdentificaciones != null)
+                        {
+                            @foreach (var tipo in _tiposIdentificaciones)
+                            {
+                                <option value="@tipo.Abreviatura" selected="@(tipo.Abreviatura == PersonaInfo.TipoIdentificacion.Abreviatura)">
+                                    @tipo.Nombre
+                                </option>
+                            }
+                        }
+                    </InputSelect>
+                </div>
+                <InputText placeholder="Número de documento" class="input-numero-identificacion"
+                           minlength="5"
+                           id="@InputID"
+                           onkeyup="reemplazarCeroInicio(this)"
+                           ValueExpression="()=>PersonaInfo.NumeroIdentificacion"
+                           Value="@PersonaInfo.NumeroIdentificacion"
+                           @oninput="@((x)=>ChildChanged("NumeroIdentificacion",x.Value))" />
+            </div>
+            @if (!PersonaInfo.IsValid() && !string.IsNullOrEmpty(PersonaInfo.GetError()))
+            {
+                <p class="error-texto">@PersonaInfo.GetError()</p>
+            }
+        </div>
+
+        @*<div>
+                <input type="submit"
+                       class="btn-primario"
+                       value="Escanear Documento" />
+                @if (_personaInfo.TipoIdentificacion == 1)
+                {
+                    <button class="btn-primario d-flex align-items-center" @onclick="EscanearDocumento">
+                        <i class="material-icons md-24">scanner</i>
+                        <span>  Escanear documento </span>
+                    </button>
+                }
+                else
+                {
+                    <p>No es posible escanear la información para este tipo de documento, por favor ingresa los siguientes datos:</p>
+                }
+            </div>*@
+
+        <div class="input-container">
+            <label>Nombres</label>
+            <InputText placeholder="Nombres"
+                       ValueExpression="()=>PersonaInfo.Nombres"
+                       Value="@PersonaInfo.Nombres"
+                       @oninput="@((x)=>ChildChanged("Nombres",x.Value))" required="true" />
+        </div>
+        <div class="input-container">
+            <label>Apellidos</label>
+            <InputText placeholder="Apellidos"
+                       ValueExpression="()=>PersonaInfo.Apellidos"
+                       Value="@PersonaInfo.Apellidos"
+                       @oninput="@((x)=>ChildChanged("Apellidos",x.Value))" />
+        </div>
+    </div>
+
+    @*<div>
+            <label>Lugar de comparecencia *</label>
+        </div>
+        <form>
+            <label class="radio-button-container">
+                Trámite en notaria
+                <input class="radio-input" type="radio" name="lugar-comparecencia" @onchange="eventArgs => { TramiteEnNotaria(eventArgs.Value); }">
+                <span class="radio-active"></span>
+            </label>
+            <label class="radio-button-container">
+                Tramite fuera del despacho
+                <input class="radio-input" name="lugar-comparecencia" type="radio" @onchange="eventArgs => { TramiteFueraDespacho(eventArgs.Value); }">
+                <span class="fuera-despacho radio-active"></span>
+            </label>
+        </form>
+        @if (fueraDespacho == "1")
+        {
+            <div class="input-container">
+                <label>Dirección de comparecencia*</label>
+                <input type="text" required />
+            </div>
+        }*@
+
+    @*<div class="datos-contacto-container">
+            <h3>Datos de contacto</h3>
+            <p>
+                Esta información es opcional y podrá ser omitida si el ciudadano así
+                lo expresa.
+            </p>
+            <div class="input-container">
+                <label>Número de celular</label>
+                <input type="number"
+                       placeholder="3112223344" value="@PersonaInfo.NumeroCelular" maxlength="10"
+                       @onchange="@((x)=>ChildChanged("NumeroCelular",x.Value))" />
+            </div>
+            <div class="input-container">
+                <label>Correo electrónico</label>
+                <InputText type="email"
+                           placeholder="correo@correo.com"
+                           ValueExpression="()=>PersonaInfo.Email"
+                           Value="@PersonaInfo.Email"
+                           @oninput="@((x)=>ChildChanged("Email",x.Value))" />
+            </div>
+        </div>*@
+</EditForm>

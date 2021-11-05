@@ -1,0 +1,155 @@
+﻿
+:root,
+input,
+select,
+button,
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-kerning: auto;
+    font-variant-ligatures: common-ligatures contextual;
+    font-feature-settings: "kern", "liga", "clig", "calt";
+    text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p,
+figure,
+pre,
+table,
+fieldset,
+hr {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    line-height: 1.5;
+}
+
+strong {
+    font-weight: 600;
+}
+
+/* -- TÍTULOS -- */
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 2.8rem 0 1rem;
+    line-height: 1;
+    font-variant-numeric: tabular-nums;
+}
+
+h1 {
+    font-size: var(--scale-3);
+    font-weight: 900;
+    color: var(--rojo-800);
+}
+
+h2 {
+    font-size: var(--scale-3);
+    font-weight: 800;
+}
+
+h3 {
+    font-size: var(--scale-1);
+    font-weight: 700;
+    color: var(--gris-800);
+    margin: 0.5rem auto;
+}
+
+h4 {
+    font-size: var(--scale-1);
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+h5 {
+    font-size: var(--scale-0);
+    font-weight: 700;
+}
+
+/* -- TEXTOS -- 5*/
+
+p {
+    font-size: var(--scale-0);
+    font-weight: 400;
+}
+
+.mayusculas {
+    font-variant: all-small-caps;
+}
+
+.small-text {
+    font-size: 0.8rem;
+    color: var(--gris-400);
+    margin-top: 10px;
+}
+
+li {
+    margin-top: 10px;
+}
+
+/* -- ENLACES -- */
+a.link-primario,
+a.link-primario:not([href]):not([tabindex]),
+a.link-primario:link {
+    color: var(--rojo-primario);
+    text-decoration: underline;
+    display: inline-flex;
+}
+
+    a.link-primario:visited {
+        color: var(--rojo-primario);
+        text-decoration: underline;
+    }
+
+    a.link-primario:hover {
+        color: var(--rojo-700);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    a.link-primario:active {
+        color: var(--rojo-400);
+        text-decoration: underline;
+    }
+
+a.link-secundario,
+a.link-secundario:not([href]):not([tabindex]),
+a.link-secundario:link {
+    color: var(--amarillo-700);
+    display: inline-flex;
+}
+
+    a.link-secundario:visited {
+        color: var(--amarillo-700);
+        text-decoration: underline;
+    }
+
+    a.link-secundario:hover {
+        color: var(--amarillo-800);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    a.link-secundario:active {
+        color: var(--amarillo-400);
+        text-decoration: underline;
+    }
+
+/*iconos*/
+.material-icons.md-18 {
+    font-size: 18px;
+}

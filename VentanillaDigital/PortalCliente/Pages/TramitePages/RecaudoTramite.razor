@@ -1,0 +1,136 @@
+﻿@attribute [Authorize]
+
+<div class="root-initial-loader" style="display: @(IsLoading ? "block" : "none")">
+    <div class="overlay"></div>
+    <i class="fas fa-circle-notch fa-3x fa-spin-2x"></i>
+</div>
+
+<div class="container">
+
+    @if (!string.IsNullOrEmpty(MensajeError))
+    {
+        <div class="mensaje-container mensaje-error ml-3">
+            <p>@MensajeError</p>
+        </div>
+    }
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="input-container">
+                <label for="txtNombreCliente">Nombre Cliente</label>
+                <input type="text" disabled="@IsLoading" id="txtNombreCliente" @bind="@RecaudoFrm.NombreCliente" placeholder="Nombre Cliente" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="input-container">
+                <label for="sleTipoDocumento">Tipo Identificación</label>
+                <select name="sleTipoDocumento" id="sleTipoDocumento" class="form-control custom-select" @bind="RecaudoFrm.TipoIdentificacion">
+                    <option value="0" selected disabled></option>
+                    @if (TiposIdentificacion != null)
+                    {
+                        foreach (var item in TiposIdentificacion)
+                        {
+                            <option value="@item.TipoIdentificacionId">@item.Nombre</option>
+                        }
+                    }
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="input-container">
+                <label for="txtNumeroIdentificacion">Número Identificación</label>
+                <input type="text" disabled="@IsLoading" id="txtNumeroIdentificacion" @bind="@RecaudoFrm.NumeroIdentificacion" placeholder="Número Identificación" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="input-container">
+                <label for="txtCorreo">Correo</label>
+                <input type="email" disabled="@IsLoading" id="txtCorreo" @bind="@RecaudoFrm.Correo" placeholder="Correo" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="input-container">
+                <label for="txtValor">Valor</label>
+                <input type="number" disabled="@IsLoading" id="txtValor" @bind="@RecaudoFrm.Valor" placeholder="Valor" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="input-container">
+                <label for="txtIva">IVA</label>
+                <input type="number" disabled="@IsLoading" id="txtIva" @bind="@RecaudoFrm.IVA" placeholder="IVA" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="input-container">
+                <label for="txtRazon">Concepto</label>
+                <input type="text" disabled="@IsLoading" id="txtRazon" @bind="@RecaudoFrm.Observacion" placeholder="Concepto" />
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="input-container">
+                <label for="txtRazon"></label><br />
+                <button class="btn btn-primary" disabled="@IsLoading" @onclick="Guardar"><i class="fa fa-plus"></i> Agregar</button>
+            </div>
+        </div>
+    </div>
+
+
+    @if (Recaudos != null && Recaudos.Any())
+    {
+        <div class="container-fluid mt-2">
+            <div class="row mt-2">
+                <div class="col-12">
+                    <figure class="fig-table table-responsive-sm">
+                        <table class="table table-hover table-sm table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Identificación</th>
+                                    <th>Correo</th>
+                                    <th>Estado</th>
+                                    <th>Valor</th>
+                                    <th>Valor Pagado</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var row in Recaudos)
+                                {
+                                    <tr>
+                                        <td>@row.NombreCompleto</td>
+                                        <td>@row.NumeroIdenficacion</td>
+                                        <td>@row.Correo</td>
+                                        <td>@row.Estado</td>
+                                        <td>@row.ValorTotal.ToString("C0", Culture)</td>
+                                        <td>@row.ValorPagado.ToString("C0", Culture)</td>
+                                        <td class="text-center">
+                                            @if (row.Estado == "GENERADO")
+                                            {
+                                                <button class="btn btn-sm btn-primary" disabled="@IsLoading" @onclick="() => MostrarModalEnviar(row)"><i class="fa fa-paper-plane"></i> Enviar</button>
+                                                <button class="btn btn-sm btn-danger ml-2" disabled="@IsLoading" @onclick="() => MostrarMensajeEliminar(row)"><i class="fa fa-trash"></i></button>
+                                            }
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    }
+
+</div>
+
+<ModalQuestion @ref="ModalQuestion" OnOkClick="Eliminar" ModalTitle="Eliminar">
+    <p>
+        ¿Está seguro que desea eliminar el registro?
+    </p>
+</ModalQuestion>
+
+<ModalForm @ref="ModalEnviar" ModalTitle="Recaudo Trámite Virtual" CustomStyleModal="max-width:50%" CustomModalClass="loader">
+    @if (ModalEnviar.ModalClass == "Show")
+    {
+        <EnviarRecaudoComponent Archivos="Archivos" RecaudoTramiteVirtualId="recaudoSeleccionado.RecaudoTramiteVirtualId" OnSend="OnSendRecaudo"></EnviarRecaudoComponent>
+    }
+</ModalForm>

@@ -1,0 +1,32 @@
+<div class="botones-container">
+  <button id="boton-filtrar-bandeja" class="btn-contorno-primario" @onclick="@(() => MostrarFiltros())">
+                        <span class="material-icons">
+                            filter_alt
+                        </span> Filtrar
+    </button> 
+  </div>
+ <div class="filtros">
+            <div class="overlay" id="overlay" @onclick="@(() => MostrarFiltros())"></div>
+            <div class="filters-container" id="filtros">
+                <h4>Filtrar resultados</h4>
+                <button id="boton-cerrar-filtrar-bandeja" @onclick="@(() => MostrarFiltros())">
+                    &#10005
+                </button>
+                <form Model="filtrosBandejaEntrada">
+                     <label class="radio-button-container">
+                        Mis tramites
+                        <input class="radio-input" type="radio" name="autorTramite" value="1"
+                            @onchange="eventArgs=>Filtrar((string)eventArgs.Value)" checked="true">
+                        <span class="radio-active"></span>
+                    </label>
+                    <label class="radio-button-container">
+                        Tramites Notaría
+                        <input class="radio-input" type="radio" name="autorTramite" value="2"
+                            @onchange="eventArgs=>Filtrar((string)eventArgs.Value)">
+                        <span class="radio-active"></span>
+                    </label>
+                </form>
+                <div class="d-flex justify-content-end mt-3">
+                </div>
+            </div>
+        </div>

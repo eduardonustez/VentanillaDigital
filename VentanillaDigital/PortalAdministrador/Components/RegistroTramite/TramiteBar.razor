@@ -1,0 +1,24 @@
+﻿<div class="cabecera-tramite-container">
+    <div class="cabecera-tramite-content">
+        @if (TramiteId == 0)
+        {
+            <p class="pl-1">Nuevo trámite</p>
+        }
+        else
+        {
+            <p>Tramite # <span>@TramiteId</span></p>
+        }
+        @if (TipoTramite != null)
+        {
+            <p>@TipoTramite.Nombre</p>
+            <p>
+                Comparecientes <span>@ComparecienteActual</span> de
+                <span>@Comparecientes</span> @ComparecienteFirmaRuego
+            </p>
+        }
+
+    <a class="link-primario" @onclick="OnCancel">
+        <i class="material-icons mr-1 md-18">cancel</i> Cancelar trámite
+    </a>
+    </div>
+</div>

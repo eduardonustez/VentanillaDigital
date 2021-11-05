@@ -1,0 +1,179 @@
+﻿
+<EditForm class="col-12" Model="@PersonaInfo">
+    <div class="datos-identificacion-container">
+        <h3>Identificación</h3>
+        <div class="input-container">
+            <label for="tipoNumeroIdentificacion">Tipo y número de documento</label>
+            <div class="d-flex tipo-numero-identificacion">
+                <div class="input-tipo-identificacion">
+                    <InputSelect id="tipo-identificacion-datos"
+                                 ValueExpression="()=>CurrTipoDoc"
+                                 Value="@CurrTipoDoc"
+                                 @oninput="@((x)=>ChildChanged("TipoIdentificacion",x.Value))">
+                        @if (_tiposIdentificaciones != null)
+                        {
+                            @foreach (var tipo in _tiposIdentificaciones)
+                            {
+                                <option value="@tipo.Abreviatura" selected="@(tipo.Abreviatura == PersonaInfo.TipoIdentificacion.Abreviatura)">
+                                    @tipo.Nombre
+                                </option>
+                            }
+                        }
+                    </InputSelect>
+                </div>
+                <InputText placeholder="Número de documento" class="input-numero-identificacion"
+                           minlength="5"
+                           maxlength="15"
+                           id="@InputID"
+                           onkeyup="reemplazarCeroInicio(this)"
+                           ValueExpression="()=>PersonaInfo.NumeroIdentificacion"
+                           Value="@PersonaInfo.NumeroIdentificacion"
+                           @oninput="@((x)=>ChildChanged("NumeroIdentificacion",x.Value))" />
+            </div>
+            @if (!PersonaInfo.IsValid() && !string.IsNullOrEmpty(PersonaInfo.GetError()))
+            {
+                <p class="error-texto">@PersonaInfo.GetError()</p>
+            }
+        </div>
+        <div class="input-container">
+            <label>Nombres</label>
+            <InputText id="nombres-compareciente" placeholder="Nombres"
+                       ValueExpression="()=>PersonaInfo.Nombres"
+                       Value="@PersonaInfo.Nombres"
+                       @oninput="@((x)=>ChildChanged("Nombres",x.Value))" required="true" />
+        </div>
+        <div class="input-container">
+            <label>Apellidos</label>
+            <InputText id="apellidos-compareciente" placeholder="Apellidos"
+                       ValueExpression="()=>PersonaInfo.Apellidos"
+                       Value="@PersonaInfo.Apellidos"
+                       @oninput="@((x)=>ChildChanged("Apellidos",x.Value))" />
+        </div>
+        <div class="input-container">
+            <a href="" class="text-decoration-none" data-toggle="modal" data-target="#exampleModal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                    <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"></path>
+                    <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"></path>
+                </svg>
+                Ver tratamiento de datos
+            </a>
+        </div>
+        <br />
+        @if (MostrarCheckDatosAdicionales)
+        {
+            <div>
+                <label class="check-box-container checkbox-disabled">
+                    Incluir datos adicionales
+                    <input type="checkbox"
+                           name="IncluirDatos"
+                           id="IncluirDatos"
+                           checked="@_incluirCelularEmail"
+                           @onchange="ToggleIncluirCelularEmail">
+                    <span class="check" for="tramiteSinBiometria"></span>
+
+                </label>
+            </div>
+        }
+        @if (_incluirCelularEmail)
+        {
+            <div class="input-container">
+                <label>Celular</label>
+                <Input type="number" id="celular-compareciente" placeholder="Número de Celular"
+                       ValueExpression="() => PersonaInfo.NumeroCelular"
+                       Value="@PersonaInfo.NumeroCelular"
+                       @oninput="@((x) => ChildChanged("NumeroCelular", x.Value))" />
+            </div>
+            @if (MostrarErrorCelular)
+            {
+                <p class="error-texto">Ingrese número de celular valido</p>
+            }
+            <div class="input-container">
+                <label>Correo</label>
+                <InputText id="correo-compareciente"
+                           placeholder="Correo electrónico"
+                           ValueExpression="() => PersonaInfo.Email"
+                           Value="@PersonaInfo.Email"
+                           @oninput="@((x) => ChildChanged("Email", x.Value))" />
+            </div>
+            @if (MostrarErrorEmail)
+            {
+                <p class="error-texto">Ingrese un correo valido</p>
+            }
+        }
+        @if (PersonaInfo.TipoIdentificacion?.Abreviatura == "CC" && !_movil && usarScanner)
+        {
+            <div class="py-2">
+                <button type="button" class="btn-primario d-flex align-items-center" id="callScanner" @onclick="Escanear">
+                    <i class="material-icons md-24">scanner</i>
+                    <span>Escanear documento </span>
+                </button>
+                <button type="button" class="btn-contorno-secundario d-flex align-items-center" data-toggle="modal" data-target="#howtoScanCenter">
+                    <i class="material-icons md-24">help</i>
+                    <span>¿Cómo ubicar el documento? </span>
+                </button>
+            </div>
+        }
+    </div>
+</EditForm>
+
+<div class="modal fade" id="scannerModalCenter" tabindex="-1" role="dialog" aria-labelledby="scannerModalCenter" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="scanner-title">Escaneo de documento</h3>
+            </div>
+            <div class="modal-body">
+                <p id="scanner-message"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-contorno-primario" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="howtoScanCenter" tabindex="-1" role="dialog" aria-labelledby="howtoScanModalCenter" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="scanner-title">Escaneo de documento</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6">
+                        <p>Ubique el documento del compareciente en la bandeja de alimentación del escáner de forma horizontal con la primera cara arriba.</p>
+                    </div>
+                    <div class="col-6">
+                        <img src="images/epson_510.png" class="epson-510-image" alt="Ubicacion de documento en escaner" />
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-contorno-primario" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Tratamiento de datos -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Autorización para el tratamiento de datos personales.</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body mensaje-info">
+                Autorizo de manera voluntaria, previa, explícita, informada e inequívoca el tratamiento de mis datos personales
+                para la autenticación biométrica en línea de mi huella dactilar conforme lo dispone el Decreto Ley 0019 de 2012
+                y en general para lo correspondiente al trámite notarial que he solicitado. “Autorizo de forma expresa el tratamiento
+                y uso de mis datos personales con el fin de realizar el enrolamiento en la Notaría Digital”.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="ui-steps-prev" data-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>

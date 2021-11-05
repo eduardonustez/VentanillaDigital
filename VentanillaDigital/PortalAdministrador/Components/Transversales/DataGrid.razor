@@ -1,0 +1,123 @@
+﻿<figure class="fig-table">
+    <table id="mi-tabla" class="tabla-tramites">
+        @if (TipoTramite == "3")
+        {
+            <caption>
+                Haga doble-clic para ver el acta.
+            </caption>
+
+            @if (mostrarMensajeFirmando)
+            {
+                <caption>
+                    <p>
+                    <strong>Algunas actas están siendo firmadas en este momento.</strong>
+                    En breve estarán disponibles para imprimir.</p>
+                    <p>Por favor, haga clic en refrescar en unos instantes.</p>
+                </caption>
+            }
+        }
+        else
+        {
+            <caption>
+                Haga doble-clic para consultar el trámite
+            </caption>
+        }
+
+        <thead>
+            <tr>
+                @for (int i = 0; i < columnTitles.Length; i++)
+                {
+                    // { "Consec.", "Tipo de Trámite", "Comparecientes"," n.º Documento",  "Fecha", "Estado" };
+                    @if (i == 0 || i == 3 || i == 4)
+                    {
+                        @* Solucion para alinear a la derecha las columnas con números *@
+                        <th class="numerico">@columnTitles[i]</th>
+                    }
+                    else if (i == 2)
+                    {
+                        <th class="numerico">
+                            <span class="material-icons" title="Número de comparecientes" alt="Comparecientes">
+                                people
+                            </span>
+                        </th>
+                    }
+                    else
+                    {
+                        <th>@columnTitles[i]</th>
+                    }
+                }
+                @if (mostrarCheckboxes)
+                {
+                    <th>
+                        <input type="checkbox" name="seleccionarTodos" title="Seleccionar todas las actas" id="seleccionarTodosCheck" @onchange="SeleccionarTodos" />
+                    </th>
+                }
+                @* else
+                    {
+                        <th>Estado</th>
+                    } *@
+            </tr>
+        </thead>
+        <tbody>
+            @if (data != null)
+            {
+                // { "Consec.", "Tipo de Trámite", "Comparecientes"," n.º Documento",  "Fecha", "Estado" };
+                @for (int i = 0; i < data.GetLength(0); i++)
+                {
+                    var id = data[i, 0].ToString();
+                    <tr class="@(data[i,5].ToString() == "Firmando" ? "tabla-tramites-pendientes" : "")" id="@id" @ondblclick="()=> OnSelectRow.InvokeAsync(id)">
+                        @for (int j = 0; j < data.GetLength(1); j++)
+                        {
+                            @if (j == 0 || j == 2 || j == 3 || j == 4)
+                            {
+                                @* Solucion para alinear a la derecha las columnas con números *@
+                                <td class="numerico">@data[i, j]</td>
+                            }
+                            else
+                            {
+                                <td>@data[i, j]</td>
+                            }
+                        }
+                        @if (mostrarCheckboxes)
+                        {
+                            <td>
+                                <input class="checkbox-table" type="checkbox" name="uno" @onclick="()=> AgregarSeleccion(id)" />
+                            </td>
+                        }
+                        @* TODO: Agregar clase "tabla-tramites-en-proceso" al TR
+                            cuando el tramite continue siendo procesado. Ejemplo:  *@
+                        @* else
+                            {
+                                @if (id is pending...)
+                                {
+                                    <td>Firmando...</td>
+                                }
+                                else
+                                {
+                                    <td>Finalizado</td>
+                                }
+                            } *@
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</figure>
+<div class="container">
+    <div class="paginator-container">
+        <div class="paginator-buttons">
+            <button class="btn-terciario" @onclick="OnClickFirst"><i class="fas fa-angle-double-left"></i></button>
+            <button class="btn-terciario" @onclick="OnClickPrevious"><i class="fas fa-angle-left"></i></button>
+            <span>Pagina @indicePagina de @totalPaginas</span>
+            <button class="btn-terciario" @onclick="OnClickNext"><i class="fas fa-angle-right"></i></button>
+            <button class="btn-terciario" @onclick="OnClickLast"><i class="fas fa-angle-double-right"></i></button>
+        </div>
+        <p>Total Registros: @totalRegistros</p>
+    </div>
+    @if (mostrarCheckboxes)
+    {
+        <a href="/bandejaEntrada/3">
+            Ir a autorizados
+        </a>
+    }
+</div>

@@ -1,0 +1,52 @@
+﻿@page "/notarias"
+@layout MainLayout
+@inject PortalAdministrador.Services.Notaria.INotariaService _notariaService
+@using ApiGateway.Contratos.Models
+
+
+<div class="container">
+    <h1>Notarias</h1>
+    <GridControl @ref="Grid" Title="" Columns="@Columns" Data="@LasNotarias" TotalRows="@TotalRows"
+        TotalPages="@TotalPages" OnChangePage="OnChangePage">
+    </GridControl>
+</div>
+
+@code {
+    // Grid
+    public GridControl<NotariaClienteModel> Grid { get; set; }
+    public List<(string, string)> Columns { get; set; } = new List<(string, string)>
+{
+("Nombre", "Nombre"),
+("Municipio", "Ciudad"),
+("Departamento", "Departamento"),
+};
+
+    public List<NotariaClienteModel> LasNotarias { get; set; }
+    public int TotalPages { get; set; }
+    public long TotalRows { get; set; }
+
+    int totalRowsByPage = 10;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await ConsultarUsuarios(1);
+    }
+    public async void OnChangePage(int indice)
+    {
+        await ConsultarUsuarios(indice);
+    }
+
+    public async Task ConsultarUsuarios(int indice)
+    {
+        var res = await _notariaService.ObtenerNotariasCompleteAsync();
+
+        if (res != null)
+        {
+            LasNotarias = res.ToList();
+            TotalRows = res.Count();
+            TotalPages = Math.Abs(res.Count() / totalRowsByPage);
+        }
+
+        StateHasChanged();
+    }
+}

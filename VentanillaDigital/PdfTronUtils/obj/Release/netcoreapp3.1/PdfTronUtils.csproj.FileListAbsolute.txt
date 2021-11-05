@@ -1,0 +1,10 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\PdfTronUtils\bin\Release\netcoreapp3.1\PDFNetC.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\PdfTronUtils\bin\Release\netcoreapp3.1\PdfTronUtils.deps.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\PdfTronUtils\bin\Release\netcoreapp3.1\PdfTronUtils.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\PdfTronUtils\bin\Release\netcoreapp3.1\PdfTronUtils.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\PdfTronUtils\obj\Release\netcoreapp3.1\PdfTronUtils.csprojAssemblyReference.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\PdfTronUtils\obj\Release\netcoreapp3.1\PdfTronUtils.AssemblyInfoInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\PdfTronUtils\obj\Release\netcoreapp3.1\PdfTronUtils.AssemblyInfo.cs
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\PdfTronUtils\obj\Release\netcoreapp3.1\PdfTronUtils.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\PdfTronUtils\obj\Release\netcoreapp3.1\PdfTronUtils.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\PdfTronUtils\obj\Release\netcoreapp3.1\PdfTronUtils.pdb

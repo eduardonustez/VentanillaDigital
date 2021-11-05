@@ -1,0 +1,4029 @@
+{
+  "NotariasCosmosMap": [
+    {
+      "notariaId": "6",
+      "notariaCosmosId": "2500000016",
+      "notariaName": "NOTARÍA DIECISÉIS DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "7",
+      "notariaCosmosId": "2500000037",
+      "notariaName": "NOTARÍA TREINTA Y SIETE DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "8",
+      "notariaCosmosId": "2500000018",
+      "notariaName": "NOTARÍA DIECIOCHO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "55",
+      "notariaCosmosId": "500200001",
+      "notariaName": "NOTARÍA ÚNICA DE ABEJORRAL - ANTIOQUIA"
+    },
+    {
+      "notariaId": "98",
+      "notariaCosmosId": "50300001",
+      "notariaName": "NOTARÍA ÚNICA DE AMAGÁ - ANTIOQUIA"
+    },
+    {
+      "notariaId": "99",
+      "notariaCosmosId": "503100001",
+      "notariaName": "NOTARÍA ÚNICA DE AMALFI - ANTIOQUIA"
+    },
+    {
+      "notariaId": "100",
+      "notariaCosmosId": "503400001",
+      "notariaName": "NOTARÍA ÚNICA DE ANDES - ANTIOQUIA"
+    },
+    {
+      "notariaId": "101",
+      "notariaCosmosId": "503800001",
+      "notariaName": "NOTARÍA ÚNICA DE ANGOSTURA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "102",
+      "notariaCosmosId": "504000001",
+      "notariaName": "NOTARÍA ÚNICA DE ANORÍ - ANTIOQUIA"
+    },
+    {
+      "notariaId": "103",
+      "notariaCosmosId": "500100002",
+      "notariaName": "NOTARÍA SEGUNDA DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "104",
+      "notariaCosmosId": "500100003",
+      "notariaName": "NOTARÍA TERCERA DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "105",
+      "notariaCosmosId": "500100004",
+      "notariaName": "NOTARÍA CUARTA DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "106",
+      "notariaCosmosId": "500100005",
+      "notariaName": "NOTARÍA QUINTA DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "107",
+      "notariaCosmosId": "500100006",
+      "notariaName": "NOTARÍA SEXTA DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "108",
+      "notariaCosmosId": "500100007",
+      "notariaName": "NOTARÍA SÉPTIMA DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "109",
+      "notariaCosmosId": "500100008",
+      "notariaName": "NOTARÍA OCTAVA DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "110",
+      "notariaCosmosId": "500100009",
+      "notariaName": "NOTARÍA NOVENA DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "140",
+      "notariaCosmosId": "500100010",
+      "notariaName": "NOTARÍA DÉCIMA DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "141",
+      "notariaCosmosId": "500100011",
+      "notariaName": "NOTARÍA ONCE DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "142",
+      "notariaCosmosId": "500100012",
+      "notariaName": "NOTARÍA DOCE DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "143",
+      "notariaCosmosId": "500100013",
+      "notariaName": "NOTARÍA TRECE DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "144",
+      "notariaCosmosId": "500100014",
+      "notariaName": "NOTARÍA CATORCE DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "145",
+      "notariaCosmosId": "500100015",
+      "notariaName": "NOTARÍA QUINCE DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "146",
+      "notariaCosmosId": "500100016",
+      "notariaName": "NOTARÍA DIECISÉIS DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "157",
+      "notariaCosmosId": "500100017",
+      "notariaName": "NOTARÍA DIECISIETE DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "158",
+      "notariaCosmosId": "500100018",
+      "notariaName": "NOTARÍA DIECIOCHO DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "159",
+      "notariaCosmosId": "500100019",
+      "notariaName": "NOTARÍA DIECINUEVE DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "160",
+      "notariaCosmosId": "500100020",
+      "notariaName": "NOTARÍA VEINTE DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "161",
+      "notariaCosmosId": "500100021",
+      "notariaName": "NOTARÍA VEINTIUNO DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "162",
+      "notariaCosmosId": "500100022",
+      "notariaName": "NOTARÍA VEINTIDÓS DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "163",
+      "notariaCosmosId": "500100023",
+      "notariaName": "NOTARÍA VEINTITRÉS DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "164",
+      "notariaCosmosId": "500100024",
+      "notariaName": "NOTARÍA VEINTICUATRO DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "165",
+      "notariaCosmosId": "500100025",
+      "notariaName": "NOTARÍA VEINTICINCO DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "166",
+      "notariaCosmosId": "500100026",
+      "notariaName": "NOTARÍA VEINTISEIS DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "167",
+      "notariaCosmosId": "500100028",
+      "notariaName": "NOTARÍA VEINTIOCHO DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "168",
+      "notariaCosmosId": "500100029",
+      "notariaName": "NOTARÍA VEINTINUEVE DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "169",
+      "notariaCosmosId": "500100030",
+      "notariaName": "NOTARÍA TREINTA DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "170",
+      "notariaCosmosId": "800100001",
+      "notariaName": "NOTARÍA PRIMERA DE BARRANQUILLA - ATLÁNTICO"
+    },
+    {
+      "notariaId": "171",
+      "notariaCosmosId": "800100002",
+      "notariaName": "NOTARÍA SEGUNDA DE BARRANQUILLA - ATLÁNTICO"
+    },
+    {
+      "notariaId": "172",
+      "notariaCosmosId": "800100003",
+      "notariaName": "NOTARÍA TERCERA DE BARRANQUILLA - ATLÁNTICO"
+    },
+    {
+      "notariaId": "173",
+      "notariaCosmosId": "800100004",
+      "notariaName": "NOTARÍA CUARTA DE BARRANQUILLA - ATLÁNTICO"
+    },
+    {
+      "notariaId": "174",
+      "notariaCosmosId": "800100005",
+      "notariaName": "NOTARÍA QUINTA DE BARRANQUILLA - ATLÁNTICO"
+    },
+    {
+      "notariaId": "175",
+      "notariaCosmosId": "800100006",
+      "notariaName": "NOTARÍA SEXTA DE BARRANQUILLA - ATLÁNTICO"
+    },
+    {
+      "notariaId": "176",
+      "notariaCosmosId": "800100007",
+      "notariaName": "NOTARÍA SÉPTIMA DE BARRANQUILLA - ATLÁNTICO"
+    },
+    {
+      "notariaId": "177",
+      "notariaCosmosId": "800100008",
+      "notariaName": "NOTARÍA OCTAVA DE BARRANQUILLA - ATLÁNTICO"
+    },
+    {
+      "notariaId": "178",
+      "notariaCosmosId": "800100009",
+      "notariaName": "NOTARÍA NOVENA DE BARRANQUILLA - ATLÁNTICO"
+    },
+    {
+      "notariaId": "179",
+      "notariaCosmosId": "800100011",
+      "notariaName": "NOTARÍA ONCE DE BARRANQUILLA - ATLÁNTICO"
+    },
+    {
+      "notariaId": "180",
+      "notariaCosmosId": "800100012",
+      "notariaName": "NOTARÍA DOCE DE BARRANQUILLA - ATLÁNTICO"
+    },
+    {
+      "notariaId": "181",
+      "notariaCosmosId": "1300600001",
+      "notariaName": "NOTARÍA ÚNICA DE ACHÍ - BOLÍVAR"
+    },
+    {
+      "notariaId": "182",
+      "notariaCosmosId": "1701300001",
+      "notariaName": "NOTARÍA ÚNICA DE AGUADAS - CALDAS"
+    },
+    {
+      "notariaId": "183",
+      "notariaCosmosId": "1704200001",
+      "notariaName": "NOTARÍA ÚNICA DE ANSERMA - CALDAS"
+    },
+    {
+      "notariaId": "184",
+      "notariaCosmosId": "1902200001",
+      "notariaName": "NOTARÍA ÚNICA DE ALMAGUER - CAUCA"
+    },
+    {
+      "notariaId": "185",
+      "notariaCosmosId": "2001100001",
+      "notariaName": "NOTARÍA ÚNICA DE AGUACHICA - CESAR"
+    },
+    {
+      "notariaId": "186",
+      "notariaCosmosId": "2001300001",
+      "notariaName": "NOTARÍA ÚNICA DE AGUSTIN CODAZZI - CESAR"
+    },
+    {
+      "notariaId": "187",
+      "notariaCosmosId": "2700600001",
+      "notariaName": "NOTARÍA ÚNICA DE ACANDÍ - CHOCÓ"
+    },
+    {
+      "notariaId": "188",
+      "notariaCosmosId": "2702500001",
+      "notariaName": "NOTARÍA ÚNICA DE ALTO BAUDO (PIE DE PATO) - CHOCÓ"
+    },
+    {
+      "notariaId": "189",
+      "notariaCosmosId": "2500100001",
+      "notariaName": "NOTARÍA ÚNICA DE AGUA DE DIOS - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "190",
+      "notariaCosmosId": "2503500001",
+      "notariaName": "NOTARIA ÚNICA DE ANAPOIMA - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "191",
+      "notariaCosmosId": "2504000001",
+      "notariaName": "NOTARÍA ÚNICA DE ANOLAIMA - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "192",
+      "notariaCosmosId": "410060001",
+      "notariaName": "NOTARÍA ÚNICA DE ACEVEDO - HUILA"
+    },
+    {
+      "notariaId": "193",
+      "notariaCosmosId": "4101300001",
+      "notariaName": "NOTARÍA ÚNICA DE AGRADO - HUILA"
+    },
+    {
+      "notariaId": "194",
+      "notariaCosmosId": "4102000001",
+      "notariaName": "NOTARÍA ÚNICA DE ALGECIRAS - HUILA"
+    },
+    {
+      "notariaId": "195",
+      "notariaCosmosId": "4703000001",
+      "notariaName": "NOTARIA ÚNICA DE ALGARROBO - MAGDALENA"
+    },
+    {
+      "notariaId": "196",
+      "notariaCosmosId": "5201900001",
+      "notariaName": "NOTARÍA ÚNICA DE ALBÁN - NARIÑO"
+    },
+    {
+      "notariaId": "197",
+      "notariaCosmosId": "5400300001",
+      "notariaName": "NOTARÍA ÚNICA DE ABREGO - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "198",
+      "notariaCosmosId": "7303000001",
+      "notariaName": "NOTARÍA ÚNICA DE AMBALEMA - TOLIMA"
+    },
+    {
+      "notariaId": "199",
+      "notariaCosmosId": "7602000001",
+      "notariaName": "NOTARÍA ÚNICA DE ALCALÁ - VALLE"
+    },
+    {
+      "notariaId": "200",
+      "notariaCosmosId": "7603600001",
+      "notariaName": "NOTARÍA ÚNICA DE ANDALUCÍA - VALLE"
+    },
+    {
+      "notariaId": "201",
+      "notariaCosmosId": "7604100001",
+      "notariaName": "NOTARÍA ÚNICA DE ANSERMANUEVO - VALLE"
+    },
+    {
+      "notariaId": "202",
+      "notariaCosmosId": "7600100002",
+      "notariaName": "NOTARÍA SEGUNDA DE CALI - VALLE"
+    },
+    {
+      "notariaId": "203",
+      "notariaCosmosId": "7600100003",
+      "notariaName": "NOTARÍA TERCERA DE CALI - VALLE"
+    },
+    {
+      "notariaId": "204",
+      "notariaCosmosId": "7600100009",
+      "notariaName": "NOTARÍA NOVENA DE CALI - VALLE"
+    },
+    {
+      "notariaId": "205",
+      "notariaCosmosId": "7600100010",
+      "notariaName": "NOTARÍA DÉCIMA DE CALI - VALLE"
+    },
+    {
+      "notariaId": "206",
+      "notariaCosmosId": "7600100011",
+      "notariaName": "NOTARÍA ONCE DE CALI - VALLE"
+    },
+    {
+      "notariaId": "207",
+      "notariaCosmosId": "7600100012",
+      "notariaName": "NOTARÍA DOCE DE CALI - VALLE"
+    },
+    {
+      "notariaId": "208",
+      "notariaCosmosId": "7600100013",
+      "notariaName": "NOTARÍA TRECE DE CALI - VALLE"
+    },
+    {
+      "notariaId": "209",
+      "notariaCosmosId": "7600100014",
+      "notariaName": "NOTARÍA CATORCE DE CALI - VALLE"
+    },
+    {
+      "notariaId": "210",
+      "notariaCosmosId": "7600100015",
+      "notariaName": "NOTARÍA QUINCE DE CALI - VALLE"
+    },
+    {
+      "notariaId": "211",
+      "notariaCosmosId": "7600100016",
+      "notariaName": "NOTARÍA DIECISÉIS DE CALI - VALLE"
+    },
+    {
+      "notariaId": "212",
+      "notariaCosmosId": "7600100017",
+      "notariaName": "NOTARÍA DIECISIETE DE CALI - VALLE"
+    },
+    {
+      "notariaId": "213",
+      "notariaCosmosId": "7600100018",
+      "notariaName": "NOTARÍA DIECIOCHO DE CALI - VALLE"
+    },
+    {
+      "notariaId": "214",
+      "notariaCosmosId": "7600100019",
+      "notariaName": "NOTARIA DIECINUEVE DE CALI - VALLE"
+    },
+    {
+      "notariaId": "215",
+      "notariaCosmosId": "7600100020",
+      "notariaName": "NOTARÍA VEINTE DE CALI - VALLE"
+    },
+    {
+      "notariaId": "216",
+      "notariaCosmosId": "7600100021",
+      "notariaName": "NOTARÍA VEINTIUNO DE CALI - VALLE"
+    },
+    {
+      "notariaId": "217",
+      "notariaCosmosId": "7600100022",
+      "notariaName": "NOTARÍA VEINTIDÓS DE CALI - VALLE"
+    },
+    {
+      "notariaId": "218",
+      "notariaCosmosId": "7600100023",
+      "notariaName": "NOTARÍA VEINTITRÉS DE CALI - VALLE"
+    },
+    {
+      "notariaId": "219",
+      "notariaCosmosId": "2500000001",
+      "notariaName": "NOTARÍA PRIMERA DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "220",
+      "notariaCosmosId": "2500000002",
+      "notariaName": "NOTARÍA SEGUNDA DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "221",
+      "notariaCosmosId": "2500000003",
+      "notariaName": "NOTARÍA TERCERA DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "222",
+      "notariaCosmosId": "2500000005",
+      "notariaName": "NOTARÍA QUINTA DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "223",
+      "notariaCosmosId": "2500000006",
+      "notariaName": "NOTARÍA SEXTA DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "224",
+      "notariaCosmosId": "2500000007",
+      "notariaName": "NOTARÍA SÉPTIMA DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "225",
+      "notariaCosmosId": "2500000008",
+      "notariaName": "NOTARÍA OCTAVA DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "226",
+      "notariaCosmosId": "2500000010",
+      "notariaName": "NOTARÍA DÉCIMA DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "227",
+      "notariaCosmosId": "2500000011",
+      "notariaName": "NOTARÍA ONCE DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "228",
+      "notariaCosmosId": "2500000012",
+      "notariaName": "NOTARÍA DOCE DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "229",
+      "notariaCosmosId": "2500000013",
+      "notariaName": "NOTARÍA TRECE DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "230",
+      "notariaCosmosId": "2500000015",
+      "notariaName": "NOTARÍA QUINCE DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "231",
+      "notariaCosmosId": "2500000017",
+      "notariaName": "NOTARÍA DIECISIETE DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "233",
+      "notariaCosmosId": "2500000021",
+      "notariaName": "NOTARÍA VEINTIUNO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "234",
+      "notariaCosmosId": "2500000022",
+      "notariaName": "NOTARÍA VEINTIDÓS DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "235",
+      "notariaCosmosId": "2500000023",
+      "notariaName": "NOTARÍA VEINTITRÉS DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "236",
+      "notariaCosmosId": "2500000024",
+      "notariaName": "NOTARÍA VEINTICUATRO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "237",
+      "notariaCosmosId": "2500000025",
+      "notariaName": "NOTARÍA VEINTICINCO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "238",
+      "notariaCosmosId": "2500000026",
+      "notariaName": "NOTARÍA VEINTISEIS DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "239",
+      "notariaCosmosId": "2500000027",
+      "notariaName": "NOTARÍA VEINTISIETE DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "240",
+      "notariaCosmosId": "2500000028",
+      "notariaName": "NOTARÍA VEINTIOCHO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "241",
+      "notariaCosmosId": "2500000029",
+      "notariaName": "NOTARÍA VEINTINUEVE DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "242",
+      "notariaCosmosId": "2500000030",
+      "notariaName": "NOTARÍA TREINTA DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "243",
+      "notariaCosmosId": "2500000031",
+      "notariaName": "NOTARÍA TREINTA Y UNO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "244",
+      "notariaCosmosId": "2500000033",
+      "notariaName": "NOTARÍA TREINTA Y TRES DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "245",
+      "notariaCosmosId": "2500000034",
+      "notariaName": "NOTARÍA TREINTA Y CUATRO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "246",
+      "notariaCosmosId": "2500000035",
+      "notariaName": "NOTARÍA TREINTA Y CINCO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "247",
+      "notariaCosmosId": "2500000036",
+      "notariaName": "NOTARÍA TREINTA Y SEIS DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "248",
+      "notariaCosmosId": "2500000038",
+      "notariaName": "NOTARÍA TREINTA Y OCHO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "249",
+      "notariaCosmosId": "2500000040",
+      "notariaName": "NOTARÍA CUARENTA DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "250",
+      "notariaCosmosId": "2500000041",
+      "notariaName": "NOTARÍA CUARENTA Y UNO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "251",
+      "notariaCosmosId": "2500000042",
+      "notariaName": "NOTARÍA CUARENTA Y DOS DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "252",
+      "notariaCosmosId": "2500000044",
+      "notariaName": "NOTARÍA CUARENTA Y CUATRO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "253",
+      "notariaCosmosId": "2500000045",
+      "notariaName": "NOTARÍA CUARENTA Y CINCO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "254",
+      "notariaCosmosId": "2500000047",
+      "notariaName": "NOTARÍA CUARENTA Y SIETE DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "255",
+      "notariaCosmosId": "2500000048",
+      "notariaName": "NOTARÍA CUARENTA Y OCHO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "256",
+      "notariaCosmosId": "2500000049",
+      "notariaName": "NOTARÍA CUARENTA Y NUEVE DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "257",
+      "notariaCosmosId": "2500000050",
+      "notariaName": "NOTARÍA CINCUENTA DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "258",
+      "notariaCosmosId": "2500000051",
+      "notariaName": "NOTARÍA CINCUENTA Y UNO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "259",
+      "notariaCosmosId": "2500000052",
+      "notariaName": "NOTARÍA CINCUENTA Y DOS DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "260",
+      "notariaCosmosId": "2500000053",
+      "notariaName": "NOTARÍA CINCUENTA Y TRES DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "261",
+      "notariaCosmosId": "2500000054",
+      "notariaName": "NOTARÍA CINCUENTA Y CUATRO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "262",
+      "notariaCosmosId": "2500000056",
+      "notariaName": "NOTARÍA CINCUENTA Y SEIS DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "263",
+      "notariaCosmosId": "2500000057",
+      "notariaName": "NOTARÍA CINCUENTA Y SIETE DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "264",
+      "notariaCosmosId": "2500000061",
+      "notariaName": "NOTARÍA SESENTA Y UNO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "265",
+      "notariaCosmosId": "2500000062",
+      "notariaName": "NOTARÍA SESENTA Y DOS DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "266",
+      "notariaCosmosId": "2500000063",
+      "notariaName": "NOTARÍA SESENTA Y TRES DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "267",
+      "notariaCosmosId": "2500000064",
+      "notariaName": "NOTARÍA SESENTA Y CUATRO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "268",
+      "notariaCosmosId": "2500000065",
+      "notariaName": "NOTARÍA SESENTA Y CINCO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "269",
+      "notariaCosmosId": "2500000066",
+      "notariaName": "NOTARÍA SESENTA Y SEIS DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "270",
+      "notariaCosmosId": "2500000067",
+      "notariaName": "NOTARÍA SESENTA Y SIETE DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "271",
+      "notariaCosmosId": "2500000068",
+      "notariaName": "NOTARÍA SESENTA Y OCHO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "272",
+      "notariaCosmosId": "2500000069",
+      "notariaName": "NOTARÍA SESENTA Y NUEVE DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "273",
+      "notariaCosmosId": "2500000070",
+      "notariaName": "NOTARÍA SETENTA DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "274",
+      "notariaCosmosId": "2500000071",
+      "notariaName": "NOTARÍA SETENTA Y UNO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "275",
+      "notariaCosmosId": "2500000072",
+      "notariaName": "NOTARÍA SETENTA Y DOS DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "276",
+      "notariaCosmosId": "2500000073",
+      "notariaName": "NOTARÍA SETENTA Y TRES DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "277",
+      "notariaCosmosId": "2500000076",
+      "notariaName": "NOTARÍA SETENTA Y SEIS DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "278",
+      "notariaCosmosId": "2500000077",
+      "notariaName": "NOTARÍA SETENTA Y SIETE DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "279",
+      "notariaCosmosId": "2500000078",
+      "notariaName": "NOTARÍA SETENTA Y OCHO DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "280",
+      "notariaCosmosId": "2500000079",
+      "notariaName": "NOTARÍA SETENTA Y NUEVE DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "281",
+      "notariaCosmosId": "2500000080",
+      "notariaName": "NOTARÍA OCHENTA DE BOGOTÁ D.C."
+    },
+    {
+      "notariaId": "282",
+      "notariaCosmosId": "9952400002",
+      "notariaName": "NOTARÍA ÚNICA SANTA ROSALÍA - VICHADA"
+    },
+    {
+      "notariaId": "283",
+      "notariaCosmosId": "4798000001",
+      "notariaName": "NOTARÍA ÚNICA DE ZONA BANANERA - MAGDALENA"
+    },
+    {
+      "notariaId": "284",
+      "notariaCosmosId": "1589700001",
+      "notariaName": "NOTARÍA ÚNICA DE ZETAQUIRA - BOYACÁ"
+    },
+    {
+      "notariaId": "285",
+      "notariaCosmosId": "7689500001",
+      "notariaName": "NOTARÍA ÚNICA DE ZARZAL - VALLE"
+    },
+    {
+      "notariaId": "286",
+      "notariaCosmosId": "589500001",
+      "notariaName": "NOTARÍA ÚNICA DE ZARAGOZA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "287",
+      "notariaCosmosId": "6889500001",
+      "notariaName": "NOTARÍA ÚNICA DE ZAPATOCA - SANTANDER"
+    },
+    {
+      "notariaId": "288",
+      "notariaCosmosId": "1389400001",
+      "notariaName": "NOTARÍA ÚNICA DE ZAMBRANO - BOLÍVAR"
+    },
+    {
+      "notariaId": "289",
+      "notariaCosmosId": "7689000001",
+      "notariaName": "NOTARÍA ÚNICA DE YOTOCO - VALLE"
+    },
+    {
+      "notariaId": "290",
+      "notariaCosmosId": "589000001",
+      "notariaName": "NOTARÍA ÚNICA DE YOLOMBÓ - ANTIOQUIA"
+    },
+    {
+      "notariaId": "291",
+      "notariaCosmosId": "588500001",
+      "notariaName": "NOTARÍA ÚNICA DE YALÍ - ANTIOQUIA"
+    },
+    {
+      "notariaId": "292",
+      "notariaCosmosId": "4188500001",
+      "notariaName": "NOTARÍA ÚNICA DE YAGUARÁ - HUILA"
+    },
+    {
+      "notariaId": "293",
+      "notariaCosmosId": "2588500",
+      "notariaName": "NOTARÍA ÚNICA DE YACOPÍ - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "294",
+      "notariaCosmosId": "1787700001",
+      "notariaName": "NOTARÍA ÚNICA DE VITERBO - CALDAS"
+    },
+    {
+      "notariaId": "295",
+      "notariaCosmosId": "5071100001",
+      "notariaName": "NOTARÍA ÚNICA DE VISTA HERMOSA - META"
+    },
+    {
+      "notariaId": "296",
+      "notariaCosmosId": "2587800",
+      "notariaName": "NOTARÍA ÚNICA DE VIOTÁ - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "297",
+      "notariaCosmosId": "2587500",
+      "notariaName": "NOTARÍA ÚNICA DE VILLETA - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "298",
+      "notariaCosmosId": "2587300",
+      "notariaName": "NOTARÍA ÚNICA DE VILLAPINZÓN - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "299",
+      "notariaCosmosId": "4487400001",
+      "notariaName": "NOTARÍA ÚNICA DE VILLANUEVA - GUAJIRA"
+    },
+    {
+      "notariaId": "300",
+      "notariaCosmosId": "8544000001",
+      "notariaName": "NOTARÍA ÚNICA DE VILLANUEVA - CASANARE"
+    },
+    {
+      "notariaId": "301",
+      "notariaCosmosId": "7387000001",
+      "notariaName": "NOTARÍA ÚNICA DE VILLAHERMOSA - TOLIMA"
+    },
+    {
+      "notariaId": "302",
+      "notariaCosmosId": "1787300001",
+      "notariaName": "NOTARÍA ÚNICA DE VILLA MARÍA - CALDAS"
+    },
+    {
+      "notariaId": "303",
+      "notariaCosmosId": "8688500001",
+      "notariaName": "NOTARÍA ÚNICA DE VILLA GARZÓN - PUTUMAYO"
+    },
+    {
+      "notariaId": "304",
+      "notariaCosmosId": "548710001",
+      "notariaName": "NOTARÍA ÚNICA DE VILLA DEL ROSARIO - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "305",
+      "notariaCosmosId": "548740001",
+      "notariaName": "NOTARÍA ÚNICA DE VILLA CARO - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "306",
+      "notariaCosmosId": "7686900001",
+      "notariaName": "NOTARÍA ÚNICA DE VIJES - VALLE"
+    },
+    {
+      "notariaId": "307",
+      "notariaCosmosId": "1786700001",
+      "notariaName": "NOTARÍA ÚNICA DE VICTORIA - CALDAS"
+    },
+    {
+      "notariaId": "308",
+      "notariaCosmosId": "7686300001",
+      "notariaName": "NOTARÍA ÚNICA DE VERSALLES - VALLE"
+    },
+    {
+      "notariaId": "309",
+      "notariaCosmosId": "1586100001",
+      "notariaName": "NOTARÍA ÚNICA DE VENTAQUEMADA - BOYACÁ"
+    },
+    {
+      "notariaId": "310",
+      "notariaCosmosId": "586100001",
+      "notariaName": "NOTARÍA ÚNICA DE VENECIA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "311",
+      "notariaCosmosId": "7386100001",
+      "notariaName": "NOTARÍA ÚNICA DE VENADILLO - TOLIMA"
+    },
+    {
+      "notariaId": "312",
+      "notariaCosmosId": "585800001",
+      "notariaName": "NOTARÍA ÚNICA DE VEGACHÍ - ANTIOQUIA"
+    },
+    {
+      "notariaId": "313",
+      "notariaCosmosId": "585600001",
+      "notariaName": "NOTARÍA ÚNICA DE VALPARAISO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "314",
+      "notariaCosmosId": "8686500001",
+      "notariaName": "NOTARÍA ÚNICA DE VALLE DEL GUAMUEZ (LA HORMIGA) - PUTUMAYO"
+    },
+    {
+      "notariaId": "315",
+      "notariaCosmosId": "2385500001",
+      "notariaName": "NOTARÍA ÚNICA DE VALENCIA - CÓRDOBA"
+    },
+    {
+      "notariaId": "316",
+      "notariaCosmosId": "585400001",
+      "notariaName": "NOTARÍA ÚNICA DE VALDIVIA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "317",
+      "notariaCosmosId": "2585100",
+      "notariaName": "NOTARÍA ÚNICA DE ÚTICA - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "318",
+      "notariaCosmosId": "584700001",
+      "notariaName": "NOTARÍA ÚNICA DE URRAO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "319",
+      "notariaCosmosId": "4484700001",
+      "notariaName": "NOTARÍA ÚNICA DE URIBIA - GUAJIRA"
+    },
+    {
+      "notariaId": "320",
+      "notariaCosmosId": "5037000001",
+      "notariaName": "NOTARÍA ÚNICA DE URIBE - META"
+    },
+    {
+      "notariaId": "321",
+      "notariaCosmosId": "2780000001",
+      "notariaName": "NOTARÍA ÚNICA DE UNGUÍA - CHOCÓ"
+    },
+    {
+      "notariaId": "322",
+      "notariaCosmosId": "2584500",
+      "notariaName": "NOTARÍA ÚNICA DE UNE - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "323",
+      "notariaCosmosId": "1584200001",
+      "notariaName": "NOTARÍA ÚNICA DE ÚMBITA - BOYACÁ"
+    },
+    {
+      "notariaId": "324",
+      "notariaCosmosId": "7684500001",
+      "notariaName": "NOTARÍA ÚNICA DE ULLOA - VALLE"
+    },
+    {
+      "notariaId": "325",
+      "notariaCosmosId": "2583900",
+      "notariaName": "NOTARÍA ÚNICA DE UBALÁ - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "326",
+      "notariaCosmosId": "1583500001",
+      "notariaName": "NOTARÍA ÚNICA DE TURMEQUÉ - BOYACÁ"
+    },
+    {
+      "notariaId": "327",
+      "notariaCosmosId": "1383600001",
+      "notariaName": "NOTARÍA ÚNICA DE TURBACO - BOLÍVAR"
+    },
+    {
+      "notariaId": "328",
+      "notariaCosmosId": "5283500001",
+      "notariaName": "NOTARÍA ÚNICA DE TUMACO - NARIÑO"
+    },
+    {
+      "notariaId": "329",
+      "notariaCosmosId": "7682800001",
+      "notariaName": "NOTARÍA ÚNICA DE TRUJILLO - VALLE"
+    },
+    {
+      "notariaId": "330",
+      "notariaCosmosId": "7682300001",
+      "notariaName": "NOTARÍA ÚNICA DE TORO - VALLE"
+    },
+    {
+      "notariaId": "331",
+      "notariaCosmosId": "1982100001",
+      "notariaName": "NOTARÍA ÚNICA DE TORIBÍO - CAUCA"
+    },
+    {
+      "notariaId": "332",
+      "notariaCosmosId": "7082300001",
+      "notariaName": "NOTARÍA ÚNICA DE TOLUVIEJO - SUCRE"
+    },
+    {
+      "notariaId": "333",
+      "notariaCosmosId": "7082000001",
+      "notariaName": "NOTARÍA ÚNICA DE TOLÚ - SUCRE"
+    },
+    {
+      "notariaId": "334",
+      "notariaCosmosId": "548200001",
+      "notariaName": "NOTARÍA ÚNICA DE TOLEDO - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "335",
+      "notariaCosmosId": "2581500",
+      "notariaName": "NOTARÍA ÚNICA DE TOCAIMA - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "336",
+      "notariaCosmosId": "1581400001",
+      "notariaName": "NOTARÍA ÚNICA DE TOCA - BOYACÁ"
+    },
+    {
+      "notariaId": "337",
+      "notariaCosmosId": "580900001",
+      "notariaName": "NOTARÍA ÚNICA DE TITIRIBÍ - ANTIOQUIA"
+    },
+    {
+      "notariaId": "338",
+      "notariaCosmosId": "1580800001",
+      "notariaName": "NOTARÍA ÚNICA DE TINJACÁ - BOYACÁ"
+    },
+    {
+      "notariaId": "339",
+      "notariaCosmosId": "1980900001",
+      "notariaName": "NOTARÍA ÚNICA DE TIMBIQUÍ - CAUCA"
+    },
+    {
+      "notariaId": "340",
+      "notariaCosmosId": "1980700001",
+      "notariaName": "NOTARÍA ÚNICA DE TIMBÍO - CAUCA"
+    },
+    {
+      "notariaId": "341",
+      "notariaCosmosId": "4180700001",
+      "notariaName": "NOTARÍA ÚNICA DE TIMANÁ - HUILA"
+    },
+    {
+      "notariaId": "342",
+      "notariaCosmosId": "2380700001",
+      "notariaName": "NOTARÍA ÚNICA DE TIERRALTA - CÓRDOBA"
+    },
+    {
+      "notariaId": "343",
+      "notariaCosmosId": "548100001",
+      "notariaName": "NOTARÍA ÚNICA DE TIBÚ - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "344",
+      "notariaCosmosId": "4179700001",
+      "notariaName": "NOTARÍA ÚNICA DE TESALIA - HUILA"
+    },
+    {
+      "notariaId": "345",
+      "notariaCosmosId": "548000001",
+      "notariaName": "NOTARÍA ÚNICA DE TEORAMA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "346",
+      "notariaCosmosId": "1579800001",
+      "notariaName": "NOTARÍA ÚNICA DE TENZA - BOYACÁ"
+    },
+    {
+      "notariaId": "347",
+      "notariaCosmosId": "4779800001",
+      "notariaName": "NOTARÍA ÚNICA DE TENERIFE - MAGDALENA"
+    },
+    {
+      "notariaId": "348",
+      "notariaCosmosId": "85410000",
+      "notariaName": "NOTARÍA ÚNICA DE TAURAMENA - CASANARE"
+    },
+    {
+      "notariaId": "349",
+      "notariaCosmosId": "579200001",
+      "notariaName": "NOTARÍA ÚNICA DE TARSO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "350",
+      "notariaCosmosId": "579000001",
+      "notariaName": "NOTARÍA ÚNICA DE TARAZÁ - ANTIOQUIA"
+    },
+    {
+      "notariaId": "351",
+      "notariaCosmosId": "5278600001",
+      "notariaName": "NOTARÍA ÚNICA DE TAMINANGO - NARIÑO"
+    },
+    {
+      "notariaId": "352",
+      "notariaCosmosId": "578900001",
+      "notariaName": "NOTARÍA ÚNICA DE TÁMESIS - ANTIOQUIA"
+    },
+    {
+      "notariaId": "353",
+      "notariaCosmosId": "8179400001",
+      "notariaName": "NOTARÍA ÚNICA DE TAME - ARAUCA"
+    },
+    {
+      "notariaId": "354",
+      "notariaCosmosId": "2078700001",
+      "notariaName": "NOTARÍA ÚNICA DE TAMALAMEQUE - CESAR"
+    },
+    {
+      "notariaId": "355",
+      "notariaCosmosId": "1378000001",
+      "notariaName": "NOTARÍA ÚNICA DE TALAIGUA NUEVO - BOLÍVAR"
+    },
+    {
+      "notariaId": "356",
+      "notariaCosmosId": "2778700",
+      "notariaName": "NOTARÍA ÚNICA DE TADO - CHOCÓ"
+    },
+    {
+      "notariaId": "357",
+      "notariaCosmosId": "2578500",
+      "notariaName": "NOTARÍA ÚNICA DE TABIO - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "358",
+      "notariaCosmosId": "1777700001",
+      "notariaName": "NOTARÍA ÚNICA DE SUPÍA - CALDAS"
+    },
+    {
+      "notariaId": "359",
+      "notariaCosmosId": "7077100001",
+      "notariaName": "NOTARÍA ÚNICA DE SUCRE - SUCRE"
+    },
+    {
+      "notariaId": "360",
+      "notariaCosmosId": "2576900",
+      "notariaName": "NOTARÍA ÚNICA DE SUBACHOQUE - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "361",
+      "notariaCosmosId": "6877000001",
+      "notariaName": "NOTARÍA ÚNICA DE SUAITA - SANTANDER"
+    },
+    {
+      "notariaId": "362",
+      "notariaCosmosId": "1576300001",
+      "notariaName": "NOTARÍA ÚNICA DE SOTAQUIRÁ - BOYACÁ"
+    },
+    {
+      "notariaId": "363",
+      "notariaCosmosId": "576100001",
+      "notariaName": "NOTARÍA ÚNICA DE SOPETRÁN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "364",
+      "notariaCosmosId": "575600001",
+      "notariaName": "NOTARÍA ÚNICA DE SONSÓN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "365",
+      "notariaCosmosId": "1575700001",
+      "notariaName": "NOTARÍA ÚNICA DE SOCHA - BOYACÁ"
+    },
+    {
+      "notariaId": "366",
+      "notariaCosmosId": "1575300001",
+      "notariaName": "NOTARÍA ÚNICA DE SOATA - BOYACÁ"
+    },
+    {
+      "notariaId": "367",
+      "notariaCosmosId": "4774500001",
+      "notariaName": "NOTARÍA ÚNICA DE SITIO NUEVO - MAGDALENA"
+    },
+    {
+      "notariaId": "368",
+      "notariaCosmosId": "2774500001",
+      "notariaName": "NOTARÍA ÚNICA DE SÍPI - CHOCÓ"
+    },
+    {
+      "notariaId": "369",
+      "notariaCosmosId": "7074200001",
+      "notariaName": "NOTARÍA ÚNICA DE SINCÉ - SUCRE"
+    },
+    {
+      "notariaId": "370",
+      "notariaCosmosId": "1374400001",
+      "notariaName": "NOTARÍA ÚNICA DE SIMITÍ - BOLÍVAR"
+    },
+    {
+      "notariaId": "371",
+      "notariaCosmosId": "2574500001",
+      "notariaName": "NOTARÍA ÚNICA DE SIMIJACA - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "372",
+      "notariaCosmosId": "6874500001",
+      "notariaName": "NOTARÍA ÚNICA DE SIMACOTA - SANTANDER"
+    },
+    {
+      "notariaId": "373",
+      "notariaCosmosId": "1974300001",
+      "notariaName": "NOTARÍA ÚNICA DE SILVIA - CAUCA"
+    },
+    {
+      "notariaId": "374",
+      "notariaCosmosId": "2574300001",
+      "notariaName": "NOTARÍA ÚNICA DE SILVANIA - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "375",
+      "notariaCosmosId": "2573600001",
+      "notariaName": "NOTARÍA ÚNICA DE SESQUILE - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "376",
+      "notariaCosmosId": "573600001",
+      "notariaName": "NOTARÍA ÚNICA DE SEGOVIA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "377",
+      "notariaCosmosId": "1572000001",
+      "notariaName": "NOTARÍA ÚNICA DE SATIVANORTE - BOYACÁ"
+    },
+    {
+      "notariaId": "378",
+      "notariaCosmosId": "2571800001",
+      "notariaName": "NOTARÍA ÚNICA DE SASAIMA - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "379",
+      "notariaCosmosId": "547200001",
+      "notariaName": "NOTARÍA ÚNICA DE SARDINATA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "380",
+      "notariaCosmosId": "8173600001",
+      "notariaName": "NOTARÍA ÚNICA DE SARAVENA - ARAUCA"
+    },
+    {
+      "notariaId": "381",
+      "notariaCosmosId": "868500001",
+      "notariaName": "NOTARÍA ÚNICA DE SANTO TÓMAS - ATLÁNTICO"
+    },
+    {
+      "notariaId": "382",
+      "notariaCosmosId": "569000001",
+      "notariaName": "NOTARÍA ÚNICA DE SANTO DOMINGO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "383",
+      "notariaCosmosId": "8676000001",
+      "notariaName": "NOTARÍA ÚNICA DE SANTIAGO - PUTUMAYO"
+    },
+    {
+      "notariaId": "384",
+      "notariaCosmosId": "1969800001",
+      "notariaName": "NOTARÍA ÚNICA DE SANTANDER DE QUILICHAO - CAUCA"
+    },
+    {
+      "notariaId": "385",
+      "notariaCosmosId": "504200001",
+      "notariaName": "NOTARÍA ÚNICA DE SANTAFÉ DE ANTIOQUIA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "386",
+      "notariaCosmosId": "1368800001",
+      "notariaName": "NOTARÍA ÚNICA DE SANTA ROSA DEL SUR - BOLÍVAR"
+    },
+    {
+      "notariaId": "387",
+      "notariaCosmosId": "1569300001",
+      "notariaName": "NOTARÍA ÚNICA DE SANTA ROSA DE VITERBO - BOYACÁ"
+    },
+    {
+      "notariaId": "388",
+      "notariaCosmosId": "568600001",
+      "notariaName": "NOTARÍA ÚNICA DE SANTA ROSA DE OSOS - ANTIOQUIA"
+    },
+    {
+      "notariaId": "389",
+      "notariaCosmosId": "1367300001",
+      "notariaName": "NOTARÍA ÚNICA DE SANTA CATALINA - BOLÍVAR"
+    },
+    {
+      "notariaId": "390",
+      "notariaCosmosId": "567900001",
+      "notariaName": "NOTARÍA ÚNICA DE SANTA BÁRBARA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "391",
+      "notariaCosmosId": "4770700001",
+      "notariaName": "NOTARÍA ÚNICA DE SANTA ANA - MAGDALENA"
+    },
+    {
+      "notariaId": "392",
+      "notariaCosmosId": "5268300001",
+      "notariaName": "NOTARÍA ÚNICA DE SANDONÁ - NARIÑO"
+    },
+    {
+      "notariaId": "393",
+      "notariaCosmosId": "4770300001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN ZENÓN - MAGDALENA"
+    },
+    {
+      "notariaId": "394",
+      "notariaCosmosId": "1875300001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN VICENTE DEL CAGUÁN - CAQUETÁ"
+    },
+    {
+      "notariaId": "395",
+      "notariaCosmosId": "6868900001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN VICENTE DE CHUCURÍ - SANTANDER"
+    },
+    {
+      "notariaId": "396",
+      "notariaCosmosId": "567400001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN VICENTE - ANTIOQUIA"
+    },
+    {
+      "notariaId": "397",
+      "notariaCosmosId": "4769200001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN SEBASTIAN DE BUENAVISTA - MAGDALENA"
+    },
+    {
+      "notariaId": "398",
+      "notariaCosmosId": "1969300001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN SEBASTIAN - CAUCA"
+    },
+    {
+      "notariaId": "399",
+      "notariaCosmosId": "567000001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN ROQUE - ANTIOQUIA"
+    },
+    {
+      "notariaId": "400",
+      "notariaCosmosId": "566700001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN RAFAEL - ANTIOQUIA"
+    },
+    {
+      "notariaId": "401",
+      "notariaCosmosId": "2368600001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN PELAYO - CÓRDOBA"
+    },
+    {
+      "notariaId": "402",
+      "notariaCosmosId": "566400001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN PEDRO BELMIRA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "403",
+      "notariaCosmosId": "766700001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN PEDRO - VALLE"
+    },
+    {
+      "notariaId": "404",
+      "notariaCosmosId": "7071700001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN PEDRO - SUCRE"
+    },
+    {
+      "notariaId": "405",
+      "notariaCosmosId": "5269300001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN PABLO - NARIÑO"
+    },
+    {
+      "notariaId": "406",
+      "notariaCosmosId": "1367000001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN PABLO - BOLÍVAR"
+    },
+    {
+      "notariaId": "407",
+      "notariaCosmosId": "7071300001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN ONOFRE - SUCRE"
+    },
+    {
+      "notariaId": "408",
+      "notariaCosmosId": "8675700001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN MIGUEL - PUTUMAYO"
+    },
+    {
+      "notariaId": "409",
+      "notariaCosmosId": "1366700001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN MARTÍN DE LOBA - BOLÍVAR"
+    },
+    {
+      "notariaId": "410",
+      "notariaCosmosId": "5068900001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN MARTÍN - META"
+    },
+    {
+      "notariaId": "411",
+      "notariaCosmosId": "7070800001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN MARCOS - SUCRE"
+    },
+    {
+      "notariaId": "412",
+      "notariaCosmosId": "1566700001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN LUIS DE GACENO - BOYACÁ"
+    },
+    {
+      "notariaId": "413",
+      "notariaCosmosId": "7367800001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN LUIS - TOLIMA"
+    },
+    {
+      "notariaId": "414",
+      "notariaCosmosId": "1365700001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN JUAN NEPOMUCENO - BOLÍVAR"
+    },
+    {
+      "notariaId": "415",
+      "notariaCosmosId": "4465000001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN JUAN DEL CESAR - GUAJIRA"
+    },
+    {
+      "notariaId": "416",
+      "notariaCosmosId": "565900001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN JUAN DE URABÁ - ANTIOQUIA"
+    },
+    {
+      "notariaId": "417",
+      "notariaCosmosId": "2566200001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN JUAN DE RIOSECO - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "418",
+      "notariaCosmosId": "5068300001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN JUAN DE ARAMA - META"
+    },
+    {
+      "notariaId": "419",
+      "notariaCosmosId": "2766000001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN JOSÉ DEL PALMAR - CHOCÓ"
+    },
+    {
+      "notariaId": "420",
+      "notariaCosmosId": "9500100001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN JOSÉ DEL GUAVIARE - GUAVIARE"
+    },
+    {
+      "notariaId": "421",
+      "notariaCosmosId": "2368200001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN JOSE DE URÉ - CÓRDOBA"
+    },
+    {
+      "notariaId": "422",
+      "notariaCosmosId": "565600001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN JERÓNIMO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "423",
+      "notariaCosmosId": "1365400001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN JACINTO - BOLÍVAR"
+    },
+    {
+      "notariaId": "424",
+      "notariaCosmosId": "2565800001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN FRANCISCO - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "425",
+      "notariaCosmosId": "1364700001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN ESTANISLAO - BOLÍVAR"
+    },
+    {
+      "notariaId": "426",
+      "notariaCosmosId": "2075000001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN DIEGO - CESAR"
+    },
+    {
+      "notariaId": "427",
+      "notariaCosmosId": "2367800001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN CARLOS - CÓRDOBA"
+    },
+    {
+      "notariaId": "428",
+      "notariaCosmosId": "564900001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN CARLOS - ANTIOQUIA"
+    },
+    {
+      "notariaId": "429",
+      "notariaCosmosId": "5467000001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN CALIXTO - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "430",
+      "notariaCosmosId": "2367500001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN BERNARDO DEL VIENTO - CÓRDOBA"
+    },
+    {
+      "notariaId": "431",
+      "notariaCosmosId": "7067800001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN BENITO ABAD - SUCRE"
+    },
+    {
+      "notariaId": "432",
+      "notariaCosmosId": "7367500001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN ANTONIO - TOLIMA"
+    },
+    {
+      "notariaId": "433",
+      "notariaCosmosId": "2367200001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN ANTERO - CÓRDOBA"
+    },
+    {
+      "notariaId": "434",
+      "notariaCosmosId": "8800100001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN ANDRÉS ISLA - SAN ANDRÉS"
+    },
+    {
+      "notariaId": "435",
+      "notariaCosmosId": "2367000001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN ANDRÉS DE SOTAVENTO - CÓRDOBA"
+    },
+    {
+      "notariaId": "436",
+      "notariaCosmosId": "6866900001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN ANDRÉS - SANTANDER"
+    },
+    {
+      "notariaId": "437",
+      "notariaCosmosId": "564700",
+      "notariaName": "NOTARÍA ÚNICA DE SAN ANDRÉS - ANTIOQUIA"
+    },
+    {
+      "notariaId": "438",
+      "notariaCosmosId": "2071000001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN ALBERTO - CESAR"
+    },
+    {
+      "notariaId": "439",
+      "notariaCosmosId": "4166800001",
+      "notariaName": "NOTARÍA ÚNICA DE SAN AGUSTÍN - HUILA"
+    },
+    {
+      "notariaId": "440",
+      "notariaCosmosId": "5267800001",
+      "notariaName": "NOTARÍA ÚNICA DE SAMANIEGO - NARIÑO"
+    },
+    {
+      "notariaId": "441",
+      "notariaCosmosId": "1766200001",
+      "notariaName": "NOTARÍA ÚNICA DE SAMANÁ - CALDAS"
+    },
+    {
+      "notariaId": "442",
+      "notariaCosmosId": "564200001",
+      "notariaName": "NOTARÍA ÚNICA DE SALGAR - ANTIOQUIA"
+    },
+    {
+      "notariaId": "443",
+      "notariaCosmosId": "6369000001",
+      "notariaName": "NOTARÍA ÚNICA DE SALENTO - QUINDÍO"
+    },
+    {
+      "notariaId": "444",
+      "notariaCosmosId": "7367100001",
+      "notariaName": "NOTARÍA ÚNICA DE SALDAÑA - TOLIMA"
+    },
+    {
+      "notariaId": "445",
+      "notariaCosmosId": "546600001",
+      "notariaName": "NOTARÍA ÚNICA DE SALAZAR DE LAS PALMAS - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "446",
+      "notariaCosmosId": "4767500001",
+      "notariaName": "NOTARÍA ÚNICA DE SALAMINA - MAGDALENA"
+    },
+    {
+      "notariaId": "447",
+      "notariaCosmosId": "1765300001",
+      "notariaName": "NOTARÍA ÚNICA DE SALAMINA - CALDAS"
+    },
+    {
+      "notariaId": "448",
+      "notariaCosmosId": "2366000001",
+      "notariaName": "NOTARÍA ÚNICA DE SAHAGÚN - CÓRDOBA"
+    },
+    {
+      "notariaId": "449",
+      "notariaCosmosId": "1563200001",
+      "notariaName": "NOTARÍA ÚNICA DE SABOYÁ - BOYACÁ"
+    },
+    {
+      "notariaId": "450",
+      "notariaCosmosId": "563100001",
+      "notariaName": "NOTARÍA ÚNICA DE SABANETA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "451",
+      "notariaCosmosId": "4766000001",
+      "notariaName": "NOTARÍA ÚNICA DE SABANAS DE SAN ÁNGEL - MAGDALENA"
+    },
+    {
+      "notariaId": "452",
+      "notariaCosmosId": "863800001",
+      "notariaName": "NOTARÍA ÚNICA DE SABANALARGA - ATLÁNTICO"
+    },
+    {
+      "notariaId": "453",
+      "notariaCosmosId": "6865500001",
+      "notariaName": "NOTARÍA ÚNICA DE SABANA DE TORRES - SANTANDER"
+    },
+    {
+      "notariaId": "454",
+      "notariaCosmosId": "7362400001",
+      "notariaName": "NOTARÍA ÚNICA DE ROVIRA - TOLIMA"
+    },
+    {
+      "notariaId": "455",
+      "notariaCosmosId": "1962200001",
+      "notariaName": "NOTARÍA ÚNICA DE ROSAS - CAUCA"
+    },
+    {
+      "notariaId": "456",
+      "notariaCosmosId": "7662200001",
+      "notariaName": "NOTARÍA ÚNICA DE ROLDANILLO - VALLE"
+    },
+    {
+      "notariaId": "457",
+      "notariaCosmosId": "1761600001",
+      "notariaName": "NOTARÍA ÚNICA DE RISARALDA - CALDAS"
+    },
+    {
+      "notariaId": "458",
+      "notariaCosmosId": "1360000001",
+      "notariaName": "NOTARÍA ÚNICA DE RIOVIEJO - BOLÍVAR"
+    },
+    {
+      "notariaId": "459",
+      "notariaCosmosId": "1761400001",
+      "notariaName": "NOTARÍA ÚNICA DE RIOSUCIO - CALDAS"
+    },
+    {
+      "notariaId": "460",
+      "notariaCosmosId": "6861500001",
+      "notariaName": "NOTARÍA ÚNICA DE RIONEGRO - SANTANDER"
+    },
+    {
+      "notariaId": "461",
+      "notariaCosmosId": "7661600001",
+      "notariaName": "NOTARÍA ÚNICA DE RIOFRÍO - VALLE"
+    },
+    {
+      "notariaId": "462",
+      "notariaCosmosId": "7361600001",
+      "notariaName": "NOTARÍA ÚNICA DE RIOBLANCO - TOLIMA"
+    },
+    {
+      "notariaId": "463",
+      "notariaCosmosId": "2061400001",
+      "notariaName": "NOTARÍA ÚNICA DE RÍO DE ORO - CESAR"
+    },
+    {
+      "notariaId": "464",
+      "notariaCosmosId": "7020400001",
+      "notariaName": "NOTARÍA ÚNICA DE RICAURTE (COLOSÓ) - SUCRE"
+    },
+    {
+      "notariaId": "465",
+      "notariaCosmosId": "5261200001",
+      "notariaName": "NOTARÍA ÚNICA DE RICAURTE - NARIÑO"
+    },
+    {
+      "notariaId": "466",
+      "notariaCosmosId": "560700001",
+      "notariaName": "NOTARÍA ÚNICA DE RETIRO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "467",
+      "notariaCosmosId": "7660600001",
+      "notariaName": "NOTARÍA ÚNICA DE RESTREPO - VALLE"
+    },
+    {
+      "notariaId": "468",
+      "notariaCosmosId": "860600001",
+      "notariaName": "NOTARÍA ÚNICA DE REPELÓN - ATLÁNTICO"
+    },
+    {
+      "notariaId": "469",
+      "notariaCosmosId": "4760500001",
+      "notariaName": "NOTARÍA ÚNICA DE REMOLINO - MAGDALENA"
+    },
+    {
+      "notariaId": "470",
+      "notariaCosmosId": "560400001",
+      "notariaName": "NOTARÍA ÚNICA DE REMEDIOS - ANTIOQUIA"
+    },
+    {
+      "notariaId": "471",
+      "notariaCosmosId": "6659400001",
+      "notariaName": "NOTARÍA ÚNICA DE QUINCHÍA - RISARALDA"
+    },
+    {
+      "notariaId": "472",
+      "notariaCosmosId": "6359400001",
+      "notariaName": "NOTARÍA ÚNICA DE QUIMBAYA - QUINDÍO"
+    },
+    {
+      "notariaId": "473",
+      "notariaCosmosId": "2358600001",
+      "notariaName": "NOTARÍA ÚNICA DE PURÍSIMA - CÓRDOBA"
+    },
+    {
+      "notariaId": "474",
+      "notariaCosmosId": "7358500001",
+      "notariaName": "NOTARÍA ÚNICA DE PURIFICACIÓN - TOLIMA"
+    },
+    {
+      "notariaId": "475",
+      "notariaCosmosId": "6857500001",
+      "notariaName": "NOTARÍA ÚNICA DE PUERTO WILCHES - SANTANDER"
+    },
+    {
+      "notariaId": "476",
+      "notariaCosmosId": "559100001",
+      "notariaName": "NOTARÍA ÚNICA DE PUERTO TRIUNFO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "477",
+      "notariaCosmosId": "1957300001",
+      "notariaName": "NOTARÍA ÚNICA DE PUERTO TEJADA - CAUCA"
+    },
+    {
+      "notariaId": "478",
+      "notariaCosmosId": "5422300001",
+      "notariaName": "NOTARÍA ÚNICA DE PUERTO SANTANDER - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "479",
+      "notariaCosmosId": "2557200001",
+      "notariaName": "NOTARÍA ÚNICA DE PUERTO SALGAR - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "480",
+      "notariaCosmosId": "8159100001",
+      "notariaName": "NOTARÍA ÚNICA DE PUERTO RONDON - ARAUCA"
+    },
+    {
+      "notariaId": "481",
+      "notariaCosmosId": "5057700001",
+      "notariaName": "NOTARÍA ÚNICA DE PUERTO RICO - META"
+    },
+    {
+      "notariaId": "482",
+      "notariaCosmosId": "1859200001",
+      "notariaName": "NOTARÍA ÚNICA DE PUERTO RICO - CAQUETÁ"
+    },
+    {
+      "notariaId": "483",
+      "notariaCosmosId": "558500001",
+      "notariaName": "NOTARÍA ÚNICA DE PUERTO NARE - ANTIOQUIA"
+    },
+    {
+      "notariaId": "484",
+      "notariaCosmosId": "5057300001",
+      "notariaName": "NOTARÍA ÚNICA DE PUERTO LÓPEZ - META"
+    },
+    {
+      "notariaId": "485",
+      "notariaCosmosId": "2358000001",
+      "notariaName": "NOTARÍA ÚNICA DE PUERTO LIBERTADOR - CÓRDOBA"
+    },
+    {
+      "notariaId": "486",
+      "notariaCosmosId": "8657300001",
+      "notariaName": "NOTARÍA ÚNICA DE PUERTO LEGUIZAMO - PUTUMAYO"
+    },
+    {
+      "notariaId": "487",
+      "notariaCosmosId": "9900100001",
+      "notariaName": "NOTARÍA ÚNICA DE PUERTO CARREÑO - VICHADA"
+    },
+    {
+      "notariaId": "488",
+      "notariaCosmosId": "557900001",
+      "notariaName": "NOTARÍA ÚNICA DE PUERTO BERRÍO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "489",
+      "notariaCosmosId": "8656800001",
+      "notariaName": "NOTARÍA ÚNICA DE PUERTO ASÍS - PUTUMAYO"
+    },
+    {
+      "notariaId": "490",
+      "notariaCosmosId": "5257300001",
+      "notariaName": "NOTARÍA ÚNICA DE PUERRES - NARIÑO"
+    },
+    {
+      "notariaId": "491",
+      "notariaCosmosId": "6857200001",
+      "notariaName": "NOTARÍA ÚNICA DE PUENTE NACIONAL - SANTANDER"
+    },
+    {
+      "notariaId": "492",
+      "notariaCosmosId": "557600001",
+      "notariaName": "NOTARÍA ÚNICA DE PUEBLORICO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "493",
+      "notariaCosmosId": "6657200001",
+      "notariaName": "NOTARÍA ÚNICA DE PUEBLO RICO - RISARALDA"
+    },
+    {
+      "notariaId": "494",
+      "notariaCosmosId": "2357000001",
+      "notariaName": "NOTARÍA ÚNICA DE PUEBLO NUEVO - CÓRDOBA"
+    },
+    {
+      "notariaId": "495",
+      "notariaCosmosId": "2057000001",
+      "notariaName": "NOTARÍA ÚNICA DE PUEBLO BELLO - CESAR"
+    },
+    {
+      "notariaId": "496",
+      "notariaCosmosId": "8856400001",
+      "notariaName": "NOTARÍA ÚNICA DE PROVIDENCIA - SAN ANDRÉS"
+    },
+    {
+      "notariaId": "497",
+      "notariaCosmosId": "7656300001",
+      "notariaName": "NOTARÍA ÚNICA DE PRADERA - VALLE"
+    },
+    {
+      "notariaId": "498",
+      "notariaCosmosId": "856000001",
+      "notariaName": "NOTARÍA ÚNICA DE PONEDERA - ATLÁNTICO"
+    },
+    {
+      "notariaId": "499",
+      "notariaCosmosId": "4755500001",
+      "notariaName": "NOTARÍA ÚNICA DE PLATO - MAGDALENA"
+    },
+    {
+      "notariaId": "500",
+      "notariaCosmosId": "2355500001",
+      "notariaName": "NOTARÍA ÚNICA DE PLANETA RICA - CÓRDOBA"
+    },
+    {
+      "notariaId": "501",
+      "notariaCosmosId": "7355500001",
+      "notariaName": "NOTARÍA ÚNICA DE PLANADAS - TOLIMA"
+    },
+    {
+      "notariaId": "502",
+      "notariaCosmosId": "4755100001",
+      "notariaName": "NOTARÍA ÚNICA DE PIVIJAY - MAGDALENA"
+    },
+    {
+      "notariaId": "503",
+      "notariaCosmosId": "1354900001",
+      "notariaName": "NOTARÍA ÚNICA DE PINILLOS - BOLÍVAR"
+    },
+    {
+      "notariaId": "504",
+      "notariaCosmosId": "6354800001",
+      "notariaName": "NOTARÍA ÚNICA DE PIJAO - QUINDÍO"
+    },
+    {
+      "notariaId": "505",
+      "notariaCosmosId": "1954800001",
+      "notariaName": "NOTARÍA ÚNICA DE PIENDAMÓ - CAUCA"
+    },
+    {
+      "notariaId": "506",
+      "notariaCosmosId": "6854700001",
+      "notariaName": "NOTARÍA ÚNICA DE PIEDECUESTA - SANTANDER"
+    },
+    {
+      "notariaId": "507",
+      "notariaCosmosId": "1554200001",
+      "notariaName": "NOTARÍA ÚNICA DE PESCA - BOYACÁ"
+    },
+    {
+      "notariaId": "508",
+      "notariaCosmosId": "1754100001",
+      "notariaName": "NOTARÍA ÚNICA DE PENSILVANIA - CALDAS"
+    },
+    {
+      "notariaId": "509",
+      "notariaCosmosId": "4754100001",
+      "notariaName": "NOTARÍA ÚNICA DE PEDRAZA - MAGDALENA"
+    },
+    {
+      "notariaId": "510",
+      "notariaCosmosId": "1553700001",
+      "notariaName": "NOTARÍA ÚNICA DE PAZ DE RÍO - BOYACÁ"
+    },
+    {
+      "notariaId": "511",
+      "notariaCosmosId": "8525000001",
+      "notariaName": "NOTARÍA ÚNICA DE PAZ DE ARIPORO - CASANARE"
+    },
+    {
+      "notariaId": "512",
+      "notariaCosmosId": "1553100001",
+      "notariaName": "NOTARÍA ÚNICA DE PAUNA - BOYACÁ"
+    },
+    {
+      "notariaId": "513",
+      "notariaCosmosId": "1953200001",
+      "notariaName": "NOTARÍA ÚNICA DE PATÍA (EL BORDO) - CAUCA"
+    },
+    {
+      "notariaId": "514",
+      "notariaCosmosId": "7052300001",
+      "notariaName": "NOTARÍA ÚNICA DE PALMITO - SUCRE"
+    },
+    {
+      "notariaId": "515",
+      "notariaCosmosId": "1752400001",
+      "notariaName": "NOTARÍA ÚNICA DE PALESTINA - CALDAS"
+    },
+    {
+      "notariaId": "516",
+      "notariaCosmosId": "4152400001",
+      "notariaName": "NOTARÍA ÚNICA DE PALERMO - HUILA"
+    },
+    {
+      "notariaId": "517",
+      "notariaCosmosId": "1551600001",
+      "notariaName": "NOTARÍA ÚNICA DE PAIPA - BOYACÁ"
+    },
+    {
+      "notariaId": "518",
+      "notariaCosmosId": "2551800001",
+      "notariaName": "NOTARÍA ÚNICA DE PAIME - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "519",
+      "notariaCosmosId": "2051700001",
+      "notariaName": "NOTARÍA ÚNICA DE PAILITAS - CESAR"
+    },
+    {
+      "notariaId": "520",
+      "notariaCosmosId": "1751300001",
+      "notariaName": "NOTARÍA ÚNICA DE PÁCORA - CALDAS"
+    },
+    {
+      "notariaId": "521",
+      "notariaCosmosId": "2551300001",
+      "notariaName": "NOTARÍA ÚNICA DE PACHO - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "522",
+      "notariaCosmosId": "7050800001",
+      "notariaName": "NOTARÍA ÚNICA DE OVEJAS - SUCRE"
+    },
+    {
+      "notariaId": "523",
+      "notariaCosmosId": "7350400001",
+      "notariaName": "NOTARÍA ÚNICA DE ORTEGA - TOLIMA"
+    },
+    {
+      "notariaId": "524",
+      "notariaCosmosId": "8632000001",
+      "notariaName": "NOTARÍA ÚNICA DE ORITO - PUTUMAYO"
+    },
+    {
+      "notariaId": "525",
+      "notariaCosmosId": "6850200001",
+      "notariaName": "NOTARÍA ÚNICA DE ONZAGA - SANTANDER"
+    },
+    {
+      "notariaId": "526",
+      "notariaCosmosId": "6850000001",
+      "notariaName": "NOTARÍA ÚNICA DE OIBA - SANTANDER"
+    },
+    {
+      "notariaId": "527",
+      "notariaCosmosId": "7649700001",
+      "notariaName": "NOTARÍA ÚNICA DE OBANDO - VALLE"
+    },
+    {
+      "notariaId": "528",
+      "notariaCosmosId": "2749500001",
+      "notariaName": "NOTARÍA ÚNICA DE NUQUÍ - CHOCÓ"
+    },
+    {
+      "notariaId": "529",
+      "notariaCosmosId": "8522500001",
+      "notariaName": "NOTARÍA ÚNICA DE NUNCHIA - CASANARE"
+    },
+    {
+      "notariaId": "530",
+      "notariaCosmosId": "2749100001",
+      "notariaName": "NOTARÍA ÚNICA DE NOVITA - CHOCÓ"
+    },
+    {
+      "notariaId": "531",
+      "notariaCosmosId": "2549100001",
+      "notariaName": "NOTARÍA ÚNICA DE NOCAIMA - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "532",
+      "notariaCosmosId": "1549100001",
+      "notariaName": "NOTARÍA ÚNICA DE NOBSA - BOYACÁ"
+    },
+    {
+      "notariaId": "533",
+      "notariaCosmosId": "2548600001",
+      "notariaName": "NOTARÍA ÚNICA DE NEMOCÓN - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "534",
+      "notariaCosmosId": "1748600001",
+      "notariaName": "NOTARÍA ÚNICA DE NEIRA - CALDAS"
+    },
+    {
+      "notariaId": "535",
+      "notariaCosmosId": "7348300001",
+      "notariaName": "NOTARÍA ÚNICA DE NATAGAIMA - TOLIMA"
+    },
+    {
+      "notariaId": "536",
+      "notariaCosmosId": "548300001",
+      "notariaName": "NOTARÍA ÚNICA DE NARIÑO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "537",
+      "notariaCosmosId": "1548000001",
+      "notariaName": "NOTARÍA ÚNICA DE MUZO - BOYACÁ"
+    },
+    {
+      "notariaId": "538",
+      "notariaCosmosId": "2547300001",
+      "notariaName": "NOTARÍA ÚNICA DE MOSQUERA - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "539",
+      "notariaCosmosId": "1947300001",
+      "notariaName": "NOTARÍA ÚNICA DE MORALES - CAUCA"
+    },
+    {
+      "notariaId": "540",
+      "notariaCosmosId": "1347300001",
+      "notariaName": "NOTARÍA ÚNICA DE MORALES - BOLÍVAR"
+    },
+    {
+      "notariaId": "541",
+      "notariaCosmosId": "8516200001",
+      "notariaName": "NOTARÍA ÚNICA DE MONTERREY - CASANARE"
+    },
+    {
+      "notariaId": "542",
+      "notariaCosmosId": "6347000001",
+      "notariaName": "NOTARÍA ÚNICA DE MONTENEGRO - QUINDÍO"
+    },
+    {
+      "notariaId": "543",
+      "notariaCosmosId": "2346600001",
+      "notariaName": "NOTARÍA ÚNICA DE MONTELIBANO - CÓRDOBA"
+    },
+    {
+      "notariaId": "544",
+      "notariaCosmosId": "1346800001",
+      "notariaName": "NOTARÍA ÚNICA DE MOMPOS - BOLÍVAR"
+    },
+    {
+      "notariaId": "545",
+      "notariaCosmosId": "6846400001",
+      "notariaName": "NOTARÍA ÚNICA DE MOGOTES - SANTANDER"
+    },
+    {
+      "notariaId": "546",
+      "notariaCosmosId": "8600100001",
+      "notariaName": "NOTARÍA ÚNICA DE MOCOA - PUTUMAYO"
+    },
+    {
+      "notariaId": "547",
+      "notariaCosmosId": "9700100001",
+      "notariaName": "NOTARÍA ÚNICA DE MITÚ - VAUPÉS"
+    },
+    {
+      "notariaId": "548",
+      "notariaCosmosId": "6645600001",
+      "notariaName": "NOTARÍA ÚNICA DE MISTRATÓ - RISARALDA"
+    },
+    {
+      "notariaId": "549",
+      "notariaCosmosId": "1945500001",
+      "notariaName": "NOTARÍA ÚNICA DE MIRANDA - CAUCA"
+    },
+    {
+      "notariaId": "550",
+      "notariaCosmosId": "1545500001",
+      "notariaName": "NOTARÍA ÚNICA DE MIRAFLORES - BOYACÁ"
+    },
+    {
+      "notariaId": "551",
+      "notariaCosmosId": "1945000001",
+      "notariaName": "NOTARÍA ÚNICA DE MERCADERES - CAUCA"
+    },
+    {
+      "notariaId": "552",
+      "notariaCosmosId": "7344900001",
+      "notariaName": "NOTARÍA ÚNICA DE MELGAR - TOLIMA"
+    },
+    {
+      "notariaId": "553",
+      "notariaCosmosId": "6844400001",
+      "notariaName": "NOTARÍA ÚNICA DE MATANZA - SANTANDER"
+    },
+    {
+      "notariaId": "554",
+      "notariaCosmosId": "1744600001",
+      "notariaName": "NOTARÍA ÚNICA DE MARULANDA - CALDAS"
+    },
+    {
+      "notariaId": "555",
+      "notariaCosmosId": "6644000001",
+      "notariaName": "NOTARÍA ÚNICA DE MARSELLA - RISARALDA"
+    },
+    {
+      "notariaId": "556",
+      "notariaCosmosId": "1744400001",
+      "notariaName": "NOTARÍA ÚNICA DE MARQUETALIA - CALDAS"
+    },
+    {
+      "notariaId": "557",
+      "notariaCosmosId": "1744200001",
+      "notariaName": "NOTARÍA ÚNICA DE MARMATO - CALDAS"
+    },
+    {
+      "notariaId": "558",
+      "notariaCosmosId": "7344300001",
+      "notariaName": "NOTARÍA ÚNICA DE MARIQUITA - TOLIMA"
+    },
+    {
+      "notariaId": "559",
+      "notariaCosmosId": "1544200001",
+      "notariaName": "NOTARÍA ÚNICA DE MARIPÍ - BOYACÁ"
+    },
+    {
+      "notariaId": "560",
+      "notariaCosmosId": "544000001",
+      "notariaName": "NOTARÍA ÚNICA DE MARINILLA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "561",
+      "notariaCosmosId": "1344200001",
+      "notariaName": "NOTARÍA ÚNICA DE MARÍA LA BAJA - BOLÍVAR"
+    },
+    {
+      "notariaId": "562",
+      "notariaCosmosId": "1743300001",
+      "notariaName": "NOTARÍA ÚNICA DE MANZANARES - CALDAS"
+    },
+    {
+      "notariaId": "563",
+      "notariaCosmosId": "843600001",
+      "notariaName": "NOTARÍA ÚNICA DE MANATÍ - ATLÁNTICO"
+    },
+    {
+      "notariaId": "564",
+      "notariaCosmosId": "843300001",
+      "notariaName": "NOTARÍA ÚNICA DE MALAMBO - ATLÁNTICO"
+    },
+    {
+      "notariaId": "565",
+      "notariaCosmosId": "7042900001",
+      "notariaName": "NOTARÍA ÚNICA DE MAJAGUAL - SUCRE"
+    },
+    {
+      "notariaId": "566",
+      "notariaCosmosId": "4443000001",
+      "notariaName": "NOTARÍA ÚNICA DE MAICAO - GUAJIRA"
+    },
+    {
+      "notariaId": "567",
+      "notariaCosmosId": "1343300001",
+      "notariaName": "NOTARÍA ÚNICA DE MAHATES - BOLÍVAR"
+    },
+    {
+      "notariaId": "568",
+      "notariaCosmosId": "1343000001",
+      "notariaName": "NOTARÍA ÚNICA DE MAGANGUÉ - BOLÍVAR"
+    },
+    {
+      "notariaId": "569",
+      "notariaCosmosId": "2543000001",
+      "notariaName": "NOTARÍA ÚNICA DE MADRID - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "570",
+      "notariaCosmosId": "2542600001",
+      "notariaName": "NOTARÍA ÚNICA DE MACHETÁ - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "571",
+      "notariaCosmosId": "542500001",
+      "notariaName": "NOTARÍA ÚNICA DE MACEO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "572",
+      "notariaCosmosId": "1542500001",
+      "notariaName": "NOTARÍA ÚNICA DE MACANAL - BOYACÁ"
+    },
+    {
+      "notariaId": "573",
+      "notariaCosmosId": "842100001",
+      "notariaName": "NOTARÍA ÚNICA DE LURUACO - ATLÁNTICO"
+    },
+    {
+      "notariaId": "574",
+      "notariaCosmosId": "5440500",
+      "notariaName": "NOTARÍA ÚNICA DE LOS PATIOS - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "575",
+      "notariaCosmosId": "7041800001",
+      "notariaName": "NOTARÍA ÚNICA DE LOS PALMITOS - SUCRE"
+    },
+    {
+      "notariaId": "576",
+      "notariaCosmosId": "5241800001",
+      "notariaName": "NOTARÍA ÚNICA DE LOS ANDES - NARIÑO"
+    },
+    {
+      "notariaId": "577",
+      "notariaCosmosId": "2341700001",
+      "notariaName": "NOTARÍA ÚNICA DE LORICA - CÓRDOBA"
+    },
+    {
+      "notariaId": "578",
+      "notariaCosmosId": "1941800001",
+      "notariaName": "NOTARÍA ÚNICA DE LÓPEZ DE MICAY - CAUCA"
+    },
+    {
+      "notariaId": "579",
+      "notariaCosmosId": "2741300001",
+      "notariaName": "NOTARÍA ÚNICA DE LLORÓ - CHOCÓ"
+    },
+    {
+      "notariaId": "580",
+      "notariaCosmosId": "5241100001",
+      "notariaName": "NOTARÍA ÚNICA DE LINARES - NARIÑO"
+    },
+    {
+      "notariaId": "581",
+      "notariaCosmosId": "541100001",
+      "notariaName": "NOTARÍA ÚNICA DE LIBORINA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "582",
+      "notariaCosmosId": "7341100001",
+      "notariaName": "NOTARÍA ÚNICA DE LÍBANO - TOLIMA"
+    },
+    {
+      "notariaId": "583",
+      "notariaCosmosId": "9100100001",
+      "notariaName": "NOTARÍA ÚNICA DE LETICIA - AMAZONAS"
+    },
+    {
+      "notariaId": "584",
+      "notariaCosmosId": "7340800001",
+      "notariaName": "NOTARÍA ÚNICA DE LÉRIDA - TOLIMA"
+    },
+    {
+      "notariaId": "585",
+      "notariaCosmosId": "6840600001",
+      "notariaName": "NOTARÍA ÚNICA DE LEBRIJA - SANTANDER"
+    },
+    {
+      "notariaId": "586",
+      "notariaCosmosId": "1537700001",
+      "notariaName": "NOTARÍA ÚNICA DE LABRANZA GRANDE - BOYACÁ"
+    },
+    {
+      "notariaId": "587",
+      "notariaCosmosId": "6640000001",
+      "notariaName": "NOTARÍA ÚNICA DE LA VIRGINIA - RISARALDA"
+    },
+    {
+      "notariaId": "588",
+      "notariaCosmosId": "7640300001",
+      "notariaName": "NOTARÍA ÚNICA DE LA VICTORIA - VALLE"
+    },
+    {
+      "notariaId": "589",
+      "notariaCosmosId": "2540200001",
+      "notariaName": "NOTARÍA ÚNICA DE LA VEGA - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "590",
+      "notariaCosmosId": "1939700001",
+      "notariaName": "NOTARÍA ÚNICA DE LA VEGA - CAUCA"
+    },
+    {
+      "notariaId": "591",
+      "notariaCosmosId": "7640000001",
+      "notariaName": "NOTARÍA ÚNICA DE LA UNIÓN - VALLE"
+    },
+    {
+      "notariaId": "592",
+      "notariaCosmosId": "5239900001",
+      "notariaName": "NOTARÍA ÚNICA DE LA UNIÓN - NARIÑO"
+    },
+    {
+      "notariaId": "593",
+      "notariaCosmosId": "540000001",
+      "notariaName": "NOTARÍA ÚNICA DE LA UNIÓN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "594",
+      "notariaCosmosId": "6340100001",
+      "notariaName": "NOTARÍA ÚNICA DE LA TEBAIDA - QUINDÍO"
+    },
+    {
+      "notariaId": "595",
+      "notariaCosmosId": "9952400001",
+      "notariaName": "NOTARÍA ÚNICA DE LA PRIMAVERA - VICHADA"
+    },
+    {
+      "notariaId": "596",
+      "notariaCosmosId": "4139600001",
+      "notariaName": "NOTARÍA ÚNICA DE LA PLATA - HUILA"
+    },
+    {
+      "notariaId": "597",
+      "notariaCosmosId": "2062100001",
+      "notariaName": "NOTARÍA ÚNICA DE LA PAZ (ROBLES) - CESAR"
+    },
+    {
+      "notariaId": "598",
+      "notariaCosmosId": "2539400001",
+      "notariaName": "NOTARÍA ÚNICA DE LA PALMA - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "599",
+      "notariaCosmosId": "1841000001",
+      "notariaName": "NOTARÍA ÚNICA DE LA MONTAÑITA - CAQUETÁ"
+    },
+    {
+      "notariaId": "600",
+      "notariaCosmosId": "5035000001",
+      "notariaName": "NOTARÍA ÚNICA DE LA MACARENA - META"
+    },
+    {
+      "notariaId": "601",
+      "notariaCosmosId": "2040000001",
+      "notariaName": "NOTARÍA ÚNICA DE LA JAGUA DE IBIRICO - CESAR"
+    },
+    {
+      "notariaId": "602",
+      "notariaCosmosId": "2038300001",
+      "notariaName": "NOTARÍA ÚNICA DE LA GLORIA - CESAR"
+    },
+    {
+      "notariaId": "603",
+      "notariaCosmosId": "538000001",
+      "notariaName": "NOTARÍA ÚNICA DE LA ESTRELLA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "604",
+      "notariaCosmosId": "7637700001",
+      "notariaName": "NOTARÍA ÚNICA DE LA CUMBRE - VALLE"
+    },
+    {
+      "notariaId": "605",
+      "notariaCosmosId": "5237800001",
+      "notariaName": "NOTARÍA ÚNICA DE LA CRUZ - NARIÑO"
+    },
+    {
+      "notariaId": "606",
+      "notariaCosmosId": "6638300001",
+      "notariaName": "NOTARÍA ÚNICA DE LA CELIA - RISARALDA"
+    },
+    {
+      "notariaId": "607",
+      "notariaCosmosId": "537600001",
+      "notariaName": "NOTARÍA ÚNICA DE LA CEJA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "608",
+      "notariaCosmosId": "2537700001",
+      "notariaName": "NOTARÍA ÚNICA DE LA CALERA - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "609",
+      "notariaCosmosId": "2737200001",
+      "notariaName": "NOTARÍA ÚNICA DE JURADÓ - CHOCÓ"
+    },
+    {
+      "notariaId": "610",
+      "notariaCosmosId": "2537200001",
+      "notariaName": "NOTARÍA ÚNICA DE JUNÍN - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "611",
+      "notariaCosmosId": "837200001",
+      "notariaName": "NOTARÍA ÚNICA DE JUAN DE ACOSTA - ATLÁNTICO"
+    },
+    {
+      "notariaId": "612",
+      "notariaCosmosId": "6836800001",
+      "notariaName": "NOTARÍA ÚNICA DE JESÚS MARÍA - SANTANDER"
+    },
+    {
+      "notariaId": "613",
+      "notariaCosmosId": "536800001",
+      "notariaName": "NOTARÍA ÚNICA DE JERICÓ - ANTIOQUIA"
+    },
+    {
+      "notariaId": "614",
+      "notariaCosmosId": "536400001",
+      "notariaName": "NOTARÍA ÚNICA DE JARDÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "615",
+      "notariaCosmosId": "7636400001",
+      "notariaName": "NOTARÍA ÚNICA DE JAMUNDÍ - VALLE"
+    },
+    {
+      "notariaId": "616",
+      "notariaCosmosId": "2736100001",
+      "notariaName": "NOTARÍA ÚNICA DE ISTMINA - CHOCÓ"
+    },
+    {
+      "notariaId": "617",
+      "notariaCosmosId": "1935500001",
+      "notariaName": "NOTARÍA ÚNICA DE INZA - CAUCA"
+    },
+    {
+      "notariaId": "618",
+      "notariaCosmosId": "7334700001",
+      "notariaName": "NOTARÍA ÚNICA DE HERVEO - TOLIMA"
+    },
+    {
+      "notariaId": "619",
+      "notariaCosmosId": "8512500001",
+      "notariaName": "NOTARÍA ÚNICA DE HATO COROZAL - CASANARE"
+    },
+    {
+      "notariaId": "620",
+      "notariaCosmosId": "5434400001",
+      "notariaName": "NOTARÍA ÚNICA DE HACARÍ - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "621",
+      "notariaCosmosId": "1532500001",
+      "notariaName": "NOTARÍA ÚNICA DE GUAYATÁ - BOYACÁ"
+    },
+    {
+      "notariaId": "622",
+      "notariaCosmosId": "6631800001",
+      "notariaName": "NOTARÍA ÚNICA DE GUÁTICA - RISARALDA"
+    },
+    {
+      "notariaId": "623",
+      "notariaCosmosId": "1532200001",
+      "notariaName": "NOTARÍA ÚNICA DE GUATEQUE - BOYACÁ"
+    },
+    {
+      "notariaId": "624",
+      "notariaCosmosId": "531800001",
+      "notariaName": "NOTARÍA ÚNICA DE GUARNE - ANTIOQUIA"
+    },
+    {
+      "notariaId": "625",
+      "notariaCosmosId": "7026500001",
+      "notariaName": "NOTARÍA ÚNICA DE GUARANDA - SUCRE"
+    },
+    {
+      "notariaId": "626",
+      "notariaCosmosId": "1931800001",
+      "notariaName": "NOTARÍA ÚNICA DE GUAPI - CAUCA"
+    },
+    {
+      "notariaId": "627",
+      "notariaCosmosId": "7331900001",
+      "notariaName": "NOTARÍA ÚNICA DE GUAMO - TOLIMA"
+    },
+    {
+      "notariaId": "628",
+      "notariaCosmosId": "1324800001",
+      "notariaName": "NOTARÍA ÚNICA DE GUAMO - BOLÍVAR"
+    },
+    {
+      "notariaId": "629",
+      "notariaCosmosId": "4731800001",
+      "notariaName": "NOTARÍA ÚNICA DE GUAMAL - MAGDALENA"
+    },
+    {
+      "notariaId": "630",
+      "notariaCosmosId": "2532000001",
+      "notariaName": "NOTARÍA ÚNICA DE GUADUAS - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "631",
+      "notariaCosmosId": "6832000001",
+      "notariaName": "NOTARÍA ÚNICA DE GUADALUPE - SANTANDER"
+    },
+    {
+      "notariaId": "632",
+      "notariaCosmosId": "4131900001",
+      "notariaName": "NOTARÍA ÚNICA DE GUADALUPE - HUILA"
+    },
+    {
+      "notariaId": "633",
+      "notariaCosmosId": "7631800001",
+      "notariaName": "NOTARÍA ÚNICA DE GUACARÍ - VALLE"
+    },
+    {
+      "notariaId": "634",
+      "notariaCosmosId": "6831800001",
+      "notariaName": "NOTARÍA ÚNICA DE GUACA - SANTANDER"
+    },
+    {
+      "notariaId": "635",
+      "notariaCosmosId": "5031300001",
+      "notariaName": "NOTARÍA ÚNICA DE GRANADA - META"
+    },
+    {
+      "notariaId": "636",
+      "notariaCosmosId": "531300001",
+      "notariaName": "NOTARÍA ÚNICA DE GRANADA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "637",
+      "notariaCosmosId": "5431300001",
+      "notariaName": "NOTARÍA ÚNICA DE GRAMALOTE - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "638",
+      "notariaCosmosId": "2031000001",
+      "notariaName": "NOTARÍA ÚNICA DE GONZÁLEZ - CESAR"
+    },
+    {
+      "notariaId": "639",
+      "notariaCosmosId": "6830700001",
+      "notariaName": "NOTARÍA ÚNICA DE GIRÓN - SANTANDER"
+    },
+    {
+      "notariaId": "640",
+      "notariaCosmosId": "530800001",
+      "notariaName": "NOTARÍA ÚNICA DE GIRARDOTA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "641",
+      "notariaCosmosId": "7630600001",
+      "notariaName": "NOTARÍA ÚNICA DE GINEBRA - VALLE"
+    },
+    {
+      "notariaId": "642",
+      "notariaCosmosId": "6330200001",
+      "notariaName": "NOTARÍA ÚNICA DE GÉNOVA - QUINDÍO"
+    },
+    {
+      "notariaId": "643",
+      "notariaCosmosId": "1529900001",
+      "notariaName": "NOTARÍA ÚNICA DE GARAGOA - BOYACÁ"
+    },
+    {
+      "notariaId": "644",
+      "notariaCosmosId": "6829800001",
+      "notariaName": "NOTARÍA ÚNICA DE GÁMBITA - SANTANDER"
+    },
+    {
+      "notariaId": "645",
+      "notariaCosmosId": "2029500001",
+      "notariaName": "NOTARÍA ÚNICA DE GAMARRA - CESAR"
+    },
+    {
+      "notariaId": "646",
+      "notariaCosmosId": "7023500001",
+      "notariaName": "NOTARÍA ÚNICA DE GALERAS - SUCRE"
+    },
+    {
+      "notariaId": "647",
+      "notariaCosmosId": "829600001",
+      "notariaName": "NOTARÍA ÚNICA DE GALAPA - ATLÁNTICO"
+    },
+    {
+      "notariaId": "648",
+      "notariaCosmosId": "6829600001",
+      "notariaName": "NOTARÍA ÚNICA DE GALÁN - SANTANDER"
+    },
+    {
+      "notariaId": "649",
+      "notariaCosmosId": "2529300001",
+      "notariaName": "NOTARÍA ÚNICA DE GACHALÁ - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "650",
+      "notariaCosmosId": "4728800001",
+      "notariaName": "NOTARÍA ÚNICA DE FUNDACIÓN - MAGDALENA"
+    },
+    {
+      "notariaId": "651",
+      "notariaCosmosId": "528400001",
+      "notariaName": "NOTARÍA ÚNICA DE FRONTINO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "652",
+      "notariaCosmosId": "7328300001",
+      "notariaName": "NOTARÍA ÚNICA DE FRESNO - TOLIMA"
+    },
+    {
+      "notariaId": "653",
+      "notariaCosmosId": "528200001",
+      "notariaName": "NOTARÍA ÚNICA DE FREDONIA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "654",
+      "notariaCosmosId": "8130000001",
+      "notariaName": "NOTARÍA ÚNICA DE FORTUL - ARAUCA"
+    },
+    {
+      "notariaId": "655",
+      "notariaCosmosId": "7627500001",
+      "notariaName": "NOTARÍA ÚNICA DE FLORIDA - VALLE"
+    },
+    {
+      "notariaId": "656",
+      "notariaCosmosId": "7327500001",
+      "notariaName": "NOTARÍA ÚNICA DE FLANDES - TOLIMA"
+    },
+    {
+      "notariaId": "657",
+      "notariaCosmosId": "6327200001",
+      "notariaName": "NOTARÍA ÚNICA DE FILANDIA - QUINDÍO"
+    },
+    {
+      "notariaId": "658",
+      "notariaCosmosId": "1727200001",
+      "notariaName": "NOTARÍA ÚNICA DE FILADELFIA - CALDAS"
+    },
+    {
+      "notariaId": "659",
+      "notariaCosmosId": "526400001",
+      "notariaName": "NOTARÍA ÚNICA DE ENTRERRÍOS - ANTIOQUIA"
+    },
+    {
+      "notariaId": "660",
+      "notariaCosmosId": "5426100001",
+      "notariaName": "NOTARÍA ÚNICA DE EL ZULIA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "661",
+      "notariaCosmosId": "5425000001",
+      "notariaName": "NOTARÍA ÚNICA DE EL TARRA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "662",
+      "notariaCosmosId": "5226000001",
+      "notariaName": "NOTARÍA ÚNICA DE EL TAMBO - NARIÑO"
+    },
+    {
+      "notariaId": "663",
+      "notariaCosmosId": "1925600001",
+      "notariaName": "NOTARÍA ÚNICA DE EL TAMBO - CAUCA"
+    },
+    {
+      "notariaId": "664",
+      "notariaCosmosId": "569700001",
+      "notariaName": "NOTARÍA ÚNICA DE EL SANTUARIO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "665",
+      "notariaCosmosId": "6825500001",
+      "notariaName": "NOTARÍA ÚNICA DE EL PLAYÓN - SANTANDER"
+    },
+    {
+      "notariaId": "666",
+      "notariaCosmosId": "4725800001",
+      "notariaName": "NOTARÍA ÚNICA DE EL PIÑON - MAGDALENA"
+    },
+    {
+      "notariaId": "667",
+      "notariaCosmosId": "554100001",
+      "notariaName": "NOTARÍA ÚNICA DE EL PEÑOL - ANTIOQUIA"
+    },
+    {
+      "notariaId": "668",
+      "notariaCosmosId": "2025000001",
+      "notariaName": "NOTARÍA ÚNICA DE EL PASO - CESAR"
+    },
+    {
+      "notariaId": "669",
+      "notariaCosmosId": "7625000001",
+      "notariaName": "NOTARÍA ÚNICA DE EL DOVIO - VALLE"
+    },
+    {
+      "notariaId": "670",
+      "notariaCosmosId": "1824700001",
+      "notariaName": "NOTARÍA ÚNICA DE EL DONCELLO - CAQUETÁ"
+    },
+    {
+      "notariaId": "671",
+      "notariaCosmosId": "2023800001",
+      "notariaName": "NOTARÍA ÚNICA DE EL COPEY - CESAR"
+    },
+    {
+      "notariaId": "672",
+      "notariaCosmosId": "1524400001",
+      "notariaName": "NOTARÍA ÚNICA DE EL COCUY - BOYACÁ"
+    },
+    {
+      "notariaId": "673",
+      "notariaCosmosId": "522500001",
+      "notariaName": "NOTARÍA ÚNICA DE EL CHARCO - NARIÑO"
+    },
+    {
+      "notariaId": "674",
+      "notariaCosmosId": "7624800001",
+      "notariaName": "NOTARÍA ÚNICA DE EL CERRITO - VALLE"
+    },
+    {
+      "notariaId": "675",
+      "notariaCosmosId": "6823500001",
+      "notariaName": "NOTARÍA ÚNICA DE EL CARMEN DE CHUCURÍ - SANTANDER"
+    },
+    {
+      "notariaId": "676",
+      "notariaCosmosId": "5424500001",
+      "notariaName": "NOTARÍA ÚNICA DE EL CARMEN - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "677",
+      "notariaCosmosId": "7624600001",
+      "notariaName": "NOTARÍA ÚNICA DE EL CAIRO - VALLE"
+    },
+    {
+      "notariaId": "678",
+      "notariaCosmosId": "4724500001",
+      "notariaName": "NOTARÍA ÚNICA DE EL BANCO - MAGDALENA"
+    },
+    {
+      "notariaId": "679",
+      "notariaCosmosId": "525000001",
+      "notariaName": "NOTARÍA ÚNICA DE EL BAGRE - ANTIOQUIA"
+    },
+    {
+      "notariaId": "680",
+      "notariaCosmosId": "7624300001",
+      "notariaName": "NOTARÍA ÚNICA DE EL ÁGUILA - VALLE"
+    },
+    {
+      "notariaId": "681",
+      "notariaCosmosId": "524000001",
+      "notariaName": "NOTARÍA ÚNICA DE EBEJICO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "682",
+      "notariaCosmosId": "5423900001",
+      "notariaName": "NOTARÍA ÚNICA DE DURANIA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "683",
+      "notariaCosmosId": "523700001",
+      "notariaName": "NOTARÍA ÚNICA DE DONMATÍAS - ANTIOQUIA"
+    },
+    {
+      "notariaId": "684",
+      "notariaCosmosId": "7323600001",
+      "notariaName": "NOTARÍA ÚNICA DE DOLORES - TOLIMA"
+    },
+    {
+      "notariaId": "685",
+      "notariaCosmosId": "7623300001",
+      "notariaName": "NOTARÍA ÚNICA DE DAGUA - VALLE"
+    },
+    {
+      "notariaId": "686",
+      "notariaCosmosId": "523400001",
+      "notariaName": "NOTARÍA ÚNICA DE DABEIBA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "687",
+      "notariaCosmosId": "2022800001",
+      "notariaName": "NOTARÍA ÚNICA DE CURUMANÍ - CESAR"
+    },
+    {
+      "notariaId": "688",
+      "notariaCosmosId": "7322600001",
+      "notariaName": "NOTARÍA ÚNICA DE CUNDAY - TOLIMA"
+    },
+    {
+      "notariaId": "689",
+      "notariaCosmosId": "5222700001",
+      "notariaName": "NOTARÍA ÚNICA DE CUMBAL - NARIÑO"
+    },
+    {
+      "notariaId": "690",
+      "notariaCosmosId": "9977300001",
+      "notariaName": "NOTARÍA ÚNICA DE CUMARIBO - VICHADA"
+    },
+    {
+      "notariaId": "691",
+      "notariaCosmosId": "5417200001",
+      "notariaName": "NOTARÍA ÚNICA DE CUCUTILLA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "692",
+      "notariaCosmosId": "1522300001",
+      "notariaName": "NOTARÍA ÚNICA DE CUBARÁ - BOYACÁ"
+    },
+    {
+      "notariaId": "693",
+      "notariaCosmosId": "8122000001",
+      "notariaName": "NOTARÍA ÚNICA DE CRAVO NORTE - ARAUCA"
+    },
+    {
+      "notariaId": "694",
+      "notariaCosmosId": "7321700001",
+      "notariaName": "NOTARÍA ÚNICA DE COYAIMA - TOLIMA"
+    },
+    {
+      "notariaId": "695",
+      "notariaCosmosId": "2521400001",
+      "notariaName": "NOTARÍA ÚNICA DE COTA - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "696",
+      "notariaCosmosId": "7021500001",
+      "notariaName": "NOTARÍA ÚNICA DE COROZAL - SUCRE"
+    },
+    {
+      "notariaId": "697",
+      "notariaCosmosId": "1321200001",
+      "notariaName": "NOTARÍA ÚNICA DE CÓRDOBA - BOLÍVAR"
+    },
+    {
+      "notariaId": "698",
+      "notariaCosmosId": "521200001",
+      "notariaName": "NOTARÍA ÚNICA DE COPACABANA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "699",
+      "notariaCosmosId": "5420600001",
+      "notariaName": "NOTARÍA ÚNICA DE CONVENCIÓN - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "700",
+      "notariaCosmosId": "6821100001",
+      "notariaName": "NOTARÍA ÚNICA DE CONTRATACIÓN - SANTANDER"
+    },
+    {
+      "notariaId": "701",
+      "notariaCosmosId": "520900001",
+      "notariaName": "NOTARÍA ÚNICA DE CONCORDIA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "702",
+      "notariaCosmosId": "6820700001",
+      "notariaName": "NOTARÍA ÚNICA DE CONCEPCIÓN - SANTANDER"
+    },
+    {
+      "notariaId": "703",
+      "notariaCosmosId": "4120600001",
+      "notariaName": "NOTARÍA ÚNICA DE COLOMBIA - HUILA"
+    },
+    {
+      "notariaId": "704",
+      "notariaCosmosId": "519700001",
+      "notariaName": "NOTARÍA ÚNICA DE COCORNÁ - ANTIOQUIA"
+    },
+    {
+      "notariaId": "705",
+      "notariaCosmosId": "510100001",
+      "notariaName": "NOTARÍA ÚNICA DE CIUDAD BOLÍVAR - ANTIOQUIA"
+    },
+    {
+      "notariaId": "706",
+      "notariaCosmosId": "519000001",
+      "notariaName": "NOTARÍA ÚNICA DE CISNEROS - ANTIOQUIA"
+    },
+    {
+      "notariaId": "707",
+      "notariaCosmosId": "6319000001",
+      "notariaName": "NOTARÍA ÚNICA DE CIRCASIA - QUINDÍO"
+    },
+    {
+      "notariaId": "708",
+      "notariaCosmosId": "6819000001",
+      "notariaName": "NOTARÍA ÚNICA DE CIMITARRA - SANTANDER"
+    },
+    {
+      "notariaId": "709",
+      "notariaCosmosId": "2318900001",
+      "notariaName": "NOTARÍA ÚNICA DE CIÉNAGA DE ORO - CÓRDOBA"
+    },
+    {
+      "notariaId": "710",
+      "notariaCosmosId": "2518300001",
+      "notariaName": "NOTARÍA ÚNICA DE CHOCONTÁ - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "711",
+      "notariaCosmosId": "1518300001",
+      "notariaName": "NOTARÍA ÚNICA DE CHITA - BOYACÁ"
+    },
+    {
+      "notariaId": "712",
+      "notariaCosmosId": "1518000001",
+      "notariaName": "NOTARÍA ÚNICA DE CHISCAS - BOYACÁ"
+    },
+    {
+      "notariaId": "713",
+      "notariaCosmosId": "2017800001",
+      "notariaName": "NOTARÍA ÚNICA DE CHIRIGUANA - CESAR"
+    },
+    {
+      "notariaId": "714",
+      "notariaCosmosId": "2517800001",
+      "notariaName": "NOTARÍA ÚNICA DE CHIPAQUE - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "715",
+      "notariaCosmosId": "2318200001",
+      "notariaName": "NOTARÍA ÚNICA DE CHINÚ - CÓRDOBA"
+    },
+    {
+      "notariaId": "716",
+      "notariaCosmosId": "5409900001",
+      "notariaName": "NOTARÍA ÚNICA DE CHINACOTA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "717",
+      "notariaCosmosId": "2017500001",
+      "notariaName": "NOTARÍA ÚNICA DE CHIMICHAGUA - CESAR"
+    },
+    {
+      "notariaId": "718",
+      "notariaCosmosId": "517200001",
+      "notariaName": "NOTARÍA ÚNICA DE CHIGORODÓ - ANTIOQUIA"
+    },
+    {
+      "notariaId": "719",
+      "notariaCosmosId": "4717000001",
+      "notariaName": "NOTARÍA ÚNICA DE CHIBOLO - MAGDALENA"
+    },
+    {
+      "notariaId": "720",
+      "notariaCosmosId": "6816700001",
+      "notariaName": "NOTARÍA ÚNICA DE CHARALÁ - SANTANDER"
+    },
+    {
+      "notariaId": "721",
+      "notariaCosmosId": "7316800001",
+      "notariaName": "NOTARÍA ÚNICA DE CHAPARRAL - TOLIMA"
+    },
+    {
+      "notariaId": "722",
+      "notariaCosmosId": "4716100001",
+      "notariaName": "NOTARÍA ÚNICA DE CERRO DE SAN ANTONIO - MAGDALENA"
+    },
+    {
+      "notariaId": "723",
+      "notariaCosmosId": "2316200001",
+      "notariaName": "NOTARÍA ÚNICA DE CERETÉ - CÓRDOBA"
+    },
+    {
+      "notariaId": "724",
+      "notariaCosmosId": "515400001",
+      "notariaName": "NOTARÍA ÚNICA DE CAUCASIA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "725",
+      "notariaCosmosId": "1815000001",
+      "notariaName": "NOTARÍA ÚNICA DE CARTAGENA DEL CHAIRÁ - CAQUETÁ"
+    },
+    {
+      "notariaId": "726",
+      "notariaCosmosId": "515000001",
+      "notariaName": "NOTARÍA ÚNICA DE CAROLINA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "727",
+      "notariaCosmosId": "514800001",
+      "notariaName": "NOTARÍA ÚNICA DE CARMEN DE VIBORAL - ANTIOQUIA"
+    },
+    {
+      "notariaId": "728",
+      "notariaCosmosId": "1324400001",
+      "notariaName": "NOTARÍA ÚNICA DE CARMEN DE BOLÍVAR - BOLÍVAR"
+    },
+    {
+      "notariaId": "729",
+      "notariaCosmosId": "514500001",
+      "notariaName": "NOTARÍA ÚNICA DE CARAMANTA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "730",
+      "notariaCosmosId": "2514800001",
+      "notariaName": "NOTARÍA ÚNICA DE CAPARRAPI - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "731",
+      "notariaCosmosId": "7613000001",
+      "notariaName": "NOTARÍA ÚNICA DE CANDELARIA - VALLE"
+    },
+    {
+      "notariaId": "732",
+      "notariaCosmosId": "513800001",
+      "notariaName": "NOTARÍA ÚNICA DE CAÑASGORDAS - ANTIOQUIA"
+    },
+    {
+      "notariaId": "733",
+      "notariaCosmosId": "1513500001",
+      "notariaName": "NOTARÍA ÚNICA DE CAMPOHERMOSO - BOYACÁ"
+    },
+    {
+      "notariaId": "734",
+      "notariaCosmosId": "4113200001",
+      "notariaName": "NOTARÍA ÚNICA DE CAMPOALEGRE - HUILA"
+    },
+    {
+      "notariaId": "735",
+      "notariaCosmosId": "813700001",
+      "notariaName": "NOTARÍA ÚNICA DE CAMPO DE LA CRUZ - ATLÁNTICO"
+    },
+    {
+      "notariaId": "736",
+      "notariaCosmosId": "1914200001",
+      "notariaName": "NOTARÍA ÚNICA DE CALOTO - CAUCA"
+    },
+    {
+      "notariaId": "737",
+      "notariaCosmosId": "761260001",
+      "notariaName": "NOTARÍA ÚNICA DE CALIMA (EL DARIÉN) - VALLE"
+    },
+    {
+      "notariaId": "738",
+      "notariaCosmosId": "512900001",
+      "notariaName": "NOTARÍA ÚNICA DE CALDAS - ANTIOQUIA"
+    },
+    {
+      "notariaId": "739",
+      "notariaCosmosId": "1314000001",
+      "notariaName": "NOTARÍA ÚNICA DE CALAMAR - BOLÍVAR"
+    },
+    {
+      "notariaId": "740",
+      "notariaCosmosId": "7312400001",
+      "notariaName": "NOTARÍA ÚNICA DE CAJAMARCA - TOLIMA"
+    },
+    {
+      "notariaId": "741",
+      "notariaCosmosId": "7012400001",
+      "notariaName": "NOTARÍA ÚNICA DE CAIMITO - SUCRE"
+    },
+    {
+      "notariaId": "742",
+      "notariaCosmosId": "7612200001",
+      "notariaName": "NOTARÍA ÚNICA DE CAICEDONIA - VALLE"
+    },
+    {
+      "notariaId": "743",
+      "notariaCosmosId": "5412800001",
+      "notariaName": "NOTARÍA ÚNICA DE CÁCHIRA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "744",
+      "notariaCosmosId": "512000001",
+      "notariaName": "NOTARÍA ÚNICA DE CÁCERES - ANTIOQUIA"
+    },
+    {
+      "notariaId": "745",
+      "notariaCosmosId": "511300001",
+      "notariaName": "NOTARÍA ÚNICA DE BURITICÁ - ANTIOQUIA"
+    },
+    {
+      "notariaId": "746",
+      "notariaCosmosId": "7611300001",
+      "notariaName": "NOTARÍA ÚNICA DE BUGALAGRANDE - VALLE"
+    },
+    {
+      "notariaId": "747",
+      "notariaCosmosId": "5211000001",
+      "notariaName": "NOTARÍA ÚNICA DE BUESACO - NARIÑO"
+    },
+    {
+      "notariaId": "748",
+      "notariaCosmosId": "1911000001",
+      "notariaName": "NOTARÍA ÚNICA DE BUENOS AIRES - CAUCA"
+    },
+    {
+      "notariaId": "749",
+      "notariaCosmosId": "2307900001",
+      "notariaName": "NOTARÍA ÚNICA DE BUENAVISTA - CÓRDOBA"
+    },
+    {
+      "notariaId": "750",
+      "notariaCosmosId": "5410900001",
+      "notariaName": "NOTARÍA ÚNICA DE BUCARASICA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "751",
+      "notariaCosmosId": "510700001",
+      "notariaName": "NOTARÍA ÚNICA DE BRICEÑO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "752",
+      "notariaCosmosId": "2006000001",
+      "notariaName": "NOTARÍA ÚNICA DE BOSCONIA - CESAR"
+    },
+    {
+      "notariaId": "753",
+      "notariaCosmosId": "7610000001",
+      "notariaName": "NOTARÍA ÚNICA DE BOLÍVAR - VALLE"
+    },
+    {
+      "notariaId": "754",
+      "notariaCosmosId": "6810100001",
+      "notariaName": "NOTARÍA ÚNICA DE BOLÍVAR - SANTANDER"
+    },
+    {
+      "notariaId": "755",
+      "notariaCosmosId": "1910000001",
+      "notariaName": "NOTARÍA ÚNICA DE BOLÍVAR - CAUCA"
+    },
+    {
+      "notariaId": "756",
+      "notariaCosmosId": "2709900001",
+      "notariaName": "NOTARÍA ÚNICA DE BOJAYA (BELLAVISTA) - CHOCÓ"
+    },
+    {
+      "notariaId": "757",
+      "notariaCosmosId": "2509900001",
+      "notariaName": "NOTARÍA ÚNICA DE BOJACÁ - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "758",
+      "notariaCosmosId": "1509700001",
+      "notariaName": "NOTARÍA ÚNICA DE BOAVITA - BOYACÁ"
+    },
+    {
+      "notariaId": "759",
+      "notariaCosmosId": "509300001",
+      "notariaName": "NOTARÍA ÚNICA DE BETULIA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "760",
+      "notariaCosmosId": "509100001",
+      "notariaName": "NOTARÍA ÚNICA DE BETANIA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "761",
+      "notariaCosmosId": "6608800001",
+      "notariaName": "NOTARÍA ÚNICA DE BELÉN DE UMBRIA - RISARALDA"
+    },
+    {
+      "notariaId": "762",
+      "notariaCosmosId": "1809400001",
+      "notariaName": "NOTARÍA ÚNICA DE BELÉN DE LOS ANDAQUIES - CAQUETÁ"
+    },
+    {
+      "notariaId": "763",
+      "notariaCosmosId": "1508700001",
+      "notariaName": "NOTARÍA ÚNICA DE BELÉN - BOYACÁ"
+    },
+    {
+      "notariaId": "764",
+      "notariaCosmosId": "1708800001",
+      "notariaName": "NOTARÍA ÚNICA DE BELALCÁZAR - CALDAS"
+    },
+    {
+      "notariaId": "765",
+      "notariaCosmosId": "1374000001",
+      "notariaName": "NOTARÍA ÚNICA DE BARRANCO DE LOBA - BOLÍVAR"
+    },
+    {
+      "notariaId": "766",
+      "notariaCosmosId": "507900001",
+      "notariaName": "NOTARÍA ÚNICA DE BARBOSA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "768",
+      "notariaCosmosId": "4107800001",
+      "notariaName": "NOTARÍA ÚNICA DE BARAYA - HUILA"
+    },
+    {
+      "notariaId": "769",
+      "notariaCosmosId": "807800001",
+      "notariaName": "NOTARÍA ÚNICA DE BARANOA - ATLÁNTICO"
+    },
+    {
+      "notariaId": "770",
+      "notariaCosmosId": "6607500001",
+      "notariaName": "NOTARÍA ÚNICA DE BALBOA - RISARALDA"
+    },
+    {
+      "notariaId": "771",
+      "notariaCosmosId": "1907500001",
+      "notariaName": "NOTARÍA ÚNICA DE BALBOA - CAUCA"
+    },
+    {
+      "notariaId": "772",
+      "notariaCosmosId": "2707700001",
+      "notariaName": "NOTARÍA ÚNICA DE BAJO BAUDÓ (PIZARRO) - CHOCÓ"
+    },
+    {
+      "notariaId": "773",
+      "notariaCosmosId": "2707500001",
+      "notariaName": "NOTARÍA ÚNICA DE BAHÍA SOLANO - CHOCÓ"
+    },
+    {
+      "notariaId": "774",
+      "notariaCosmosId": "2306800001",
+      "notariaName": "NOTARÍA ÚNICA DE AYAPEL - CÓRDOBA"
+    },
+    {
+      "notariaId": "775",
+      "notariaCosmosId": "7306700001",
+      "notariaName": "NOTARÍA ÚNICA DE ATACO - TOLIMA"
+    },
+    {
+      "notariaId": "776",
+      "notariaCosmosId": "2003200001",
+      "notariaName": "NOTARÍA ÚNICA DE ASTREA - CESAR"
+    },
+    {
+      "notariaId": "777",
+      "notariaCosmosId": "7305500001",
+      "notariaName": "NOTARÍA ÚNICA DE ARMERO-GUAYABAL - TOLIMA"
+    },
+    {
+      "notariaId": "778",
+      "notariaCosmosId": "505900001",
+      "notariaName": "NOTARÍA ÚNICA DE ARMENIA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "779",
+      "notariaCosmosId": "1305200001",
+      "notariaName": "NOTARÍA ÚNICA DE ARJONA - BOLÍVAR"
+    },
+    {
+      "notariaId": "780",
+      "notariaCosmosId": "4705800001",
+      "notariaName": "NOTARÍA ÚNICA DE ARIGUANÍ - MAGDALENA"
+    },
+    {
+      "notariaId": "781",
+      "notariaCosmosId": "7605400001",
+      "notariaName": "NOTARÍA ÚNICA DE ARGELIA - VALLE"
+    },
+    {
+      "notariaId": "782",
+      "notariaCosmosId": "505500001",
+      "notariaName": "NOTARÍA ÚNICA DE ARGELIA - ANTIOQUIA"
+    },
+    {
+      "notariaId": "783",
+      "notariaCosmosId": "505100001",
+      "notariaName": "NOTARÍA ÚNICA DE ARBOLETES - ANTIOQUIA"
+    },
+    {
+      "notariaId": "784",
+      "notariaCosmosId": "5405100001",
+      "notariaName": "NOTARÍA ÚNICA DE ARBOLEDAS - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "785",
+      "notariaCosmosId": "8106500001",
+      "notariaName": "NOTARÍA ÚNICA DE ARAUQUITA - ARAUCA"
+    },
+    {
+      "notariaId": "786",
+      "notariaCosmosId": "8100100001",
+      "notariaName": "NOTARÍA ÚNICA DE ARAUCA - ARAUCA"
+    },
+    {
+      "notariaId": "787",
+      "notariaCosmosId": "1705000001",
+      "notariaName": "NOTARÍA ÚNICA DE ARANZAZU - CALDAS"
+    },
+    {
+      "notariaId": "788",
+      "notariaCosmosId": "1504700001",
+      "notariaName": "NOTARÍA ÚNICA DE AQUITANIA - BOYACÁ"
+    },
+    {
+      "notariaId": "789",
+      "notariaCosmosId": "6604500001",
+      "notariaName": "NOTARÍA ÚNICA DE APÍA - RISARALDA"
+    },
+    {
+      "notariaId": "790",
+      "notariaCosmosId": "5000100003",
+      "notariaName": "NOTARÍA TERCERA DE VILLAVICENCIO - META"
+    },
+    {
+      "notariaId": "791",
+      "notariaCosmosId": "2000100003",
+      "notariaName": "NOTARÍA TERCERA DE VALLEDUPAR - CESAR"
+    },
+    {
+      "notariaId": "792",
+      "notariaCosmosId": "1500100003",
+      "notariaName": "NOTARÍA TERCERA DE TUNJA - BOYACÁ"
+    },
+    {
+      "notariaId": "793",
+      "notariaCosmosId": "7683400003",
+      "notariaName": "NOTARÍA TERCERA DE TULUÁ - VALLE"
+    },
+    {
+      "notariaId": "794",
+      "notariaCosmosId": "1575900003",
+      "notariaName": "NOTARÍA TERCERA DE SOGAMOSO - BOYACÁ"
+    },
+    {
+      "notariaId": "795",
+      "notariaCosmosId": "7000100003",
+      "notariaName": "NOTARÍA TERCERA DE SINCELEJO - SUCRE"
+    },
+    {
+      "notariaId": "796",
+      "notariaCosmosId": "4700100003",
+      "notariaName": "NOTARÍA TERCERA DE SANTA MARTA - MAGDALENA"
+    },
+    {
+      "notariaId": "797",
+      "notariaCosmosId": "1900100003",
+      "notariaName": "NOTARÍA TERCERA DE POPAYÁN - CAUCA"
+    },
+    {
+      "notariaId": "798",
+      "notariaCosmosId": "6600100003",
+      "notariaName": "NOTARÍA TERCERA DE PEREIRA - RISARALDA"
+    },
+    {
+      "notariaId": "799",
+      "notariaCosmosId": "5200100003",
+      "notariaName": "NOTARÍA TERCERA DE PASTO - NARIÑO"
+    },
+    {
+      "notariaId": "800",
+      "notariaCosmosId": "7652000003",
+      "notariaName": "NOTARÍA TERCERA DE PALMIRA - VALLE"
+    },
+    {
+      "notariaId": "801",
+      "notariaCosmosId": "4100100003",
+      "notariaName": "NOTARÍA TERCERA DE NEIVA - HUILA"
+    },
+    {
+      "notariaId": "802",
+      "notariaCosmosId": "2300100003",
+      "notariaName": "NOTARÍA TERCERA DE MONTERÍA - CÓRDOBA"
+    },
+    {
+      "notariaId": "803",
+      "notariaCosmosId": "1700100003",
+      "notariaName": "NOTARÍA TERCERA DE MANIZALES - CALDAS"
+    },
+    {
+      "notariaId": "804",
+      "notariaCosmosId": "7300100003",
+      "notariaName": "NOTARÍA TERCERA DE IBAGUÉ - TOLIMA"
+    },
+    {
+      "notariaId": "805",
+      "notariaCosmosId": "2526900003",
+      "notariaName": "NOTARÍA TERCERA DE FACATATIVÁ - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "806",
+      "notariaCosmosId": "5400100003",
+      "notariaName": "NOTARÍA TERCERA DE CÚCUTA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "807",
+      "notariaCosmosId": "1300100003",
+      "notariaName": "NOTARÍA TERCERA DE CARTAGENA - BOLÍVAR"
+    },
+    {
+      "notariaId": "808",
+      "notariaCosmosId": "7610900003",
+      "notariaName": "NOTARÍA TERCERA DE BUENAVENTURA - VALLE"
+    },
+    {
+      "notariaId": "809",
+      "notariaCosmosId": "6300100003",
+      "notariaName": "NOTARÍA TERCERA DE ARMENIA - QUINDÍO"
+    },
+    {
+      "notariaId": "810",
+      "notariaCosmosId": "6600100006",
+      "notariaName": "NOTARÍA SEXTA DE PEREIRA - RISARALDA"
+    },
+    {
+      "notariaId": "811",
+      "notariaCosmosId": "7300100006",
+      "notariaName": "NOTARÍA SEXTA DE IBAGUÉ - TOLIMA"
+    },
+    {
+      "notariaId": "812",
+      "notariaCosmosId": "5400100006",
+      "notariaName": "NOTARÍA SEXTA DE CÚCUTA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "813",
+      "notariaCosmosId": "1300100006",
+      "notariaName": "NOTARÍA SEXTA DE CARTAGENA - BOLÍVAR"
+    },
+    {
+      "notariaId": "814",
+      "notariaCosmosId": "6800100006",
+      "notariaName": "NOTARÍA SEXTA DE BUCARAMANGA - SANTANDER"
+    },
+    {
+      "notariaId": "815",
+      "notariaCosmosId": "5400100007",
+      "notariaName": "NOTARÍA SÉPTIMA DE CÚCUTA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "816",
+      "notariaCosmosId": "1300100007",
+      "notariaName": "NOTARÍA SÉPTIMA DE CARTAGENA - BOLÍVAR"
+    },
+    {
+      "notariaId": "817",
+      "notariaCosmosId": "6800100007",
+      "notariaName": "NOTARÍA SÉPTIMA DE BUCARAMANGA - SANTANDER"
+    },
+    {
+      "notariaId": "818",
+      "notariaCosmosId": "2589902",
+      "notariaName": "NOTARÍA SEGUNDA DE ZIPAQUIRÁ - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "819",
+      "notariaCosmosId": "7689200002",
+      "notariaName": "NOTARÍA SEGUNDA DE YUMBO - VALLE"
+    },
+    {
+      "notariaId": "820",
+      "notariaCosmosId": "588700002",
+      "notariaName": "NOTARÍA SEGUNDA DE YARUMAL - ANTIOQUIA"
+    },
+    {
+      "notariaId": "821",
+      "notariaCosmosId": "2000100002",
+      "notariaName": "NOTARÍA SEGUNDA DE VALLEDUPAR - CESAR"
+    },
+    {
+      "notariaId": "822",
+      "notariaCosmosId": "2584302",
+      "notariaName": "NOTARÍA SEGUNDA DE UBATÉ - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "823",
+      "notariaCosmosId": "5283800002",
+      "notariaName": "NOTARÍA SEGUNDA DE TÚQUERRES - NARIÑO"
+    },
+    {
+      "notariaId": "824",
+      "notariaCosmosId": "1500100002",
+      "notariaName": "NOTARÍA SEGUNDA DE TUNJA - BOYACÁ"
+    },
+    {
+      "notariaId": "825",
+      "notariaCosmosId": "7683400002",
+      "notariaName": "NOTARÍA SEGUNDA DE TULUÁ - VALLE"
+    },
+    {
+      "notariaId": "826",
+      "notariaCosmosId": "875800002",
+      "notariaName": "NOTARÍA SEGUNDA DE SOLEDAD - ATLÁNTICO"
+    },
+    {
+      "notariaId": "827",
+      "notariaCosmosId": "1575900002",
+      "notariaName": "NOTARÍA SEGUNDA DE SOGAMOSO - BOYACÁ"
+    },
+    {
+      "notariaId": "828",
+      "notariaCosmosId": "2575400002",
+      "notariaName": "NOTARÍA SEGUNDA DE SOACHA - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "829",
+      "notariaCosmosId": "7673600002",
+      "notariaName": "NOTARÍA SEGUNDA DE SEVILLA - VALLE"
+    },
+    {
+      "notariaId": "830",
+      "notariaCosmosId": "561500002",
+      "notariaName": "NOTARÍA SEGUNDA DE RIONEGRO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "831",
+      "notariaCosmosId": "4400100002",
+      "notariaName": "NOTARÍA SEGUNDA DE RIOHACHA - GUAJIRA"
+    },
+    {
+      "notariaId": "832",
+      "notariaCosmosId": "1559000002",
+      "notariaName": "NOTARÍA SEGUNDA DE RAMIRIQUÍ - BOYACÁ"
+    },
+    {
+      "notariaId": "833",
+      "notariaCosmosId": "2700100002",
+      "notariaName": "NOTARÍA SEGUNDA DE QUIBDO - CHOCÓ"
+    },
+    {
+      "notariaId": "834",
+      "notariaCosmosId": "1900100002",
+      "notariaName": "NOTARÍA SEGUNDA DE POPAYÁN - CAUCA"
+    },
+    {
+      "notariaId": "835",
+      "notariaCosmosId": "4155100002",
+      "notariaName": "NOTARÍA SEGUNDA DE PITALITO - HUILA"
+    },
+    {
+      "notariaId": "836",
+      "notariaCosmosId": "5200100002",
+      "notariaName": "NOTARÍA SEGUNDA DE PASTO - NARIÑO"
+    },
+    {
+      "notariaId": "837",
+      "notariaCosmosId": "5451800002",
+      "notariaName": "NOTARÍA SEGUNDA DE PAMPLONA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "838",
+      "notariaCosmosId": "7652000002",
+      "notariaName": "NOTARÍA SEGUNDA DE PALMIRA - VALLE"
+    },
+    {
+      "notariaId": "839",
+      "notariaCosmosId": "5449800002",
+      "notariaName": "NOTARÍA SEGUNDA DE OCAÑA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "840",
+      "notariaCosmosId": "4100100002",
+      "notariaName": "NOTARÍA SEGUNDA DE NEIVA - HUILA"
+    },
+    {
+      "notariaId": "841",
+      "notariaCosmosId": "2300100002",
+      "notariaName": "NOTARÍA SEGUNDA DE MONTERÍA - CÓRDOBA"
+    },
+    {
+      "notariaId": "842",
+      "notariaCosmosId": "1546900002",
+      "notariaName": "NOTARÍA SEGUNDA DE MONIQUIRÁ - BOYACÁ"
+    },
+    {
+      "notariaId": "843",
+      "notariaCosmosId": "1700100002",
+      "notariaName": "NOTARÍA SEGUNDA DE MANIZALES - CALDAS"
+    },
+    {
+      "notariaId": "844",
+      "notariaCosmosId": "6843200002",
+      "notariaName": "NOTARÍA SEGUNDA DE MÁLAGA - SANTANDER"
+    },
+    {
+      "notariaId": "845",
+      "notariaCosmosId": "536000002",
+      "notariaName": "NOTARÍA SEGUNDA DE ITAGUÍ - ANTIOQUIA"
+    },
+    {
+      "notariaId": "846",
+      "notariaCosmosId": "5235602",
+      "notariaName": "NOTARÍA SEGUNDA DE IPIALES - NARIÑO"
+    },
+    {
+      "notariaId": "847",
+      "notariaCosmosId": "2530700002",
+      "notariaName": "NOTARÍA SEGUNDA DE GIRARDOT - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "848",
+      "notariaCosmosId": "4129800002",
+      "notariaName": "NOTARÍA SEGUNDA DE GARZÓN - HUILA"
+    },
+    {
+      "notariaId": "849",
+      "notariaCosmosId": "2528600003",
+      "notariaName": "NOTARÍA SEGUNDA DE FUSAGASUGÁ - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "850",
+      "notariaCosmosId": "1800100002",
+      "notariaName": "NOTARÍA SEGUNDA DE FLORENCIA - CAQUETÁ"
+    },
+    {
+      "notariaId": "851",
+      "notariaCosmosId": "2526900002",
+      "notariaName": "NOTARÍA SEGUNDA DE FACATATIVÁ - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "852",
+      "notariaCosmosId": "526600002",
+      "notariaName": "NOTARÍA SEGUNDA DE ENVIGADO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "853",
+      "notariaCosmosId": "1523800002",
+      "notariaName": "NOTARÍA SEGUNDA DE DUITAMA - BOYACÁ"
+    },
+    {
+      "notariaId": "854",
+      "notariaCosmosId": "15176000012",
+      "notariaName": "NOTARÍA SEGUNDA DE CHIQUINQUIRÁ - BOYACÁ"
+    },
+    {
+      "notariaId": "855",
+      "notariaCosmosId": "1717400002",
+      "notariaName": "NOTARÍA SEGUNDA DE CHINCHINÁ - CALDAS"
+    },
+    {
+      "notariaId": "856",
+      "notariaCosmosId": "2517500002",
+      "notariaName": "NOTARÍA SEGUNDA DE CHÍA - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "857",
+      "notariaCosmosId": "7614700002",
+      "notariaName": "NOTARÍA SEGUNDA DE CARTAGO - VALLE"
+    },
+    {
+      "notariaId": "858",
+      "notariaCosmosId": "1300100002",
+      "notariaName": "NOTARÍA SEGUNDA DE CARTAGENA - BOLÍVAR"
+    },
+    {
+      "notariaId": "859",
+      "notariaCosmosId": "6313000002",
+      "notariaName": "NOTARÍA SEGUNDA DE CALARCÁ - QUINDÍO"
+    },
+    {
+      "notariaId": "860",
+      "notariaCosmosId": "7611100002",
+      "notariaName": "NOTARÍA SEGUNDA DE BUGA - VALLE"
+    },
+    {
+      "notariaId": "861",
+      "notariaCosmosId": "508800002",
+      "notariaName": "NOTARÍA SEGUNDA DE BELLO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "862",
+      "notariaCosmosId": "6808100002",
+      "notariaName": "NOTARÍA SEGUNDA DE BARRANCABERMEJA - SANTANDER"
+    },
+    {
+      "notariaId": "863",
+      "notariaCosmosId": "4100100005",
+      "notariaName": "NOTARÍA QUINTA DE NEIVA - HUILA"
+    },
+    {
+      "notariaId": "864",
+      "notariaCosmosId": "1700100005",
+      "notariaName": "NOTARÍA QUINTA DE MANIZALES - CALDAS"
+    },
+    {
+      "notariaId": "865",
+      "notariaCosmosId": "7300100005",
+      "notariaName": "NOTARÍA QUINTA DE IBAGUÉ - TOLIMA"
+    },
+    {
+      "notariaId": "866",
+      "notariaCosmosId": "5400100005",
+      "notariaName": "NOTARÍA QUINTA DE CÚCUTA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "867",
+      "notariaCosmosId": "1300100005",
+      "notariaName": "NOTARÍA QUINTA DE CARTAGENA - BOLÍVAR"
+    },
+    {
+      "notariaId": "868",
+      "notariaCosmosId": "6800100005",
+      "notariaName": "NOTARÍA QUINTA DE BUCARAMANGA - SANTANDER"
+    },
+    {
+      "notariaId": "869",
+      "notariaCosmosId": "6300100005",
+      "notariaName": "NOTARÍA QUINTA DE ARMENIA - QUINDÍO"
+    },
+    {
+      "notariaId": "870",
+      "notariaCosmosId": "2589901",
+      "notariaName": "NOTARÍA PRIMERA DE ZIPAQUIRÁ - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "871",
+      "notariaCosmosId": "7689200001",
+      "notariaName": "NOTARÍA PRIMERA DE YUMBO - VALLE"
+    },
+    {
+      "notariaId": "872",
+      "notariaCosmosId": "8500100001",
+      "notariaName": "NOTARÍA PRIMERA DE YOPAL - CASANARE"
+    },
+    {
+      "notariaId": "873",
+      "notariaCosmosId": "588700001",
+      "notariaName": "NOTARÍA PRIMERA DE YARUMAL - ANTIOQUIA"
+    },
+    {
+      "notariaId": "874",
+      "notariaCosmosId": "5000100001",
+      "notariaName": "NOTARÍA PRIMERA DE VILLAVICENCIO - META"
+    },
+    {
+      "notariaId": "875",
+      "notariaCosmosId": "6886100001",
+      "notariaName": "NOTARÍA PRIMERA DE VÉLEZ - SANTANDER"
+    },
+    {
+      "notariaId": "876",
+      "notariaCosmosId": "2000100001",
+      "notariaName": "NOTARÍA PRIMERA DE VALLEDUPAR - CESAR"
+    },
+    {
+      "notariaId": "877",
+      "notariaCosmosId": "2584301",
+      "notariaName": "NOTARÍA PRIMERA DE UBATÉ - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "878",
+      "notariaCosmosId": "5283800001",
+      "notariaName": "NOTARÍA PRIMERA DE TÚQUERRES - NARIÑO"
+    },
+    {
+      "notariaId": "879",
+      "notariaCosmosId": "1500100001",
+      "notariaName": "NOTARÍA PRIMERA DE TUNJA - BOYACÁ"
+    },
+    {
+      "notariaId": "880",
+      "notariaCosmosId": "7683400001",
+      "notariaName": "NOTARÍA PRIMERA DE TULUÁ - VALLE"
+    },
+    {
+      "notariaId": "881",
+      "notariaCosmosId": "1575900001",
+      "notariaName": "NOTARÍA PRIMERA DE SOGAMOSO - BOYACÁ"
+    },
+    {
+      "notariaId": "882",
+      "notariaCosmosId": "2575400001",
+      "notariaName": "NOTARÍA PRIMERA DE SOACHA - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "883",
+      "notariaCosmosId": "7673600001",
+      "notariaName": "NOTARÍA PRIMERA DE SEVILLA - VALLE"
+    },
+    {
+      "notariaId": "884",
+      "notariaCosmosId": "4700100001",
+      "notariaName": "NOTARÍA PRIMERA DE SANTA MARTA - MAGDALENA"
+    },
+    {
+      "notariaId": "885",
+      "notariaCosmosId": "6867900001",
+      "notariaName": "NOTARÍA PRIMERA DE SAN GIL - SANTANDER"
+    },
+    {
+      "notariaId": "886",
+      "notariaCosmosId": "561500001",
+      "notariaName": "NOTARÍA PRIMERA DE RIONEGRO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "887",
+      "notariaCosmosId": "4400100001",
+      "notariaName": "NOTARÍA PRIMERA DE RIOHACHA - GUAJIRA"
+    },
+    {
+      "notariaId": "888",
+      "notariaCosmosId": "1559900001",
+      "notariaName": "NOTARÍA PRIMERA DE RAMIRIQUÍ - BOYACÁ"
+    },
+    {
+      "notariaId": "889",
+      "notariaCosmosId": "2700100001",
+      "notariaName": "NOTARÍA PRIMERA DE QUIBDO - CHOCÓ"
+    },
+    {
+      "notariaId": "890",
+      "notariaCosmosId": "1900100001",
+      "notariaName": "NOTARÍA PRIMERA DE POPAYÁN - CAUCA"
+    },
+    {
+      "notariaId": "891",
+      "notariaCosmosId": "4155100001",
+      "notariaName": "NOTARÍA PRIMERA DE PITALITO - HUILA"
+    },
+    {
+      "notariaId": "892",
+      "notariaCosmosId": "5200100001",
+      "notariaName": "NOTARÍA PRIMERA DE PASTO - NARIÑO"
+    },
+    {
+      "notariaId": "893",
+      "notariaCosmosId": "5451800001",
+      "notariaName": "NOTARÍA PRIMERA DE PAMPLONA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "894",
+      "notariaCosmosId": "5449800001",
+      "notariaName": "NOTARÍA PRIMERA DE OCAÑA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "895",
+      "notariaCosmosId": "4100100001",
+      "notariaName": "NOTARÍA PRIMERA DE NEIVA - HUILA"
+    },
+    {
+      "notariaId": "896",
+      "notariaCosmosId": "2300100001",
+      "notariaName": "NOTARÍA PRIMERA DE MONTERÍA - CÓRDOBA"
+    },
+    {
+      "notariaId": "897",
+      "notariaCosmosId": "1546900001",
+      "notariaName": "NOTARÍA PRIMERA DE MONIQUIRÁ - BOYACÁ"
+    },
+    {
+      "notariaId": "898",
+      "notariaCosmosId": "1700100001",
+      "notariaName": "NOTARÍA PRIMERA DE MANIZALES - CALDAS"
+    },
+    {
+      "notariaId": "899",
+      "notariaCosmosId": "6843200001",
+      "notariaName": "NOTARÍA PRIMERA DE MÁLAGA - SANTANDER"
+    },
+    {
+      "notariaId": "900",
+      "notariaCosmosId": "536000001",
+      "notariaName": "NOTARÍA PRIMERA DE ITAGUÍ - ANTIOQUIA"
+    },
+    {
+      "notariaId": "901",
+      "notariaCosmosId": "5235600001",
+      "notariaName": "NOTARÍA PRIMERA DE IPIALES - NARIÑO"
+    },
+    {
+      "notariaId": "902",
+      "notariaCosmosId": "2530700001",
+      "notariaName": "NOTARÍA PRIMERA DE GIRARDOT - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "903",
+      "notariaCosmosId": "4129800001",
+      "notariaName": "NOTARÍA PRIMERA DE GARZÓN - HUILA"
+    },
+    {
+      "notariaId": "904",
+      "notariaCosmosId": "2528600002",
+      "notariaName": "NOTARÍA PRIMERA DE FUSAGASUGÁ - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "905",
+      "notariaCosmosId": "1800100001",
+      "notariaName": "NOTARÍA PRIMERA DE FLORENCIA - CAQUETÁ"
+    },
+    {
+      "notariaId": "906",
+      "notariaCosmosId": "2526900001",
+      "notariaName": "NOTARÍA PRIMERA DE FACATATIVÁ - CUNDINAMARCA"
+    },
+    {
+      "notariaId": "907",
+      "notariaCosmosId": "7326800001",
+      "notariaName": "NOTARÍA PRIMERA DE ESPINAL - TOLIMA"
+    },
+    {
+      "notariaId": "908",
+      "notariaCosmosId": "526600001",
+      "notariaName": "NOTARÍA PRIMERA DE ENVIGADO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "909",
+      "notariaCosmosId": "1523800001",
+      "notariaName": "NOTARÍA PRIMERA DE DUITAMA - BOYACÁ"
+    },
+    {
+      "notariaId": "910",
+      "notariaCosmosId": "5400100001",
+      "notariaName": "NOTARÍA PRIMERA DE CÚCUTA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "911",
+      "notariaCosmosId": "1517600001",
+      "notariaName": "NOTARÍA PRIMERA DE CHIQUINQUIRÁ - BOYACÁ"
+    },
+    {
+      "notariaId": "912",
+      "notariaCosmosId": "1717400001",
+      "notariaName": "NOTARÍA PRIMERA DE CHINCHINÁ - CALDAS"
+    },
+    {
+      "notariaId": "913",
+      "notariaCosmosId": "7614700001",
+      "notariaName": "NOTARÍA PRIMERA DE CARTAGO - VALLE"
+    },
+    {
+      "notariaId": "914",
+      "notariaCosmosId": "1300100001",
+      "notariaName": "NOTARÍA PRIMERA DE CARTAGENA - BOLÍVAR"
+    },
+    {
+      "notariaId": "915",
+      "notariaCosmosId": "6313000001",
+      "notariaName": "NOTARÍA PRIMERA DE CALARCÁ - QUINDÍO"
+    },
+    {
+      "notariaId": "916",
+      "notariaCosmosId": "7610900001",
+      "notariaName": "NOTARÍA PRIMERA DE BUENAVENTURA - VALLE"
+    },
+    {
+      "notariaId": "917",
+      "notariaCosmosId": "6800100001",
+      "notariaName": "NOTARÍA PRIMERA DE BUCARAMANGA - SANTANDER"
+    },
+    {
+      "notariaId": "918",
+      "notariaCosmosId": "508800001",
+      "notariaName": "NOTARÍA PRIMERA DE BELLO - ANTIOQUIA"
+    },
+    {
+      "notariaId": "919",
+      "notariaCosmosId": "6300100001",
+      "notariaName": "NOTARÍA PRIMERA DE ARMENIA - QUINDÍO"
+    },
+    {
+      "notariaId": "920",
+      "notariaCosmosId": "6800100011",
+      "notariaName": "NOTARÍA ONCE DE BUCARAMANGA - SANTANDER"
+    },
+    {
+      "notariaId": "921",
+      "notariaCosmosId": "7300100008",
+      "notariaName": "NOTARÍA OCTAVA DE IBAGUÉ - TOLIMA"
+    },
+    {
+      "notariaId": "922",
+      "notariaCosmosId": "6800100008",
+      "notariaName": "NOTARÍA OCTAVA DE BUCARAMANGA - SANTANDER"
+    },
+    {
+      "notariaId": "944",
+      "notariaCosmosId": "6800100009",
+      "notariaName": "NOTARÍA NOVENA DE BUCARAMANGA - SANTANDER"
+    },
+    {
+      "notariaId": "923",
+      "notariaCosmosId": "6800100010",
+      "notariaName": "NOTARÍA DÉCIMA DE BUCARAMANGA - SANTANDER"
+    },
+    {
+      "notariaId": "924",
+      "notariaCosmosId": "1500100004",
+      "notariaName": "NOTARÍA CUARTA DE TUNJA - BOYACÁ"
+    },
+    {
+      "notariaId": "925",
+      "notariaCosmosId": "4700100004",
+      "notariaName": "NOTARÍA CUARTA DE SANTA MARTA - MAGDALENA"
+    },
+    {
+      "notariaId": "926",
+      "notariaCosmosId": "6600100004",
+      "notariaName": "NOTARÍA CUARTA DE PEREIRA - RISARALDA"
+    },
+    {
+      "notariaId": "927",
+      "notariaCosmosId": "5200100004",
+      "notariaName": "NOTARÍA CUARTA DE PASTO - NARIÑO"
+    },
+    {
+      "notariaId": "928",
+      "notariaCosmosId": "7652000004",
+      "notariaName": "NOTARÍA CUARTA DE PALMIRA - VALLE"
+    },
+    {
+      "notariaId": "929",
+      "notariaCosmosId": "4100100004",
+      "notariaName": "NOTARÍA CUARTA DE NEIVA - HUILA"
+    },
+    {
+      "notariaId": "930",
+      "notariaCosmosId": "1700100004",
+      "notariaName": "NOTARÍA CUARTA DE MANIZALES - CALDAS"
+    },
+    {
+      "notariaId": "931",
+      "notariaCosmosId": "5400100004",
+      "notariaName": "NOTARÍA CUARTA DE CÚCUTA - NORTE DE SANTANDER"
+    },
+    {
+      "notariaId": "932",
+      "notariaCosmosId": "1300100004",
+      "notariaName": "NOTARÍA CUARTA DE CARTAGENA - BOLÍVAR"
+    },
+    {
+      "notariaId": "933",
+      "notariaCosmosId": "6300100004",
+      "notariaName": "NOTARÍA CUARTA DE ARMENIA - QUINDÍO"
+    },
+    {
+      "notariaId": "935",
+      "notariaCosmosId": "2500000058",
+      "notariaName": "Notaría Cincuenta y Ocho de Bogotá D.C."
+    },
+    {
+      "notariaId": "936",
+      "notariaCosmosId": "500100031",
+      "notariaName": "NOTARÍA TREINTA Y UNO DE MEDELLÍN - ANTIOQUIA"
+    },
+    {
+      "notariaId": "937",
+      "notariaCosmosId": "549500001",
+      "notariaName": "NOTARIA ÚNICA DE NECHÍ - ANTIOQUIA"
+    },
+    {
+      "notariaId": "938",
+      "notariaCosmosId": "5056800001",
+      "notariaName": "NOTARIA ÚNICA DE PUERTO GAITAN - META"
+    },
+    {
+      "notariaId": "939",
+      "notariaCosmosId": "4407800001",
+      "notariaName": "NOTARÍA ÚNICA DE BARRANCAS - GUAJIRA"
+    }
+  ]
+}

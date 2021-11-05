@@ -1,0 +1,12 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GenericExtensions\bin\Debug\netstandard2.1\GenericExtensions.deps.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GenericExtensions\bin\Debug\netstandard2.1\GenericExtensions.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GenericExtensions\bin\Debug\netstandard2.1\GenericExtensions.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GenericExtensions\bin\Debug\netstandard2.1\Infraestructura.Transversal.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GenericExtensions\bin\Debug\netstandard2.1\Infraestructura.Transversal.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GenericExtensions\obj\Debug\netstandard2.1\GenericExtensions.csprojAssemblyReference.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GenericExtensions\obj\Debug\netstandard2.1\GenericExtensions.AssemblyInfoInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GenericExtensions\obj\Debug\netstandard2.1\GenericExtensions.AssemblyInfo.cs
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GenericExtensions\obj\Debug\netstandard2.1\GenericExtensions.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GenericExtensions\obj\Debug\netstandard2.1\GenericExtensions.csproj.CopyComplete
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GenericExtensions\obj\Debug\netstandard2.1\GenericExtensions.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GenericExtensions\obj\Debug\netstandard2.1\GenericExtensions.pdb

@@ -1,0 +1,22 @@
+﻿input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+  display: none !important;
+}
+
+.custom-file-input ~ .custom-file-label::after {
+  content: "...";
+}
+.custom-file-label {
+  width: 100%;
+}

@@ -1,0 +1,50 @@
+﻿.titulo-login {
+    color: var(--rojo-primario);
+    text-align: center;
+}
+
+/* - Login Layout*/
+.login-layout-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+    .login-layout-container .content {
+        text-align: right;
+        margin-right: 2rem;
+    }
+
+/* -- Fin layout -- */
+.linea-horizontal {
+    width: 100%;
+    background-color: var(--rojo-700);
+    height: 5px;
+    position: fixed;
+    top: 0;
+}
+
+    .linea-horizontal.linea-2 {
+        height: 2px;
+        top: 7px;
+    }
+
+.square-form {
+    max-width: 500px;
+}
+
+.login-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.logo-ucnc {
+    width: 130px;
+}
+
+.logo-olimpia {
+    width: 90px;
+}

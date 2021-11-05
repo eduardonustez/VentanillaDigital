@@ -1,0 +1,9 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\OTPClient\bin\Release\netcoreapp3.1\OTPClient.deps.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\OTPClient\bin\Release\netcoreapp3.1\OTPClient.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\OTPClient\bin\Release\netcoreapp3.1\OTPClient.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\OTPClient\obj\Release\netcoreapp3.1\OTPClient.csprojAssemblyReference.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\OTPClient\obj\Release\netcoreapp3.1\OTPClient.AssemblyInfoInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\OTPClient\obj\Release\netcoreapp3.1\OTPClient.AssemblyInfo.cs
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\OTPClient\obj\Release\netcoreapp3.1\OTPClient.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\OTPClient\obj\Release\netcoreapp3.1\OTPClient.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\OTPClient\obj\Release\netcoreapp3.1\OTPClient.pdb

@@ -1,0 +1,116 @@
+﻿@page "/autorizar/{PEstadoTramite}/{PIdTramite}"
+@using PortalAdministrador.Components.Notario
+@inject ITramiteService TramiteService
+<div class="autorizar-grid-pdf">
+    <div class="container autorizar-flex-titulo">
+        <a href="@($"bandejaEntrada/{PEstadoTramite}")">
+            Regresar al listado
+        </a>
+        <h1 class="autorizar-flex-titulo-h1">@titulo</h1>
+        @* <button
+            class="btn btn-contorno-primario autorizar-flex-titulo-btn-imprimir @(MostrarAutorizar ? "ocultar" : ""
+            )">Imprimir
+            acta</button> *@
+    </div>
+    <div class="pdf-contenedor @(PEstadoTramite != "2" ? "pdf-contenedor-full" : "" )" id="pdfObject">
+        @if (paginasNoAutorizar.Contains(PEstadoTramite))
+        {
+            <ActaPrevia IdTramite="long.Parse(PIdTramite)" />
+        }
+        else
+        {
+            @if (!string.IsNullOrWhiteSpace(pdfFile))
+            {
+                <object class="tamanio-pdf" data="data:application/pdf;base64,@pdfFile"></object>
+            }
+            else
+            {
+                @* style="position: absolute; width: 40%; top: 50%; left: 30%; text-align: center;" *@
+                <p>
+                    @MsgActaNoEncontrada
+                </p>
+            }
+        }
+
+
+    </div>
+    @if(PEstadoTramite == "2"){
+        <div class="autorizar-flex-botones">
+            @if (MostrarAutorizar && (UserRol == "Administrador" || UserRol == "Notario Encargado"))
+            {
+                <button data-target="#modalForPinFirma" data-toggle="modal" class="btn btn-autorizar">
+                    <i class="fas fa-stamp mr-3"></i>
+                    Autorizar
+                </button>
+                <button data-target="#modalRechazoTramite" data-toggle="modal" class="btn btn-rechazar mt-3">
+                    <i class="fas fa-times mr-3"></i>
+                    No autorizar
+                </button>
+            }
+        </div>
+    }
+
+
+    @if (!string.IsNullOrWhiteSpace(MsjAutorizacionResul))
+    {
+        <div class="mensaje-container @MsjAutorizacionClass">
+            <p>@MsjAutorizacionResul</p>
+        </div>
+    }
+
+    @if (ShowBackdrop)
+    {
+        <div class="modal-backdrop fade show"></div>
+    }
+
+    @* Modal que muestra el modal de pin firma*@
+    <div class="modal @ModalFirma" id="modalForPinFirma" data-keyboard="false" tabindex="-1"
+         aria-labelledby="modalForAtdp" aria-hidden="true" style="display:@ModalFirmaDisplay">
+        <div class="modal-dialog modal-dialog-centered modal-pin">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Autorización de trámite</h3>
+                    <button @onclick="@(() => CerrarModal())" type="button" class="close" data-dismiss="modal"
+                            aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    @if (!string.IsNullOrWhiteSpace(@MsjAutorizacionResul) && @MostrarErrorEnModal)
+                    {
+                        <div class="alert @MsjAutorizacionClass">
+                            @MsjAutorizacionResul
+                        </div>
+                    }
+                    <p>Ingrese su PIN para continuar</p>
+                    <PinFirma ClaseFirma="pin-autorizar" ModalAutorizar="true" SetPin="Firmar" />
+                </div>
+            </div>
+        </div>
+    </div>
+    @* Fin del modal *@
+
+    @* Modal que muestra el modal de rechazo tramite*@
+    <div class="modal @ModalRechazo" id="modalRechazoTramite" data-keyboard="false" tabindex="-1"
+         aria-labelledby="modalRechazoTramite" aria-hidden="true" style="display:@ModalDisplay">
+        <div class="modal-dialog modal-dialog-centered modal-pin">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Rechazo de trámite</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Ingrese el motivo del rechazo y su PIN para continuar</p>
+                    <div class="input-container">
+                        <label>Motivo de rechazo</label>
+                        <textarea @bind="MotivoRechazo" required></textarea>
+                    </div>
+                    <PinFirma ClaseFirma="pin-rechazar-tramite" ModalAutorizar="false" SetPin="RechazarTramite" />
+                </div>
+            </div>
+        </div>
+    </div>
+    @* Fin del modal *@
+</div>

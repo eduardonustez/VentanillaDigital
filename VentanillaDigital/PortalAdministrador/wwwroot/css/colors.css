@@ -1,0 +1,66 @@
+:root {
+  /* -- TAMAÑO DE FUENTES -- */
+  --scale-0: 1rem; /* Párrafos - h5 */
+  --scale-1: 1.2rem;
+  --scale-2: 1.44rem;
+  --scale-3: 1.728rem;
+  --scale-4: 2.074rem;
+  --scale-5: 2.488rem;
+  /* -- SOMBRAS -- */
+  --elevacion-1: 0 1px 3px hsla(0, 0%, 0%, 0.12),
+    0 1px 2px hsla(0, 0%, 0%, 0.24);
+  --elevacion-2: 0 3px 6px hsla(0, 0%, 0%, 0.15),
+    0 2px 4px hsla(0, 0%, 0%, 0.12);
+  --elevacion-3: 0 10px 20px hsla(0, 0%, 0%, 0.15),
+    0 3px 6px hsla(0, 0%, 0%, 0.1);
+  --elevacion-4: 0 15px 25px hsla(0, 0%, 0%, 0.15),
+    0 5px 10px hsla(0, 0%, 0%, 0.05);
+  --elevacion-5: 0 20px 40px hsla(0, 0%, 0%, 0.07);
+  /* -- COLORES -- */
+  --rojo-900: hsl(0, 100%, 10%);
+  --rojo-800: hsl(0, 90%, 20%);
+  --rojo-700: hsl(2, 80%, 30%);
+  --rojo-600: hsl(2, 60%, 40%);
+  --rojo-500: hsl(2, 60%, 53%);
+  --rojo-400: hsl(2, 60%, 63%);
+  --rojo-300: hsl(2, 76%, 73%);
+  --rojo-200: hsl(0, 81%, 84%);
+  --rojo-100: hsl(0, 100%, 92%);
+  --rojo-primario: hsl(2, 100%, 38%);
+  --amarillo-900: hsl(38, 100%, 10%);
+  --amarillo-800: hsl(38, 91%, 20%);
+  --amarillo-700: hsl(38, 80%, 30%);
+  --amarillo-600: hsl(38, 62%, 42%);
+  --amarillo-500: hsl(38, 63%, 52%);
+  --amarillo-400: hsl(38, 63%, 60%);
+  --amarillo-300: hsl(38, 75%, 70%);
+  --amarillo-200: hsl(38, 90%, 80%);
+  --amarillo-100: hsl(38, 100%, 91%);
+  --verde-900: hsl(150, 100%, 10%);
+  --verde-800: hsl(150, 90%, 20%);
+  --verde-700: hsl(150, 84%, 31%);
+  --verde-600: hsl(150, 65%, 40%);
+  --verde-500: hsl(150, 65%, 50%);
+  --verde-400: hsl(150, 65%, 60%);
+  --verde-300: hsl(150, 70%, 70%);
+  --verde-200: hsl(150, 80%, 80%);
+  --verde-100: hsl(150, 100%, 91%);
+  --azul-900: hsl(223, 100%, 10%);
+  --azul-800: hsl(223, 93%, 20%);
+  --azul-700: hsl(220, 82%, 33%);
+  --azul-600: hsl(220, 67%, 42%);
+  --azul-500: hsl(220, 57%, 53%);
+  --azul-400: hsl(220, 65%, 64%);
+  --azul-300: hsl(220, 77%, 74%);
+  --azul-200: hsl(220, 84%, 86%);
+  --azul-100: hsl(220, 100%, 95%);
+  --gris-900: hsl(0, 0%, 10%);
+  --gris-800: hsl(0, 0%, 20%);
+  --gris-700: hsl(0, 0%, 30%);
+  --gris-600: hsl(0, 0%, 40%);
+  --gris-500: hsl(0, 0%, 50%);
+  --gris-400: hsl(0, 0%, 60%);
+  --gris-300: hsl(0, 0%, 70%);
+  --gris-200: hsl(0, 0%, 87%);
+  --gris-100: hsl(0, 0%, 98%);
+}

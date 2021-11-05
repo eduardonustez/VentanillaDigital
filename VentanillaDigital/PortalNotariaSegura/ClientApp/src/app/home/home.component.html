@@ -1,0 +1,120 @@
+<div class="center-block ">
+  <div class="container_infor">
+    <div class="cuadro_infor">
+      <div class="row inputs">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <h2>
+            Consulta Pública de Documentos.
+          </h2>
+        </div>
+      </div>
+      <div>
+        <div class="row inputs">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <div class="input-group">
+              <input [(ngModel)]="modelDatePicker" ngbDatepicker #d="ngbDatepicker" (ngModelChange)="selectDatePicker(modelDatePicker)" class="form-control" placeholder="dd/mm/yyyy" #triggerdateinput tooltipClass="my-custom-class" ngbTooltip="Completa este campo" placement="bottom" #triggerdate="ngbTooltip" [disableTooltip]="!isErrorDate">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary fa fa-calendar" (click)="d.toggle()" type="button"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row inputs">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <ng-select #countryRef
+                       [items]="departments$ | async" bindLabel="departamento" bindValue="departamento"
+                       placeholder="Departamento"
+                       [(ngModel)]="selectedDepartment" (ngModelChange)="onChangeDepartment($event)"
+                       #triggerdptoinput tooltipClass="my-custom-class" ngbTooltip="Completa este campo" placement="bottom" #triggerdpto="ngbTooltip" [disableTooltip]="!isErrorDpto">
+            </ng-select>
+          </div>
+        </div>
+        <div class="row inputs">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <ng-select [disabled]='!countryRef.bindValue'
+                       [items]="cities" bindLabel="cuidad" bindValue="id"
+                       placeholder="Ciudad"
+                       [(ngModel)]="selectedCity" (ngModelChange)="onChangeCity($event)"
+                       #triggercityinput tooltipClass="my-custom-class" ngbTooltip="Completa este campo" placement="bottom" #triggercity="ngbTooltip" [disableTooltip]="!isErrorCity">
+            </ng-select>
+          </div>
+        </div>
+        <div class="row inputs">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <ng-select [items]="notariesArray"
+                       bindLabel="nombre"
+                       bindValue="notariaId"
+                       placeholder="Notaría"
+                       [(ngModel)]="selectedNotary"
+                       #triggernotariainput tooltipClass="my-custom-class" ngbTooltip="Completa este campo" placement="bottom" #triggernotaria="ngbTooltip" [disableTooltip]="!isErrorNotaria">
+            </ng-select>
+          </div>
+        </div>
+        <div class="row inputs">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <input [(ngModel)]="nut"
+                   type="text"
+                   class="form-control"
+                   placeholder="Nut"
+                   #triggernutinput tooltipClass="my-custom-class"
+                   ngbTooltip="Completa este campo"
+                   placement="bottom"
+                   #triggernut="ngbTooltip"
+                   [disableTooltip]="!isErrorNut"
+                   (change)="validateFormatNut()">
+            <span class="error-message" *ngIf="showMessage">{{ message }}</span>
+          </div>
+        </div>
+        <div class="row inputs">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <input [(ngModel)]="email"
+                   type="email"
+                   class="form-control"
+                   placeholder="Email"
+                   #triggeremailinput tooltipClass="my-custom-class"
+                   ngbTooltip="Completa este campo"
+                   placement="bottom"
+                   #triggeremail="ngbTooltip"
+                   [disableTooltip]="!isErrorEmail"
+                   (change)="validateEmail()">
+            <span class="error-message" *ngIf="showMessageEmail">{{ messageEmail }}</span>
+          </div>
+        </div>
+        <div class="row inputs">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <app-captcha #CaptchaComponent></app-captcha>
+            <div class="captcha" *ngIf="isErrorCaptcha">Complete el captcha</div>
+          </div>
+        </div>
+        <div class="row inputs">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <button type="submit" *ngIf="!btn_load"
+                    id="btn_query"
+                    class="btn btn-danger"
+                    name="btn_query"
+                    (click)="validationFunction()"
+                    [disabled]="showMessage">
+              Consultar
+            </button>
+            <button class="btn-load" *ngIf="btn_load">
+              <span class="lds-dual-ring"></span>
+            </button>
+          </div>
+        </div>
+        <div class="row inputs" *ngIf="showResultFail">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <p> La búsqueda no arrojó coincidencias.</p>
+          </div>
+        </div>
+        <div class="row inputs" *ngIf="showResultOk">
+          <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+            <p class="message-ok"> Su archivo se ha descargado satisfactoriamente.</p>
+          </div>
+        </div>
+      </div>
+      <div class="logo">
+        <span>Desarrollado por</span><img class="logo-olimpia ml-1" src="./assets/images/logo-olimpia-color.svg">
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,33 @@
+/* -- CREAR USUARIOS -- */
+.modal-crear-usuario {
+  max-width: 780px;
+}
+
+.password-rules {
+  margin: 1rem 0;
+}
+
+.form-en-linea {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.form-en-linea > .input-container {
+  width: 48%;
+}
+
+.form-en-linea > .half {
+  width: 22%;
+}
+
+.skeleton-tabla-usuarios {
+  display: flex;
+  justify-content: center;
+}
+
+.skeleton-tabla-usuarios > img {
+  width: 1140px;
+  height: 500px;
+}

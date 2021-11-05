@@ -1,0 +1,14 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Aplicacion.Nucleo\bin\Release\netcoreapp3.1\Aplicacion.Nucleo.deps.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Aplicacion.Nucleo\bin\Release\netcoreapp3.1\Aplicacion.Nucleo.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Aplicacion.Nucleo\bin\Release\netcoreapp3.1\Aplicacion.Nucleo.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Aplicacion.Nucleo\bin\Release\netcoreapp3.1\Dominio.Nucleo.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Aplicacion.Nucleo\bin\Release\netcoreapp3.1\Infraestructura.Transversal.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Aplicacion.Nucleo\bin\Release\netcoreapp3.1\Dominio.Nucleo.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Aplicacion.Nucleo\bin\Release\netcoreapp3.1\Infraestructura.Transversal.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Aplicacion.Nucleo\obj\Release\netcoreapp3.1\Aplicacion.Nucleo.csprojAssemblyReference.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Aplicacion.Nucleo\obj\Release\netcoreapp3.1\Aplicacion.Nucleo.AssemblyInfoInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Aplicacion.Nucleo\obj\Release\netcoreapp3.1\Aplicacion.Nucleo.AssemblyInfo.cs
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Aplicacion.Nucleo\obj\Release\netcoreapp3.1\Aplicacion.Nucleo.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Aplicacion.Nucleo\obj\Release\netcoreapp3.1\Aplicacion.Nucleo.csproj.CopyComplete
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Aplicacion.Nucleo\obj\Release\netcoreapp3.1\Aplicacion.Nucleo.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Aplicacion.Nucleo\obj\Release\netcoreapp3.1\Aplicacion.Nucleo.pdb

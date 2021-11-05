@@ -1,0 +1,9 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneradorQR\bin\Debug\netstandard2.0\GeneradorQR.deps.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneradorQR\bin\Debug\netstandard2.0\GeneradorQR.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneradorQR\bin\Debug\netstandard2.0\GeneradorQR.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneradorQR\obj\Debug\netstandard2.0\GeneradorQR.csprojAssemblyReference.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneradorQR\obj\Debug\netstandard2.0\GeneradorQR.AssemblyInfoInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneradorQR\obj\Debug\netstandard2.0\GeneradorQR.AssemblyInfo.cs
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneradorQR\obj\Debug\netstandard2.0\GeneradorQR.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneradorQR\obj\Debug\netstandard2.0\GeneradorQR.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\GeneradorQR\obj\Debug\netstandard2.0\GeneradorQR.pdb

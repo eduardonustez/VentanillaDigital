@@ -1,0 +1,196 @@
+﻿@page "/Autorizaciones"
+@attribute [Authorize]
+@using PortalCliente.Components.Notario
+@using PortalCliente.Components.Certificado
+@using PortalCliente.Components.Input
+
+<div class="container">
+    <h1>Autorizaciones</h1>
+    <h3>Certificado digital</h3>
+    <p>Es un mecanismo de identificación de una persona que contiene parte de un par de claves generadas en una infraestructura PKI (contiene la llave pública, ya que la llave privada hace parte de una firma digital) y los datos personales de quien se identifica ante cualquier persona, como generadora de un mensaje de datos o documento electrónico</p>
+    <div>
+            <div class="certificados-container my-3">
+                @if (certificados != null && certificados.Count > 0)
+                {
+                    @*<div class="mensaje-container mensaje-info">
+                            <p>Los actos notariales que autorice serán firmados con el certificado seleccionado.</p>
+                        </div>*@
+                    foreach (var certificado in certificados)
+                    {
+                        string textoBoton = certificado.Seleccionado ? "Certificado Actual" : "Comenzar a Usar";
+                        @if (@certificado.Descripcion == "Olimpia IT")
+                        {
+                            <div class="card-certificado certificado-olimpia shadow-sm">
+                                <img src="images/calidad.svg" height="50px" />
+                                <p class="card-title">
+                                    Certificado Digital OLIMPIA
+                                </p>
+                                <p>
+                                    <label>Estado:</label> Activo
+                                </p>
+                                <button @onclick="async ()=> await SeleccionarCertificado(certificado.IdCertificado)"> @textoBoton</button>
+                            </div>
+                        }
+                        else
+                        {
+                            bool inactivo = certificado.Estado == "Inactivo" ||
+                                string.IsNullOrWhiteSpace(certificado.ValidoHasta);
+                            <div class="border-gradient shadow-sm" disabled="@inactivo">
+                                <div class="certificado-propio">
+                                    <img src="images/calidad.svg" height="50px" />
+                                    <label class="subtitle">Certificado Digital Persona Natural</label>
+                                    <p> <strong>ID:</strong></p>
+                                    <p>@certificado.IdCertificado</p>
+                                    <p> <strong>Estado:</strong></p>
+                                    @if (string.IsNullOrWhiteSpace(certificado.ValidoHasta))
+                                    {
+                                        <p>@certificado.Descripcion</p>
+                                    }
+                                    else
+                                    {
+                                        <p>Válido hasta @certificado.ValidoHasta</p>
+                                    }
+                                    <button @onclick="async ()=> await SeleccionarCertificado(certificado.IdCertificado)" disabled="@inactivo">@textoBoton</button>
+                                </div>
+                            </div>
+                        }
+                    }
+                }
+            </div>
+            @if (!tieneCertificadosActivos)
+            {
+                <button type="button" class="@(certificados.Count>0?"btn-contorno-secundario":"btn-primario")" @onclick="SolicitarCertificado">
+                    Solicitar certificado digital
+                </button>
+            }
+    </div>
+    <h3>PIN de firma electrónica</h3>
+    <p> El PIN de firma electrónica es el que debe ingresar cada vez que realiza una autorizacion de trámite </p>
+
+    <div>
+        <button type="button" class="@(banPin?"btn-contorno-secundario":"btn-primario")"
+                data-toggle="modal"
+                data-target="#modalPIN">
+            @(banPin? "Cambiar":"Configurar") PIN de firma electrónica
+        </button>
+        @if (CreacionPinResul != "")
+        {
+            <div class="alert @CreacionPinClass alert-dismissible fade show" role="alert">
+                @CreacionPinResul
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+        }
+    </div>
+    <!-- -->
+    <div class="modal fade" id="modalPIN" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="modalForAtdp" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-pin">
+                <div class="modal-header">
+                    <h3>Cambiar PIN de firma electronica</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Ingrese el PIN que utilizará para realizar la autorización de los actos notariales</p>
+                    <PinFirma ClaseFirma="pin-autorizar" ModalAutorizar="true" ModalCambioFirma="true" SetPin="AdicionarPIN" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- fin de Ventana Modal-->
+    <h3>Grafo Visible</h3>
+    <p>
+        Esta será la firma que se imprimirá cuando realice la autorización de los trámites. Recuerde
+        que para capturar el grafo es necesario contar con una tableta wacom.
+    </p>
+    <p>Su grafo aparecerá en el siguiente recuadro</p>
+    <div class="firma-container">
+        <div class="img-firma-container">
+            <img class="img-firma" id="signatureImage" src="@grafo" />
+        </div>
+    </div>
+    @if (!_capturando)
+    {
+        <button type="button"
+                class="@(banFirma?"btn-contorno-secundario":"btn-primario")"
+                @onclick="MostrarADTP">
+            @(banFirma? "Cambiar":"Configurar") grafo de firma electrónica
+        </button>
+
+        @if (CreacionFirmaResul != "")
+        {
+            <div class="alert @CreacionFirmaClass alert-dismissible fade show" role="alert">
+                @CreacionFirmaResul
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        }
+    }
+</div>
+<ModalForm @ref="modalForm" ModalTitle="Solicitud Certificado">
+    @switch (CertificateStep)
+    {
+        case 1:
+            <h4 class="ml-3">
+                1. Confirmación de datos
+            </h4>
+            <p class="ml-3">Por favor verifique los siguientes datos para realizar su solicitud:</p>
+            @* <SolicitudCertificado @bind-solicitud="solicitudCertificado"
+                    @bind-solicitud:event="HandleSolicitudChanged">
+                </SolicitudCertificado> *@
+            <SolicitudCertificado solicitud="solicitudCertificado" solicitudChanged="HandleSolicitudChanged">
+
+            </SolicitudCertificado>
+            break;
+        case 2:
+            <TerminosCondiciones></TerminosCondiciones>
+            break;
+        case 3:
+            <CargueDocsCertificado solicitud="solicitudCertificado" solicitudChanged="HandleSolicitudChanged"></CargueDocsCertificado>
+            break;
+        case 4:
+            <h4>4. PIN de autorización</h4>
+            <p>Por favor ingrese su pin para finalizar la solicitud:</p>
+            <PinCertificado ClaseFirma="pin-certificado" ModalAutorizar="true" @bind-Pin="solicitudCertificado.PinFirma">
+            </PinCertificado>
+            break;
+        default:
+            <div><p>¡Usted ya ha realizado una solicitud!</p></div>
+            break;
+    }
+    @if (!string.IsNullOrWhiteSpace(errorSolicitud))
+    {
+        <div class="alert mensaje-alerta">
+            <p>@errorSolicitud</p>
+        </div>
+    }
+    <div id="CertificateNavigation">
+        @if (CertificateStep > 1)
+        {
+            <button id="backward" type="button" class="btn-contorno-primario"
+                    @onclick="IrAtras">
+                Anterior
+            </button>
+        }
+        <button id="forward" type="button" class="btn-primario"
+                @onclick="ContinuarSolicitud" disabled="@(continueIsDisabled==true || showSpinner==true)">
+            @if (showSpinner)
+            {
+                <i class="fa fa-sync fa-spin"></i>
+            }
+            @if (CertificateStep == 2)
+            {
+                <span>Aceptar y Continuar</span>
+            }
+            else
+            {
+                <span>Continuar</span>
+            }
+        </button>
+    </div>
+</ModalForm>

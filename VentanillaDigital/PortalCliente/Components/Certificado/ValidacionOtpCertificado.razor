@@ -1,0 +1,13 @@
+@using PortalCliente.Components.Input
+@using BlazorInputFile
+
+<h3>Solicitud Certificado</h3>
+<div class="text-center">
+<p>Hemos enviado un código de seguridad para comprobar su correo electrónico.</p>
+ <input type="text" class="form-control" placeholder="OTP" />
+<br><a href="">Reenviar Código</a>
+ <div class="mt-3">
+        <button type="button" class="btn-contorno-primario" @onclick="Validar">Continuar</button>
+</div>
+</div>
+

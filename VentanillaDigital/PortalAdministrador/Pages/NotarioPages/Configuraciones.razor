@@ -1,0 +1,77 @@
+﻿@page  "/configuraciones"
+<div class="container">
+    <h1>Configuración</h1>
+
+    @*<label class="check-box-container">
+            Permitir impresión de documentos en formato sticker
+            <input type="checkbox" name="usarSticker" @onchange="eventArgs => { UsarStickerCheck(eventArgs.Value); }" />
+            <span class="check" for="usarSticker"></span>
+        </label>*@
+
+    @*<select @bind="@UsarSticker">
+            <option disabled>Seleccione</option>
+            <option value="0">Imprimir Documentos en Formato Acta</option>
+            <option value="1">Imprimir Documentos en Formato Sticker</option>
+        </select>*@
+    @*<h3 class="mt-4">Tableta de firma</h3>
+        <label class="check-box-container">
+            No usar tableta de captura de firma
+            <input type="checkbox" name="noUsarTableta" @onchange="eventArgs => { NoUsarTabletaCheck(eventArgs.Value); }" />
+            <span class="check" for="noUsarTableta"></span>
+        </label>
+        <label class="check-box-container">
+            Mostrar ATDP en la ventana de la aplicación
+            <input type="checkbox" name="mostrarATDP" @onchange="eventArgs => { MostrarATDPCheck(eventArgs.Value); }" />
+            <span class="check" for="mostrarATDP"></span>
+        </label>*@
+    <div class="col-6 p-0">
+        <h3 class="mt-4">Impresión</h3>
+        <p>Seleccione el formato de impresión</p>
+        <div class="input-container">
+            <select @bind="@UsarSticker">
+                <option disabled>Seleccione</option>
+                <option value="0">Imprimir Documentos en Formato Carta</option>
+                <option value="1">Imprimir Documentos en Formato Sticker</option>
+            </select>
+        </div>
+
+        <h3 class="mt-4">Firma manual</h3>
+        <label class="check-box-container">
+            Activar firma manual
+            <input type="checkbox" name="firmaManual" checked="@UsarFirmaManual"
+                   @onchange="eventArgs => { ActivarFirmaManualCheck(eventArgs.Value); }" />
+            <span class="check" for="firmaManual"></span>
+        </label>
+        @if (UsarFirmaManual)
+        {
+            <div class="input-container">
+                <label>Seleccione el notario</label>
+                <select @bind="@notarioId">
+                    <option disabled>Seleccione</option>
+                    @if (notarioReturnDTOs != null)
+                    {
+                        @foreach (ApiGateway.Contratos.Models.Notario.NotarioReturnDTO notario in notarioReturnDTOs)
+                        {
+                            @*if (notario.NotarioDeTurno)
+                                {
+                                    <option value="@notario.NotarioId" selected>@notario.NotarioNombre</option>
+                                }
+                                else
+                                {*@
+                            <option value="@notario.NotarioId">@notario.NotarioNombre</option>
+                            @*}*@
+
+                        }
+                    }
+                </select>
+            </div>
+
+        }
+        
+
+    </div>
+    <div class="mt-3">
+        <button type="button" class="btn-contorno-primario" @onclick="Guardar">Guardar Cambios</button>
+    </div>
+</div>
+

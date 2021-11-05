@@ -1,0 +1,21 @@
+/* -- REPORTES --*/
+
+.reportes-container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+#report-container {
+  height: calc(0.6225 * 65vw); /* 16:9 aspect ratio */
+  width: 100%;
+}
+
+@media only screen and (max-width: 574px) {
+  #report-container {
+    height: calc(0.5625 * 100vw); /* 16:9 aspect ratio */
+  }
+}
+
+.embed-container iframe {
+  border: 1px solid var(--gris-300);
+}

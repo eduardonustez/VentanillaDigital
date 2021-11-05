@@ -1,0 +1,95 @@
+﻿header {
+    background: var(--gris-100);
+    display: flex;
+    align-content: center;
+    align-items: center;
+    color: var(--gris-600);
+    height: 50px;
+    border-bottom: 1px solid var(--gris-200);
+}
+
+    header > .titulo-header {
+        font-weight: bold;
+        margin-right: 0.8rem;
+        margin-left: 0.8rem;
+    }
+
+    header > .mini-profile-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        align-items: flex-end;
+        padding: 0 1.3rem;
+        font-size: small;
+    }
+
+    header > .mini-profile-info-altern {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1.3rem;
+        font-size: small;
+    }
+
+.mini-profile-info > .mini-profile-info-header,
+.mini-profile-info-altern > .mini-profile-info-header {
+    font-weight: bold;
+}
+
+header > nav > ul {
+    display: flex;
+}
+
+    header > nav > ul > li > a {
+        padding: 0.7rem;
+        cursor: pointer;
+        color: var(--gris-600);
+    }
+
+        header > nav > ul > li > a:hover {
+            color: var(--gris-800);
+            font-weight: bold;
+        }
+
+.active-fijas {
+    background-color: var(--gris-200);
+    border-bottom: 4px solid var(--rojo-600);
+    border-top: 4px solid var(--gris-200);
+    font-weight: bold;
+}
+
+.active-ciudadano {
+    background-color: var(--gris-200);
+    border-bottom: 4px solid var(--azul-600);
+    border-top: 4px solid var(--gris-200);
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+    header > .titulo-header {
+        display: none;
+    }
+
+    header > .mini-profile-info {
+        width: 250px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+.header-logo-menu {
+    width: 40px;
+    height: 40px;
+    margin: 4px 10px;
+}
+
+.header-close-session {
+    color: var(--rojo-primario);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#tramites-virtuales-link {
+    border-left: 1px solid var(--gris-400);
+    padding: 0 0.8rem;
+}

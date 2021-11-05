@@ -1,0 +1,9 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.AgenteServicios\bin\Debug\netcoreapp3.1\Infraestructura.AgenteServicios.deps.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.AgenteServicios\bin\Debug\netcoreapp3.1\Infraestructura.AgenteServicios.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.AgenteServicios\bin\Debug\netcoreapp3.1\Infraestructura.AgenteServicios.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.AgenteServicios\obj\Debug\netcoreapp3.1\Infraestructura.AgenteServicios.csprojAssemblyReference.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.AgenteServicios\obj\Debug\netcoreapp3.1\Infraestructura.AgenteServicios.AssemblyInfoInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.AgenteServicios\obj\Debug\netcoreapp3.1\Infraestructura.AgenteServicios.AssemblyInfo.cs
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.AgenteServicios\obj\Debug\netcoreapp3.1\Infraestructura.AgenteServicios.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.AgenteServicios\obj\Debug\netcoreapp3.1\Infraestructura.AgenteServicios.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.AgenteServicios\obj\Debug\netcoreapp3.1\Infraestructura.AgenteServicios.pdb

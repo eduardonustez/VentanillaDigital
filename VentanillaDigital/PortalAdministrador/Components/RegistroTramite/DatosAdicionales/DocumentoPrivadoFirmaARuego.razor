@@ -1,0 +1,14 @@
+<form Model="documentoPrivado" @oninput="oninput">
+    <div class="input-container">
+        <label>Acto</label>
+        <textarea @bind-value="documentoPrivado.ActoNotarial" @bind-value:event="oninput"></textarea>
+    </div>
+    <div class="input-container">
+        <label>Firmantes</label>
+        <textarea @bind-value="documentoPrivado.Firmantes" @bind-value:event="oninput" />
+    </div>
+    <div class="input-container">
+        <label>Descripción</label>
+        <textarea @bind-value="documentoPrivado.DetalleDeActo" @bind-value:event="oninput"></textarea>
+    </div>
+</form>

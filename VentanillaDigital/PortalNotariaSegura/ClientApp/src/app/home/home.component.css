@@ -1,0 +1,106 @@
+::ng-deep .my-custom-class .tooltip-inner {
+    background-color: #D0343D;
+    font-size: 100%;
+}
+::ng-deep .my-custom-class .arrow::before {
+    border-bottom-color: #D0343D;
+}
+
+.captcha {
+    color:#D0343D;
+}
+
+.logo-olimpia {
+    width: 90px;
+  }
+
+.logo{
+    text-align: center;
+    padding: inherit;
+}
+
+@media screen and (max-width: 575px) {
+    .city {
+       padding-top: 25px;
+    }
+  } 
+
+  .text-description-title{
+    padding: 14px 0;
+  }
+
+  .inputs{
+    padding: 8px 0;
+  }
+
+  p{
+    color: red;
+    padding: 20px;
+    background-color: mistyrose;
+    border: 1px solid red
+}
+
+.message-ok {
+  color: rgb(4, 109, 4);
+  padding: 20px;
+  background-color: rgba(10, 126, 45, 0.11);
+  border: 1px solid rgb(4, 109, 4);
+}
+
+.MessageLink{
+  color: #D0343D;
+  padding: 20px;
+  background-color: mistyrose;
+  border: 1px solid red
+}
+
+.error-message{
+  color: #D0343D;
+  font-size: 0.9rem;
+}
+
+.btn-load{
+  width: 97px;
+  cursor: wait;  
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #a02330;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.lds-dual-ring {
+  width: 100px;
+  height: 17px;
+  margin: 0px auto;
+  }
+  .lds-dual-ring:after {
+  content: " ";
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  margin: -2.5px;
+  border-radius: 50%;
+  border: 4.5px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}

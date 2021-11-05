@@ -1,0 +1,29 @@
+﻿@page "/tramite"
+@page "/tramite/{TramiteEnProcesoId:long}"
+@attribute [Authorize]
+@using PortalCliente.Components.RegistroTramite;
+@using PortalCliente.Components.Transversales;
+
+
+@if (TramiteId == 0)
+{
+    <CrearTramite @bind-Tramite="Tramite"></CrearTramite>
+}
+else
+{
+    <TramiteBar TramiteId="TramiteId"
+                TipoTramite="Tramite.TipoTramite"
+                ComparecienteActual="Tramite.ComparecienteActualPos"
+                Comparecientes="Tramite.CantidadComparecientes" 
+                OnCancel="CancelarTramite"/>
+
+    @if (!Tramite.ComparecientesCompletos)
+    {
+        <RegistrarCompareciente @key="Tramite.ComparecienteActual"
+                                CodigoTipoTramite="_esMovil? Tramite.TipoTramite.ProductoReconoserId:
+                                                              Tramite.TipoTramite.CodigoTramite"
+                                @bind-Compareciente="Tramite.ComparecienteActual" 
+                                ComparecienteTerminado="ComparecienteTerminado"
+                                TramiteTerminado="TramiteTerminado"/>
+    }
+}

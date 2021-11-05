@@ -1,0 +1,9 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ValidationAttributes\bin\Debug\netstandard2.1\ValidationAttributes.deps.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ValidationAttributes\bin\Debug\netstandard2.1\ValidationAttributes.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ValidationAttributes\bin\Debug\netstandard2.1\ValidationAttributes.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ValidationAttributes\obj\Debug\netstandard2.1\ValidationAttributes.csprojAssemblyReference.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ValidationAttributes\obj\Debug\netstandard2.1\ValidationAttributes.AssemblyInfoInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ValidationAttributes\obj\Debug\netstandard2.1\ValidationAttributes.AssemblyInfo.cs
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ValidationAttributes\obj\Debug\netstandard2.1\ValidationAttributes.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ValidationAttributes\obj\Debug\netstandard2.1\ValidationAttributes.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\ValidationAttributes\obj\Debug\netstandard2.1\ValidationAttributes.pdb

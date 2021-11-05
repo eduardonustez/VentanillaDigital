@@ -1,0 +1,112 @@
+/* -- BANDEJA DE ENTRADA -- */
+
+.mensaje-bandeja-entrada {
+  margin: 0.7rem 0;
+}
+
+.contenedor_tabla {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fig-table {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.tabla-tramites,
+.tabla-usuarios {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tabla-tramites tbody,
+.tabla-usuarios tbody {
+  border: 1px solid var(--gris-200);
+}
+
+.tabla-tramites caption,
+.tabla-usuarios caption {
+  caption-side: top;
+  text-align: center;
+}
+
+.tabla-tramites-en-proceso,
+.tabla-tramites-pendientes {
+  pointer-events: none;
+  color: hsla(0, 0%, 0%, 0.27);
+}
+
+.tabla-tramites th,
+.tabla-usuarios th {
+  border-bottom: 1px solid var(--gris-200);
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.tabla-tramites tr,
+.tabla-usuarios tr {
+  transition: color 400ms ease-in;
+}
+
+.tabla-usuarios th,
+.tabla-tramites th,
+.tabla-tramites td {
+  vertical-align: top;
+  padding: 0.5em 1em;
+  line-height: 1.2;
+}
+
+.tabla-usuarios td {
+  padding: 0.3em 0.7em;
+  line-height: 1.2;
+}
+
+.tabla-tramites td:not(:nth-child(2)) {
+  /* Con esto hago que todas la columnas excepto la 2
+    (tipo de tramite) se mantengan en una linea */
+  white-space: nowrap;
+  width: 1em;
+}
+
+.tabla-tramites td:nth-child(2) {
+  /* La columna más grande está limitada en tamaño */
+  min-width: 20em;
+  max-width: 26em;
+}
+
+.tabla-tramites .numerico,
+.tabla-usuarios .numerico {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+/* Esta regla sirve para ponerle fondo alternante a las filas de la tabla */
+.tabla-tramites tbody > tr:nth-child(odd),
+.tabla-usuarios tbody > tr:nth-child(odd) {
+  background-color: hsl(38, 10%, 96%);
+}
+/* Y esta para resaltar las tablas en amarillo al pasarles el mouse */
+.tabla-tramites tbody > tr:hover,
+.tabla-usuarios tbody > tr:hover {
+  background-color: var(--amarillo-100) !important;
+}
+.tabla-tramites-virtuales {
+  border: 1px solid var(--gris-200);
+  width: 90%;
+  margin: auto;
+}
+.tabla-tramites-virtuales td:nth-child(2) {
+  max-width: 150px;
+}
+/* -- FIN DE BANDEJA DE ENTRADA --*/
+
+#CertificateNavigation {
+  margin-top: 10px;
+}
+#CerticateNavigation #backward {
+  float: left;
+}
+#forward {
+  float: right;
+}

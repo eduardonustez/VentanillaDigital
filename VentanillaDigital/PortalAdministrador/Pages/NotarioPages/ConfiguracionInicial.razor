@@ -1,0 +1,51 @@
+﻿@page "/configuracion"
+@attribute [Authorize(Policy = "RequireNotario")]
+
+<div class="container">
+    @if (_nombreNotario != null)
+    {
+        <h1>Bienvenido Dr(a). @_nombreNotario</h1>
+    }
+    else
+    {
+        <h1>Bienvenido Dr(a).</h1>
+    }
+    <p>Todo listo para iniciar, ¿Qué desea hacer primero?</p>
+    <div class="botones-configuracion-container">
+        <div class="btn-configuracion-container">
+            <a href="/Autorizaciones" class="btn-configuracion">
+                <i class="fas fa-file-signature"></i>
+                Configuración de firma
+            </a>
+            <div class="mensaje-container mensaje-info info-configuracion">
+                <p>Cree y administre su PIN de firma electrónica y la representación gráfica de su firma manuscrita para
+                    sus autorizaciones.</p>
+            </div>
+        </div>
+        <div class="btn-configuracion-container">
+            <a href="/usersAdmin" class="btn-configuracion">
+                <i class="fas fa-users"></i>
+                Usuarios
+            </a>
+            <div class="mensaje-container mensaje-info info-usuarios">
+                <p>Cree y administre los usuarios que tendrán acceso al sistema de su notaria.</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@code {
+    [CascadingParameter]
+    protected Task<AuthenticationState> authenticationStateTask { get; set; }
+
+    private string _nombreNotario;
+
+    protected async override Task OnInitializedAsync()
+    {
+        var authState = await authenticationStateTask;
+        var user = authState.User;
+        _nombreNotario = user.Claims.FirstOrDefault(c => c.Type == "family_name")?.Value;
+    }
+
+}

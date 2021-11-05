@@ -1,0 +1,62 @@
+﻿/* -- TABLAS --*/
+.tabla-responsive {
+    border-collapse: collapse;
+}
+
+    .tabla-responsive th,
+    .tabla-responsive td {
+        padding: 10px;
+        /* font-size: 0.8rem; */
+        border-bottom: 1px solid var(--gris-200);
+    }
+
+    .tabla-responsive th {
+        text-align: left;
+        font-weight: 600;
+        color: var(--gris-900);
+    }
+
+    .tabla-responsive td {
+        color: var(--gris-700);
+    }
+
+@media (max-width: 600px) {
+    .tabla-responsive {
+        border: none;
+    }
+
+        .tabla-responsive,
+        .tabla-responsive caption,
+        .tabla-responsive tbody,
+        .tabla-responsive tr,
+        .tabla-responsive td {
+            display: block;
+            text-align: left;
+        }
+
+            .tabla-responsive thead,
+            .tabla-responsive th {
+                display: none;
+                visibility: hidden;
+            }
+
+            .tabla-responsive tr {
+                background-color: white;
+                margin-bottom: 8px;
+                border: 1px solid var(--gris-200);
+            }
+
+            .tabla-responsive td[data-title]:before {
+                content: attr(data-title) ": ";
+                display: inline-block;
+                white-space: pre;
+                font-weight: bold;
+                /*width: 5rem;*/
+                /*margin-right: 1.5rem;*/
+            }
+
+            .tabla-responsive th,
+            .tabla-responsive td {
+                border-bottom: none;
+            }
+}

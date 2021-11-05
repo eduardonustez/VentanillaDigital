@@ -1,0 +1,46 @@
+TÉRMINOS Y CONDICIONES SERVICIOS GENERADOS POR EL USUARIO
+(MODALIDAD FACTURA ELECTRÓNICA)
+Generación del par de llaves 
+Las llaves pública y privada de titulares del certificado son generadas por el propio suscriptor. Para la emisión del certificado debe suministrar a Olimpia IT el CSR (Certificate Signing Request). 
+
+Entrega de la llave privada al suscriptor 
+No procede porque la llave privada en ningún momento es conocida por Olimpia IT. La llave privada es generada por el propio suscriptor.
+ 
+Entrega de la llave pública al emisor del certificado 
+La entrega de la llave pública del suscriptor a Olimpia IT se realiza al registrar la solicitud de emisión de certificado con forma de entrega “PKCS10” desde la plataforma o servicio web, donde el suscriptor vincula el CSR que contiene la llave pública.
+ 
+Distribución de la llave pública del suscriptor 
+La llave pública de cualquier suscriptor de certificados con forma de entrega “PKCS10” está permanentemente disponible para descarga en la pestaña de validaciones OCSP o su estado revocado en la CRL de la página web ecd.olimpiait.com
+ 
+Distribución de la llave pública de Olimpia IT a los usuarios 
+La llave pública de la CA raíz de Olimpia IT, se encuentra disponible para descarga en la página WEB ecd.olimpiait.com en la pestaña Validaciones, Certificados CA.
+ 
+Periodo de utilización de la llave privada 
+El periodo de utilización de la llave privada es el mismo tiempo de la vigencia del certificado con forma de entrega PKCS10 o menos si el certificado es revocado antes de caducar.
+ 
+En la DPC de Olimpia IT se detalla el periodo de utilización de la llave privada de la CA raíz y las CA subordinadas emisoras de certificados de Olimpia IT.
+ 
+Tamaño de las llaves 
+El tamaño de las llaves de certificados con forma de entrega PKCS10 es de 2048 bits basado en el algoritmo RSA. 
+El tamaño de las llaves certificadas de la CA emisora de los certificados con forma de entrega PKCS10 tiene una longitud de 4096 bits basadas en el algoritmo RSA. 
+
+Controles de protección de la llave privada 
+En la Declaración de Prácticas de Certificación de la entidad que recibe el CSR, para suministrar el certificado digital se especifican los controles y estándares de los módulos criptográficos, el control, respaldo, almacenamiento, activación, desactivación y destrucción de las llaves privadas de la Autoridad de Certificación. 
+ 
+Control de protección 	Llave privada generada por suscriptor CSR 
+Respaldo de la llave privada 	No realiza respaldo sobre las llaves privadas de los suscriptores cuando el certificado se genera a partir de CSR. La entidad que suministra el certificado digital nunca está en posesión de dichas llaves y solo permanecen bajo custodia del propio suscriptor.
+ 
+Almacenamiento de la llave privada 	Las llaves privadas de los suscriptores no son almacenadas por la entidad que suministra el certificado digital. 
+La llave privada debe ser almacenada por el propio suscriptor y la responsabilidad por su uso y la información cifrada con esta llave es completa del suscriptor. 
+Transferencia de la llave privada 	La llave privada generada por el usuario que solicita por CSR para generación de certificado es custodiada por el suscriptor y nunca es enviada a la entidad que suministra el certificado. 
+Activación de la llave privada 	La protección de los datos de activación es responsabilidad del suscriptor 
+Desactivación de la llave privada 	La desactivación de la llave privada es responsabilidad del suscriptor 
+Destrucción de llave privada 	La destrucción de la llave privada del suscriptor puede realizarla el propio suscriptor eliminando la llave privada correspondiente al CSR enviado a la entidad de certificación digital. 
+
+Formato del certificado digital con forma de entrega PKCS10
+El formato del certificado digital es X.509 v3 y según corresponda a la entidad de certificación digital previamente acreditado ante ONAC.
+
+Términos y condiciones generales del certificado con forma de entrega PKCS10 
+Los demás términos y condiciones no tratados en este documento se suplen por lo dispuesto en la Declaración de Prácticas de Certificación de la entidad de certificación que expide el certificado digital, publicada en su página web. 
+Responsabilidad
+La responsabilidad por el uso ya sea legal o fuera de la ley, del par de llaves generado por el suscriptor, es de su entera responsabilidad, Olimpia IT y/o la entidad de certificación digital garantiza que la emisión del certificado digital que acompaña la información del CSR y de la llave pública generada por el suscriptor cumple con los requerimientos técnicos exigidos para este tipo de certificado digitales según las autoridades nacionales. 

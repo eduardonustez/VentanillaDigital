@@ -1,0 +1,91 @@
+﻿@{
+}
+
+@if (!string.IsNullOrEmpty(JsonData))
+{
+    <div class="fig-table table-responsive-sm">
+        <table class="table table-sm table-striped table-bordered">
+            <thead>
+                <tr>
+                    @{
+                        var anyClass = Classes.FirstOrDefault();
+                        if (anyClass != null)
+                        {
+                            var properties = anyClass.Properties().Select(x => x.Name).ToList();
+                            foreach (var property in properties)
+                            {
+                                <th>@property</th>
+                            }
+                        }
+                        else
+                        {
+                            <th>Data</th>
+                        }
+                    }
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (Newtonsoft.Json.Linq.JObject item in Classes)
+                {
+                    <tr>
+                        @foreach (var property in item.Properties())
+                        {
+                            if (property.Value.Type == Newtonsoft.Json.Linq.JTokenType.Array)
+                            {
+                                <td>
+                                    <Details_SingleLevelResult JsonData="@property.Value.ToString()"></Details_SingleLevelResult>
+                                </td>
+                            }
+                            else if (property.Value.Type == Newtonsoft.Json.Linq.JTokenType.Object)
+                            {
+                                var inlineClass = ((Newtonsoft.Json.Linq.JObject)property.Value).Properties();
+                                var resultado = inlineClass.Where(m => m.Value != null && !m.Value.ToString().Equals("")).Select(x => string.Format("<div><b>{0}</b> <span>: {1}</span></div>", x.Name, x.Value)).ToList();
+                                string resultadoUnido = string.Join("", resultado);
+                                <td>
+                                    <div>
+                                        @Raw(resultadoUnido)
+                                    </div>
+                                </td>
+                            }
+                            else
+                            {
+                                <td>@property.Value</td>
+                            }
+                        }
+                    </tr>
+                }
+                @foreach (Newtonsoft.Json.Linq.JValue item in NonClasses)
+                {
+                    <tr>
+                        <td>@item.Value</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+}
+
+@code {
+    [Parameter] public string JsonData { get; set; }
+
+    public Newtonsoft.Json.Linq.JArray JsonAsArray { get; set; }
+    public List<Newtonsoft.Json.Linq.JObject> Classes { get; set; }
+    public List<Newtonsoft.Json.Linq.JToken> NonClasses { get; set; }
+
+    protected override void OnInitialized()
+    {
+        JsonAsArray = Newtonsoft.Json.JsonConvert.DeserializeObject(JsonData) as Newtonsoft.Json.Linq.JArray;
+
+        Classes = JsonAsArray
+            .OfType<Newtonsoft.Json.Linq.JObject>()
+            .ToList();
+        NonClasses = JsonAsArray
+            .Where(x => x.Type != Newtonsoft.Json.Linq.JTokenType.Object)
+            .ToList();
+    }
+
+    MarkupString Raw(string value)
+    {
+        return (MarkupString)value;
+    }
+}

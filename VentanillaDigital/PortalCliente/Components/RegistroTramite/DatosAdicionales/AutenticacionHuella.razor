@@ -1,0 +1,10 @@
+<form Model="enrolamientoNotariaDigital" @oninput="oninput">
+    <div class="input-container">
+        <label>Celular *</label>
+        <input type="number" required @bind-value="enrolamientoNotariaDigital.Telefono" @bind-value:event="oninput" />
+    </div>
+    <div class="input-container">
+        <label>Correo *</label>
+        <input type="text" @bind-value="enrolamientoNotariaDigital.Correo" @bind-value:event="oninput" />
+    </div>
+</form>

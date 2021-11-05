@@ -1,0 +1,355 @@
+﻿@implements IDisposable
+@inherits LayoutComponentBase
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject NavigationManager NavigationManager
+@inject IJSRuntime js
+@inject IConfiguration Configuration
+@inject IParametrizacionServicio Parametrizacion
+@inject PortalCliente.Services.Notaria.INotariaService NotariaService
+@inject AuthenticationStateProvider _authenticationStateProvider
+@inject PortalCliente.Services.SignalR.ISignalRv2Service SignalRv2Service
+@inject ITramiteVirtualService _tramitesVirtualService
+@inject IParametrizacionServicio _parametrizacionServicio
+@inject IRNECService _rnecService;
+@using Components.RegistroTramite
+@using PortalCliente.Services
+@using PortalCliente.Data.Account
+@using ApiGateway.Models.Transaccional
+@using PortalCliente.Pages.TramitePages
+@using PortalCliente.Services.Biometria
+@using PortalCliente.Services.Biometria.Models.Internal;
+
+<CascadingValue Value="this">
+    <header>
+        @if (menuFijas)
+        {
+            <div class="logo-main-menu" @onclick="ExpandirNav">
+                <img src="images/logo-ucnc.svg" class="header-logo-menu" alt="UCNC logo" />
+            </div>
+        }
+        <p class="titulo-header">@nombreNotaria</p>
+        @if (esNotariaVirtual)
+        {
+            <a id="tramites-virtuales-link" href="/tramitesportalvirtual">Ir a trámites virtuales</a>
+        }
+        <div class="mini-profile-info">
+            <AuthorizeView>
+                <Authorized>
+                    <span class="mini-profile-info-header">@context.User.Identity.Name</span>
+                    <small class="header-close-session" title="Cerrar sesión" @onclick="Open">Cerrar sesión</small>
+                </Authorized>
+            </AuthorizeView>
+        </div>
+    </header>
+    <div class="ParentMainLayout">
+        <div class="left-sidebar">
+            <AuthorizeView>
+                <NotAuthorized>
+                    <div class="mensaje-error">
+                        <p>Usted no ha iniciado sesión (o su sesión caducó).</p>
+                        <NavLink class="nav-link" href="Login">
+                            Iniciar sesión
+                        </NavLink>
+                    </div>
+                </NotAuthorized>
+                <Authorized>
+
+                    <nav class="main-menu">
+                        <ul class="main-menu-botones">
+                            <label>
+                                <span title="Expandir menú" @onclick="ExpandirNav" class="icono-en-menu material-icons">
+                                    @menuIconoDefecto
+                                </span>
+                            </label>
+                            @if (menuFijas)
+                            {
+                                @if (context.User.IsInRole("Administrador") || context.User.IsInRole("Notario Encargado"))
+                                {
+                                    <NavNotario onListenClickMenu="OpenCancelTramiteModal"
+                                                usePreventDefault="TramiteIdEnProceso > 0" />
+                                }
+                                else
+                                {
+                                    <NavOperario onListenClickMenu="OpenCancelTramiteModal"
+                                                 usePreventDefault="TramiteIdEnProceso > 0">
+                                    </NavOperario>
+                                }
+                            }
+                            else
+                            {
+                                <NavNotariaDigital NotariaConvenioVirtual="esNotariaVirtual" />
+                            }
+
+                        </ul>
+
+                    </nav>
+                </Authorized>
+            </AuthorizeView>
+        </div>
+        <main class="wrapper">
+            <div id="content" class="main container-fluid content">
+                <div class="contenido_principal">
+                    <RadzenNotification />
+                    <RadzenDialog />
+
+                    @Body
+                </div>
+            </div>
+        </main>
+    </div>
+</CascadingValue>
+<!-- Confirmar cierre de sesión -->
+<div class="modal @ModalClass" id="avisoTramiteModal" tabindex="-1" role="dialog"
+     aria-labelledby="avisoTramiteModalLabel" aria-hidden="true" style="display:@ModalDisplay">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Espere un momento...</h3>
+            </div>
+            <div class="modal-body">
+                <p>@MensajeCerrarSesion</p>
+                <div class="d-flex justify-content-around mt-3">
+
+                    <button type="button" class="btn-contorno-primario" data-dismiss="modal" @onclick="Close">
+                        Volver a
+                        la sesión
+                    </button>
+                    <button type="button" class="btn-primario" data-dismiss="modal" @onclick="Logout">
+                        Cerrar sesión
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@if (ShowBackdrop)
+{
+    <div class="modal-backdrop fade show"></div>
+}
+<PortalCliente.Components.RegistroTramite.CancelarTramiteModal @ref="cancelarTramiteModal"
+                                                               MotivoCancelacionChanged="CancelTramite"></PortalCliente.Components.RegistroTramite.CancelarTramiteModal>
+<ModalForm @ref="modalFormAnuncio">
+    <img src="./images/MyPost.jpg">
+</ModalForm>
+@code{
+
+    public long TramiteIdEnProceso { get; set; }
+    private CancelarTramiteModal cancelarTramiteModal { get; set; }
+    public TramitePage tramitePage { get; set; }
+    string menuIconoDefecto = "menu";
+    bool menuFijas = true;
+    string nombreNotaria;
+    public string ModalDisplay = "none;";
+    public string ModalClass = "";
+    public bool ShowBackdrop = false;
+    public string MensajeCerrarSesion = "¿Desea cerrar sesión? Recuerde guardar cambios.";
+    double tiempoInactividad = 0;
+    string lastRequestedUrl = "";
+    string AnuncioSitio = "";
+    ConsultarEstadoResponse consultarEstadoResult;
+    DotNetObjectReference<MainLayout> ObjectReference;
+    [Inject]
+    public ILocalStorageService localStorageService { get; set; }
+
+    ModalForm modalFormAnuncio { get; set; }
+    public bool esNotariaVirtual { get; set; }
+    async void ExpandirNav()
+    {
+        menuIconoDefecto = menuIconoDefecto == "menu" ? "menu_open" : "menu";
+        await js.InvokeVoidAsync("expandirNav");
+    }
+    void ChangeMenu(bool menu)
+    {
+        menuFijas = menu;
+    }
+
+    //[CascadingParameter] protected Task<AuthenticationState> AuthStat { get; set; }
+    [JSInvokable]
+    public async Task Logout()
+    {
+        await ((PortalCliente.Services.CustomAuthenticationStateProvider)AuthenticationStateProvider).MarkUserAsLoggedOut();
+        NavigationManager.NavigateTo("/login");
+    }
+    [JSInvokable]
+    public async Task notificationLogout()
+    {
+        SetMensajeCerrarSesion();
+        Open();
+    }
+    public async Task ModificarVisuales()
+    {
+        await js.InvokeVoidAsync("cambiarTheme");
+        if (NavigationManager.Uri.Contains("virtual") || NavigationManager.Uri.Contains("ciudadano"))
+        {
+            menuFijas = false;
+        }
+        StateHasChanged();
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        ObjectReference = DotNetObjectReference.Create(this);
+        var userActual = (CustomAuthenticationStateProvider)_authenticationStateProvider;
+        AuthenticatedUser userName = await userActual.GetAuthenticatedUser();
+        nombreNotaria = userName != null ? (await
+            NotariaService.ObtenerNotariaPorId(long.Parse(userName.Notaria))).NotariaNombre : "";
+        if (userName != null)
+        {
+            nombreNotaria = (await
+                NotariaService.ObtenerNotariaPorId(long.Parse(userName.Notaria))).NotariaNombre;
+            await LogOutDueToInactivity(userName.Rol);
+        }
+        await ValidarConvenioNotariaVirtual();
+        //await ConsultarEstadoAgenteRNEC();
+        await _parametrizacionServicio.ValidarEstadoCaptorHuella();
+    }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            AnuncioSitio = Configuration.GetValue<string>("AnuncioSitio");
+            if (AnuncioSitio == "1")
+                modalFormAnuncio.Open();
+        }
+    }
+
+    async Task LogOutDueToInactivity(string rolName)
+    {
+        if (rolName == "Administrador" || rolName == "Notario Encargado")
+        {
+            tiempoInactividad = Configuration.GetValue<double>("SessionTimeMinutesAdmin");
+            await js.InvokeVoidAsync("timerInactivo", ObjectReference,
+                tiempoInactividad);
+        }
+        else
+        {
+            tiempoInactividad = Configuration.GetValue<double>("SessionTimeMinutes");
+            await js.InvokeVoidAsync("timerInactivo", ObjectReference,
+                tiempoInactividad);
+        }
+    }
+    void SetMensajeCerrarSesion()
+    {
+        if (tiempoInactividad >= 3)
+            MensajeCerrarSesion = "Su sesión vencerá en 2 minutos. Recuerde finalizar el trámite en proceso o cerrar sesión.";
+        else if (tiempoInactividad >= 1 && tiempoInactividad < 3)
+            MensajeCerrarSesion = "Su sesión vencerá en 30 segundos. Recuerde finalizar el trámite en proceso o cerrar sesión.";
+        else
+            MensajeCerrarSesion = "¿Desea cerrar sesión? Recuerde guardar cambios.";
+    }
+
+    async void MostrarMenu()
+    {
+        await js.InvokeVoidAsync("mostrarMenu");
+    }
+
+    async Task RegistrarMaquinaAsync()
+    {
+        try
+        {
+            await Parametrizacion.RegistrarMaquina();
+        }
+        catch (ApplicationException)
+        {
+            NavigationManager.NavigateTo("/install");
+        }
+    }
+    async Task ConsultarEstadoAgenteRNEC()
+    {
+        try
+        {
+            consultarEstadoResult = await _rnecService.ConsultarEstado();
+            if (consultarEstadoResult == null || consultarEstadoResult?.Estado != "OK")
+            {
+                NavigationManager.NavigateTo("/install");
+            }
+        }
+        catch (ApplicationException)
+        {
+            NavigationManager.NavigateTo("/install");
+        }
+    }
+
+    public void Dispose()
+    {
+        GC.SuppressFinalize(this);
+        if (ObjectReference != null)
+        {
+            //Now dispose our object reference so our component can be garbage collected
+            ObjectReference.Dispose();
+        }
+    }
+    public void Open()
+    {
+        ModalDisplay = "block;";
+        ModalClass = "Show";
+        ShowBackdrop = true;
+        StateHasChanged();
+    }
+
+    public void Close()
+    {
+        ModalDisplay = "none";
+        ModalClass = "";
+        ShowBackdrop = false;
+        MensajeCerrarSesion = "¿Desea cerrar sesión? Recuerde guardar cambios.";
+        StateHasChanged();
+    }
+
+    protected async Task OpenCancelTramiteModal(string urlRedirect)
+    {
+        //await ConsultarEstadoAgenteRNEC();
+        lastRequestedUrl = urlRedirect;
+        if (TramiteIdEnProceso > 0)
+            cancelarTramiteModal.Open();
+    }
+    protected async void CancelTramite(string MotivoCancelacion)
+    {
+        if (!string.IsNullOrWhiteSpace(MotivoCancelacion))
+        {
+            TramiteIdEnProceso = 0;
+            await tramitePage.CancelarTramite(MotivoCancelacion);
+            if (!string.IsNullOrWhiteSpace(lastRequestedUrl))
+                NavigationManager.NavigateTo(lastRequestedUrl);
+        }
+    }
+
+    protected async Task ValidarConvenioNotariaVirtual()
+    {
+        string[] res = { };
+        var value = await localStorageService.GetItem<string>("ConvenioNotaria");
+        if (!string.IsNullOrEmpty(value))
+            res = value.Split('|');
+        if (res.Length == 0)
+        {
+            await AsignarConvenioNotariaVirtual();
+        }
+        else
+        {
+            bool.TryParse(res[0], out bool ConvenioNotaria);
+            DateTime.TryParse(res[1], out DateTime fechaConsulta);
+            if (fechaConsulta < DateTime.Now)
+                await AsignarConvenioNotariaVirtual();
+            else
+                esNotariaVirtual = ConvenioNotaria;
+        }
+    }
+
+    protected async Task AsignarConvenioNotariaVirtual()
+    {
+        var state = await _authenticationStateProvider.GetAuthenticationStateAsync();
+        var authuser = state.User;
+        if (!long.TryParse(authuser.Claims.FirstOrDefault(c => c.Type == "NotariaId")?.Value, out long notariaId))
+            notariaId = -1;
+        if (notariaId != -1)
+        {
+            esNotariaVirtual = await _tramitesVirtualService.ValidarConvenioNotariaVirtual(notariaId);
+            await localStorageService.RemoveItem("ConvenioNotaria");
+            await localStorageService.SetItem<string>("ConvenioNotaria", $"{esNotariaVirtual.ToString()}|{DateTime.Now.AddDays(1)}");
+        }
+        else
+        {
+            //await localStorageService.RemoveItem("ConvenioNotaria");
+        }
+    }
+}

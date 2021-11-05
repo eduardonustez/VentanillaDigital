@@ -1,0 +1,9 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlExtensions\bin\Release\netstandard2.1\HtmlExtensions.deps.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlExtensions\bin\Release\netstandard2.1\HtmlExtensions.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlExtensions\bin\Release\netstandard2.1\HtmlExtensions.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlExtensions\obj\Release\netstandard2.1\HtmlExtensions.csprojAssemblyReference.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlExtensions\obj\Release\netstandard2.1\HtmlExtensions.AssemblyInfoInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlExtensions\obj\Release\netstandard2.1\HtmlExtensions.AssemblyInfo.cs
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlExtensions\obj\Release\netstandard2.1\HtmlExtensions.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlExtensions\obj\Release\netstandard2.1\HtmlExtensions.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\HtmlExtensions\obj\Release\netstandard2.1\HtmlExtensions.pdb

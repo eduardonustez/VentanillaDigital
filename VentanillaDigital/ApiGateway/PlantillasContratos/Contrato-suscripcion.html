@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=665px, initial-scale=1.0" />
+    <title>Contrato de Suscripción para Emisión de Certificados</title>
+  </head>
+  <style>
+    :root {
+      font-family: Cambria, "Times New Roman", Times, serif;
+      font-size: 9pt;
+      line-height: 1.15;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    main p {
+      margin: 0;
+      text-align: justify;
+      margin-bottom: 1.15em;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 1em;
+      list-style: none;
+    }
+
+    .sin-margen {
+      margin-bottom: 0;
+    }
+
+    .caja {
+      width: 68mm;
+      height: 26mm;
+      border: 1px solid black;
+      margin-bottom: 1.15em;
+    }
+
+    .encabezado {
+      margin-bottom: 8mm;
+    }
+
+    .encabezado-tabla,
+    .firmas {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0;
+      padding: 0;
+    }
+    .encabezado-tabla td {
+      border: 1px solid black;
+    }
+
+    .encabezado-tabla-logo {
+      width: 32mm;
+      vertical-align: top;
+      text-align: left;
+    }
+
+    .encabezado-tabla-titulo {
+      width: auto;
+      padding: 3mm;
+      vertical-align: top;
+    }
+    .encabezado-tabla-titulo h1 {
+      font-size: 10pt;
+      font-weight: bold;
+      text-align: center;
+      line-height: 1.2;
+      margin: 0;
+    }
+
+    .wrapper {
+      margin: 0;
+      padding: 0;
+    }
+    .logo-thomas {
+      margin-left: 2mm;
+      margin-top: 1mm;
+      width: 20mm;
+    }
+    .formulario {
+      margin-bottom: 1.15rem;
+    }
+    .formulario tr,
+    .formulario tbody {
+      padding: 0;
+      margin: 0;
+    }
+    .formulario td {
+      padding-left: 0;
+      padding-right: 1em;
+    }
+  </style>
+
+  <body>
+    <table class="wrapper">
+      <thead style="display: table-header-group">
+        <tr>
+          <th>
+            <header class="encabezado">
+              <table class="encabezado-tabla">
+                <tr>
+                  <td rowspan="2" class="encabezado-tabla-logo">
+                    <img
+                      alt="logo-thomas"
+                      class="logo-thomas"
+                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJgAAABoCAYAAAANUDk4AAAACXBIWXMAAB7CAAAewgFu0HU+AAAV6UlEQVR4Xu2deXgUx5mH3+45NaMTBJJAAiEQ4hCnOA3GxtjmMAQnjomPtR0fycbrnE682WSTTdZJdtfJxonj+EniI4ftYOOD2AaMAdtgDnEIBAJkQBeSOCSQBJIYSTOa6a79Q2jQaHrUwyGvNNPv8/QD0/VVjUbz01dVX1d9JQkhBAYGvYSsZ2BgcDUYAjPoVQyBGfQqhsAMehVDYFeBMT/Sx6xnYBCMqqoASJKkY2lgCCwMXO5WtpcUUFpzHLvFxpTh45k4bCwmWUaWZUNoPSAZcbDQnGtpZE3hh6wt/Jimtgt0ykgIweTM8fxg2aMkOhMMgfWAITANzjTVs3rPejYe2kZrexsAsiRhkU2AQBECRVXJGTKSX939Q6wWa88NXiFt7W5qGs+SHJdEfEycnnmfxBBYF6obTvPW7nVs/nQn7T6v/74kSTjMFrr6KYHA7fPx8Py7uWPG4uDGrhBFVTh6upztx/ZwoLKYFk8bdouNryy4h+lZk/Sq9zkMgQEVZ6r5e/475JfsQxVqULnNZMYia0+442MT+fM//y8SV9dN1jbWsfXobvJL9tHgOhfUntPm4On7/oMYqz1EC32TqB7kCyH4x94NvPDxa5rC6sQcQlwADc0NnG1qICUhOaRNKNxeD/sqDrLlyC6OnS7339cSq8vTQmXdCcYOzQ4q68tEtcC2HdvD8x+tRBDaiZskuUffZJFNnG2uD1tgAkHN+bNsLs5nR8leLrhdYXu//tjVRK3AvIqP5z96rUdxAZjCmCG2edr0TPApPg6dOMqmg9soPlXiD9KGKy4JiURHvJ5ZnyNqBba/8jB1Fxr0zJDDEFirpzVkWYunje1H9/BR8XZqGuvClFMwJtlEfEysnlmfI2oF9umpUj0TILxo/QV3S9C9c65GNhzcytYju2i5KED9lkITY7X1uwE+RLHA6i+c0zMBQA5DFc1tLv//a86fYe3+j9hZWohP8fVQ6/KIs8dikk16Zn2OqBVYY8sFPZOL6Cusuc1FVd1J3iv8kL3lRbrjuithYFySnkmfJGoF1tXrhEIiHHnBjiN72HZoFyabJawu9UpI6IcDfIji5ToujXHTleJqdeFubQP12nuuTgY4E/VM+iRRK7CWHmZ+fsL0RgLwub2ovSiwJKfhwfoNqlBp97XrmYWPLKF4FVRV0bO8YgbEGh6s3+BTfLRfwxmeLEuoqoKqhH7cdDUIIUh0JuiZ9UmiUmDtPq9/VWqPhLkOQJJAlUD4eseDmU1mkuMG6Jn1SaJSYIqqhhVK0LfoQEICiV7zYJOGj+uXUXyI0jCFV/GFvWFDEF6oQjLLqMq18WBCCCxmC06bg5y0LB644U69Kn2WqBRYbyCb5IseLFxJdiCEwGwyM3RAKiNThpM1eDjDk4cwMG4AMRYbZlP//or690//GSCECCt4KptkhE8ghH50QxWClISBjE/PYeKwsYxOyyLO7gzrffobhsB0CK8jBdl8UWCqQDIFC0WSJEYMzmBq5gTyRkwgLSklrJUa/R1DYDqoQoS1Jky2mBAeJWDmaZJNjEwZzoyRk5mWNbHfxrKuhqgTWFu7m1U73tUz8xPObBNAkiVMVjOyLJM1eBizsvOYnjWx3z6kvlZElcBOnqvhd+teouJkZdjjcDXM2aYkSSyetYAleQtISxoc9krVSCdqBLan7AAvbXkdl+sCitcHYW5lDFNfSMCYjGyGJKXomUYVES8wIQSrC9bz3r5NHbEvSQJVIAkQYTgZNcwuEuBkw2k9k6gjogXW7vPy4scr2VW2339PkiX9OEIXhBBhhypOGAILImIF5nK38Mz6lzhWUxFwX5IuJiwRSlgeDMKfSVbXn9IziToiUmDnWpr49do/cqKhJqhMkgAZJCERbpRLEYJwVsPXnj+Dx9uOrZdyVfRHIu5ht6IqPPP+i5riAkCSMJlMl9NLooQ50ldUheoGw4t1JeIEVn6mioq6Ez3amCxmTFI4PqkDpYe0Al2RJInyM1V6ZlFFxAmssbVZNwIlmU0kOC5v+Uu4Xqys9niP5Z2TBlVV/ZeiKGGv7uhvRNwYbFAPC/NMsolxKaOYOWwizZ5Wnt36ckjb7vhUFZNJ3+uV1lT4BaOqapCYugqsE0mSMJvN2O12zObI+koi69MAmYMymJAxhkMnjvrvJTjimZ01hclpY7HLFgRgazkfuhENOrpJfYGdPFdDbf0ZbCZrgKC6X12RZRmLxYIQAqfTidxDNp/+RsQJTJIkvr7wy7x/4GPONjUwPmM0M0dOwdPmpqmpifb2js0eSTHxWE0W2pVLieZ6QhUCVQjdFRBCCIqrSxiTkhUkqFDdoCRJqBc9pKqqhsD6OjFWO3fMWBJwz+tp9yfs7VzkN8CZSG1zXYhWgvGpKladblICSmrLGTkgo0e7rgghUBQF5RqtiO1LRM6fig7dx09CCNITLu+5oTfM2WRpXdVlP+yO1EF+1AhMa+wzNPHyBCaEwBeGyE42nsbt8+iZ+ZEkKWLToUe0wIQQ+Hw+WltbcblcQeGAYUlDeqitTXsY3ZgQKiV1lZhMJt3LbDZjNpv9ryONiByDqaqKz+fD5/Ph9XrxeDy0tLQEebCMxDT/mCxcVCFQhIpJCv23KSFxrK6CWaOm+L1ST96p04OZzeaIGuBDhAmsM2jp9Xr9AlMUxf9v9y85zuZkUOwAzoaR6bArHkXBYe5ZCMWnS4iLjwvI6dX9/bsL2xBYH6dTXJ0zss4v0GQyYbPZAgKg0LEcOjt5+GULTBUCr6pcPJhBm+a2Zo6fO0luek5Im2ggov5cug6WzWYzFosFm82G3W4nLi6O2NhY7HZ7wFgne1Bm6AZ7wKMoPS6nNkkyW4/sDlkeLUSUwMxmM1arFbvdTkxMDA6HA6fTSVxcHPHx8QwYMIC4uDgslkuJ4kYPHnHZIYVO3IqvxwU/+SUFeK9hkpX+SEQJDPAPlrvOzuSLp6LJsozdbsdms/m9WFJMPKnx4eW4744qBG0+b0iRudpcFJQXhSiNDiJOYHqYzWZsNpvfiwkEuWmj9aqFpFNkWt2lSZJZX7RZo1b0EHUCA7Db7VgsFr8Xmzjk6gbiqhC0+rx4FF+Q0A5WfUp1FK/Vj0qBdS6N6fRiWQMziLM59arp4lVVWn1eWnxe2nw+3BcT3a3es16vasQSlQKTJAm73Y7Var24fFpiSvo4vWphIy4GY32qiioEHx7ewZmm8B+qRxJRKTC45MWsViuyLDMtI1evyhXjVby8sv0femYRSdQKTJIkYmJi/AP+7MGZDHT0XnKSjw5v52iXI/uihagVGHRE+B0Oh7+rnDVisl6VK0YVgmc3/CXq4mJRLTAAm81GTEwMFouFOVl5yD08xL5ays5U8cq21XpmEUXv/Tb7CZ1dpd1uJyUhmSnpY/WqXBVv7l5HYeVhPbOIIeoFBh0DfqfTic1mY+mEm6740VE4qELlpc2rLmuJUH/GENhFrFYrDoeDUSmZzMicqGd+VZSdqaSq/lRUiMwQ2EU6u0qH08E9M5djN9v0qlwVZbWVmsu4Iw1DYF2QZRmHw0F6cir3zlquZ35VNLY2B+2bjEQMgXVDlmUcTidLpsxnzqhpeuZXTJzNGfHiAkNgmsiyjNPh5FuLHmR06gg98ytixODgfZORKDRDYAa9iiGwEEiSREJsPD/74vcYkzZSz/yyyBg4hMzkdP/y7q5XpGEITIfE2Hh+ec8PuDl3bpj5EPW5b87n/SttI1VYnUgiEjv+XmJHyV5e+Pg1ahrP6pmGZPnkW/jqgrsxWyx6phGBIbDLpN3nZevR3awv2sKx0+W0+7w9eiAhOo7my0hK43OTb2ZOdh6xsbERuYtbC0NgV8E5VyNHa8o5fvYE9RfO4XK34PX5cFjtxMXEMih2IOlJKWQMSCPBEe/fkGK1Rk+SYENgvYHo2NTb9VcbTgqBSMQQmEGvYswiDXoVQ2AGvYohMINexRCYQa9iCMygVzEEZtCrGAIz6FWueYZDn6rw+w9X0u4LfcDB4PiBfHnuchRV5fktq3jw+i9gtwQvUd5TcQi318O8nMCFf26vh9f3fEB+2QHsFitLJszj1tzZQVvOXt7xHmmJydwy/jpCUXfhPH/etpoH5iwnNSE4jVP5mWp2lhfxT9ct06jdwZGa47y+ez1VDacZkjiYu2cuZkJ6dkj7Thpcjby9dyNnmxqQJJkpw8eycOJcf/5XAewpL2LmyEkB9Vo9bby5dyPVdacwmc1MHTaWW3LnYOqSfvNA9RHSk1JJDnEo/f7KYqZkjgeg9EwV7xdt1dzqMm7oKG4eP1ujJDyuvQcTApe7BZen46ptrueZD1/1v3Z5WmhrbwNAEQpPb3wVt7dds6n88gN8fLQg4F5Tm4ulv32MNQe2cN2oyYxNy+LJ9/7At1c+haIGphh/cdtqfrj62YBzgbrz1t6NPLnmT9SEyB3x8s61fGfVr3B5WjXL3967iWXPPIYkSSzKnUOsLYYvPvc4L+ev0bTvpOxsNb/Z8DcWT5zHvy//Gv+29BGcthj+e83zXTL0CPJLL53WCx1nYT617gXmZE/hR8sf5ftLHsZhi+FX778Y8PkPVh/jxU/eIhQFxy9tnTtac5xFE+dy/9zbg67rsqeEbCMcrrkHM5vM/OhzX/O/Pt1YxweHdvDk57/RQ63w+dHqZ5k8bAy/XPG432M9MGc5tz/7TVbuWsd9XTyNAFrcrRw+XcbEdO0cYG8WbGTkoHTNMgGsP7SNhblz+LB4F7dPvSmg3OVu5Yk3fs3abz/HuCGX1oytmLGIRU9/jVvHX0dqwkC0WF2wiZ/c/hgWU8dXYJJN3DBmOlazhU2Hd7BwwlzNen/ZuprvLXmYOHtHNiCTZGJezjScthg2HNrOkknzADDLMukDUjh0ooQJGfr5z+LsThIdcXpml82192C9yJmmBjYV7+Qny/8loDt0WO08defjPPfxa6hdDkoQQmXxxOt5a+8mreY4XncKl6eVzOShmuWltVUkxMRy/+xlrCnaElR+8GQJ2amZAeICGDU4g1vGz2ZD8Y6gOtCRDTvW4fSLqyuzRk6i7Gy1Rq2Oz5+akOwXV1emZo6ntNtZlUsnz+f9ok8CfiefNf1KYNtK9jEnewpxdkdQ2aSMHFo9bk6ePxNwf/mU+aw9sAVFDT5AYXXhh9w+NfRG23UHP2HJxOuZl5PH9tL9QXklbBYrLrd213nvzMWMSc3ULJNlGU+79kkgkiRxQ472ZpOC44e4PkSZBKyYsTDgnkmWWTB+NhsOaQv9s6BfCazkbDXj0rI0y2RJYnRaJmVnAk+7TU9KISUhmX2VnwbVeatgIyumB34pXXm3cDO3TZyH3WIjb/g4tpcWBpRPTB9NU9sFXs5fg+i23nXu6DxmZoXewJsan8yObu11khuiOz/bfC7koB0gLXFw0L1pI3I5fLIUtzf8o22uJdd8DHa5qEKwsTgfpy3YKx2tqQyY2Z1zNTF2SOhdPokxcTS2Nl+6IToWCH5pxiJWFWxgRtYEf1Hx6XJsFisjB2XgU4Mz3pxurKPZ00J26nAAbps0j/f2b2b+mBl+G4vJzKtf+R/u/tMTvL1vEw9f/3kWjJ2F0xYT1F537pq1hJd3vMv2kkKWT72J7JTMgFmgFq1ej+5xglrcM/s2Vu5cy0Pz7ghpU3fhfNAs3Gwykxx7dSmt+oDAVF7duQ6LxgrPyvrTLJt8Y4BtT8iShLdbV+hTfSyddANPb/gb7T4vVnPHUuW3927kjrybkSQJj0ZIZV3RVhZNmOvvPhflzuEXa55HFWrAFzF5WA57fvwaf93xLv+19kW+vfKXPDLvC3zn1vuIsdqD2u1EkiQemHs7ze4WPji4lVW71zNiUDorZizSDNloIYSgtd3tfy1LkuZ7Dk1Kwacq1DbVa4ZiADYW7yQhJvCY6SRnPHdOu1XTPlz+3wVmlk28/MgvNGcwv930Co2trku2JnOPhx94FR82U/Ba9+TYRMakjSC/bD83jpmBKlTeKdzMmm/9XqOVDtYUbeHfljzsfz0wNpH0pMHsrzpKXmZgus04u5NvLLiHx+bfxb6qT/npu39gd8VB3n7sN5g1BvJdibc7WTFjMQDFp8r42bt/4IklD5HoiA+y7e5hXJ5WXti8yv/6eP0pnr3vx92rAXDv7GX8cfPrfHfRg9rls5YwRKOLvVr61RgsOTaR+guhj0KudzUyKMQYZcX0hbxRsBGAwqojpCUmMyRpkKZtU9sF8ssO8Nqu9/nOyqf8l6vdzXsas8lOZFlm+ohc3vnGb2ltd7Om6JOQtlqMHzqKJ5Y8xN93rtUsj7fF0N5lohFnd/L44of8V9ag0IegOm0xjBo8nKLqS0dNfxb0K4HlDh1FYdURzTKfolB6pso/ZurOoglz2VqyD7fXwxsFG/nitFtDzh43HN5B3vBxjBuSxejU4f7rC1NuYu2BLX67P255g22l+4LqW0wWlk2+kf0hftZjtZWcOFerWZboiA8ZGB4xOIOy2sBQxOWwdPKNn3nYol8J7PrRUymqPqr55Ww+uofM5KEMitX2YLE2BzNGTGDj4XzWH9zK8inzNe0A1h74hEfnr+DRm+4KuL63+EFUASUX400udyvri7ZrttHc5sIWYixlM1sorCzWLANQQgwD8jLHkx9i5hkOJlnmltw5rD+4Tc/0mtGvBBZnd/LoTV/isVd+zgV3i/9+9bka/vXNp/n+4od63FTxpRkL+fE/fs+4ISMZ4EzQtGlr97C1ZB83jZulWb5s0jzWHOjo+u6auZhVBR+wvbQwIExRUlvJX3e8x9KLUfXuDBs4hP1VR2jTCB2Una3GadUWpt1iJSk2kaITx4LKFFWlue3S7yQU00bk8umpss8sbPGZDPJ72lfS454Tjcwz37z5Xqrqa5j183uZlzONtnY3+WUH+O7CB7hx7KUQQkf1wLo3jplOU5srKPbV1e6TYwVMHjaGeI1oOcDSyTfwxKpf892F95OelMILX/4pX/3rf5KZPJSc1Exqm+rZVXGQH972CJMytE8QkSWJR268kyffeY55o6cxYVgOiqqys3Q/R2oq+MHSr3axDvwMd89awu82vsrB6mPcMGY6AIdPlrC9dD+35y0IWa8r98xextdf/TnfvPV+/72CikMM1AhJpMQPJDtEwDgcen1XkcfXzv6qI8zqtiIAOmJgu8uLmD4iV3O2daKhBq+qkNXtWaEQgkOnStlTcRibxcoNo/MYNjAtqP7eymLGpI0gtkuMraj6GDlpmQGhgP1VRxiVMow4u5Oq+tMoQg16z04UVWVHaSHX5+T5x3AuTyvbSwqpqD/FQGcCc0dPZWgYMzKf4mPv8cMcqTmOLMtMHTaW3PTsAC9c3VAT9NkEcPR0OXsqDiGAnNRM8jLH+0MwALWNdSTHD8Ac4kzLiroT/klBves8h0+UaNqlJgxizBDt4HY49LrADKKbfjUGM+h/GAIz6FUMgRn0Kmbg8sLNBj3SUF+PyWwmMfHqHhJHCv8HunJv8MI9sXAAAAAASUVORK5CYII="
+                    />
+                  </td>
+                  <td rowspan="2" class="encabezado-tabla-titulo">
+                    <h1>
+                      Contrato de Suscripción para Emisión de <br />
+                      Certificados
+                    </h1>
+                  </td>
+                  <td
+                    style="width: 55mm; height: 8mm"
+                    class="encabezado-tabla-qr"
+                  ></td>
+                </tr>
+                <tr>
+                  <td style="height: 10mm"></td>
+                </tr>
+              </table>
+            </header>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <main>
+              <p>
+                <strong>INTERVIENEN</strong> <br />
+                Por una parte, <br />La Entidad de Certificación Digital de
+                THOMAS SIGNE SOLUCIONES TECNOLÓGICAS GLOBALES S.A.S., en
+                adelante la ECD, con N° de NIT 900962071-5, con domicilio en la
+                Av. Las Américas No 44-57 Bogotá D.C.
+              </p>
+              <p class="sin-margen">
+                Por otra parte, la persona natural o jurídica, en adelante el
+                SUSCRIPTOR, con los datos de identificación siguientes:
+              </p>
+              <table class="formulario">
+                <tr>
+                  <td><strong>Nombre o Razón social:</strong></td>
+                  <td>[Nombre_suscriptor]</td>
+                </tr>
+                <tr>
+                  <td><strong>Tipo de documento:</strong></td>
+                  <td>[tipo_documento]</td>
+                </tr>
+                <tr>
+                  <td><strong>Número de documento:</strong></td>
+                  <td>[Numero_documento]</td>
+                </tr>
+                <tr>
+                  <td><strong>Dirección completa:</strong></td>
+                  <td>[Direccion]</td>
+                </tr>
+                <tr>
+                  <td><strong>Correo electrónico:</strong></td>
+                  <td>[email]</td>
+                </tr>
+              </table>
+              <p>
+                Las partes involucradas tienen conocimiento y se encuentran
+                conformes con los siguientes términos y condiciones:
+              </p>
+              <p>
+                <strong>1. DEFINICIONES Y ABREVIACIONES</strong> <br />
+                Los términos, abreviaciones, siglas y definiciones aplicables al
+                presente contrato se indican a continuación: <br />
+                - Certificado digital: mensaje de datos electrónico firmado por
+                la ECD, el cual identifica tanto a la ECD que lo expide, como al
+                suscriptor y contiene la clave pública de este último. <br />
+                - Clave privada: valores numéricos únicos que, utilizados
+                conjuntamente con un procedimiento matemático conocido, sirven
+                para generar la firma digital de un mensaje de datos. <br />
+                - Clave pública: datos que son utilizados para verificar que una
+                firma digital fue generada con la clave privada del suscriptor.
+                <br />
+                - DPC – Declaración de Prácticas de Certificación: documento en
+                el que constan de manera detallada los procedimientos que aplica
+                la ECD para la prestación de sus servicios. Una declaración de
+                las prácticas que la ECD emplea para emitir, gestionar, revocar
+                y renovar certificados sin y con cambio de claves. <br />
+                - ECD – Entidad de Certificación Digital: entidad que presta el
+                servicio de emisión de certificados, incluyendo otras gestiones
+                propias de certificados digitales, de acuerdo a la regulación
+                establecida por ONAC. <br />
+                - ONAC – Organismo Nacional de Acreditación de Colombia. <br />
+                - PC – Política de Certificados: conjunto de reglas que indica
+                los requisitos de un certificado en una comunidad y/o clase en
+                particular, en el marco de los requisitos legales,
+                reglamentarios, y con requisitos de seguridad comunes. <br />
+                - Solicitante: persona natural o jurídica que con el propósito
+                de obtener servicios de certificación digital de una ECD,
+                demuestra el cumplimiento de los requisitos establecidos en la
+                DPC y la PC correspondiente para acceder al servicio de
+                certificación digital. Persona natural o jurídica que solicita a
+                la ECD la emisión de un certificado. <br />
+                - Suscriptor: persona natural o jurídica a cuyo nombre se expide
+                un certificado digital. Persona natural o jurídica que, habiendo
+                firmado el respectivo Contrato de Suscripción, acepta las
+                condiciones del servicio de emisión de certificados prestado por
+                la ECD.
+              </p>
+              <p>
+                <strong>2. ALCANCE</strong> <br />
+                El presente contrato establece los términos y condiciones a los
+                que la ECD está sujeta en el ámbito de la emisión de un
+                certificado del tipo siguiente al SUSCRIPTOR.
+              </p>
+              <table class="formulario">
+                <tr>
+                  <td>
+                    <strong>Tipo de certificado contratado: </strong>
+                    [perfil_certificado]
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Vigencia:</strong> [validez] año(s)</td>
+                </tr>
+              </table>
+              <p>
+                <strong>3. DE LA ECD QUE PRESTA SUS SERVICIOS</strong> <br />
+                3.1. Obligaciones legales y generales <br />
+                - Cumplir con las obligaciones especificadas por ONAC y los
+                Criterios Específicos de Acreditación Entidades de Certificación
+                Digital - CEA-4.1-10 en su versión vigente, establecidos por él.
+                <br />
+                - Encontrarse regulada por la Ley 527 de 1999 y sus
+                modificaciones; el Decreto de Ley 0019 de 2012 y sus
+                modificaciones; el Decreto 333 de 2014 y sus modificaciones; y
+                el Decreto 1471 de 2014 y sus modificaciones y demás normas que
+                le resulten aplicables. <br />
+                - Cumplir con lo dispuesto en su respectiva DPC y PC. <br />
+                - Cumplir con las condiciones de servicio dispuestas en la
+                respectiva propuesta comercial, que forma parte del presente
+                contrato. <br />
+                3.2. Obligaciones financieras <br />
+                3.2.1. Política de reembolso <br />
+                La ECD cuenta con una Política de reembolso acorde con las leyes
+                vigentes. <br />
+                3.2.2. Cobertura de seguro <br />
+                La ECD dispone de una garantía de cobertura de su
+                responsabilidad civil suficiente para el pago de indemnizaciones
+                o pagos afines, bien mediante un seguro de responsabilidad civil
+                profesional por errores y omisiones, bien mediante una fianza o
+                aval. En cualquier caso, la cuantía garantizada cubrirá la
+                cuantía mínima establecida por ONAC en todo momento. <br />
+                3.3. Excepciones de garantía <br />
+                - La ECD limita su responsabilidad mediante la inclusión de
+                límites de uso del certificado, y límites de valor de las
+                transacciones para las que puede emplearse el certificado, de
+                acuerdo con lo establecido en su DPC, su PC y en su propuesta
+                comercial. Todas las responsabilidades legales, contractuales o
+                extracontractuales, daños directos o indirectos que puedan
+                derivarse del uso del certificado fuera de tales límites quedan
+                a cargo del SUSCRIPTOR. <br />
+                - En ningún caso podrán el SUSCRIPTOR ni los terceros
+                perjudicados reclamar a la ECD compensación o indemnización
+                alguna por daños o responsabilidades provenientes del uso de las
+                claves o el certificado para fines de cifrado. <br />
+                3.4. Eventos eximentes de responsabilidad <br />
+                La ECD limita su responsabilidad en el evento de caso fortuito
+                y/o fuerza mayor, respecto de la emisión y uso del certificado.
+                <br />
+                3.5. Obligaciones de la ECD en relación al SUSCRIPTOR <br />
+                - Publicar la DPC, la PC y el presente Contrato de Suscripción,
+                en su versión vigente, así como cualquier otro documento
+                informativo acerca del servicio de emisión de certificados
+                prestado en la página web de la ECD
+                <a href="http://www.thomas-signe.co">www.thomas-signe.co</a>
+                <br />
+                - Informar sobre las modificaciones de la DPC y la PC,
+                incluyendo dichas modificaciones en la tabla inicial de
+                historial de versiones de dichos documentos. <br />
+                - Gestionar, proteger y custodiar de manera segura y responsable
+                su clave privada. <br />
+                - Emitir el certificado conforme a la PC y a lo definido en la
+                DPC. <br />
+                - Emitir el certificado de conformidad con la normativa vigente
+                para el tipo de certificado. <br />
+                - Emitir el certificado de conformidad con la información
+                suministrada por el solicitante. <br />
+                - Conservar la información sobre el certificado emitido de
+                conformidad con la normatividad vigente. <br />
+                - Revocar el certificado según lo dispuesto en la DPC y en la
+                PC. <br />
+                - Publicar los certificados revocados en la lista de
+                certificados revocados. <br />
+                - Informar al SUSCRIPTOR de la revocación del certificado de
+                conformidad con lo dispuesto en la DPC y en la PC. <br />
+                3.6. Resolución de diferencias <br />
+                La solicitud de resolución de diferencias deberá ser comunicada
+                por medio del correo electrónico brindado por el SUSCRIPTOR a
+                través del presente contrato y el de la ECD
+                <a href="mailto:pqrsa@thsigne.com">pqrsa@thsigne.com</a>
+                <br />
+                Dentro de los quince (15) días siguientes al envío del mensaje
+                de correo electrónico, se buscará llegar a un arreglo directo
+                entre el SUSCRIPTOR y la ECD, y se ejecutará el procedimiento de
+                Peticiones, Quejas, Reclamos, Apelaciones y Sugerencias (PQRSA).
+                En el caso de que no se llegase a un acuerdo entre las partes,
+                intervendría un tercero, bien mediante arbitraje si así se
+                pactase, de conformidad con la Ley 1563 de 2012 que regula el
+                Arbitraje Nacional e Internacional, bien acudiendo a la
+                jurisdicción que corresponda para su resolución. La jurisdicción
+                aplicable será la del territorio de Colombia independientemente
+                de la nacionalidad o domicilio del SUSCRIPTOR. Las partes fijan
+                como domicilio contractual, para efectos judiciales, la ciudad
+                de Bogotá. <br />
+                3.7. Comunicaciones de valor legal <br />
+                Ambas partes reconocen que las comunicaciones se realizarán por
+                medio electrónico a través del correo electrónico brindado por
+                el SUSCRIPTOR a través del presente contrato y el de la ECD
+                <a href="mailto:pqrsa@thsigne.com">pqrsa@thsigne.com</a> <br />
+                3.8. PQRSA <br />
+                El SUSCRIPTOR y en general cualquier interesado podrán remitir
+                un correo electrónico a
+                <a href="mailto:pqrsa@thsigne.com">pqrsa@thsigne.com</a> para
+                indicar sus peticiones, quejas, reclamos, apelaciones y
+                sugerencias. <br />
+                3.9. Uso y protección de datos personales <br />
+                - El SUSCRIPTOR, al completar el Formulario de Solicitud y
+                aceptar el presente Contrato, autoriza a la ECD para la
+                recolección, almacenamiento y uso de los datos proporcionados
+                con la finalidad de llevar a cabo las validaciones necesarias de
+                autenticidad para brindar servicios de certificación digital,
+                así como para fines comerciales relacionados con los mismos.
+                <br />
+                - La ECD llevará a cabo el tratamiento de datos personales de
+                acuerdo a su Política de Privacidad, y conforme a la Ley
+                Estatuaria 1581 del 17 de octubre de 2012 de Protección de Datos
+                Personales y Decreto 1377 de 2013 y a la demás normatividad
+                aplicable. <br />
+                3.10. Notificaciones <br />
+                El procedimiento por el cual las partes se notifican hechos
+                mutuamente es mediante el correo electrónico brindado por el
+                SUSCRIPTOR a través del presente contrato. Si el SUSCRIPTOR
+                desea enviar correspondencia o notificaciones físicas, éstas
+                deberán ser dirigidas a la dirección Avenida de Las Américas No
+                44-57 – Bogotá DC – Colombia. <br />
+                3.11. Imparcialidad <br />
+                La ECD se compromete a cumplir con su Política de imparcialidad,
+                la cual se encuentra publicada en su página web, por lo cual
+                garantizará que en el desarrollo de sus actividades no permitirá
+                presiones exógenas de índole comercial, financiera u otras que
+                comprometan la calidad del servicio prestado. De igual forma, la
+                ECD garantiza que el personal de apoyo contratado por la
+                compañía para la ejecución del servicio contratado es idóneo
+                para el desempeño de sus funciones y no presenta ningún tipo de
+                inhabilidad e incompatibilidad que atenten contra la continuidad
+                de la actividad desarrollada por las partes firmantes. <br />
+                3.12. Tarifas <br />
+                Las tarifas propuestas por la ECD se encuentran descritas en la
+                propuesta comercial entregada al cliente para la firma del
+                presente contrato o pueden ser consultadas directamente a la
+                ECD.
+              </p>
+              <p class="sin-margen">
+                <strong>4. DEL SUSCRIPTOR</strong> <br />
+                4.1. Obligaciones generales <br />
+                - Manifestar ser consciente y encontrarse conforme a lo
+                estipulado en el presente contrato, la propuesta comercial y los
+                documentos facilitados por la ECD. <br />
+                - Cumplir los requisitos del servicio de emisión de
+                certificados, incluyendo la implementación de los cambios cuando
+                los comunica la ECD. <br />
+                - Cumplir con los términos y condiciones aceptados en el momento
+                de solicitar el certificado. <br />
+                - Cumplir con las obligaciones dispuestas en la respectiva
+                propuesta comercial que forma parte del presente contrato.
+                <br />
+                - Informar durante la vigencia del certificado digital de
+                cualquier cambio en los datos suministrados para la emisión del
+                certificado. <br />
+                - No utilizar su certificación digital de manera que contravenga
+                la ley u ocasione mala reputación para la ECD, y no hacer
+                ninguna declaración relacionada con su certificación que la ECD
+                pueda considerar engañosa o no autorizada. <br />
+                - Inmediatamente después de la cancelación o la terminación de
+                la certificación digital, dejar de utilizarla en todo el
+                material publicitario que contenga alguna referencia a ella, y
+                emprende las acciones exigidas por el servicio de certificación
+                digital y cualquier otra medida que se requiera en la DPC o en
+                la PC. <br />
+                - Al hacer referencia al servicio de certificación digital en
+                medios de comunicación, tales como documentos, folletos o
+                publicidad, informar de que cumple con los requisitos
+                especificados en la DPC y la PC de la ECD. <br />
+                - Cumplir los requisitos que pueda prescribir el servicio de
+                certificación digital con relación al uso de las marcas de
+                conformidad y a la información relacionada con el servicio.
+                <br />
+                - Informar a la ECD, sin retraso, acerca de los cambios que
+                pueden afectar a la certificación digital que le fue expedida
+                por la ECD. <br />
+                - Al firmar este contrato, asimismo aceptar los términos de uso
+                y condiciones del servicio especificados en la DPC y la PC de la
+                ECD, la propuesta comercial respectiva y en el presente contrato
+                de suscripción. <br />
+                - Al adquirir el certificado digital con la ECD, conocer y
+                enviar el contrato de suscripción firmado. <br />
+                4.2. Obligaciones financieras <br />
+                - Indemnizaciones: el SUSCRIPTOR indemnizará y liberará de toda
+                responsabilidad a la ECD sobre el uso que el SUSCRIPTOR haga del
+                certificado otorgado que no sea el uso indicado en el presente
+                contrato y en los documentos brindados por la ECD (DPC, PC,
+                propuesta comercial, etc.). <br />
+                4.3. Revocación <br />
+                - El SUSCRIPTOR podrá efectuar la revocación del certificado por
+                medio de la página web de la ECD, ingresando al link
+                <a href="https://thomas-signe.co/revocacion-de-certificados/"
+                  >https://thomas-signe.co/revocacion-de-certificados/</a
+                >; o contactando con la RA de la ECD, solicitando la revocación
+                desde su correo declarado a la dirección
+                <a href="mailto:pqrsa@thsigne.com">pqrsa@thsigne.com</a> <br />
+                - El SUSCRIPTOR deberá solicitar la revocación del certificado
+                en caso de:
+              </p>
+              <ul>
+                <li>
+                  - Pérdida, robo o extravío del dispositivo electrónico de
+                  seguridad que almacena su clave privada.
+                </li>
+                <li>- Compromiso potencial de la clave privada.</li>
+                <li>
+                  - Pérdida de control sobre su clave privada, debido al
+                  compromiso de los datos de activación o por cualquier otra
+                  causa.
+                </li>
+                <li>
+                  - Las causas mencionadas en la DPC y en la PC de la ECD.
+                </li>
+              </ul>
+              <p>
+                4.4. Otras obligaciones <br />
+                - Usar el certificado según lo establecido en la DPC y en la PC
+                de la ECD. <br />
+                - Custodiar de manera diligente la clave privada y/o sus datos
+                de activación (tales como contraseñas o códigos secretos
+                definidos o recibidos por algún medio). <br />
+                - Dejar de utilizar la clave privada y el certificado,
+                transcurrido el plazo de vigencia del certificado, o desde el
+                momento en que se solicita o es advertido por la ECD de la
+                revocación del mismo. <br />
+                4.5. Vigencia del servicio <br />
+                - El periodo de vigencia del presente contrato de suscripción
+                inicia desde el momento en que el solicitante envía la solicitud
+                a la ECD y termina cuando pierde vigencia el certificado o, si
+                ocurriere, cuando se produce la revocación del mismo. A su vez,
+                el presente contrato pierde vigencia en el momento que el
+                SUSCRIPTOR incumpla con las obligaciones del presente contrato,
+                con las condiciones descritas en la propuesta comercial o con la
+                DPC o PC de la ECD.
+              </p>
+              <table class="firmas">
+                <tr>
+                  <td colspan="2" style="padding-right: 3rem">
+                    <p style="text-align: right">
+                      <strong>Fecha:</strong> [Fecha]
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p style="text-align: center; width: 68mm">
+                      <strong>Firma de Thomas Signe S.A.S.</strong>
+                    </p>
+                    <div class="caja"></div>
+                  </td>
+                  <td>
+                    <p style="text-align: center; width: 68mm">
+                      <strong>Firma del SUSCRIPTOR</strong>
+                    </p>
+                    <div class="caja"></div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>Nombre:</strong> [Fdo_ths]</td>
+                  <td><strong>Nombre:</strong> [Fdo_suscriptor]</td>
+                </tr>
+              </table>
+            </main>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,96 @@
+﻿@page "/tramitesportalvirtual"
+
+<div class="@(FiltrosVisibles ? "grid-tabla-filtro" : "" )">
+    <div class="grid-tabla-filtro-contenedor">
+        <div class="container">
+            <a href="" @onclick="VolverPortalNotario">
+                Volver al Portal Notario
+            </a>
+            <h1>@TituloBandejaTramitesVirtuales</h1>
+            @if (!string.IsNullOrWhiteSpace(MsjAutorizacionResulError))
+            {
+                <div class="mensaje-container mensaje-error mensaje-bandeja-entrada">
+                    <p>@MsjAutorizacionResulError</p>
+                </div>
+            }
+            <div class="botones-container">
+                <button id="boton-filtrar-bandeja" class="btn-contorno-primario" @onclick="@(() => MostrarFiltros())">
+                    <span class="material-icons">
+                        filter_alt
+                    </span> Filtrar
+                </button>
+            </div>
+        </div>
+        <div class="container-fluid">
+            @if (TramitesVirtual != null)
+            {
+                <GridControl @ref="Grid" Title=""
+                             Columns="@Columns"
+                             Data="@TramitesVirtual"
+                             TotalRows="@TotalRows"
+                             TotalPages="@TotalPages"
+                             OnChangePage="OnChangePage"
+                             ShowViewAction="true"
+                             OnViewItemClick="@((ApiGateway.Contratos.Models.Notario.TramiteVirtuales i) =>
+                                        OnViewClick(i))">
+                </GridControl>
+            }
+            else
+            {
+                <img src="images/table-skeleton.svg" />
+            }
+        </div>
+    </div>
+    @if (FiltrosVisibles)
+    {
+        <div class="filtros">
+            <div class="overlay" id="overlay" @onclick="@(() => MostrarFiltros())"></div>
+            <div class="filters-container" id="filtros">
+                <h4>Filtrar resultados</h4>
+                <button id="boton-cerrar-filtrar-bandeja" @onclick="@(() => MostrarFiltros())">
+                    &#10005
+                </button>
+                <form Model="filtrosBandejaEntrada">
+                    <div class="d-flex justify-content-between">
+                        <div class="input-container">
+                            <label for="fecha-inicio">Fecha inicio</label>
+                            <input name="fecha-inicio" type="date" max="@DateTime.Now.ToString("yyyy-MM-dd")"
+                                   @bind-value="filterModel.FechaInicio" />
+                        </div>
+                        <div class="input-container">
+                            <label for="fecha-fin">Fecha fin</label>
+                            <input name="fecha-fin" type="date"
+                                   min="@filterModel.FechaInicio.ToString("yyyy-MM-dd")"
+                                   max="@DateTime.Now.ToString("yyyy-MM-dd")" @bind-value="filterModel.FechaFin" />
+                        </div>
+                    </div>
+                    <div class="input-container">
+                        <label for="nuip-operador">CUANDI</label>
+                        <input name="nuip-operador" type="number" maxlength="40"
+                               @bind-value="filterModel.CUANDI" />
+                    </div>
+                    <div class="input-container">
+                        <label for="nuip-compareciente">Estado</label>
+                        <select name="lsMotivos" id="lsMotivos" @bind="filterModel.Estado" class="form-control">
+                            <option selected>--Seleccione--</option>
+                            @foreach (KeyValuePair<int, string> item in opcEstadosTramite)
+                            {
+                                <option value="@item.Key">@item.Value</option>
+                            }
+                        </select>
+                    </div>
+                </form>
+                <div class="d-flex justify-content-end mt-3">
+
+                    <button @onclick="LimpiarCampos" class="btn-contorno-primario mr-3">
+                        Reiniciar
+                    </button>
+                    <button @onclick="Filtrar" class="btn-primario">
+                        Buscar
+                    </button>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

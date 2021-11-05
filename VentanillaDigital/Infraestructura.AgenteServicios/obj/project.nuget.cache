@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Q7dv7/ZM+zBZZXuC6aP23eRFjgxjavv0VZWQjXSyAu/gpJUDuQh0bX1g07Ac95rjdDMn97n5U9rMgBBYHc6n5A==",
+  "success": true,
+  "projectFilePath": "D:\\VentanillaDigitalGit\\Web.Application.NotariaFijaYMovil\\VentanillaDigital\\Infraestructura.AgenteServicios\\Infraestructura.AgenteServicios.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\enustez\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

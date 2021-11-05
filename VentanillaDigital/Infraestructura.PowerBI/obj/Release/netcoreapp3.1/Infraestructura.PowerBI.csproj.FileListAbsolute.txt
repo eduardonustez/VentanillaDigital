@@ -1,0 +1,9 @@
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.PowerBI\bin\Release\netcoreapp3.1\Infraestructura.PowerBI.deps.json
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.PowerBI\bin\Release\netcoreapp3.1\Infraestructura.PowerBI.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.PowerBI\bin\Release\netcoreapp3.1\Infraestructura.PowerBI.pdb
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.PowerBI\obj\Release\netcoreapp3.1\Infraestructura.PowerBI.csprojAssemblyReference.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.PowerBI\obj\Release\netcoreapp3.1\Infraestructura.PowerBI.AssemblyInfoInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.PowerBI\obj\Release\netcoreapp3.1\Infraestructura.PowerBI.AssemblyInfo.cs
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.PowerBI\obj\Release\netcoreapp3.1\Infraestructura.PowerBI.csproj.CoreCompileInputs.cache
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.PowerBI\obj\Release\netcoreapp3.1\Infraestructura.PowerBI.dll
+D:\VentanillaDigitalGit\Web.Application.NotariaFijaYMovil\VentanillaDigital\Infraestructura.PowerBI\obj\Release\netcoreapp3.1\Infraestructura.PowerBI.pdb

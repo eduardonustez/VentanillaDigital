@@ -1,0 +1,27 @@
+@* <div style="position: absolute;top:0;left:0;bottom:0;right:0;"> *@
+<div class="modal @ModalClass" id="modalForm" tabindex="-1" role="dialog"
+     aria-labelledby="modalFormLabel" aria-hidden="true" style="display:@ModalDisplay;">
+    <div class="modal-dialog modal-dialog-centered" style="@CustomStyleModal" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>@ModalTitle</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" @onclick="() => Close()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h3></h3>
+            </div>
+            <div class="modal-body">
+                <div class="form-group @CustomModalClass" >
+                    @ChildContent
+                </div>
+                <div class="d-flex justify-content-around mt-3">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@if (ShowBackdrop)
+{
+    <div class="modal-backdrop fade show"></div>
+}
+@* </div> *@

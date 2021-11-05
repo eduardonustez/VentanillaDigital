@@ -1,0 +1,35 @@
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 612 792" xml:space="preserve">
+  <style>
+    .st0{opacity: 0.25; fill:#eaeaea; }
+
+    .opacity {
+      opacity: 0.25;
+      animation: opacity 1.5s infinite;
+    }
+
+     @keyframes opacity {
+      0% {
+        opacity: 0.25;
+      }
+
+      50% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0.25;
+      }
+    }
+  </style>
+  <path class="st0 opacity" d="M103.5 209.69h149.65v61H103.5zM447.5 209.69h61v61h-61zM42.5 40.22h61v61h-61zM508.5 40.22h61v61h-61zM133 52.19h346v13.12H133zM133 76.13h346v13.12H133z"/>
+  <g>
+    <path class="st0 opacity" d="M184.1 442.84h243.79v99.37H184.1zM133 563.06h346v13.12H133zM133 587h346v13.12H133z"/>
+  </g>
+  <g>
+    <path class="st0 opacity" d="M42.5 120.19h527v13.12h-527zM42.5 144.13h527v13.12h-527zM42.5 168.07h527v13.12h-527z"/>
+  </g>
+  <g>
+    <path class="st0 opacity" d="M42.5 299.19h527v13.12h-527zM42.5 323.13h527v13.12h-527zM42.5 347.07h527v13.12h-527zM42.5 371.01h527v13.12h-527zM42.5 394.96h527v13.12h-527z"/>
+  </g>
+  <path class="opacity" d="M571.85 771.19H40.15c-10.68 0-19.34-8.66-19.34-19.34V40.15c0-10.68 8.66-19.34 19.34-19.34h531.7c10.68 0 19.34 8.66 19.34 19.34v711.7c0 10.68-8.66 19.34-19.34 19.34z" fill="none" stroke="#eaeaea" stroke-miterlimit="10"/>
+</svg>

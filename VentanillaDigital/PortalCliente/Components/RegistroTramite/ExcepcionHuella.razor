@@ -1,0 +1,115 @@
+﻿@using PortalCliente.Data
+
+<p>Seleccione los dedos de los cuales no es posible capturar la huella</p>
+<div class="col-12 d-flex">
+    <div class="col-md-6">
+        <h4>Mano Izquierda</h4>
+        <RadzenCheckBoxList @bind-Value=@dedosManoIzquierdaSelec TValue="int" Orientation="Orientation.Vertical">
+            <Items>
+                @if (DedosManoIzquierda != null)
+                {
+                    @foreach (var dedo in DedosManoIzquierda)
+                    {
+                        <RadzenCheckBoxListItem Text="@dedo.nombre" Value="dedo.id" />
+                    }
+                }
+            </Items>
+        </RadzenCheckBoxList>
+    </div>
+    <div class="col-md-6">
+        <h4>Mano Derecha</h4>
+        <RadzenCheckBoxList @bind-Value=@dedosManoDerechaSelec TValue="int" Orientation="Orientation.Vertical">
+            <Items>
+                @if (DedosManoDerecha != null)
+                {
+                    @foreach (var dedo in DedosManoDerecha)
+                    {
+                        <RadzenCheckBoxListItem Text="@dedo.nombre" Value="dedo.id" />
+                    }
+                }
+            </Items>
+        </RadzenCheckBoxList>
+    </div>
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn-contorno-primario" data-dismiss="modal" @onclick="Cancelar">Cancelar</button>
+    <button type="button" class="btn-primario" data-dismiss="modal" @onclick="CrearExcepcionHuella">Aceptar</button>
+</div>
+@code {
+    IEnumerable<int> dedosManoIzquierdaSelec = new int[] { };
+    IEnumerable<int> dedosManoDerechaSelec = new int[] { };
+    List<Dedo> DedosManoIzquierda;
+    List<Dedo> DedosManoDerecha;
+    string numeroDocumento = "";
+    int tipoIdentificacion = 0;
+
+    [Parameter]
+    public List<PortalCliente.Services.Biometria.Models.Dedo> Excepciones { get; set; }
+
+    [Parameter]
+    public EventCallback<List<PortalCliente.Services.Biometria.Models.Dedo>> ExcepcionesChanged { get; set; }
+
+    private List<PortalCliente.Services.Biometria.Models.Dedo> NewExcepciones { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+        LlenarManoDerecha();
+        LlenarManoIzquierda();
+    }
+
+    protected async override Task OnParametersSetAsync()
+    {
+        dedosManoDerechaSelec =
+            Excepciones?.Where(e => e < Services.Biometria.Models.Dedo.PulgarIzquierdo)
+            ?.Select(e => (int)e)
+            ?.ToArray();
+        dedosManoIzquierdaSelec =
+            Excepciones?.Where(e => e >= Services.Biometria.Models.Dedo.PulgarIzquierdo)
+            ?.Select(e => (int)e)
+            ?.ToArray();
+    }
+
+    private async Task CrearExcepcionHuella()
+    {
+        NewExcepciones = new List<Services.Biometria.Models.Dedo>();
+        NewExcepciones.AddRange(dedosManoDerechaSelec.Select(d => (PortalCliente.Services.Biometria.Models.Dedo)d)
+            .Concat(dedosManoIzquierdaSelec.Select(d => (PortalCliente.Services.Biometria.Models.Dedo)d)));
+
+        await ExcepcionesChanged.InvokeAsync(NewExcepciones);
+    }
+
+    private async Task Cancelar()
+    {
+        await ExcepcionesChanged.InvokeAsync(Excepciones);
+    }
+
+    void LlenarManoDerecha()
+    {
+        DedosManoDerecha = new List<Dedo>();
+
+        DedosManoDerecha.Add(new Dedo() { id = (int)PortalCliente.Services.Biometria.Models.Dedo.PulgarDerecho, nombre = "Pulgar" });
+        DedosManoDerecha.Add(new Dedo() { id = (int)PortalCliente.Services.Biometria.Models.Dedo.IndiceDerecho, nombre = "Índice" });
+        DedosManoDerecha.Add(new Dedo() { id = (int)PortalCliente.Services.Biometria.Models.Dedo.MedioDerecho, nombre = "Corazón" });
+        DedosManoDerecha.Add(new Dedo() { id = (int)PortalCliente.Services.Biometria.Models.Dedo.AnularDerecho, nombre = "Anular" });
+        DedosManoDerecha.Add(new Dedo() { id = (int)PortalCliente.Services.Biometria.Models.Dedo.MeniqueDerecho, nombre = "Meñique" });
+
+    }
+    void LlenarManoIzquierda()
+    {
+        DedosManoIzquierda = new List<Dedo>();
+        DedosManoIzquierda.Add(new Dedo() { id = (int)PortalCliente.Services.Biometria.Models.Dedo.PulgarIzquierdo, nombre = "Pulgar" });
+        DedosManoIzquierda.Add(new Dedo() { id = (int)PortalCliente.Services.Biometria.Models.Dedo.IndiceIzquierdo, nombre = "Índice" });
+        DedosManoIzquierda.Add(new Dedo() { id = (int)PortalCliente.Services.Biometria.Models.Dedo.MedioIzquierdo, nombre = "Corazón" });
+        DedosManoIzquierda.Add(new Dedo() { id = (int)PortalCliente.Services.Biometria.Models.Dedo.AnularIzquierdo, nombre = "Anular" });
+        DedosManoIzquierda.Add(new Dedo() { id = (int)PortalCliente.Services.Biometria.Models.Dedo.MeniqueIzquierdo, nombre = "Meñique" });
+
+    }
+
+    private class Dedo
+    {
+        public int id { get; set; }
+        public string nombre { get; set; }
+    }
+}
+

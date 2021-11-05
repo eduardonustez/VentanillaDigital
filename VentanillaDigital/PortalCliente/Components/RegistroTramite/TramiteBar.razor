@@ -1,0 +1,54 @@
+﻿<div class="cabecera-tramite-container desktop">
+    <div class="cabecera-tramite-content">
+        @if (TramiteId == 0)
+        {
+            <p class="pl-1">Nuevo trámite</p>
+        }
+        else
+        {
+            <p>Tramite # <span>@TramiteId</span></p>
+        }
+        @if (TipoTramite != null)
+        {
+            <p>@TipoTramite.Nombre</p>
+            <p>
+                Comparecientes <span>@ComparecienteActual</span> de
+                <span>@Comparecientes</span> @ComparecienteFirmaRuego
+            </p>
+        }
+
+        <button class="cancelar-desk" data-toggle="modal" data-target="#cancelarTramiteModal">
+            <i class="material-icons mr-1 md-18">cancel</i> Cancelar trámite
+        </button>
+    </div>
+</div>
+
+<div class="cabecera-tramite-container mobile">
+    <div class="cabecera-tramite-content mobile">
+    <div class="datos-tramite">
+        @if (TramiteId == 0)
+        {
+            <p class="pl-1">Nuevo trámite</p>
+        }
+        else
+        {
+            <p>Tramite # <span>@TramiteId</span></p>
+        }
+        @if (TipoTramite != null)
+        {
+            <p>@TipoTramite.Nombre</p>
+            <p>
+                Comparecientes <span>@ComparecienteActual</span> de
+                <span>@Comparecientes</span> @ComparecienteFirmaRuego
+            </p>
+        }
+    </div>
+          <button class="cancelar-mobile" @onclick="(e=>cancelarTramiteModal.Open())">
+            <i class="material-icons mr-1 mb-1 md-18">cancel</i> Cancelar trámite
+        </button>
+    </div>
+</div>
+
+<!-- Confirmar cancelación de trámite -->
+<PortalCliente.Components.RegistroTramite.CancelarTramiteModal @ref="cancelarTramiteModal" 
+MotivoCancelacionChanged="CancelarTramite"></PortalCliente.Components.RegistroTramite.CancelarTramiteModal>

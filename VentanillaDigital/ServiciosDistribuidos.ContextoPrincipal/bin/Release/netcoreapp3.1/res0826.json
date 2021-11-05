@@ -1,0 +1,1820 @@
+{
+  "res0826": [
+    {
+      "nombre": "INSCRIPCION REGISTRO CIVIL DE DEFUNCION",
+      "codigo": "00000100"
+    },
+    {
+      "nombre": "INSCRIPCION REGISTRO CIVIL DE MATRIMONIO",
+      "codigo": "00000101"
+    },
+    {
+      "nombre": "INSCRIPCION REGISTRO CIVIL DE NACIMIENTO",
+      "codigo": "00000102"
+    },
+    {
+      "nombre": "INSCRIPCION REGISTRO CIVIL A DOMICILIO",
+      "codigo": "00000103"
+    },
+    {
+      "nombre": "INSCRIPClON REGISTRO CIVIL EN CLlNICA y/U HOSPITALES",
+      "codigo": "00000104"
+    },
+    {
+      "nombre": "SUSTITUClON DE REGISTRO CIVIL DE DEFUNClON",
+      "codigo": "00000105"
+    },
+    {
+      "nombre": "SUSTITUCION DE REGISTRO CIVIL DE MATRIMONIO",
+      "codigo": "00000106"
+    },
+    {
+      "nombre": "SUSTITUCION DE REGISTRO CIVIL DE NACIMIENTO",
+      "codigo": "00000107"
+    },
+    {
+      "nombre": "CORRECClON REGISTRO CIVIL",
+      "codigo": "00000108"
+    },
+    {
+      "nombre": "CORRECCION REGISTRO CIVIL COMUNIDAD INDIGENA",
+      "codigo": "00000109"
+    },
+    {
+      "nombre": "CORRECCION DEL COMPONENTE SEXO EN EL REGISTRO CIVIL DE NACIMIENTO",
+      "codigo": "00000110"
+    },
+    {
+      "nombre": "ADICION PARTICULA \"DE\" y APELLIDO DEL MARIDO",
+      "codigo": "00000111"
+    },
+    {
+      "nombre": "CESION CONTRATO DE CONCESION",
+      "codigo": "00000150"
+    },
+    {
+      "nombre": "CONTRATO GOBIERNO EXTRANJEROS ADQUISICION SEDE DIPLOMATICA",
+      "codigo": "00000151"
+    },
+    {
+      "nombre": "FIDUClA EN ADMINISTRACION",
+      "codigo": "00000152"
+    },
+    {
+      "nombre": "FIDUClA EN GARANTIA",
+      "codigo": "00000153"
+    },
+    {
+      "nombre": "REMUNERAClON DETERMINADA DEL FIDUCIARIO",
+      "codigo": "00000154"
+    },
+    {
+      "nombre": "REMUNERACION FIDUCIA POR PAGOS PERIODICOS",
+      "codigo": "00000155"
+    },
+    {
+      "nombre": "REMUNERACION INDETERMINADA DEL FIDUCIARIO",
+      "codigo": "00000156"
+    },
+    {
+      "nombre": "ACUERDO DE RESTRUCTURAClON",
+      "codigo": "00000200"
+    },
+    {
+      "nombre": "CONSTITUCION EMPRESA SOCIEDAD POR ACCIONES SIMPLIFICADA",
+      "codigo": "00000201"
+    },
+    {
+      "nombre": "CONSTITUCION ESTATUTARIA DE EMPRESAS INDUSTRIALES Y COMERCIALES DEL ESTADO",
+      "codigo": "00000202"
+    },
+    {
+      "nombre": "CONSTITUCION ESTATUTARIA DE SOCIEDADES DE ECONOMIA MIXTA",
+      "codigo": "00000203"
+    },
+    {
+      "nombre": "CONSTITUCION SOCIEDADES",
+      "codigo": "00000204"
+    },
+    {
+      "nombre": "CONSTITUCION SUCURSAL DE SOCIEDAD EXTRANJERA EN COLOMBIA",
+      "codigo": "00000205"
+    },
+    {
+      "nombre": "REFORMA ESTATUTARIA CON AUMENTO DE CAPITAL",
+      "codigo": "00000206"
+    },
+    {
+      "nombre": "REFORMA ESTATUTARIA DE EMPRESAS INDUSTRIALES Y COMERCIALES DEL ESTADO",
+      "codigo": "00000207"
+    },
+    {
+      "nombre": "REFORMA ESTATUTARIA DE SOCIEDADES DE ECONOMIA MIXTA",
+      "codigo": "00000208"
+    },
+    {
+      "nombre": "REFORMA SOCIEDAD",
+      "codigo": "00000209"
+    },
+    {
+      "nombre": "TRANSFORMACION SOCIEDAD",
+      "codigo": "00000210"
+    },
+    {
+      "nombre": "TESTAMENTO",
+      "codigo": "00000250"
+    },
+    {
+      "nombre": "APERTURA Y PUBLlCACION TESTAMENTO CERRADO",
+      "codigo": "00000251"
+    },
+    {
+      "nombre": "REVOCACION DE TESTAMENTO",
+      "codigo": "00000252"
+    },
+    {
+      "nombre": "ESCRITURA DE DEPOSITO DE TESTAMENTO CERRADO",
+      "codigo": "00000253"
+    },
+    {
+      "nombre": "PROTOCOLlZACION PROCESO JUDICIAL DE SUCESION",
+      "codigo": "00000254"
+    },
+    {
+      "nombre": "MATRIMONIO CIVIL EN DESPACHO",
+      "codigo": "00000300"
+    },
+    {
+      "nombre": "MATRIMONIO CIVIL FUERA DEL DESPACHO",
+      "codigo": "00000301"
+    },
+    {
+      "nombre": "MATRIMONIO CIVIL ENTRE HETEROSEXUALES",
+      "codigo": "00000302"
+    },
+    {
+      "nombre": "MATRIMONIO CIVIL ENTRE HOMOSEXUALES - HOMBRES",
+      "codigo": "00000303"
+    },
+    {
+      "nombre": "MATRIMONIO CIVIL ENTRE HOMOSEXUALES - MUJERES",
+      "codigo": "00000304"
+    },
+    {
+      "nombre": "MATRIMONIO CIVIL DE EXTRANJEROS CELEBRADOS EN COLOMBIA EN DESPACHO",
+      "codigo": "00000305"
+    },
+    {
+      "nombre": "MATRIMONIO CIVIL DE EXTRANJEROS CELEBRADOS EN COLOMBIA FUERA DEL DESPACHO",
+      "codigo": "00000306"
+    },
+    {
+      "nombre": "PROTOCOLlZAClON ACTA MATRIMONIO RELIGIOSO",
+      "codigo": "00000307"
+    },
+    {
+      "nombre": "PROTOCOLlZACION MATRIMONIO CIVIL ANTE JUEZ",
+      "codigo": "00000308"
+    },
+    {
+      "nombre": "PROTOCOLlZAClON MATRIMONIO CIVIL CELEBRADO EN EL EXTERIOR",
+      "codigo": "00000309"
+    },
+    {
+      "nombre": "DECLARACION DE BIENES DE LA SOCIEDAD PATRIMONIAL NO DECLARADA, NI LIQUIDADA QUE INGRESAN A LA SOCIEDAD CONYUGAL",
+      "codigo": "00000310"
+    },
+    {
+      "nombre": "DECLARACION DE CONSTITUCION SOCIEDAD PATRIMONIAL DE HECHO",
+      "codigo": "00000311"
+    },
+    {
+      "nombre": "DECLARACION UN ION MARITAL DE HECHO",
+      "codigo": "00000312"
+    },
+    {
+      "nombre": "DECLARACION UNION MARITAL DE HECHO ESPECIAL FEMENINO",
+      "codigo": "00000313"
+    },
+    {
+      "nombre": "DECLARACION UNION MARITAL DE HECHO ESPECIAL MASCULINO",
+      "codigo": "00000314"
+    },
+    {
+      "nombre": "DECLARAClON DE CESAClON DE LOS EFECTOS CIVILES DE LA UNION MARITAL DE HECHO",
+      "codigo": "00000315"
+    },
+    {
+      "nombre": "CESACION DE EFECTOS CIVILES MATRIMONIO RELIGIOSO",
+      "codigo": "00000316"
+    },
+    {
+      "nombre": "DIVORCIO ANTE NOTARIO",
+      "codigo": "00000317"
+    },
+    {
+      "nombre": "DISOLUCION SOCIEDAD CONYUGAL",
+      "codigo": "00000318"
+    },
+    {
+      "nombre": "DISOLUCION UNION MARITAL DE HECHO (SIN BIENES INMUEBLES)",
+      "codigo": "00000319"
+    },
+    {
+      "nombre": "DISOLUClON Y L1QUIDACION DE LA SOCIEDAD PATRIMONIAL DE HECHO",
+      "codigo": "00000320"
+    },
+    {
+      "nombre": "PROTOCOLlZACION DIVORCIO ANTE JUEZ",
+      "codigo": "00000321"
+    },
+    {
+      "nombre": "L1QUIDACION SOCIEDAD CONYUGAL",
+      "codigo": "00000322"
+    },
+    {
+      "nombre": "CAPITULACIONES MATRIMONIALES",
+      "codigo": "00000323"
+    },
+    {
+      "nombre": "CAPITULACIONES PATRIMONIALES (DE UNION MARITAL DE HECHO)",
+      "codigo": "00000324"
+    },
+    {
+      "nombre": "ADIClON A L1QUIDACION SOCIEDAD CONYUGAL",
+      "codigo": "00000325"
+    },
+    {
+      "nombre": "DECLARACION DE MERA AUSENCIA",
+      "codigo": "00000326"
+    },
+    {
+      "nombre": "SOLICITUD DE LA PARTIClON DEL PATRIMONIO EN VIDA",
+      "codigo": "00000327"
+    },
+    {
+      "nombre": "LEGITIMACION DE HIJO",
+      "codigo": "00000350"
+    },
+    {
+      "nombre": "RECONOCIMIENTO HIJO",
+      "codigo": "00000351"
+    },
+    {
+      "nombre": "SALIDA DE MENORES DEL PAIS",
+      "codigo": "00000352"
+    },
+    {
+      "nombre": "CUSTODIA DEL HIJO MENOR O DEL MAYOR DISCAPACITADO Y LA REGULACION DE VISITAS, DE COMUN ACUERDO",
+      "codigo": "00000353"
+    },
+    {
+      "nombre": "DECLARACION DE INEXISTENCIA DE BIENES PROPIOS DEL MENOR O DEL MAYOR DISCAPACITADO. INVENTARIO SOLEMNE DE BIENES PROPIOS DE MENORES BAJO PATRIA POTESTAD O MAYORES",
+      "codigo": "00000354"
+    },
+    {
+      "nombre": "DISCAPACITADOS, EN CASO DE MATRIMONIO, DE DECLARACION DE UNION MARITAL DE HECHO O DECLARACION DE SOCIEDAD PATRIMONIAL DE HECHO DE UNO DE LOS PADRES INVENTARIO SOLEMNE DE BIENES PROPIOS DE MENORES BAJO PATRIA POTESTAD O MAYORES",
+      "codigo": "00000355"
+    },
+    {
+      "nombre": "DISCAPACITADOS, EN CASO DE MATRIMONIO, DE DECLARACION DE UNION MARITAL DE HECHO O DECLARACION DE SOCIEDAD PATRIMONIAL DE HECHO DE UNO DE LOS PADRES",
+      "codigo": "00000356"
+    },
+    {
+      "nombre": "AUTORIZACION PARA ENAJENAR BIENES DE LOS INCAPACES, SEAN ESTOS MAYORES O MENORES DE EDAD.",
+      "codigo": "00000357"
+    },
+    {
+      "nombre": "RENUNCIA DERECHOS GANANCIALES",
+      "codigo": "00000400"
+    },
+    {
+      "nombre": "CANCELACION DE SERVIDUMBRE",
+      "codigo": "00000401"
+    },
+    {
+      "nombre": "CESION DE SERVIDUMBRE",
+      "codigo": "00000402"
+    },
+    {
+      "nombre": "COMPRAVENTA DE BIENES MUEBLES",
+      "codigo": "00000403"
+    },
+    {
+      "nombre": "COPIA SUSTITUTIVA DE LAS PRIMERA COPIA QUE PRESTA MERITO EJECUTIVO",
+      "codigo": "00000404"
+    },
+    {
+      "nombre": "CORRECCION DE ERRORES ARITMETICOS",
+      "codigo": "00000405"
+    },
+    {
+      "nombre": "ESCRITURA DE COMPARECENCIA",
+      "codigo": "00000406"
+    },
+    {
+      "nombre": "FUNDAClON DE ASISTENCIA O BENEFICENCIA PUBLICA RECONOCIDA POR EL ESTADO",
+      "codigo": "00000407"
+    },
+    {
+      "nombre": "INSINUACION DONACION",
+      "codigo": "00000408"
+    },
+    {
+      "nombre": "PODER POR ESCRITURA PUBLICA",
+      "codigo": "00000409"
+    },
+    {
+      "nombre": "PROTOCOLlZACION CON CUANTIA",
+      "codigo": "00000410"
+    },
+    {
+      "nombre": "PROTOCOLlZACION SIN CUANTIA",
+      "codigo": "00000411"
+    },
+    {
+      "nombre": "RECONSTRUCCION DE ESCRITURA",
+      "codigo": "00000412"
+    },
+    {
+      "nombre": "RENUNCIA CONDICION RESOLUTORIA",
+      "codigo": "00000413"
+    },
+    {
+      "nombre": "REVOCACION DE PODER EFECTUADO POR ESCRITURA PUBLICA",
+      "codigo": "00000414"
+    },
+    {
+      "nombre": "REVOCAClON DE PODER POR DOCUMENTO PRIVADO",
+      "codigo": "00000415"
+    },
+    {
+      "nombre": "SILENCIO ADMINISTRATIVO POSITIVO",
+      "codigo": "00000416"
+    },
+    {
+      "nombre": "SUSTITUClON DE PODER POR DOCUMENTO PRIVADO",
+      "codigo": "00000417"
+    },
+    {
+      "nombre": "SUSTITUCION DE PODER POR ESCRITURA PUBLICA",
+      "codigo": "00000418"
+    },
+    {
+      "nombre": "CESION DERECHOS HERENClALES",
+      "codigo": "00000419"
+    },
+    {
+      "nombre": "NOTA MARGINAL DE INTERDICClONES",
+      "codigo": "00000420"
+    },
+    {
+      "nombre": "ACTA DE ADMISION EN TRAMITE SUCESORALES",
+      "codigo": "00000500"
+    },
+    {
+      "nombre": "ACTA DE COMPARECENCIA",
+      "codigo": "00000501"
+    },
+    {
+      "nombre": "ACTA DE DEPOSITO",
+      "codigo": "00000502"
+    },
+    {
+      "nombre": "ACTA DE DEVOLUCION EN TRAMITE SUCESORALES",
+      "codigo": "00000503"
+    },
+    {
+      "nombre": "AUDIENCIA POR REFORMA O INCUMPLIMIENTO DE ACUERDO POR INSOLVENCIA",
+      "codigo": "00000504"
+    },
+    {
+      "nombre": "AUTENTICACION DE COPIAS",
+      "codigo": "00000505"
+    },
+    {
+      "nombre": "AUTENTICACION DE COPIAS EN PAPEL DE SEGURIDAD",
+      "codigo": "00000506"
+    },
+    {
+      "nombre": "AUTENTICACION DE FIRMAS Y FIRMA REGISTRADA",
+      "codigo": "00000507"
+    },
+    {
+      "nombre": "AUTENTICACION DE FOTOGRAFIAS",
+      "codigo": "00000508"
+    },
+    {
+      "nombre": "AUTENTICACION DE FOTOGRAFIAS EN PAPEL DE SEGURIDAD",
+      "codigo": "00000509"
+    },
+    {
+      "nombre": "AUTENTICAClON DE HUELLAS (HUELLA BIOMETRICA)",
+      "codigo": "00000510"
+    },
+    {
+      "nombre": "AUTENTICACION DOCUMENTO",
+      "codigo": "00000511"
+    },
+    {
+      "nombre": "AUTENTICACION FIRMAS EN PAPEL DE SEGURIDAD",
+      "codigo": "00000512"
+    },
+    {
+      "nombre": "AUTENTICACION FIRMA 10% ADICIONAL - RESOLUClON NO. 451/2017 - ART 6. PARAGRAFO 1",
+      "codigo": "00000513"
+    },
+    {
+      "nombre": "AUTENTICACION HUELLA EN PAPEL DE SEGURIDAD (HUELLA BIOMETRICA)",
+      "codigo": "00000514"
+    },
+    {
+      "nombre": "AUTENTICACION SALIDA DEL PAIS DE UN MENOR",
+      "codigo": "00000515"
+    },
+    {
+      "nombre": "AUTORIZAClON DE INSTRUMENTOS EN LA CABECERA DEL CIRCULO",
+      "codigo": "00000516"
+    },
+    {
+      "nombre": "AUTORIZACION DE INSTRUMENTOS FUERA DE LA CABECERA DEL CIRCULO",
+      "codigo": "00000517"
+    },
+    {
+      "nombre": "CERTIFICACIONES",
+      "codigo": "00000518"
+    },
+    {
+      "nombre": "CONClLlACION",
+      "codigo": "00000519"
+    },
+    {
+      "nombre": "CONClLlACION POR INSOLVENCIA SIN ACUERDO ENTRE LAS PARTES",
+      "codigo": "00000520"
+    },
+    {
+      "nombre": "CONSTANCIA EN ESCRITURA MATRIZ DE CANCELACIONES",
+      "codigo": "00000521"
+    },
+    {
+      "nombre": "CONSTANCIA EN ESCRITURA MATRIZ POR AFECTAClON DE VIVIENDA FAMILIAR",
+      "codigo": "00000522"
+    },
+    {
+      "nombre": "COPIA DE DOCUMENTOS E INSTRUMENTOS PUBLlCOS SOLICITADOS POR EL MINISTERIO PUBLICO",
+      "codigo": "00000523"
+    },
+    {
+      "nombre": "COPIA DE DOCUMENTOS E INSTRUMENTOS PUBLlCOS SOLICITADOS POR ENTIDADES PUBLICAS",
+      "codigo": "00000524"
+    },
+    {
+      "nombre": "COPIA DE DOCUMENTOS E INSTRUMENTOS PUBLlCOS SOLICITADOS POR JUECES PENALES",
+      "codigo": "00000525"
+    },
+    {
+      "nombre": "COPIA DE ESCRITURA PUBLICA VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "00000526"
+    },
+    {
+      "nombre": "COPIA DE ESCRITURA PUBLICA VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "00000527"
+    },
+    {
+      "nombre": "COPIA DE ESCRITURA PUBLICA VIVIENDA DE INTERES SOCIAL",
+      "codigo": "00000528"
+    },
+    {
+      "nombre": "COPIA SIMPLE",
+      "codigo": "00000529"
+    },
+    {
+      "nombre": "COPIA SOLICITADAS POR ENTIDADES ESTATALES PARA INVESTIGACIONES - HASTA 10 HOJAS",
+      "codigo": "00000530"
+    },
+    {
+      "nombre": "COPIAS AUTENTICAS",
+      "codigo": "00000531"
+    },
+    {
+      "nombre": "COPIA Y CERTIFICACION DE REGISTRO CIVIL",
+      "codigo": "00000532"
+    },
+    {
+      "nombre": "COPIA REGISTRO CIVIL NACIMIENTO EXPEDICION CEDULA POR PRIMERA VEZ",
+      "codigo": "00000533"
+    },
+    {
+      "nombre": "DECLARACION DE SUPERVIVENCIA",
+      "codigo": "00000534"
+    },
+    {
+      "nombre": "DECLARAClON EXTRA PROCESO",
+      "codigo": "00000535"
+    },
+    {
+      "nombre": "DECLARACION EXTRA PROCESO INSCRIPClON NACIMIENTO DE EXPOSITOS",
+      "codigo": "00000536"
+    },
+    {
+      "nombre": "DECLARACION MUJER CABEZA DE FAMILIA",
+      "codigo": "00000537"
+    },
+    {
+      "nombre": "DILIGENCIA CONCILlACION ANTE NOTARIO",
+      "codigo": "00000538"
+    },
+    {
+      "nombre": "FIRMA DIGITAL",
+      "codigo": "00000539"
+    },
+    {
+      "nombre": "HOJA INSTRUMENTO PUBLICO",
+      "codigo": "00000540"
+    },
+    {
+      "nombre": "HUELLA DACTILAR POR MEDIOS ELECTRONICOS",
+      "codigo": "00000541"
+    },
+    {
+      "nombre": "IMPRESION y AUTENTICAClON CERTIFICADOS WEB",
+      "codigo": "00000542"
+    },
+    {
+      "nombre": "LEASING BIENES MUEBLES",
+      "codigo": "00000543"
+    },
+    {
+      "nombre": "NOTAS DE REFERENCIA EN LA ESCRITURA PUBLICA",
+      "codigo": "00000544"
+    },
+    {
+      "nombre": "NOTAS Y CERTIFICADOS DE CANCELACION ARTICULO 52 A 54DECRETO 960 DE 1970",
+      "codigo": "00000545"
+    },
+    {
+      "nombre": "PODER DOCUMENTO PRIVADO",
+      "codigo": "00000546"
+    },
+    {
+      "nombre": "PRENDA DE GARANTIA",
+      "codigo": "00000547"
+    },
+    {
+      "nombre": "PRESENTACION PERSONAL y RECONOCIMIENTO DE DOCUMENTO PRIVADO",
+      "codigo": "00000548"
+    },
+    {
+      "nombre": "PRIMERA COPIA REGISTRO CIVIL",
+      "codigo": "00000549"
+    },
+    {
+      "nombre": "PROCEDIMIENTOS DE INSOLVENCIA.",
+      "codigo": "00000550"
+    },
+    {
+      "nombre": "RE L1QUIDACION DE LA TARIFA -INSOLVENCIA",
+      "codigo": "00000551"
+    },
+    {
+      "nombre": "RECONOCIMIENTO DE DOCUMENTOS PRIVADOS DE PERSONAS DISCAPACITADAS",
+      "codigo": "00000552"
+    },
+    {
+      "nombre": "REGISTRO Y RADICAClON DEL ACTA -INSOLVENCIA",
+      "codigo": "00000553"
+    },
+    {
+      "nombre": "REMATE POR COMISIONADO",
+      "codigo": "00000554"
+    },
+    {
+      "nombre": "SESIONES ADICIONALES -INSOLVENCIA",
+      "codigo": "00000555"
+    },
+    {
+      "nombre": "SUSCRIPCION REPRESENTANTES LEGALES ENTIDADES OFICIALES Y PARTICULARES (FUERA DEL DESPACHO)",
+      "codigo": "00000556"
+    },
+    {
+      "nombre": "TARIFAS EN CASO DE AUDIENCIA DE REFORMA DEL ACUERDO DE PAGO - INSOLVENCIA",
+      "codigo": "00000557"
+    },
+    {
+      "nombre": "TARIFAS EN CASO DE AUDIENCIA POR INCUMPLIMIENTO DEL ACUERDO -INSOLVENCIA",
+      "codigo": "00000558"
+    },
+    {
+      "nombre": "TARIFAS EN CASO DE NULIDAD DEL ACUERDO DE PAGO - INSOLVENCIA",
+      "codigo": "00000559"
+    },
+    {
+      "nombre": "TESTIMONIO NOTARIAL",
+      "codigo": "00000560"
+    },
+    {
+      "nombre": "TESTIMONIO NOTARIAL CON DESPLAZAMIENTO DENTRO DE LA CABECERA DEL CIRCULO",
+      "codigo": "00000561"
+    },
+    {
+      "nombre": "VALOR ADICIONAL A LA FIRMA 10% POR HOJA",
+      "codigo": "00000562"
+    },
+    {
+      "nombre": "TRANSFERENCIA CIBERNETICA",
+      "codigo": "00000563"
+    },
+    {
+      "nombre": "VALOR ADICIONAL 10% TRANSF ClBERNETICA - RESOLUCION NO. 451/2017 - ART 6. PARAGRAFO 2",
+      "codigo": "00000564"
+    },
+    {
+      "nombre": "SILENCIO ADMINISTRATIVO POSITIVO",
+      "codigo": "00000565"
+    },
+    {
+      "nombre": "ACCEDER AL PROCESO (Art. 2.2.4.4.7.4 del Decreto 1069 de 2015) - INSOLVENCIA",
+      "codigo": "00000566"
+    },
+    {
+      "nombre": "RELlQUIDACION DE TARIFA INICIAL (Art. 2.2.4.4.7.6 del Decreto 1069 de 2015) -INSOLVENCIA",
+      "codigo": "00010567"
+    },
+    {
+      "nombre": "TRANSFERENCIA BIENES INMUEBLES UNIDAD ADMINISTRATIVA ESPECIAL DE GESTION DE TIERRAS DESPOJADA",
+      "codigo": "00000600"
+    },
+    {
+      "nombre": "ACTUACIONES EN DOCUMENTOS E INSTRUMENTOS PUBLlCOS QUE INTERVIENEN EMPRESA INDUSTRIAL Y COMERCIAL DEL ESTADO Y SOCIEDAD DE ECONOMIA MIXTA",
+      "codigo": "00000601"
+    },
+    {
+      "nombre": "CANCELACION DE HIPOTECAS DE MAYOR EXTENSION EN LOS CASOS DE SUBROGACION",
+      "codigo": "00000602"
+    },
+    {
+      "nombre": "PROHIBICION DE TRANSFERENCIA VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "00000603"
+    },
+    {
+      "nombre": "PROHIBICION DE TRANSFERENCIA VIVIENDA DE INTERES SOCIAL",
+      "codigo": "00000604"
+    },
+    {
+      "nombre": "PROTOCOLlZACION VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "00000605"
+    },
+    {
+      "nombre": "PROTOCOLlZACION VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "00000606"
+    },
+    {
+      "nombre": "PROTOCOLlZACION VIVIENDA DE INTERES SOCIAL",
+      "codigo": "00000607"
+    },
+    {
+      "nombre": "REMATE POR ADMINISTRAClON",
+      "codigo": "01080000"
+    },
+    {
+      "nombre": "L1QUIDACION DE HERENCIA Y SOCIEDADES CONYUGALES Y/O SOCIEDAD PATRIMONIAL DE HECHO (SUCESION)",
+      "codigo": "01090000"
+    },
+    {
+      "nombre": "L1QUIDACION DE LA COMUNIDAD",
+      "codigo": "01100000"
+    },
+    {
+      "nombre": "SUBDIVISION y L1QUIDAClON DE LA COMUNIDAD (LEY 1848 de 2017)",
+      "codigo": "01100001"
+    },
+    {
+      "nombre": "DISOLUClON Y L1QUIDACION DE SOCIEDAD COMERCIAL",
+      "codigo": "01110000"
+    },
+    {
+      "nombre": "DISOLUCION Y L1QUIDACION SOCIEDAD CONYUGAL",
+      "codigo": "01120000"
+    },
+    {
+      "nombre": "DISOLUCION Y L1QUIDACION SOCIEDAD PATRIMONIAL DE HECHO",
+      "codigo": "01130000"
+    },
+    {
+      "nombre": "ADICION SUCESION TRAMITE NOTARIAL",
+      "codigo": "01150000"
+    },
+    {
+      "nombre": "APORTE SOCIEDAD COMERCIAL",
+      "codigo": "01180000"
+    },
+    {
+      "nombre": "TRANSFERENCIA VIVIENDA DE INTERES PARA AHORRADORES A TITULO DE SUBSIDIO EN ESPECIE",
+      "codigo": "01190000"
+    },
+    {
+      "nombre": "CESION A TITULO GRATUITO DE BIENES FISCALES",
+      "codigo": "01210000"
+    },
+    {
+      "nombre": "CESION DE BIENES OBLIGATORIA",
+      "codigo": "01220000"
+    },
+    {
+      "nombre": "CESION DE CREDITO - LEY 546 ARTICULO 24 DE 1999",
+      "codigo": "01230000"
+    },
+    {
+      "nombre": "COMPRAVENTA BIEN INMUEBLES",
+      "codigo": "01250000"
+    },
+    {
+      "nombre": "COMPRAVENTA DE UNIDAD AGRICOLA FAMILIAR",
+      "codigo": "01250001"
+    },
+    {
+      "nombre": "COMPRAVENTA DE BIEN UTILIDAD PUBLICA",
+      "codigo": "01250002"
+    },
+    {
+      "nombre": "COMPRAVENTA DE EJIDOS Y BALOIOS",
+      "codigo": "01250003"
+    },
+    {
+      "nombre": "COMPRAVENTA CON HIPOTECA ABIERTA SIN LIMITE DE CUANTIA",
+      "codigo": "01250004"
+    },
+    {
+      "nombre": "COMPRAVENTA DE MEJORAS",
+      "codigo": "01250005"
+    },
+    {
+      "nombre": "COMPRAVENTA CON PACTO DE RETROVENTA",
+      "codigo": "01250006"
+    },
+    {
+      "nombre": "COMPRAVENTA ENTRE ENTIDADES EXENTAS",
+      "codigo": "01250007"
+    },
+    {
+      "nombre": "COMPRAVENTA ENTRE ENTIDADES EXENTAS Y PARTICULARES",
+      "codigo": "01250008"
+    },
+    {
+      "nombre": "COMPRAVENTA ENTRE ENTIDADES NO EXENTAS Y PARTICULARES",
+      "codigo": "01250009"
+    },
+    {
+      "nombre": "COMPRAVENTA ENTRE PARTICULARES Y EMPRESAS INDUSTRIALES Y COMERCIALES DEL ESTADO O ECONOMIA MIXTA",
+      "codigo": "01250010"
+    },
+    {
+      "nombre": "COMPRAVENTA DERECHOS HERENClALES",
+      "codigo": "01250011"
+    },
+    {
+      "nombre": "COMPRAVENTA DERECHOS UNIVERSALES",
+      "codigo": "01250012"
+    },
+    {
+      "nombre": "COMPRAVENTA AERONAVES",
+      "codigo": "01250013"
+    },
+    {
+      "nombre": "COMPRAVENTA DE DESPLAZADOS",
+      "codigo": "01250014"
+    },
+    {
+      "nombre": "COMPRAVENTA VIVIENDA DE INTERES SOCIAL",
+      "codigo": "01250015"
+    },
+    {
+      "nombre": "COMPRAVENTA VIVIENDA DE INTERES SOCIAL DECRETO 2158 DE 1995 Y 371 DE 1996 (ESPECIAL)",
+      "codigo": "01250016"
+    },
+    {
+      "nombre": "COMPRAVENTA VIVIENDA DE INTERES PRIORITARIO CON SUBSIDIO FAMILIAR DE VIVIENDA EN ESPECIE",
+      "codigo": "01250017"
+    },
+    {
+      "nombre": "COMPRAVENTA VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES CON SUBSIDIO FAMILIAR DE VIVIENDA EN ESPECIE",
+      "codigo": "01250018"
+    },
+    {
+      "nombre": "COMPRAVENTA PARCIAL",
+      "codigo": "01260000"
+    },
+    {
+      "nombre": "COMPRAVENTA PARCIAL CON ENTIDADES EXENTAS",
+      "codigo": "01260001"
+    },
+    {
+      "nombre": "CONSTITUCION FIDUCIA MERCANTIL",
+      "codigo": "01280000"
+    },
+    {
+      "nombre": "DACION EN PAGO SIN RETE FUENTE",
+      "codigo": "01290000"
+    },
+    {
+      "nombre": "DAClON EN PAGO QUE GARANTICE UNA OBLlGACION HIPOTECARIA (LEY 633 ARTICULO 88 DEL 2000)",
+      "codigo": "01300000"
+    },
+    {
+      "nombre": "CESION OBLIGATORIA DE ZONAS CON DESTINO A USO PUBLICO",
+      "codigo": "01330000"
+    },
+    {
+      "nombre": "DECRETO DE POSESION EFECTIVA",
+      "codigo": "01360000"
+    },
+    {
+      "nombre": "DONAClON DE BIENES DE INTERES CULTURAL EFECTUADAS POR PARTICULAR A LOS MUSEOS PUBLlCOS",
+      "codigo": "01380000"
+    },
+    {
+      "nombre": "ESCISION DE SOCIEDADES",
+      "codigo": "01390000"
+    },
+    {
+      "nombre": "FUSION DE SOCIEDADES",
+      "codigo": "01430000"
+    },
+    {
+      "nombre": "RATIFICACION CONTRATO",
+      "codigo": "01460000"
+    },
+    {
+      "nombre": "RENTA VITALICIA",
+      "codigo": "01500000"
+    },
+    {
+      "nombre": "RESCILlACION CONTRACTUAL",
+      "codigo": "01510000"
+    },
+    {
+      "nombre": "RESClLlAClON VENTA PARA ESCRITURAS VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "01510001"
+    },
+    {
+      "nombre": "RESCILlAClON VENTA PARA ESCRITURAS VIVIENDA DE INTERES SOCIAL",
+      "codigo": "01510002"
+    },
+    {
+      "nombre": "RESCILlACION VENTA PARA ESCRITURAS VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "01510003"
+    },
+    {
+      "nombre": "RESClSION CONTRATO",
+      "codigo": "01520000"
+    },
+    {
+      "nombre": "RESOLUCION CONTRATO",
+      "codigo": "01530000"
+    },
+    {
+      "nombre": "RESTITUCION EN FIDEICOMISO CIVIL",
+      "codigo": "01540000"
+    },
+    {
+      "nombre": "RESTITUCION EN FIDUCIA MERCANTIL",
+      "codigo": "01550000"
+    },
+    {
+      "nombre": "ESCRITURA DE TRANSACClON",
+      "codigo": "01630000"
+    },
+    {
+      "nombre": "ADJUDICACION L1QUIDACION SOCIEDAD DE HECHO",
+      "codigo": "01670000"
+    },
+    {
+      "nombre": "TRANSFERENCIA DE DOMINIO A TITULO DE LEASING HABITACIONAL DE VIVIENDA FAMILIAR",
+      "codigo": "01680000"
+    },
+    {
+      "nombre": "TRANSFERENCIA DE DOMINIO A TITULO DE LEASING HABITAClONAL DE VIVIENDA NO FAMILIAR",
+      "codigo": "01690000"
+    },
+    {
+      "nombre": "ENTREGA ANTICIPADA DE CESIONES",
+      "codigo": "01710000"
+    },
+    {
+      "nombre": "CESION DE BALDIO URBANO DE LA NAClON AL MUNICIPIO",
+      "codigo": "01750000"
+    },
+    {
+      "nombre": "ACUERDO DE REORGANIZACION ART. 36 LEY 1166 DE 2006",
+      "codigo": "01790000"
+    },
+    {
+      "nombre": "ACUERDO DE ADJUDICAClON ART. 37 LEY 1116 DE 2006.",
+      "codigo": "01800000"
+    },
+    {
+      "nombre": "TRANSFERENCIA VIVIENDA DE INTERES PRIORITARIO A TITULO DE SUBSIDIO EN ESPECIE",
+      "codigo": "01860000"
+    },
+    {
+      "nombre": "RECONSTITUCION DE SOCIEDAD: VERIFICADO EL e.CO NO SE ENCONTRO. SE ASIMILA A LA FUSION.",
+      "codigo": "01880000"
+    },
+    {
+      "nombre": "TRANSFERENCIA DE DOMINIO POR ADICION A FIDUCIA MERCANTIL.",
+      "codigo": "01890000"
+    },
+    {
+      "nombre": "RESTITUCION PARTE RESTANTE DE BIEN FIDEICOMETIDO (LEY 1537 DE 2012).NO SE ENCONTRO ESTA ES LA RESTITUCION DE FIDEICOMISO CIVIL Y COMERCIAL",
+      "codigo": "01930000"
+    },
+    {
+      "nombre": "TRANSFERENCIA A TITULO DE LEASING INMOBILIARIO (D. 193 DE 1993 Y D. 2555 DE 2010) VER RESOLUClON TARIFAS NOTARIALES.",
+      "codigo": "01940000"
+    },
+    {
+      "nombre": "TRANSFERENCIA DE DOMINIO POR COMPENSACION ART. 1625 e.e.",
+      "codigo": "01950000"
+    },
+    {
+      "nombre": "TRANSFERENCIA DEL DERECHO DEL DOMINIO LEY 1848 de 2017)",
+      "codigo": "01950001"
+    },
+    {
+      "nombre": "TITULACION DE LA POSESION MATERIAL DE INMUEBLE URBANO. LEY 1561 DE 2012",
+      "codigo": "01960000"
+    },
+    {
+      "nombre": "REFORMA ESTATUTARIA CON DISMINUClON DE CAPITAL",
+      "codigo": "01980000"
+    },
+    {
+      "nombre": "AMPLlACION HIPOTECA",
+      "codigo": "02010000"
+    },
+    {
+      "nombre": "AMPLlACION DE HIPOTECA EN VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "02010001"
+    },
+    {
+      "nombre": "AMPLlACION DE HIPOTECA EN VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "02010002"
+    },
+    {
+      "nombre": "AMPLlACION DE HIPOTECA EN VIVIENDA DE INTERES SOCIAL",
+      "codigo": "02010003"
+    },
+    {
+      "nombre": "CONSTITUCION DE MOBILlZACION",
+      "codigo": "02020000"
+    },
+    {
+      "nombre": "HIPOTECA",
+      "codigo": "02030000"
+    },
+    {
+      "nombre": "HIPOTECA VIVIENDA DE INTERES SOCIAL",
+      "codigo": "02030001"
+    },
+    {
+      "nombre": "HIPOTECA VIVIENDA DE INTERES SOCIAL SUBSIDIADA 10 %",
+      "codigo": "02030002"
+    },
+    {
+      "nombre": "HIPOTECA VIVIENDA DE INTERES SOCIAL NO SUBSIDIADA 40 %",
+      "codigo": "02030003"
+    },
+    {
+      "nombre": "HIPOTECA VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "02030004"
+    },
+    {
+      "nombre": "HIPOTECA VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "02030005"
+    },
+    {
+      "nombre": "HIPOTECA SISTEMA ESPECIALIZADO FINANCIACION DE VIVIENDA 10 % LEY 546 DE 1999 CON SUBSIDIO",
+      "codigo": "02030006"
+    },
+    {
+      "nombre": "HIPOTECA SISTEMA ESPECIALIZADO FINANClACION DE VIVIENDA 40 % LEY 546 DE 1999 SIN SUBSIDIO",
+      "codigo": "02030007"
+    },
+    {
+      "nombre": "HIPOTECA SISTEMA ESPECIALIZADO FINANCIACION DE VIVIENDA 70 % LEY 546 DE 1999 CON SUBSIDIO",
+      "codigo": "02030008"
+    },
+    {
+      "nombre": "HIPOTECA ENTRE LAS MISMAS PARTES EN EL MISMO ACTO",
+      "codigo": "02030009"
+    },
+    {
+      "nombre": "HIPOTECA AERONAVES",
+      "codigo": "02030010"
+    },
+    {
+      "nombre": "MODIFICACION HIPOTECA DE VIVIENDA DE INTERES SOCIAL SUBSIDIADA 10 %",
+      "codigo": "02030011"
+    },
+    {
+      "nombre": "MODIFICACION HIPOTECA DE VIVIENDA DE INTERES SOCIAL NO SUBSIDIADA 40 %",
+      "codigo": "02030012"
+    },
+    {
+      "nombre": "HIPOTECA ABIERTA",
+      "codigo": "02040000"
+    },
+    {
+      "nombre": "HIPOTECA ABIERTA CON LIMITE DE CUANTIA",
+      "codigo": "02040001"
+    },
+    {
+      "nombre": "HIPOTECA CON CUANTIA INDETERMINADA",
+      "codigo": "02050000"
+    },
+    {
+      "nombre": "HIPOTECA DE BIENES EN USUFRUCTO",
+      "codigo": "02060000"
+    },
+    {
+      "nombre": "HIPOTECA DERECHOS Y ACCIONES",
+      "codigo": "02070000"
+    },
+    {
+      "nombre": "HIPOTECA GANANCIALES",
+      "codigo": "02080000"
+    },
+    {
+      "nombre": "HIPOTECA MINAS CON ANTECEDENTE REGISTRAL",
+      "codigo": "02090000"
+    },
+    {
+      "nombre": "HIPOTECA UNIDAD AGRICOLA FAMILIAR",
+      "codigo": "02100000"
+    },
+    {
+      "nombre": "HIPOTECA DERECHOS DE CUOTA",
+      "codigo": "02110000"
+    },
+    {
+      "nombre": "HIPOTECA NUDA PROPIEDAD",
+      "codigo": "02130000"
+    },
+    {
+      "nombre": "HIPOTECA ABIERTA SIN LIMITE DE CUANTIA",
+      "codigo": "02190000"
+    },
+    {
+      "nombre": "LIMITACIONES AL DOMINIO (LEY 1848 de 2017)",
+      "codigo": "03000000"
+    },
+    {
+      "nombre": "ADJUDICAClON SUCESION SUBSUELO CON ANTECEDENTE REGISTRAL",
+      "codigo": "03030000"
+    },
+    {
+      "nombre": "AFECTAClON A VIVIENDA FAMILIAR",
+      "codigo": "03040000"
+    },
+    {
+      "nombre": "AFECTACION A VIVIENDA FAMILIAR VIVIENDA DE INTERES SOCIAL",
+      "codigo": "03040001"
+    },
+    {
+      "nombre": "AFECTACION A VIVIENDA FAMILIAR VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "03040002"
+    },
+    {
+      "nombre": "AFECTACION A VIVIENDA FAMILIAR VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "03040003"
+    },
+    {
+      "nombre": "AFECTACION POR CAUSA DE UNA OBRA PUBLICA",
+      "codigo": "03050000"
+    },
+    {
+      "nombre": "CAMBIO REGIMEN COPROPIEDAD",
+      "codigo": "03060000"
+    },
+    {
+      "nombre": "COMPRAVENTA DERECHOS CUOTA",
+      "codigo": "03070000"
+    },
+    {
+      "nombre": "COMPRAVENTA NUDA PROPIEDAD",
+      "codigo": "03080000"
+    },
+    {
+      "nombre": "COMPRAVENTA SUBSUELO CON ANTECEDENTE REGISTRAL",
+      "codigo": "03090000"
+    },
+    {
+      "nombre": "COMPRAVENTA USUFRUCTO",
+      "codigo": "03100000"
+    },
+    {
+      "nombre": "CONDICION RESOLUTORIA EXPRESA",
+      "codigo": "03110000"
+    },
+    {
+      "nombre": "CONDICION RESOLUTORIA EN VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "03110001"
+    },
+    {
+      "nombre": "CONDICION RESOLUTORIA EN VIVIENDA DE INTERES PRIORITARIA",
+      "codigo": "03110002"
+    },
+    {
+      "nombre": "CONDICION RESOLUTOIRA EN VIVIENDA DE INTERES SOCIAL",
+      "codigo": "03110003"
+    },
+    {
+      "nombre": "CONSTITUCION FIDEICOMISO CIVIL",
+      "codigo": "03130000"
+    },
+    {
+      "nombre": "CONSTITUCION FIDEICOMISO CIVIL VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "03130001"
+    },
+    {
+      "nombre": "CONSTITUCION FIDEICOMISO CIVIL VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "03130002"
+    },
+    {
+      "nombre": "CONSTITUCION FIDEICOMISO CIVIL VIVIENDA DE INTERES SOCIAL",
+      "codigo": "03130003"
+    },
+    {
+      "nombre": "CONSTITUCION USUFRUCTO",
+      "codigo": "03140000"
+    },
+    {
+      "nombre": "PATRIMONIO DE FAMILIA",
+      "codigo": "03150000"
+    },
+    {
+      "nombre": "PATRIMONIO DE FAMILIA UAF",
+      "codigo": "03150001"
+    },
+    {
+      "nombre": "PATRIMONIO DE FAMILIA VIVIENDA DE INTERES SOCIAL",
+      "codigo": "03150002"
+    },
+    {
+      "nombre": "PATRIMONIO DE FAMILIA VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "03150003"
+    },
+    {
+      "nombre": "PATRIMONIO DE FAMILIA VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "03150004"
+    },
+    {
+      "nombre": "CONSTITUCION REGIMEN DE CONDOMINIO",
+      "codigo": "03160000"
+    },
+    {
+      "nombre": "CONSTITUCION REGLAMENTO PROPIEDAD HORIZONTAL",
+      "codigo": "03170000"
+    },
+    {
+      "nombre": "CONSTITUCION REGLAMENTO PROPIEDAD HORIZONTAL EN VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "03170001"
+    },
+    {
+      "nombre": "CONSTITUCION REGLAMENTO PROPIEDAD HORIZONTAL EN VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "03170002"
+    },
+    {
+      "nombre": "CONSTITUCION REGLAMENTO PROPIEDAD HORIZONTAL EN VIVIENDA DE INTERES SOCIAL",
+      "codigo": "03170003"
+    },
+    {
+      "nombre": "DECLARATORIA INDIVISION",
+      "codigo": "03180000"
+    },
+    {
+      "nombre": "CONSTITUCION REGLAMENTO PROPIEDAD HORIZONTAL (LEY 1848 de 2017)",
+      "codigo": "03180004"
+    },
+    {
+      "nombre": "DERECHO DE HABITACION",
+      "codigo": "03190000"
+    },
+    {
+      "nombre": "DERECHO DE USO",
+      "codigo": "03200000"
+    },
+    {
+      "nombre": "DONACION NUDA PROPIEDAD",
+      "codigo": "03220000"
+    },
+    {
+      "nombre": "DONACION USUFRUCTO",
+      "codigo": "03230000"
+    },
+    {
+      "nombre": "PACTO COMISORIO",
+      "codigo": "03260000"
+    },
+    {
+      "nombre": "PACTO DE INDIVISION",
+      "codigo": "03270000"
+    },
+    {
+      "nombre": "PACTO RESERVA DE DOMINIO",
+      "codigo": "03280000"
+    },
+    {
+      "nombre": "PACTO DE RETROVENTA",
+      "codigo": "03290000"
+    },
+    {
+      "nombre": "REFORMA REGIMEN DE CONDOMINIO",
+      "codigo": "03300000"
+    },
+    {
+      "nombre": "REFORMA REGLAMENTO DE PROPIEDAD HORIZONTAL",
+      "codigo": "03310000"
+    },
+    {
+      "nombre": "RESERVA DERECHO DE USUFRUCTO",
+      "codigo": "03330000"
+    },
+    {
+      "nombre": "SERVIDUMBRE DE ACUEDUCTO ACTIVA",
+      "codigo": "03340000"
+    },
+    {
+      "nombre": "SERVIDUMBRE DE ACUEDUCTO PASIVA",
+      "codigo": "03350000"
+    },
+    {
+      "nombre": "SERVIDUMBRE DE AGUAS NEGRAS ACTIVA",
+      "codigo": "03360000"
+    },
+    {
+      "nombre": "SERVIDUMBRE DE AGUAS NEGRAS PASIVA",
+      "codigo": "03370000"
+    },
+    {
+      "nombre": "SERVIDUMBRE DE AIRE",
+      "codigo": "03380000"
+    },
+    {
+      "nombre": "SERVIDUMBRE DE ENERGIA ELECTRICA",
+      "codigo": "03390000"
+    },
+    {
+      "nombre": "SERVIDUMBRE DE GASODUCTO",
+      "codigo": "03400000"
+    },
+    {
+      "nombre": "SERVIDUMBRE DE LUZ",
+      "codigo": "03410000"
+    },
+    {
+      "nombre": "SERVIDUMBRE DE OLEODUCTO",
+      "codigo": "03420000"
+    },
+    {
+      "nombre": "SERVIDUMBRE DE TRANSITO ACTIVA",
+      "codigo": "03430000"
+    },
+    {
+      "nombre": "SERVIDUMBRE DE TRANSITO PASIVA",
+      "codigo": "03440000"
+    },
+    {
+      "nombre": "ADICION REGIMEN CONDOMINIO ~",
+      "codigo": "03460000"
+    },
+    {
+      "nombre": "ADICION REGIMEN DE PROPIEDAD HORIZONTAL",
+      "codigo": "03470000"
+    },
+    {
+      "nombre": "ADJUDICACION SUCESION DERECHO DE CUOTA",
+      "codigo": "03480000"
+    },
+    {
+      "nombre": "ADJUDICAClON SUCESION NUDA PROPIEDAD",
+      "codigo": "03490000"
+    },
+    {
+      "nombre": "PROHIBICION TRANSFERENCIA VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "03620000"
+    },
+    {
+      "nombre": "DERECHO PREFERENCIA VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "03690000"
+    },
+    {
+      "nombre": "DACION EN PAGO",
+      "codigo": "03750000"
+    },
+    {
+      "nombre": "DONACION",
+      "codigo": "03760000"
+    },
+    {
+      "nombre": "DONACION PARCIAL",
+      "codigo": "03760001"
+    },
+    {
+      "nombre": "PERMUTA",
+      "codigo": "03770000"
+    },
+    {
+      "nombre": "ADJUDICACION SUCESION USUFRUCTO",
+      "codigo": "03780000"
+    },
+    {
+      "nombre": "ADJUDICACION L1QUIDACION SOCIEDAD CONYUGAL USUFRUCTO",
+      "codigo": "03820000"
+    },
+    {
+      "nombre": "DERECHO PREFERENCIA VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "04210001"
+    },
+    {
+      "nombre": "DERECHO PREFERENCIA VIVIENDA DE INTERES SOCIAL",
+      "codigo": "04210002"
+    },
+    {
+      "nombre": "CONSTITUCION ADMINISTRAClON ANTICRETICA",
+      "codigo": "05010000"
+    },
+    {
+      "nombre": "CONTRATO DE ARRENDAMIENTO",
+      "codigo": "05020000"
+    },
+    {
+      "nombre": "CONTRATO ARRENDAMIENTO PLAZO DETERMINADO",
+      "codigo": "05020001"
+    },
+    {
+      "nombre": "CONTRATO ARRENDAMIENTO PLAZO INDETERMINADO",
+      "codigo": "05020002"
+    },
+    {
+      "nombre": "CONTRATO DE USO DE HABITAClON",
+      "codigo": "05020003"
+    },
+    {
+      "nombre": "COMODATO",
+      "codigo": "05030000"
+    },
+    {
+      "nombre": "COMODATO A TITULO PRECARIO",
+      "codigo": "05040000"
+    },
+    {
+      "nombre": "LEASING BIENES INMUEBLES",
+      "codigo": "05050000"
+    },
+    {
+      "nombre": "LEASING HABITACIONAL EN VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "05050001"
+    },
+    {
+      "nombre": "LEASING HABITACIONAL EN VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "05050002"
+    },
+    {
+      "nombre": "LEASING HABITACIONAL EN VIVIENDA DE INTERES SOCIAL",
+      "codigo": "05050003"
+    },
+    {
+      "nombre": "LEASING CON PLAZO INDETERMINADO",
+      "codigo": "05050004"
+    },
+    {
+      "nombre": "LEASING SIN ESCRITURA PUBLICA CAUSANDO LA TRANSFERENCIA DE BIENES POR OPClON DE COMPRA",
+      "codigo": "05050005"
+    },
+    {
+      "nombre": "ADJUDICACION SUCESION DERECHOS Y ACCIONES",
+      "codigo": "06010000"
+    },
+    {
+      "nombre": "AFECTAClON A VIVIENDA FAMILIAR SOBRE MEJORAS EN PREDIO AJENO",
+      "codigo": "06030000"
+    },
+    {
+      "nombre": "COMPRAVENTA DERECHOS GANANCIALES",
+      "codigo": "06060000"
+    },
+    {
+      "nombre": "COMPRAVENTA DE POSESION",
+      "codigo": "06080000"
+    },
+    {
+      "nombre": "DECLARACION DE MEJORAS EN PREDIO AJENO",
+      "codigo": "06090000"
+    },
+    {
+      "nombre": "PATRIMONIO DE FAMILIA SOBRE MEJORAS EN PREDIO AJENO",
+      "codigo": "06120000"
+    },
+    {
+      "nombre": "COMPRAVENTA DE MEJORAS CON ANTECEDENTE REGISTRAL",
+      "codigo": "06160000"
+    },
+    {
+      "nombre": "DACION EN PAGO DE DERECHOS Y ACCIONES",
+      "codigo": "06170000"
+    },
+    {
+      "nombre": "CANCELACION ADMINISTRACION ANTICRETICA.",
+      "codigo": "07010000"
+    },
+    {
+      "nombre": "CANCELACION AFECTACION VIVIENDA FAMILIAR",
+      "codigo": "07020000"
+    },
+    {
+      "nombre": "CANCELACION AFECTACION VIVIENDA DE INTERES SOCIAL",
+      "codigo": "07020001"
+    },
+    {
+      "nombre": "CANCELACION AFECTACION VIVIENDA FAMILIAR DE INTERES PRIORITARIO",
+      "codigo": "07020002"
+    },
+    {
+      "nombre": "CANCELACION AFECTACION VIVIENDA FAMILIAR VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "07020003"
+    },
+    {
+      "nombre": "CANCELACION AMPLlACION HIPOTECA",
+      "codigo": "07050000"
+    },
+    {
+      "nombre": "CANCELACION CONTRATO DE ARRENDAMIENTO PLAZO DETERMINADO.",
+      "codigo": "07060001"
+    },
+    {
+      "nombre": "CANCELACION CONTRATO DE ARRENDAMIENTO PLAZO INDETERMINADO",
+      "codigo": "07060002"
+    },
+    {
+      "nombre": "CANCELACION COMODATO",
+      "codigo": "07080000"
+    },
+    {
+      "nombre": "CANCELACION CONDICION RESOLUTORIA EXPRESA",
+      "codigo": "07100000"
+    },
+    {
+      "nombre": "CANCELACION CONDICION RESOLUTORIA EN VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "07100001"
+    },
+    {
+      "nombre": "CANCELACION CONDICION RESOLUTORIA EN VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "07100002"
+    },
+    {
+      "nombre": "CANCELACION CONDICION RESOLUTORIA EN VIVIENDA DE INTERES SOCIAL",
+      "codigo": "07100003"
+    },
+    {
+      "nombre": "CANCELACION CONSTITUCION LEASING INMOBILIARIO",
+      "codigo": "07120000"
+    },
+    {
+      "nombre": "CANCELACION CONSTITUCION FIDEICOMISO CIVIL",
+      "codigo": "07130000"
+    },
+    {
+      "nombre": "CANCELACION CONSTITUCION FIDEICOMISO CIVIL VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "07130001"
+    },
+    {
+      "nombre": "CANCELAClON CONSTITUCION FIDEICOMISO CIVIL VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "07130002"
+    },
+    {
+      "nombre": "CANCELACION CONSTITUCION FIDEICOMISO CIVIL VIVIENDA DE INTERES SOCIAL",
+      "codigo": "07130003"
+    },
+    {
+      "nombre": "CANCELAClON CONSTITUCION DE USUFRUCTO",
+      "codigo": "07160000"
+    },
+    {
+      "nombre": "CANCELACION CONSTITUCION FIDUCIA MERCANTIL",
+      "codigo": "07170000"
+    },
+    {
+      "nombre": "CANCELACION CONSTITUCION PATRIMONIO DE FAMILIA",
+      "codigo": "07180000"
+    },
+    {
+      "nombre": "CANCELACION CONSTITUCION PATRIMONIO DE FAMILIA EN VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "07180001"
+    },
+    {
+      "nombre": "CANCELACION CONSTITUCION PATRIMONIO DE FAMILIA EN VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "07180002"
+    },
+    {
+      "nombre": "CANCELACION CONSTITUCION PATRIMONIO DE FAMILIA EN VIVIENDA DE INTERES SOCIAL",
+      "codigo": "07180003"
+    },
+    {
+      "nombre": "CANCELACION y SUSTITUCION VOLUNTARIA DE PATRIMONIO DE FAMILIA",
+      "codigo": "07180004"
+    },
+    {
+      "nombre": "CANCELACION CONSTITUCION REGLAMENTO PROPIEDAD HORIZONTAL",
+      "codigo": "07200000"
+    },
+    {
+      "nombre": "CANCELACION CONSTITUCION REGLAMENTO PROPIEDAD HORIZONTAL EN VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "07200001"
+    },
+    {
+      "nombre": "CANCELACION CONSTITUCION REGLAMENTO PROPIEDAD HORIZONTAL EN VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "07200002"
+    },
+    {
+      "nombre": "CANCELACION CONSTITUCION REGLAMENTO PROPIEDAD HORIZOZTAL EN VIVIENDA DE INTERES SOCIAL",
+      "codigo": "07200003"
+    },
+    {
+      "nombre": "CANCELACION CONTRATO",
+      "codigo": "07210000"
+    },
+    {
+      "nombre": "CANCELAClON CONTRATO DE HABITACION",
+      "codigo": "07430000"
+    },
+    {
+      "nombre": "CANCELACION DERECHOS DE USO",
+      "codigo": "07450000"
+    },
+    {
+      "nombre": "CANCELACION ESCRITURA PUBLICA",
+      "codigo": "07730000"
+    },
+    {
+      "nombre": "CANCELACION HIPOTECA",
+      "codigo": "07740000"
+    },
+    {
+      "nombre": "CANCELACION HIPOTECA EN VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "07740001"
+    },
+    {
+      "nombre": "CANCELACION HIPOTECA EN VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "07740002"
+    },
+    {
+      "nombre": "CANCELACION HIPOTECA EN VIVIENDA DE INTERES SOCIAL",
+      "codigo": "07740003"
+    },
+    {
+      "nombre": "CANCELACION HIPOTECA EN MAYOR EXTENSION-L1BERACION UNIDADES PRIVADAS",
+      "codigo": "07740004"
+    },
+    {
+      "nombre": "CANCELACION HIPOTECA EN MAYOR EXTENSION-L1BERACION UNIDADES PRIVADAS VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "07740005"
+    },
+    {
+      "nombre": "CANCELACION HIPOTECA EN MAYOR EXTENSION-L1BERACION UNIDADES PRIVADAS VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "07740006"
+    },
+    {
+      "nombre": "CANCELACION HIPOTECA SISTEMA ESPECIALIZADO FINANCIACION VIVIENDA 70%",
+      "codigo": "07740007"
+    },
+    {
+      "nombre": "CANCELACION HIPOTECA SISTEMA ESPECIALIZADO FINANCIACION VIVIENDA 10 % LEY 546 DE 1999 CON SUBSIDIO",
+      "codigo": "07740008"
+    },
+    {
+      "nombre": "CANCELACION HIPOTECA SISTEMA ESPECIALIZADO FINANCIACION VIVIENDA 40 % LEY 546 DE 1999 SIN SUBSIDIO",
+      "codigo": "07740009"
+    },
+    {
+      "nombre": "CANCELAClON HIPOTECA CREDITOS PARA VIVIENDA (LEY 546 ARTICULO 23 -31 A—O 1999)",
+      "codigo": "07740010"
+    },
+    {
+      "nombre": "CANCELACION HIPOTECA ABIERTA",
+      "codigo": "07750000"
+    },
+    {
+      "nombre": "CANCELACION HIPOTECA CON CUANTIA INDETERMINADA",
+      "codigo": "07760000"
+    },
+    {
+      "nombre": "CANCELACION HIPOTECA DE BIENES EN USUFRUCTO",
+      "codigo": "07770000"
+    },
+    {
+      "nombre": "CANCELACION HIPOTECA DE UNIDAD AGRICOLA FAMILIAR",
+      "codigo": "07790000"
+    },
+    {
+      "nombre": "CANCELAClON HIPOTECA DERECHOS DE CUOTA",
+      "codigo": "07800000"
+    },
+    {
+      "nombre": "CANCELACION HIPOTECA DERECHOS Y ACCIONES",
+      "codigo": "07810000"
+    },
+    {
+      "nombre": "CANCELAClON HIPOTECA GANANCIALES",
+      "codigo": "07820000"
+    },
+    {
+      "nombre": "CANCELACION PACTO COMISORIO",
+      "codigo": "07940000"
+    },
+    {
+      "nombre": "CANCELACION PACTO DE INDIVISION",
+      "codigo": "07950000"
+    },
+    {
+      "nombre": "CANCELACION PACTO DE RETROVENTA",
+      "codigo": "07960000"
+    },
+    {
+      "nombre": "EXTINCION TOTAL REGIMEN PROPIEDAD HORIZONTAL",
+      "codigo": "08370000"
+    },
+    {
+      "nombre": "CANCELACION PARCIAL DE HIPOTECA",
+      "codigo": "08550000"
+    },
+    {
+      "nombre": "ACLARACION",
+      "codigo": "09010000"
+    },
+    {
+      "nombre": "ACLARAClON DE AREA",
+      "codigo": "09010001"
+    },
+    {
+      "nombre": "ACLARACION DE REGISTRO CATASTRAL",
+      "codigo": "09010002"
+    },
+    {
+      "nombre": "ACLARACION LINDEROS",
+      "codigo": "09010003"
+    },
+    {
+      "nombre": "ACLARACION MATRICULA INMOBILIARIA",
+      "codigo": "09010004"
+    },
+    {
+      "nombre": "ACLARACION NOMENCLATURA",
+      "codigo": "09010005"
+    },
+    {
+      "nombre": "ACLARAClON NOMBRES y APELLIDOS DE OTORGANTES",
+      "codigo": "09010006"
+    },
+    {
+      "nombre": "ACLARACION ESCRITURAS PUBLICAS O CORRECCION",
+      "codigo": "09010007"
+    },
+    {
+      "nombre": "ACTUALlZACION AREA",
+      "codigo": "09020000"
+    },
+    {
+      "nombre": "ACTUALlZACION LINDEROS",
+      "codigo": "09030000"
+    },
+    {
+      "nombre": "ACTUALlZACION NOMENCLATURA",
+      "codigo": "09040000"
+    },
+    {
+      "nombre": "ESCRITURA DE CORRECCION-ACLARACION-ACTUALlZACION (NOMENCLATURA) EN VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "09040001"
+    },
+    {
+      "nombre": "ESCRITURA DE CORRECClON-ACLARACION-ACTUALlZAClON (NOMENCLATURA) EN VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "09040002"
+    },
+    {
+      "nombre": "ESCRITURA DE CORRECCION-ACLARACION-ACTUALlZAClON (NOMENCLATURA) EN VIVIENDA DE INTERES SOCIAL",
+      "codigo": "09040003"
+    },
+    {
+      "nombre": "CAMBIO DE NOMBRE",
+      "codigo": "09060000"
+    },
+    {
+      "nombre": "CAMBIO DE NOMBRE INDIGENA",
+      "codigo": "09060001"
+    },
+    {
+      "nombre": "CAMBIO RAZON SOCIAL",
+      "codigo": "09070000"
+    },
+    {
+      "nombre": "CONSTITUCION URBANIZACION",
+      "codigo": "09090000"
+    },
+    {
+      "nombre": "CONSTITUCION URBANIZACION VIVIENDA DE INTERES PRIORITARIO",
+      "codigo": "09090001"
+    },
+    {
+      "nombre": "CONSTITUCION URBANIZACION VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "09090002"
+    },
+    {
+      "nombre": "CONSTITUCION URBANIZACION VIVIENDA DE INTERES SOCIAL",
+      "codigo": "09090003"
+    },
+    {
+      "nombre": "DECLARAClON CONSTRUCClON CON SUBSIDIO FAMILIAR DE VIVIENDA",
+      "codigo": "09100000"
+    },
+    {
+      "nombre": "DECLARACION CONSTRUCCION EN SUELO PROPIO",
+      "codigo": "09110000"
+    },
+    {
+      "nombre": "DECLARACION DE CONSTRUCCION EN SUELO AJENO",
+      "codigo": "09110001"
+    },
+    {
+      "nombre": "RECONOCIMIENTO DE CONTRUCCIONES (LEY 1848 de 2017)",
+      "codigo": "09110002"
+    },
+    {
+      "nombre": "DECLARAClON DE MEJORAS EN SUELO PROPIO",
+      "codigo": "09120000"
+    },
+    {
+      "nombre": "DECLARAClON DE MEJORAS EN VIVIENDA DE INTERES SOCIAL",
+      "codigo": "09120001"
+    },
+    {
+      "nombre": "DECLARACION DE MEJORAS EN VIVIENDA DE INTERES PRIORITARIO PARA AHORRADORES",
+      "codigo": "09120002"
+    },
+    {
+      "nombre": "DECLARACION DE MEJORAS EN VIVIENDA DE INTERES PARA AHORRADORES",
+      "codigo": "09120003"
+    },
+    {
+      "nombre": "DECLARACION PARTE RESTANTE",
+      "codigo": "09130000"
+    },
+    {
+      "nombre": "DESENGLOBE",
+      "codigo": "09150000"
+    },
+    {
+      "nombre": "DETERMINACION AREAS Y LINDEROS PREDIO DEL MUNICIPIO",
+      "codigo": "09170000"
+    },
+    {
+      "nombre": "DIVISION MATERIAL",
+      "codigo": "09180000"
+    },
+    {
+      "nombre": "DIVISION MATERIAL (LEY 1848 de 2017)",
+      "codigo": "09180001"
+    },
+    {
+      "nombre": "ENGLOBE",
+      "codigo": "09190000"
+    },
+    {
+      "nombre": "LOTEO",
+      "codigo": "09200000"
+    },
+    {
+      "nombre": "REGLAMENTACION URBANISTICA ESPECIAL",
+      "codigo": "09230000"
+    },
+    {
+      "nombre": "RELOTEO",
+      "codigo": "09240000"
+    },
+    {
+      "nombre": "DECLARACION EXTINCION OBLlGACION HIPOTECARIA",
+      "codigo": "09250000"
+    },
+    {
+      "nombre": "CESION DE POSICION CONTRACTUAL DE FIDUCIARIO",
+      "codigo": "09570000"
+    },
+    {
+      "nombre": "ACLARACION DE CEDULA CATASTRAL",
+      "codigo": "09580000"
+    },
+    {
+      "nombre": "CERTIFICACION T…CNICA DE OCUPACION CONFORME A LA INSTRUCCi”N ADMINISTRATIVA No. 12 DE 31 DE JULIO DE 2017 DE LA SUPERNOTARIADO",
+      "codigo": "09600000"
+    }
+  ]
+}
